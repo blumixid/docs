@@ -4,10 +4,10 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015，2016
 
  
-
+ 
 ---
 
 {:codeblock: .codeblock}
@@ -51,46 +51,32 @@ copyright:
 # Pricing
 {: #pricing}
 
-*Last updated: 16 August 2016*
+Last updated: 5 September 2016
 {: .last-updated}
 
-You can run applications in {{site.data.keyword.Bluemix}} and try {{site.data.keyword.Bluemix_notm}} services for free. You can sign up for a free 30-day trial that gives you additional allowances, including free support. After 30 days, you can choose an account type and pay only for what you use beyond the free allowances. Bluemix provides a cost calculator for you to estimate the cost beforehand and the Usage Dashboard view for you to check the actual cost after you build your apps.
+{{site.data.keyword.Bluemix_notm}} has choices of pricing plans to meet your needs and your budget, and account options for how you'll be billed. 
 {:shortdesc}
-
-## Free trial
-{: #trial}
-You can sign up for a free 30-day trial with your {{site.data.keyword.Bluemix_notm}} ID. During the trial, you can develop applications and use services on {{site.data.keyword.Bluemix_notm}}.
-
-Your account is provided with the following resources, free of charge:
-
-* Maximum 2 GB memory
-* 10 services
-* 1 SSL certificate
-
-Your free trial expires 30 days after you sign up. After your 30-day trial expires, the applications in your account are stopped. You will not be able to sign up for another trial on {{site.data.keyword.Bluemix_notm}}. However, you can still access your account and the accounts that you are invited to. To restart your applications, you must either provide your credit card information for a Pay-As-You-Go account or create a Subscription account. After you convert your account, you can continue to use free compute and service allowances. You pay only for the usage of services, containers, and runtimes that is not included as part of your free monthly allowance.
-
-If you do not convert your account after your free trial expires, you will receive email notifications about your account status after the trial expires. The notifications remind you to create your pay account so that your application settings and configurations will not be lost. If you do not want to receive these notifications from {{site.data.keyword.Bluemix_notm}}, you can unsubscribe at any time.
-One month after the trial expiration, your applications and service configurations are removed. The following figure shows the general process of {{site.data.keyword.Bluemix_notm}} account management.
-
-
-![Process flowchart of {{site.data.keyword.Bluemix_notm}} account management](acctmgmt600.png)
-
-*Figure 1. Process flowchart of {{site.data.keyword.Bluemix_notm}} account management*
-
-
-If you convert your account during your free trial, your free allowances are limited to allowances normally provided by each service. The allowances are no longer unlimited use allowances that are offered by many of the IBM services during the free trial.
-
 
 ##What it costs
 {: #what_it_costs}
 
-Charges vary depending on the resources used by a particular service, runtime, container, virtual server, or support option. The resources can be the number of API calls, the number of instances, memory, storage, and so on. {{site.data.keyword.Bluemix_notm}} also provides detailed cost estimators, and a down-to-the-penny cost calculator to help you plan for charges. You can check the actual cost after you build your apps by using the *Usage Dashboard* view. For more detailed information about charges, see [How you are charged](index.html#charges).
+{{site.data.keyword.Bluemix_notm}} has a paid pricing plan ({{site.data.keyword.Bluemix_notm}} Paid), where the charges vary according to the resources used.
+
+Charges vary depending on the resources used by a particular service, runtime, or support option. The resources can be the number of API calls, the number of instances, memory, storage, and so on. {{site.data.keyword.Bluemix_notm}} also provides detailed cost estimators, and a down-to-the-penny cost calculator to help you plan for charges. You can check the actual cost after you build your apps by using the *Usage dashboard* view. For more detailed information about Paid plan charges, see [How you are charged](index.html#charges).
  
+##Pricing plans
+{: #plans}
+
+When you sign up to use {{site.data.keyword.Bluemix_notm}}, you will be offered a pricing plan:
+
+* **{{site.data.keyword.Bluemix_notm}} Paid**: A billable plan with access to unlimited memory and services
 
 ##Promo code
 {: #promo}
 
-Sometimes {{site.data.keyword.Bluemix_notm}} Sales or other {{site.data.keyword.Bluemix_notm}} representatives provide promo codes. By applying a promo code, you can get extra resources or capabilities that are provided by {{site.data.keyword.Bluemix_notm}} for your trial account.
+<!-- Original: Sometimes {{site.data.keyword.Bluemix_notm}} Sales or other {{site.data.keyword.Bluemix_notm}} representatives provide promo codes. By applying a promo code, you can get extra resources or capabilities that are provided by {{site.data.keyword.Bluemix_notm}} for your trial account. -->
+
+Sometimes {{site.data.keyword.Bluemix_notm}} Sales or other {{site.data.keyword.Bluemix_notm}} representatives provide promo codes. By applying a promo code, you can get extra resources or capabilities that are provided by {{site.data.keyword.Bluemix_notm}}.
 
 The resources or capabilities vary depending on the particular code, but can include one or more of the following items:
 
@@ -101,42 +87,28 @@ The resources or capabilities vary depending on the particular code, but can inc
 * Use premium service plans
 
 **Note:** You can apply multiple promo codes to your account. Each promo code can be redeemed only once before the expiration date of the code.
-To use a promo code, click the **Profile Settings** icon, select **Account**, then click **Account Type** in the {{site.data.keyword.Bluemix_notm}} user interface.
+To use a promo code, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), select **Account**, then click **Account Type** in the {{site.data.keyword.Bluemix_notm}}x user interface.
 
 ##How you are billed
 {: #pay-accounts}
 
-When you sign up for a {{site.data.keyword.Bluemix_notm}} billable plan, you can select from the following accounts:
-* Pay-As-You-Go
+When you sign up for the {{site.data.keyword.Bluemix_notm}} Paid pricing plan, you can select from the following accounts:
 * Subscription
 * {{site.data.keyword.Bluemix_notm}} Dedicated
 * {{site.data.keyword.Bluemix_notm}} Local
 
-With a Pay-As-You-Go account, you are charged based on your use of {{site.data.keyword.Bluemix_notm}} compute and services. With a Subscription account, you can get a monthly discount based on a minimum monthly spending commitment. {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local are charged by annual contracts.
+ With a Subscription account, you can get a monthly discount based on a minimum monthly spending commitment. {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local are charged by annual contracts.
 
-You can convert your free trial into a billable account at any time. All of your free trial non-billable account information and {{site.data.keyword.Bluemix_notm}} solutions will be seamlessly merged into the new billable account.
+After you create a paid account, you can edit the information that you provided. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), then click **Account &gt; Account Type** to edit your information.
 
-After you create a billable account, you can edit the information that you provided. Click the **Profile Settings icon**, then click **Account &gt; Account Type** to edit your information.
-
-If you encounter any problems with {{site.data.keyword.Bluemix_notm}} when you are using a Pay-As-You-Go or a Subscription account, see [Getting online help](https://www.ng.bluemix.net/docs/troubleshoot/getting_customer_support.html#online_help) for more information.
-
-**Note:** If you link your {{site.data.keyword.Bluemix_notm}} billing account with a SoftLayer account, starting on the first of the next month, your {{site.data.keyword.Bluemix_notm}} charges will be on your SoftLayer invoice. For more details, see [Viewing credits](../admin//softlayerlink.html#bill_usage).
-
-###Pay-As-You-Go account
-{: #pay-as-you-go}
-
-If you sign up for a Pay-As-You-Go account, you pay only for the {{site.data.keyword.Bluemix_notm}} resources that you use. You are also eligible for free runtime and service allowances.
-
-In many countries and regions, you can sign up for a Pay-As-You-Go account from the {{site.data.keyword.Bluemix_notm}} user interface. Click the **Free Trial** icon, then click **Confirm Your Free Account** and select **Option 1**. Enter your country or region and click **Add Credit Card** to provide your credit card information. After you provide your billing and credit card information, accept the terms and conditions, and submit your account request, your credit card will be validated. A confirmation email of the account information is also sent. A few minutes after you receive the confirmation email, you can return to {{site.data.keyword.Bluemix_notm}} to continue building your apps. If {{site.data.keyword.Bluemix_notm}} is unable to process your online request for your country or region, you can contact {{site.data.keyword.Bluemix_notm}} Sales, by using the link listed on the [Bluemix Contact Us](https://console.ng.bluemix.net/#/contactUs/cloudOEPaneId=contactUs) page, to sign up for your Pay-As-You-Go account.
-
-You can convert your Pay-As-You-Go account to a Subscription account at any time. With a Subscription account, you commit to spending a minimum amount each month. If you want to convert to a Subscription account, contact {{site.data.keyword.Bluemix_notm}} Sales, by using the link listed on the [Bluemix Contact Us](https://console.ng.bluemix.net/#/contactUs/cloudOEPaneId=contactUs) page.
+If you encounter any problems with {{site.data.keyword.Bluemix_notm}} when you are using a Subscription account, see [Getting help](../support/index.html#getting-help) for more information.
 
 ###Subscription account
 {: #subscription}
 
 If you sign up for a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
 
-To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact {{site.data.keyword.Bluemix_notm}} Sales, by using the link listed on the [Bluemix Contact Us](https://console.ng.bluemix.net/#/contactUs/cloudOEPaneId=contactUs) page.
+To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact {{site.data.keyword.Bluemix_notm}} Sales, by using the link listed on the [{{site.data.keyword.Bluemix_notm}} Contact Us](../support/index.html#getting-customer-support) page.
 
 ###{{site.data.keyword.Bluemix_notm}} Dedicated account
 {: #dedicated}
@@ -144,14 +116,11 @@ To sign up for a Subscription account, and for more information about subscripti
 {{site.data.keyword.Bluemix_notm}} requires a one year minimum term that includes:
 
 * VPN connectivity back to your infrastructure
-* Fully redundant environment in a SoftLayer data center
 * All supported runtimes (IBM Java Liberty, Node.js, and built-in open source runtimes)
 * All dedicated services that you have selected and all public {{site.data.keyword.Bluemix_notm}} services
 * Standard {{site.data.keyword.Bluemix_notm}} support
 
-You can also order optional items such as SoftLayer DirectLink or premium support options. Contact [Bluemix sales](https://console.ng.bluemix.net/?direct=classic/#/contactUs/cloudOEPaneId=contactUs) for more information.
-
-With {{site.data.keyword.Bluemix_notm}} Dedicated, you must sign up for a one year minimum term. What you pay each month during that term is based on the dedicated services that you want, plus a subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or contact [Bluemix sales](https://console.ng.bluemix.net/#/contactUs/cloudOEPaneId=contactUs) to get started on your agreement.
+With {{site.data.keyword.Bluemix_notm}} Dedicated, you must sign up for a one year minimum term. What you pay each month during that term is based on the dedicated services that you want, plus a subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your designated account representative or contact [{{site.data.keyword.Bluemix_notm}} sales](https://console.chinabluemix.net/#/contactUs/cloudOEPaneId=contactUs) to get started on your agreement.
 
 
 ###{{site.data.keyword.Bluemix_notm}} Local account
@@ -164,21 +133,22 @@ With {{site.data.keyword.Bluemix_notm}} Dedicated, you must sign up for a one ye
 * All local services that you have selected and access to all public {{site.data.keyword.Bluemix_notm}} services
 * Standard {{site.data.keyword.Bluemix_notm}} support
 
-With {{site.data.keyword.Bluemix_notm}} Local, you must sign up for a one year minimum term. What you pay each month during that term is based on the local services that you want, plus a subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or contact [{{site.data.keyword.Bluemix_notm}} sales](https://console.ng.bluemix.net/#/contactUs/cloudOEPaneId=contactUs) to get started on your agreement.
+With {{site.data.keyword.Bluemix_notm}} Local, you must sign up for a one year minimum term. What you pay each month during that term is based on the local services that you want, plus a subscription account that gives you access to all public services. Usage charges of the services in {{site.data.keyword.Bluemix_notm}} Public are calculated based on your subscription account agreement. You receive an invoice for any services that you use beyond that subscription agreement. Contact your IBM designated account representative or contact [{{site.data.keyword.Bluemix_notm}} sales](https://console.chinabluemix.net/#/contactUs/cloudOEPaneId=contactUs) to get started on your agreement.
 
 ##How you are charged
 {: #charges}
 
-With a {{site.data.keyword.Bluemix_notm}} billable account, you are charged for the compute, containers, and services that are used in your organization. You might be invited by other {{site.data.keyword.Bluemix_notm}} users to participate in organizations under a different account. If you create applications or use services in the organizations that you are invited to, the usage incurred is charged to the account that contains those organizations. You can see more information about a specific charges on a resource details page from the {{site.data.keyword.Bluemix_notm}} Catalog, or on the price calculator from the {{site.data.keyword.Bluemix_notm}} Pricing page.
+With a {{site.data.keyword.Bluemix_notm}} Paid plan account, you are charged for the compute and services that are used in your organization. You might be invited by other {{site.data.keyword.Bluemix_notm}} users to participate in organizations under a different account. If you create applications or use services in the organizations that you are invited to, the usage incurred is charged to the account that contains those organizations. You can see more information about a specific charges on a resource details page from the {{site.data.keyword.Bluemix_notm}} Catalog, or on the price calculator from the {{site.data.keyword.Bluemix_notm}} Pricing page.
 
 Different types of charges apply depending on the features of {{site.data.keyword.Bluemix_notm}} you are using. The following table provides a high-level overview:
 
-| Type of charge | Description | {{site.data.keyword.Bluemix_notm}} features that use this type of charge | Example |
+| Type of charge | Description | {{site.data.keyword.Bluemix_notm}} features that use this type of charge | 
 |------------------|------------------|--------------------------|--------------------------|
-| Fixed | Fixed-rate pricing is based on an agreed upon monthly charge that is not adjusted. | Services  | Data Cache has a fixed plan that is charged at a fixed monthly rate. |
-| Metered | Metered-usage pricing is based on the number of GB-hours consumed for runtimes, and on the number of GB-hours consumed and the number of IP addresses and storage for containers. | Services, Compute, and Containers | For the Push service, any usage over the free monthly allowance is charged. |
-|  Tiered   |  Some pricing plans are based on a tiered pricing model, so you can get a volume-based discount according to your actual usage. Services might offer simple, graduated, or block tier pricing plans. | Services | Tiered pricing is typically used for charge metrics that are expected to have very high quantities per month, such as API calls. |
-| Reserved | Reserved pricing is based on a long-term commitment for a service, so you can get a discounted price. With a reserved plan, you get a dedicated service instance that is easy to set up, deploy, and deliver in the public {{site.data.keyword.Bluemix_notm}} environment. | Services | DB2 on Cloud has reserved plans.|
+| Fixed | Fixed-rate pricing is based on an agreed upon monthly charge that is not adjusted. | Services  |
+| Metered | Metered-usage pricing is based on the number of GB-hours consumed for runtimes, and on the number of GB-hours consumed and the number of IP addresses and storage for containers. | Services and Compute | 
+|  Tiered   |  Some pricing plans are based on a tiered pricing model, so you can get a volume-based discount according to your actual usage. Services might offer simple, graduated, or block tier pricing plans. | Services | 
+| Reserved | Reserved pricing is based on a long-term commitment for a service, so you can get a discounted price. With a reserved plan, you get a dedicated service instance that is easy to set up, deploy, and deliver in the public {{site.data.keyword.Bluemix_notm}} environment. | Services | 
+
 
 ###Charges for compute resources
 {: #compute}
@@ -202,10 +172,10 @@ Many services include monthly free allowances. Usage of services that is not inc
 <dt>Metered charges</dt>
     <dd>You pay based on your runtime and service consumption. For example, with the Push service, any usage over the free monthly allowance is charged.</dd>
 <dt>Reserved charges</dt>
-    <dd><p>As the account owner of a Pay As You Go account or a Subscription account, you can reserve a service instance, with a long-term commitment, for a discounted price. For example, you can reserve the standard large DB2 on Cloud offering for 12 months.</p> 
+    <dd><p>As the account owner of a Subscription account, you can reserve a service instance, with a long-term commitment, for a discounted price.</p> 
     <p>Some {{site.data.keyword.Bluemix_notm}} services offer reserved plans. You can request a reserved plan from the {{site.data.keyword.Bluemix_notm}} <strong>Catalog</strong> by clicking the tile of the service. Then, select the service plan that best meets your needs. If a reserved plan is available, click <strong>Request</strong>, and follow the prompts to send your request. You will receive an email that contains the price information of the reserved plan. A {{site.data.keyword.Bluemix_notm}} sales representative will also contact you soon to complete the purchase.</p></dd>
 <dt>Tiered charges</dt>
-    <dd>Similar to metered charges, you pay based based on your runtime and service consumption. However, Tiered charges add additional pricing tiers, often offering discounted charges in tiers with larger consumption. Tiered pricing is offered in simple, graduated, or block.</dd>
+    <dd>Similar to metered charges, you pay based based on your runtime and service consumption. However, Tiered charges add additional pricing tiers, often offering discounted charges in tiers with larger consuption. Tiered pricing is offered in simple, graduated, or block.</dd>
 </dl>
 
 
@@ -284,21 +254,8 @@ The following table illustrates how much you pay with a plan that is based on a 
 |5200 |	The number of items falls into Tier 5, so the total price is $5000 USD. |	$5000 USD|
 *Table 6. Charge calculation by using the block tier pricing model*
 
-### Free allowances for virtual servers
-{: #vms}
 
-You can use {{site.data.keyword.virtualmachineslong}} in the IBM public cloud as a beta feature at no charge. Free allowances are provided for the number of virtual server images that you can create, the number of IP addresses that are assigned, as well as the amount of memory that can be used.
-
-The following items are the free allowances for the {{site.data.keyword.virtualmachineslong}} beta:
-
-* 2 instances
-* 2 virtual CPUs
-* 8 GB memory
-* 200 GB block storage
-* 5 public IP addresses
-
-
-##How to estimate your costs
+##Estimating your costs
 {: #cost}
 
 You can use different methods to know how much you need to pay for using {{site.data.keyword.Bluemix_notm}} to build and host your app.
@@ -356,7 +313,7 @@ The price of the application can be calculated in the following way:
 
 <dl>
 <dt>Four 256 MB Node.js runtime instances</dt>
-<dd>Bluemix charges for a runtime by GB-hours. The number of GB used per month is <code>4 x 256 = 1024 MB or 1 GB per month</code>. Assume that there are <code>24 x 30 = 720 hours in a month</code>, so the application is charged for <code>1 x 720 = 720 GB-hours</code>.
+<dd>{{site.data.keyword.Bluemix_notm}} charges for a runtime by GB-hours. The number of GB used per month is <code>4 x 256 = 1024 MB or 1 GB per month</code>. Assume that there are <code>24 x 30 = 720 hours in a month</code>, so the application is charged for <code>1 x 720 = 720 GB-hours</code>.
 <p>
 375 GB-hours are included in a free allowance per month, shared across all {{site.data.keyword.Bluemix_notm}} runtimes. So the total cost for the runtime is <code>$0.07 x (720-375) = $24.15</code>.</p></dd>
 
@@ -390,7 +347,30 @@ The total price is 148 + 13.5 + 13.5 = $175.</p></dd>
 
 When all the items are added, the total price of the application is $384.15.
 
-##Usage dashboard
+###Supported currencies
+
+Although the United States dollar (USD) is used in the pricing examples, other currencies are also supported in {{site.data.keyword.Bluemix_notm}}. The following table lists the different currencies that are supported.
+
+|ISO 4217 code| Currency|
+|-------------|---------|
+|AUD |	  Australian dollar|
+|BRL |	  Brazilian real|
+|CAD |	  Canadian dollar|
+|CHF |	  Swiss franc|
+|DKK |	  Danish krone|
+|EUR |	  Euro|
+|GBP |	  Pound sterling|
+|INR |	  Indian rupee|
+|JPY |	  Japanese yen|
+|KRW |	  South Korean won|
+|NOK |	  Norwegian krone|
+|NZD |	  New Zealand dollar|
+|SEK |	  Swedish krona|
+|USD |    United States dollar|
+|ZAR |	  South African rand|
+*Table 8. Supported currencies* 
+
+##Viewing usage details
 {: #usage}
 
 As an account owner or a billing manager, you can use the Usage Dashboard view to see the real-time charges for the runtimes and services that are used per month in your organizations. You can see the runtime GB-hours and service consumption in all regions, or you can select to see a particular region and space, for the past 12 months.
@@ -406,18 +386,12 @@ If you select a specific organization for the **Organization**, you can see the 
 ##Viewing credits
 {: #credits}
 
-As an account owner or a billing manager, you can use the Usage Dashboard view to see any credits for your account. You might have credits if, for example, you linked a SoftLayer account with a {{site.data.keyword.Bluemix_notm}} account.
+As an account owner or a billing manager, you can use the Usage Dashboard view to see any credits for your account.
 
 To open the Usage Dashboard view, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), then select **Account**. On the page that is displayed, click **Usage Dashboard**. In the view, you can see any credits, if they exist, and when they expire.
 
-##Notifications
-{: #notifications}
 
-As an account manager of a Pay-As-You-Go account, you can set spending notifications against the total cost of your account, for your runtime, services, and for individual services, excluding third-party services. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify.
-
-To open the **Notifications** view, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; *your_account_name* &gt; **Spending Notifications**. Enter a numeric value to set the spending threshold for triggering a notification for each type of spending notification as needed. You can also add and delete notifications for individual services.
-
-##How to change your plan
+##Changing your plan
 {: #changing}
 
 You can change your service plan in {{site.data.keyword.Bluemix_notm}} in the service Dashboard, if plan changes are enabled for that service.
@@ -430,7 +404,7 @@ Only certain services provide the ability for you to change the service plan. If
 |Service |	Information|
 |--------|-------------|
 |Presence Insights 	|If you have a Lite plan and exceed the free allowances, a 403 message displays or is logged to indicate that you are no longer authorized, and your service instance is disabled. In addition, POST REST API calls are rejected with a 403 response.<br/><br/>If your service is disabled because you exceed the free allowance, you can upgrade from a Lite plan to a Paid plan. Your service is re-enabled within 2 hours.<br/><br/>If you have a Paid plan, you can reduce your plan to the Lite plan, as long as your usage stays within the Lite plan allowance for events and total storage.<br/><br/>When you upgrade or reduce your plan, you do not need to restage or restart your apps.|
-*Table 8. Next steps for changing your plan*
+*Table 9. Next steps for changing your plan*
 
 ###How to change your plan through the command line interface
 
@@ -439,6 +413,27 @@ To update the service plan, enter the following command:
 ```
 cf update-service <service_name> [-p <new_plan>]
 ```
+
+
+<!-- audience blue staging only begin comment -->
+
+##Requesting more quota for staging
+{: #staging_quota}
+
+Your organization might run out of free quota easily and require more disk space or memory in order to host a demo for clients.
+
+Use the following template in the request and send the request to [{{site.data.keyword.Bluemix_notm}} admin](mailto:bluemix-admin-reqs@wwpdl.vnet.ibm.com){: new_window} .
+
+1. What is the organization that needs increased quota?
+2. What type and amount of quota is needed?
+3. Are you from a service team under the service onboarding Process? `Yes`/`No`
+4. Are you from a {{site.data.keyword.Bluemix_notm}} testing or development team? `Yes`/`No`
+5. If both 3 and 4 are `No`, what is the team or group that you belong to?
+6. What is the Service Operation Plan (SOP) number?
+7. Provide a detailed justification for your request for quota increase.
+
+<!-- audience blue staging only end comment -->
+
 # rellinks
 ## general 
 * [{{site.data.keyword.Bluemix_notm}} Pricing Sheet](https://console.{DomainName}/pricing/)

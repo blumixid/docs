@@ -17,34 +17,12 @@ copyright:
 # Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}} 
 {: #accessing}
 
-Last updated: 18 August 2016
+Last updated: 13 September 2016
 {: .last-updated} 
 
-General problems with accessing {{site.data.keyword.Bluemix}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
+General problems with accessing {{site.data.keyword.Bluemix_notm}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
 {:shortdesc}
 
-## Unable to log in to {{site.data.keyword.Bluemix_notm}}
-{: #ts_logintobm}
-
-You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}.
-
-
-When you try to sign in to {{site.data.keyword.Bluemix_notm}}, you see the following error message: 
-{: tsSymptoms} 
-
-`The password that you entered is not correct.`
-
-
-The IBMid and password that you use to sign in to {{site.data.keyword.Bluemix_notm}} is invalid.
-{: tsCauses} 
- 
-
-To get a valid IBMid and password, go to the My IBM profile page, and then complete one of the following steps:
-{: tsResolve}
-  * If you have already registered an IBMid and you want to check whether your ID and password are valid, click **Sign in** and enter your IBMid and password on the Sign in page. If you have forgotten your password, click **Forgot your password** on the Sign in page to reset your password. If you have forgotten your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help. 
-  * If you don't have an IBMid, click **Register** to register an IBMid and password. 
-  
-**Note:** For IBM employees, the IBMid might be different from the intranet login ID. 
 
 
 
@@ -102,49 +80,8 @@ Close the message window, and then click the **RESET** button in your runtime pa
 
 
 
-    
-    
-## Automatic failover between {{site.data.keyword.Bluemix_notm}} regions is not available
-{: #ts_failover}
-
-You are unable to use automatic failover between {{site.data.keyword.Bluemix_notm}} regions. However, you can use a DNS provider that supports failover among multiple IP addresses as a workaround.
- 
-
-When a {{site.data.keyword.Bluemix_notm}} region becomes unavailable, the apps that are running in that region are also unavailable, even if the same apps are running in another {{site.data.keyword.Bluemix_notm}} region.
-{: tsSymptoms}
-
- 
-{{site.data.keyword.Bluemix_notm}} does not yet provide automatic failover from one region to another.
-{: tsCauses}
-
- 
-You can use a DNS provider that supports intelligent failover among multiple ID addresses, and manually configure your DNS settings to enable the automatic failover between {{site.data.keyword.Bluemix_notm}} regions. DNS providers with this capability include NSONE, Akamai, Dyn.
-{: tsResolve}
-
-When you configure your DNS settings, you must specify the public IP addresses of the {{site.data.keyword.Bluemix_notm}} regions that your apps are running in. To get the public IP address of a {{site.data.keyword.Bluemix_notm}} region, use the `nslookup` command. For example, you can type the following command in a command line window:
-```
-nslookup stage1.mybluemix.net
-```
 
 
-
-## Account is pending
-{: #ts_accntpding}
-
-If your account is pending, you cannot log in to {{site.data.keyword.Bluemix_notm}}.
-
- 
-After you register for a {{site.data.keyword.Bluemix_notm}} trial account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. Instead, you see the following message:
-{: tsSymptoms}
-
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Bluemix Support</a>.</code>
-
-
-After you register for a {{site.data.keyword.Bluemix_notm}} trial account, you receive a confirmation email. You must click the link that is in the confirmation email to complete the registration process.
-{: tsCauses} 
-
-The confirmation email is sent to the email address that you provided. Check your inbox and your junk mail folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport.com){: new_window}.  
-{: tsResolve}
 
 
 
@@ -187,7 +124,7 @@ If you are unable to invite users to your organization and need a different role
   
 If you are unable to invite users because you are a collaborator and not a member, you must delete your previous {{site.data.keyword.Bluemix_notm}} account and then be invited to join the account as a member of the organization. To delete your previous account and join the account as a member, complete the following steps: 
 
-  1. Contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport){: new_window} to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email. 
+  1. Go to the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn/){: new_window} page to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email. 
   2. After your account is deleted, have a user with the organization manager role invite you to the organization as an organization manager. Then, sign up for {{site.data.keyword.Bluemix_notm}} from the invitation. 
 
 

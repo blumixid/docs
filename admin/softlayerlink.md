@@ -19,7 +19,7 @@ copyright:
 
 #Linking SoftLayer and {{site.data.keyword.Bluemix_notm}} billing accounts
 {: #softlayerlink}
-*Last updated: 15 August 2016*
+Last updated: 5 September 2016
 {: .last-updated}
 
 You can now link SoftLayer and {{site.data.keyword.Bluemix_notm}} billing accounts. When you link your accounts, you are billed through SoftLayer for both SoftLayer and {{site.data.keyword.Bluemix_notm}} resources. If you have an existing account, billing through SoftLayer for {{site.data.keyword.Bluemix_notm}} takes effect for the new billing cycle that starts after the accounts are linked.
@@ -32,6 +32,7 @@ After your accounts are linked, you can switch between accounts easily. You can 
 Although your account billing will be linked, your login ID will vary depending on how your SoftLayer account is authenticated:
 * For users in SoftLayer accounts that do not use IBMid for authentication, continue to use your SoftLayer ID for SoftLayer products and services, and use your IBMid for {{site.data.keyword.Bluemix_notm}} products and services.
 * For users in SoftLayer accounts that use IBMid for authentication, use your IBMid to access both your SoftLayer and your {{site.data.keyword.Bluemix_notm}} accounts.
+
 
 **Attention:** After accounts are linked, they cannot be unlinked.  
 
@@ -50,7 +51,7 @@ After you have linked your accounts, **Go to {{site.data.keyword.Bluemix_notm}}*
 
 When you link {{site.data.keyword.Bluemix_notm}} and SoftLayer billing accounts, you receive a $200.00 credit toward {{site.data.keyword.Bluemix_notm}} usage. The credit must be used within 30 days of linking the accounts.
 
-For information about how to view the credits and expiration date, see [Viewing credits](https://console.ng.bluemix.net/docs/pricing/index.html#credits).
+For information about how to view the credits and expiration date, see [Viewing credits](https://console.chinabluemix.net/docs/pricing/index.html#credits).
 
 ## Inviting SoftLayer team members to {{site.data.keyword.Bluemix_notm}}
 {: #invite_users}
@@ -58,7 +59,7 @@ For information about how to view the credits and expiration date, see [Viewing 
 You can invite your SoftLayer team members to join {{site.data.keyword.Bluemix_notm}} when linking  {{site.data.keyword.Bluemix_notm}} and SoftLayer accounts. Or, you can invite SoftLayer team members later from the {{site.data.keyword.Bluemix_notm}} user interface.
 {:shortdesc}
 
-From the {{site.data.keyword.Bluemix_notm}} user interface, you can select to invite all members of your SoftLayer account or you can select individual members. When inviting team members, you must set the {{site.data.keyword.Bluemix_notm}} account role for the invitees. For more information about the different roles in {{site.data.keyword.Bluemix_notm}}, see [User roles](https://console.ng.bluemix.net/docs/admin/users_roles.html#userrolesinfo).
+From the {{site.data.keyword.Bluemix_notm}} user interface, you can select to invite all members of your SoftLayer account or you can select individual members. When inviting team members, you must set the {{site.data.keyword.Bluemix_notm}} account role for the invitees. For more information about the different roles in {{site.data.keyword.Bluemix_notm}}, see [User roles](https://console.chinabluemix.net/docs/admin/users_roles.html#userrolesinfo).
 
 You must be a Master User in the SoftLayer account to invite team members to the {{site.data.keyword.Bluemix_notm}} account.
 
@@ -71,7 +72,7 @@ You can do this operation over and over as more team members are added to your S
  
 The team member receives an email that includes a **Join the organization** link. If the member does not have an IBMid, the member is redirected to a registration page. Next, the member can enter some basic information and create their {{site.data.keyword.Bluemix_notm}} account.
 
-For more information about inviting team members through the {{site.data.keyword.Bluemix_notm}} user interface, see [Inviting team members](https://console.ng.bluemix.net/docs/admin/users_roles.html#inviteteammembers).
+For more information about inviting team members through the {{site.data.keyword.Bluemix_notm}} user interface, see [Inviting team members](https://console.chinabluemix.net/docs/admin/users_roles.html#inviteteammembers).
 
 ## Using {{site.data.keyword.Bluemix_notm}} services with SoftLayer assets
 {: #bluemix_services}
@@ -151,7 +152,7 @@ For example, if you linked your accounts on April 16th, you will get a Bluemix i
 
 After your bills are combined, your SoftLayer invoice will have a **{{site.data.keyword.Bluemix_notm}}** section on the summary invoice. On the detailed billing view, {{site.data.keyword.Bluemix_notm}} charges will show as other services and begin with *"{{site.data.keyword.Bluemix_notm}} Plan..."*.
 
-For information about how to view {{site.data.keyword.Bluemix_notm}} usage, see [Viewing usage details](https://console.ng.bluemix.net/docs/pricing/index.html#usage).
+For information about how to view {{site.data.keyword.Bluemix_notm}} usage, see [Viewing usage details](https://console.chinabluemix.net/docs/pricing/index.html#usage).
 
 
 # rellinks

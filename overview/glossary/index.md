@@ -19,7 +19,7 @@ copyright:
 *Last updated: 19 April 2016*
 {: .last-updated}
 
-This glossary provides terms and definitions for {{site.data.keyword.Bluemix}}.
+This glossary provides terms and definitions for {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
 The following cross-references are used in this glossary:
@@ -28,7 +28,6 @@ The following cross-references are used in this glossary:
 - *See also* refers you to a related or contrasting term.
 
 
-For other terms and definitions, see the [IBM Terminology website](http://www-01.ibm.com/software/globalization/terminology/){: new_window}.
 
 <!--If you do not want letter links at the top of your 
 glossary, delete the
@@ -1710,7 +1709,7 @@ A section of a software package that defines either a specific action to be perf
 ### starter
 {: #x7470511}
 
-A template that includes predefined services and application code that is configured with a particular buildpack.  A starter might be application code that is written in a specific programming language, or a combination of application code and a set of services. See also [runtime](#x2391929).
+A template that includes predefined services and application code that is configured with a particular buildpack.  A starter might be application code that is written in a specific programming language, or a combination of application code and a set of services. See also [runtime](#x2391929).
 
 ### statement of requirements (SOR)
 {: #x2214820}
@@ -2018,3 +2017,4 @@ See [worldwide quality assurance](#x2215010).
 {: #x2215018}
 
 See [cross-application performance reliability stress test](#x2215016).
+

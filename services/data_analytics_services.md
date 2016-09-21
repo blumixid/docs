@@ -10,4 +10,4 @@ copyright:
 # Data & Analytics services
 {: #data_analytics_services}
 
-*Last updated: 7 April 2016*
+Last updated: 7 April 2016

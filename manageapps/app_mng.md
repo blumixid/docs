@@ -5,7 +5,6 @@ copyright:
 
 ---
 
-
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
@@ -14,10 +13,10 @@ copyright:
 #Managing Liberty and Node.js apps
 {: #app_management}
 
-*Last updated: 17 March 2016*
+Last updated: 12 September 2016
 {: .last-updated}
 
-App Management is a set of development and debugging utilities that can be enabled for your Liberty and Node.js applications on {{site.data.keyword.Bluemix}}.
+App Management is a set of development and debugging utilities that can be enabled for your Liberty and Node.js applications on {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
 ##App Management utilities
@@ -31,7 +30,7 @@ These utilities support both Liberty and Node.js.
 	
   2. *devconsole*: Enables the development console utility that is accessible at the following URL:
     ```
-    http://<yourappname>.mybluemix.net/bluemix-debug/manage
+    http://<yourappname>.mychinabluemix.net/bluemix-debug/manage
     ```
 	
     Using the development console, users can restart, stop, or suspend their applications. Users can also enable or access the shell and inspector utilities.
@@ -40,11 +39,10 @@ These utilities support both Liberty and Node.js.
 	
   3. *hc*: Health Center agent that enables your application to be monitored by the Health Center client.
 
-    The Health Center supports analyzing the performance of your Liberty and Node.js applications by using the IBM Monitoring and Diagnostic Tools. For more information see [How to analyze the performance of Liberty Java or Node.js apps in {{site.data.keyword.Bluemix_notm}}](https://developer.ibm.com/bluemix/2015/07/03/how-to-analyze-performance-in-bluemix/){:new_window}.</p></li>
 	
   4. *shell*: Enables a web-based shell that is accessible from the devconsole utility or by accessing the following URL:
     ```
-    http://<yourappname>.mybluemix.net/bluemix-debug/shell
+    http://<yourappname>.mychinabluemix.net/bluemix-debug/shell
     ```
 	
     A terminal window is displayed with shell access into your application after you access the shell utility. You can do everything that is supported in a regular shell, such as editing files, checking memory usage or running diagnostic commands.
@@ -67,7 +65,7 @@ These utilities support Liberty only.
 
 These utilities support Node.js only.
 
-  1. *inspector*: Enables the node inspector debugger interface that is accessible from the *devconsole* utility or at *https://myApp.mybluemix.net/bluemix-debug/inspector.*
+  1. *inspector*: Enables the node inspector debugger interface that is accessible from the *devconsole* utility or at *https://myApp.mychinabluemix.net/bluemix-debug/inspector.*
   
   The inspector process runs in your application container. Use this utility to create CPU usage profiles, add breakpoints, and debug code, all while your application is running on {{site.data.keyword.Bluemix_notm}}. For more information about the node inspector module, see [node-inspector on GitHub](https://github.com/node-inspector/node-inspector){:new_window}.
   
@@ -86,10 +84,10 @@ These utilities support Node.js only.
     cf restage <appname>
     ```
 	
-    2. From the Cloud Foundry command line, add a route to your application where the route has "-pm" appended to the application name, such as, <appname>-pm.mybluemix.net.
+    2. From the Cloud Foundry command line, add a route to your application where the route has "-pm" appended to the application name, such as, <appname>-pm.mychinabluemix.net.
     
 	```
-    cf map-route <appname> ng.bluemix.net -n <appname>-pm
+    cf map-route <appname> chinabluemix.net -n <appname>-pm
     ```
 	
     3. Install the [StrongLoop npm module](https://www.npmjs.com/package/strongloop){:new_window} on your local workstation.

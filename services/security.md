@@ -12,7 +12,7 @@ copyright:
 # Security
 {: #security}
 
-*Last updated: 9 December 2015*
+Last updated: 9 December 2015
 
 With these security services, you can protect access to applications and workloads, and scan applications for vulnerabilities. You can also embed security controls into data management and big data services. 
 {:shortdesc}

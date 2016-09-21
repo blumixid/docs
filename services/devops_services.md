@@ -10,4 +10,4 @@ copyright:
 # DevOps services
 {: #devops_services}
 
-*Last updated: 7 April 2016*
+Last updated: 7 April 2016

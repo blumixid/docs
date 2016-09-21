@@ -12,9 +12,10 @@ copyright:
 #Managing applications
 {: #manageapps}
 
-*Last updated: 17 March 2015*
+Last updated: 17 March 2016
+{: .last-updated}
 
-You can use the Dashboard in the {{site.data.keyword.Bluemix}} user interface to view and manage your applications and services, and to monitor resource usage by using the quota gauges.
+You can use the Dashboard in the {{site.data.keyword.Bluemix_notm}} user interface to view and manage your applications and services, and to monitor resource usage by using the quota gauges.
 {:shortdesc}
 
 The application section on the Dashboard provides summary information for the applications that you created. The summary information includes the name, icon, URL, runtime, and running status of the application, and service instances that are bound to the application. Different colors are used to indicate the running status of each application.

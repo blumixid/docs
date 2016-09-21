@@ -15,10 +15,10 @@ copyright:
 {:download: .download}
 
 # Start coding with Git
-Last updated: 2 March 2016
+Last updated: 6 September 2016
 {: .last-updated}  
 
-You can create a hosted Git repository that deploys to {{site.data.keyword.Bluemix}} automatically. Then, you can modify the code that runs in your app by pushing changes to the Git repository. 
+You can create a hosted Git repository that deploys to {{site.data.keyword.Bluemix_notm}} automatically. Then, you can modify the code that runs in your app by pushing changes to the Git repository. 
 {:shortdesc}
 
 1. To get started, on the app's Overview page, click **Add Git Repo and Pipeline**, or in the {{site.data.keyword.Bluemix_notm}} Classic Experience, click **ADD GIT**. 
@@ -56,7 +56,7 @@ Before you begin, download and install the {{site.data.keyword.Bluemix_notm}} Li
 ```
 bl login
 ```
-When you are prompted, enter your {{site.data.keyword.ibmid}} and password.
+When you are prompted, enter your ID and password.
 
 2. See the list of projects that are available for {{site.data.keyword.Bluemix_notm}} Live Sync synchronization by entering the following command: 
 ```

@@ -8,7 +8,7 @@ copyright:
 # DevOps
 {: #devops}
 
-*Last updated: 9 December 2015*
+Last updated: 9 December 2015
 
 Accelerate app delivery | Choose how you code | Deploy with confidence
 ---- | ---- | ----

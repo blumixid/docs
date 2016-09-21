@@ -11,7 +11,7 @@ copyright:
 # APIs
 {: #apis}
 
-*Last updated: 21 March 2016*
+Last updated: 21 March 2016
 
 Work with APIs by creating your own custom APIs. You can also monitor performance and usage.
 {: shortdesc}

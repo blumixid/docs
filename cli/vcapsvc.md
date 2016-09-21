@@ -14,7 +14,7 @@ copyright:
 
 # VCAP services
 
-*Last updated: 15 March 2016*
+Last updated: 15 March 2016
 {: .last-updated}
 
 

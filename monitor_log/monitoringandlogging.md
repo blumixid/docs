@@ -14,13 +14,13 @@ copyright:
 #Monitoring and logging
 {: #monitoringandlogging}
 
-*Last updated: 1 July 2016*
+Last updated: 12 September 2016
 {: .last-updated}
 
 By monitoring your apps and reviewing logs, you can follow application execution and data flow to get a better understanding of your deployment. In addition, you can reduce the time and effort that is required to locate any issues and repair them.
 {:shortdesc}
 
-{{site.data.keyword.Bluemix}} applications can be widely distributed, multi-instance applications, and the execution of your application and its data can be shared across many services. In this complex environment, monitoring your apps and reviewing logs is important for you to manage your apps.
+Bluemix applications can be widely distributed, multi-instance applications, and the execution of your application and its data can be shared across many services. In this complex environment, monitoring your apps and reviewing logs is important for you to manage your apps.
 
 ##Monitoring and logging Cloud Foundry apps
 {: #monitoring_logging_bluemix_apps}
@@ -40,17 +40,14 @@ For stable operations of your deployments on {{site.data.keyword.Bluemix_notm}} 
 
 When you are using the Cloud Foundry infrastructure to run your apps on {{site.data.keyword.Bluemix_notm}}, you'll want to keep up with performance information such as health status, resource usage, and traffic metrics. With this performance information, you can then make decisions or take actions accordingly.
 
-To monitor {{site.data.keyword.Bluemix_notm}} apps, use one of the following methods:
-
-* {{site.data.keyword.Bluemix_notm}} services. Monitoring and Analytics offers a service that you can use to monitor your application performance. In addition, this service also provides analytic features such as log analysis. For more information, see [Monitoring and Analytics](../services/monana/index.html).
+To monitor Bluemix apps, use one of the following methods:
+* Bluemix built-in monitoring mechanism.
 * Third-party options. For example, [New Relic](http://newrelic.com/){:new_window}.
 
 ###Logging for apps running on Cloud Foundry
 {: #logging_for_bluemix_apps}
 
 Log files are automatically created when you are using the Cloud Foundry infrastructure to run your apps on {{site.data.keyword.Bluemix_notm}}. When you encounter errors in any stage from deployment to runtime, you can check the logs for clues that might help solve your issue.
-
-<!-- 2016.1.27: original shortdes: Log files are automatically created when you are using the Cloud Foundry infrastructure to run your apps on {{site.data.keyword.Bluemix_notm}}. You can view logs from the {{site.data.keyword.Bluemix_notm}} Dashboard, the cf command line interface, or external hosts. You can also filter the logs to see the parts that you are interested in. -->
 
 
 
@@ -134,7 +131,7 @@ You can view the logs for your Cloud Foundry apps in three places:
 
 To see the deployment or runtime logs, complete the following steps:
 1. Log in to {{site.data.keyword.Bluemix_notm}}, and then click the tile for your app on the Dashboard. The app details page is displayed.
-2. In the left navigation bar, click **Logs**.
+2. In the navigation bar, click **Logs**.
 
 In the **Logs** console, you can view the recent logs for your app or tail logs in real time. In addition, you can filter logs by log type and channel.
 
@@ -208,7 +205,8 @@ cf logs appname --recent | cut -c 29-40,46-
 ```
 
 For more information about the **grep** option, type cut --help.
-* To display log entries that contain certain keywords, use the **grep** option. For example, to display log entries that contain the keyword [APP, you can use the follow command:
+* To display log entries that contain certain keywords, use the **grep** option. For example, to display log entries that contain the keyword `[APP`, you can use the follow command:
+
 ```
 cf logs appname --recent | grep '\[App'
 ```
@@ -229,15 +227,15 @@ To stream logs from your app and the system to an external log host, complete th
 
   2. Create a user-provided service instance.
      
-	 Use the ```cf create-user-provided-service``` command (or ```cups```, a short version of the command) to create a user-provided service instance: 
+	 Use the `cf create-user-provided-service` command (or `cups`, a short version of the command) to create a user-provided service instance: 
 	 ```
 	 cf create-user-provided-service <service_name> -l <logging_endpoint>
 	 ```
-	 **service_name**
+	 &lt;service_name&gt;
 	 
 	 The name for the user-provided service instance.
 	 
-	 **logging_endpoint**
+	 &lt;logging_endpoint&gt;
 	 
 	 The logging endpoint that {{site.data.keyword.Bluemix_notm}} sends logs to. Refer to the following table to replace *logging_endpoint* with your value:
 	 
@@ -272,18 +270,18 @@ To stream logs from your app and the system to an external log host, complete th
 	 Use the following command to bind the service instance to your app: 
 	
 	 ```
-	 cf bind-service appname <service_name>
+	 cf bind-service <appname> <service_name>
 	 ```
-	 **appname**
+	 &lt;appname&gt;
 	 
 	 The name of your app.
 	 
-	 **service_name**
+	 &gt;service_name&gt;
 	 
 	 The name for the user-provided service instance.
 	 
   4. Restage the app. 
-     Type ```cf restage appname``` for the changes to take effect. 
+     Type `cf restage appname` for the changes to take effect. 
 
 #### Viewing logs from external hosts
 {: #viewing_logs_external}
@@ -332,7 +330,7 @@ In this example, a developer named Jane creates a virtual server by using IBM Vi
 
      c. After Splunk is set up, Jane must open some ports on the Ubuntu machine to accept the incoming syslog drain (port 5140) and Splunk web UI (port 8000) because {{site.data.keyword.Bluemix_notm}} virtual server has the firewall set up by default.
 	   
-	    **Note:** The iptable confiration is done here for Jane's evaluation purpose and is temporary. To configure the firewall setting in Bluemix virtual server in production, see the [Network Security Groups](https://new-console.ng.bluemix.net/docs/services/networksecuritygroups/index.html){:new_window} documentation for details.
+	    **Note:** The iptable confiration is done here for Jane's evaluation purpose and is temporary.
 	 
 	   ```
 	   iptables -A INPUT -p tcp --dport 5140 -j ACCEPT
@@ -350,7 +348,7 @@ In this example, a developer named Jane creates a virtual server by using IBM Vi
 		
   2. Jane configures the Splunk settings to accept the syslog drain from {{site.data.keyword.Bluemix_notm}}. She must create a data input for the syslog drain.
 
-     a. From the left side of the Splunk web interface, Jane clicks **Data > Data inputs**. A list of input types that Splunk supports is displayed. 
+     a. From the Splunk web interface, Jane clicks **Data > Data inputs**. A list of input types that Splunk supports is displayed. 
 	 
      b. She selects **TCP**, because the syslog drain uses the TCP protocol.
 	 
@@ -362,7 +360,7 @@ In this example, a developer named Jane creates a virtual server by using IBM Vi
 	 
      f. In the **Index** field, Jane clicks **Create a new index**. She names the new index "bluemix", and then clicks **Save**.
 	 
-     g. Finally, in the **Review** window, Jane confirms that the setting is right and then clicks **Submit** to enable this data input.
+     g. Finally, in the **Review** window, Jane confirms that the setting is correct and then clicks **Submit** to enable this data input.
 
   3. In {{site.data.keyword.Bluemix_notm}}, Jane creates a syslog drain service and binds the service to an app.
 

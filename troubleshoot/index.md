@@ -2,7 +2,6 @@
 
 copyright:
   years: 2015, 2016
-  
 
 ---
 
@@ -13,20 +12,23 @@ copyright:
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock} 
 
+
+
 # Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}} 
 {: #accessing}
 
-Last updated: 11 August 2016
-{: .last-updated}
+Last updated: 18 September 2016
+{: .last-updated} 
 
-
-General problems with accessing {{site.data.keyword.Bluemix}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
+General problems with accessing {{site.data.keyword.Bluemix_notm}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
 {:shortdesc}
 
+
+<!-- Crystal: 2016.9.6  The BM China sign in page is not available yet, so can't verify the exact UI strings. Hide this topic for now.
 ## Unable to log in to {{site.data.keyword.Bluemix_notm}}
 {: #ts_logintobm}
 
-You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}.
+You must have a valid ID and password to log in to {{site.data.keyword.Bluemix_notm}}.
 
 
 When you try to sign in to {{site.data.keyword.Bluemix_notm}}, you see the following error message: 
@@ -35,17 +37,46 @@ When you try to sign in to {{site.data.keyword.Bluemix_notm}}, you see the follo
 `The password that you entered is not correct.`
 
 
-The IBMid and password that you use to sign in to {{site.data.keyword.Bluemix_notm}} is invalid.
+The ID and password that you use to sign in to {{site.data.keyword.Bluemix_notm}} is invalid.
 {: tsCauses} 
  
 
-To get a valid IBMid and password, go to the My IBM profile page, and then complete one of the following steps:
+To get a valid ID and password, go to the My IBM profile page, and then complete one of the following steps:
 {: tsResolve}
   * If you have already registered an IBMid and you want to check whether your ID and password are valid, click **Sign in** and enter your IBMid and password on the Sign in page. If you have forgotten your password, click **Forgot your password** on the Sign in page to reset your password. If you have forgotten your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help. 
   * If you don't have an IBMid, click **Register** to register an IBMid and password. 
   
 **Note:** For IBM employees, the IBMid might be different from the intranet login ID. 
+-->
 
+
+<!-- begin STAGING ONLY --> 
+
+## Problem accessing external website
+{: #ts_bmlinkid}
+
+You cannot log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID unless you link your intranet ID with your IBMid.
+
+
+After you select **Sign in with your intranet ID** from the {{site.data.keyword.Bluemix_notm}} Sign in page, you might see the following error message:
+{: tsSymptoms} 
+
+`Problem Accessing External Website`
+
+
+
+This problem occurs when you log in to {{site.data.keyword.Bluemix_notm}} by using an IBM intranet ID that is not linked to an IBMid. Your IBMid is the ID that you use to log in to www.ibm.com.
+{: tsCauses}
+
+
+As an IBM employee, before you are able to log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID, you must link your intranet ID with your external IBMid. To link the two IDs, complete the following steps:
+{: tsResolve} 
+
+  1. On the [Central Sign-on](https://w3-03.sso.ibm.com/tools/cso/index.jsp){: new_window} page, click **My Sign-ons**.
+  2. On the My Sign-ons page, click **Link IDs**, and enter your IBMid and password on the {{site.data.keyword.Bluemix_notm}} Sign in page. After that, your intranet ID and IBMid will be automatically linked.
+  
+
+<!-- end STAGING ONLY -->
 
 
 
@@ -94,7 +125,7 @@ You can use a DNS provider that supports intelligent failover among multiple ID 
 
 When you configure your DNS settings, you must specify the public IP addresses of the {{site.data.keyword.Bluemix_notm}} regions that your apps are running in. To get the public IP address of a {{site.data.keyword.Bluemix_notm}} region, use the `nslookup` command. For example, you can type the following command in a command line window:
 ```
-nslookup mybluemix.net
+nslookup stage1.mychinabluemix.net
 ```
 
 
@@ -214,6 +245,9 @@ You can complete one or more of the following actions as necessary:
   
   
   
+  
+  
+
 
 
 
@@ -304,7 +338,6 @@ If your workbench JVM is IBM JVM 7 or 8, or a previous version of Oracle JVM 8, 
   2. Restart Eclipse.
   3. Check whether the `eclipse.vm` property points to your new installation of Oracle JVM 8.
 
-
   
 ## Unable to reuse names of deleted apps
 {: #ts_reuse_appname}
@@ -336,19 +369,15 @@ Take the following steps to delete the unused route:
 	 ```
 	 For example:
 	 ```
-	 cf delete-route mybluemix.net -n app001
+	 cf delete-route mychinabluemix.net -n app001
 	 ```
 
-  
-  
-  
-  
-  
-  
-  
+
+	 
+	 
+
 ## Unable to retrieve spaces in the org
 {: #ts_retrieve_space}
-
 You can't create an app or a service if your current organization does not have a space associated with it.
 
 When you try to create an app in Bluemix, you see the following error message:
@@ -366,7 +395,6 @@ Ensure that you created a space in your current organization.  To create a space
   * In the cf command line interface, type `cf create-space <space_name> -o <organization_name>`.
 
 Try again. If you see this message again, go to the [Bluemix status](http://ibm.biz/bluemixstatus){: new_window} page to check whether a service or component has an issue.
-
 
 
 
@@ -391,14 +419,12 @@ You do not have the appropriate level of authority that is required to perform t
 {: tsCauses}
 
   
-
 To obtain the appropriate authority level, use one of the following methods: 
 {: tsResolve}
  * Select another organization and space for which you have the developer role. 
  * Ask the org manager to change your role to developer or to create a space and then assign you a developer role. See [Managing organizations and spaces](../admin/orgs_spaces.html){: new_window} for details.
  
 
- 
 
 
 ## Unable to access {{site.data.keyword.Bluemix_notm}} services because of authorization errors
@@ -546,18 +572,15 @@ If those workarounds do not fix the problem, send an email to idslogin@jazz.net.
 
 
 
-## Android apps can't receive push notifications
+## Android apps can't receive {{site.data.keyword.mobilepushshort}}
 {: #ts_push}
 
-Android apps in certain regions where Google is not accessible can't receive notifications that you send out through the IBM Push service. In this case, you can use third-party services as a workaround.
+Android apps in certain regions where Google is not accessible can't receive notifications that you send out through the IBM {{site.data.keyword.mobilepushshort}} service. In this case, you can use third-party services as a workaround.
 
- 
-
-You bind a Push service for your Bluemix app and send a message to the registered devices. However, apps that are developed on the Android platform can't receive your notifications in certain regions. 
+You bind a {{site.data.keyword.mobilepushshort}} service for your Bluemix app and send a message to the registered devices. However, apps that are developed on the Android platform can't receive your notifications in certain regions. 
 {: tsSymptoms}
 
- 
-IBM Push service uses the Google Cloud Messaging (GCM) service to dispatch notifications to mobile apps that are developed on the Android platform. To enable the Android apps to receive notifications, Google Cloud Messaging (GCM) service must be accessible by the mobile apps. In regions where the GCM service can't be reached by the Android apps, the Android apps are not able to receive push notifications.
+IBM {{site.data.keyword.mobilepushshort}} service uses the Google Cloud Messaging (GCM) service to dispatch notifications to mobile apps that are developed on the Android platform. To enable the Android apps to receive notifications, Google Cloud Messaging (GCM) service must be accessible by the mobile apps. In regions where the GCM service cannot be reached by the Android apps, the Android apps are not able to receive {{site.data.keyword.mobilepushshort}}.
 {: tsCauses}
 
  
@@ -589,7 +612,7 @@ Delete any services instances that are not needed, or remove the limit on the nu
  
   * To delete a services instance, you can use the {{site.data.keyword.Bluemix_notm}} user interface or the command line interface.
     To use the {{site.data.keyword.Bluemix_notm}} user interface to delete a service instance, complete the following steps:
-	  1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, click the service that you want to delete. The service tile displays. 
+	  1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, click the service that you want to delete.  The service tile displays.
 	  2. On the service tile, click the **Menu** icon.
 	  3. Click **Delete Service**. After you delete the service instance, you will be prompted to restage the application that the service instance was bound to. 
     To use the command line interface to delete a service instance, complete the following steps:
@@ -621,11 +644,11 @@ When you push the executable to {{site.data.keyword.Bluemix_notm}}, you must spe
 {: tsResolve}
 
 ```
-cf push appname -p <app_path> -c <start_command> -b <null-buildpack>
+cf push appname -p app_path -c <start_command> -b <null-buildpack>
 ```
 For example:
 ```
-cf push appname -p <app_path> -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
+cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
 
 
@@ -656,7 +679,9 @@ You can either increase the memory quota of your account, or reduce the memory t
     If you use the {{site.data.keyword.Bluemix_notm}} user interface, complete the following steps:
 	  1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, select your application. The app details page opens.
 	  2. In the runtime pane, you can reduce the maximum memory limit or the numbers of app instances, or both, for your app. 
+	  
 	If you use the cf command line interface, complete the following steps:
+	
 	  1. Check how much memory is being used for your apps:
 	  ```
 	  cf apps
@@ -664,7 +689,7 @@ You can either increase the memory quota of your account, or reduce the memory t
 	     The cf apps command lists all the apps that you deployed in your current space. The status of each app is also displayed.
       2. To reduce the amount of memory that is used by your app, reduce the number of app instances or the maximum memory limit, or both:
 	  ```
-	  cf push <appname> -p <app_path> -i <instance_number> -m <memory_limit>
+	  cf push appname -p app_path -i instance_number -m memory_limit
       ```
 	  3. Restart your app for the changes to take effect.
 
@@ -693,7 +718,7 @@ You can manually restart the app by typing the following command in the command 
 {: tsResolve}
 
 ```
-cf push <appname> -p <app_path>
+cf push appname -p app_path
 ```
 In addition, you can code the app to identify and recover from problems such as outages, exceptions, and connection failures. 
 
@@ -753,7 +778,36 @@ Use one of the following methods to solve the problem:
   
   
   
+<!-- begin STAGING ONLY --> 
 
+## Bluemix Live Sync Debug does not start from the command line
+{: #ts_no_debug}
+
+You enabled the IBM Bluemix Live Sync Debug feature for your app by using the command line, but you cannot access the Debug interface.  
+  
+ 
+
+You enabled the Debug feature for your app by setting the **BLUEMIX_APP_MGMT_ENABLE** environment variable. However, you cannot access the Debug user interface at `app_url/bluemix-debug/manage`.
+{: tsSymptoms}
+
+
+
+The Debug feature cannot be enabled in these situations:
+{: tsCauses} 
+
+  * When the `manifest.yml` contains the command attribute
+  * When you use the **-c** option to push an app to {{site.data.keyword.Bluemix_notm}}
+
+ 
+  
+Use one of the following options to resolve the issue: 
+{: tsResolve}
+
+  * The recommended practice is to use the IBM Node.js buildpack to start the app. For more information, see the Startup command section of the [Deploying a Node.js application to {{site.data.keyword.Bluemix_notm}}](../runtimes/nodejs/index.html#nodejs_runtime){: new_window} topic. 
+  * Disable the command for your existing app either by revising the command attribute in your `manifest.yml` to command: null or by editing your push command to include `-c null`. 
+  * Remove the **command** attribute from the `manifest.yml`. Then delete the current app from {{site.data.keyword.Bluemix_notm}} and push the app again.
+  
+<!-- end STAGING ONLY -->  
   
   
 
@@ -787,11 +841,11 @@ This problem occurs because the API endpoint of the region that you want to work
 
    
   
-If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the cf command line interface, enter the cf api command and specify the API endpoint of the region. For example, enter the following command to connect to the {{site.data.keyword.Bluemix_notm}} Europe United Kingdom region:
+If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the cf command line interface, enter the cf api command and specify the API endpoint of the region. For example, enter the following command to connect to the {{site.data.keyword.Bluemix_notm}} China:
 {: tsResolve}
 
 ```
-cf api https://api.eu-gb.bluemix.net
+cf api https://api.chinabluemix.net
 ```
 If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the Eclipse tools, you must first create a {{site.data.keyword.Bluemix_notm}} server and specify the API endpoint of the {{site.data.keyword.Bluemix_notm}} region that your organization was created in. For more information about using the Eclipse tools, see [Deploying apps with IBM Eclipse Tools for Bluemix](../manageapps/eclipsetools/eclipsetools.html){: new_window}.  
   
@@ -822,11 +876,11 @@ The host name that you specify must be unique within the domain that you are usi
 
   * If you deploy your application by using the `manifest.yml` file, specify the host name in the host option.	 
     ```
-    host: <hostname>	
+    host: host_name	
 	```
   * If you deploy your application from the command prompt, use the `cf push` command with the **-n** option. 
     ```
-    cf push <appname> -p <app_path> -n <hostname>
+    cf push appname -p app_path -n host_name
     ```
 
 
@@ -1080,6 +1134,7 @@ If you click the Deploy to {{site.data.keyword.Bluemix_notm}} button and find th
   * [The Bluemix DevOps Services project cannot be created](#project-cannot-be-created)
   * [The Git repository is not found and cannot be cloned in DevOps Services](#repo-not-found)
   * [The Git repository is cloned in DevOps Services, but the app is not deployed to {{site.data.keyword.Bluemix_notm}}](#repo-cloned-app-not-deployed)
+
 For more information about how to create the button, see Creating a Deploy to {{site.data.keyword.Bluemix_notm}} button.
 
 ### The Bluemix DevOps Services project cannot be created
@@ -1187,7 +1242,7 @@ Use one of the following methods to fix the problem:
 	```
 	<appname> open
 	```
-
+	
 ## Deploying an app from the run bar fails
 {: #deployinganappfromtherunbarfails}
 
@@ -1263,7 +1318,7 @@ The status of your {{site.data.keyword.Bluemix_notm}} account becomes inactive w
 To reactivate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport.com){: new_window}. In the email, you must include the following information:
 {: tsResolve}
 
-  * The IBMid that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+  * The ID that you use to log in to {{site.data.keyword.Bluemix_notm}}.
   * The name of the organization in which your app is being created. This information can help the support team determine whether you are assigned the correct roles or membership within your organization.
 
 
@@ -1292,7 +1347,7 @@ To create a space, use one of the following methods:
 {: tsResolve}
  
   * On the {{site.data.keyword.Bluemix_notm}} Dashboard, select the organization in which you want to create the space, then click **Create a Space**.
-  * In the cf command line interface, type ```cf create-space <space_name> -o <organization_name>```.
+  * In the cf command line interface, type `cf create-space <space_name> -o <organization_name>`.
   
   
   
@@ -1307,7 +1362,7 @@ You might notice that several applications share the same URL in {{site.data.key
 This problem might happen when you assign the same URL route for different applications within a space.
 {: tsCauses}
 
-For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.mybluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.mybluemix.net". The route is now mapped to both applications.
+For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mychinabluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mychinabluemix.net". The route is now mapped to both applications.
 
  
 
@@ -1316,7 +1371,30 @@ This is supported behavior of the {{site.data.keyword.Bluemix_notm}} and you can
   
 	
 	
+<!-- begin STAGING ONLY --> 
+	
+	
+## Administrators can't view all orgs by using the {{site.data.keyword.Bluemix_notm}} user interface
+{: #ts_ui_org}
 
+As an administrator, when you use the {{site.data.keyword.Bluemix_notm}} user interface, you can't display every organization to administer them. You can display and administer only those organizations to which you belong.
+
+ 
+
+As an administrator, you cannot see all the organizations by using the {{site.data.keyword.Bluemix_notm}} user interface.
+{: tsSymptoms}
+
+ 
+
+This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
+{: tsCauses}
+
+ 
+
+You can use the command such as `cf orgs`, `cf create-org`, and `cf delete-org` from the cf command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
+{: tsResolve}
+	
+<!-- end STAGING ONLY -->
 
 
 
@@ -1623,5 +1701,54 @@ You can resolve this issue by using one of the following methods:
 	```
 	
 	
+<!-- begin STAGING ONLY --> 
 
+	
+## Log4js logger objects are not displayed in the Node.js Trace pop-up window
+{: #ts_logger}
+
+The log4js logger objects are not displayed in the Node.js Trace pop-up window when both the log4js and ibmbluemix modules are used in your app. 	
+
+ 
+The log4js logger objects are not displayed in the Node.js Trace pop-up window when both the log4js, winston, and ibmbluemix modules are used in your app.
+{: tsSymptoms}
+
+
+Because the ibmbluemix module provides a unified API for log operations that use the log4js and winston modules, only the ibmbluemix logger objects are displayed in the Node.js Trace pop-up window. This is to stop the log level settings for the ibmbluemix, log4js, and winston logger objects from overwriting each other.
+{: tsCauses}
+
+
+This behavior is expected.
+{: tsResolve}
+
+<!-- end STAGING ONLY -->
+
+
+
+
+<!-- begin STAGING ONLY -->
+
+
+## Apply trace setting to all instances of the application check box is disabled
+{: #ts_bunyan}
+
+The **Apply trace setting to all instances of the application** check box is unchecked and disabled in the Node.js Trace pop-up window when the Bunyan logger levels are modified.
+
+
+
+When you change the levels of the Bunyan logger objects, the **Apply trace setting to all instances of the application** check box is unchecked and disabled in the Node.js Trace pop-up window.
+{: tsSymptoms} 
+
+ 
+
+When Bunyan log levels are modified, the trace setting cannot be applied to all instances of an application. This is because the Bunyan library does not require the names or identifiers of Bunyan logger objects to be unique. More than one of the Bunyan logger objects that are used to specify levels in the log messages for your application can have the same name or identifier. Therefore, if the trace setting is enabled for an application, the log levels that are specified in the log messages of your application might be inaccurate.
+{: tsCauses}
+
+
+
+
+This behavior is expected.
+{: tsResolve} 
+
+<!-- end STAGING ONLY -->
 

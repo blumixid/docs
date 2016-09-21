@@ -17,7 +17,7 @@ copyright:
 
 # Profile settings
 {: #usersettings}
-Last updated: 16 August 2016
+Last updated: 04 August 2016
 {: .last-updated}
 
 Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile** to update your profile settings.
@@ -26,7 +26,7 @@ Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar
  On the **Profile** page, you can set or update the following information:
 
  * A profile photo that is visible to other {{site.data.keyword.Bluemix_notm}} users
- * IBMid information including your name, email, phone number, password, company, and role
+ * ID information including your name, email, phone number, password, company, and role
  * Analytics tracking setting
 
 ## Changing your profile photo
@@ -37,13 +37,13 @@ Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar
 * Click **Change Photo** to upload a new photo.
 * Click **Remove Photo** to remove your photo.
 
-## Editing your IBMid information
+## Editing your ID information
 {: #ibmid}
 
-If you need to change your IBMid account information, such as your name, email, phone number, password, or company name, complete the following steps:
+If you need to change your ID account information, such as your name, email, phone number, password, or company name, complete the following steps:
 
 1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
-2. Click **Edit your IBMid**.
+2. Click **Edit your ID**.
 3. Edit your user information.
 4. Click **Submit**.
 

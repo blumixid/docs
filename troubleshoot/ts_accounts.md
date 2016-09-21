@@ -19,7 +19,7 @@ copyright:
 # Troubleshooting for managing accounts
 {: #managingaccounts}
 
-Last updated: 18 August 2016
+Last updated: 13 September 2016
 {: .last-updated}
 
 You might experience problems when you manage your account, such as different apps share the same domain name, administrators can't view all organizations. However, in many cases, you can recover from these problems by following a few easy steps.
@@ -44,10 +44,10 @@ The status of your {{site.data.keyword.Bluemix_notm}} account becomes inactive w
 
  
 
-To reactivate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport.com){: new_window}. In the email, you must include the following information:
+To reactivate your account, you can submit a ticket from the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn/){: new_window} page. In the ticket, you must include the following information:
 {: tsResolve}
 
-  * The IBMid that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+  * The ID that you use to log in to {{site.data.keyword.Bluemix_notm}}.
   * The name of the organization in which your app is being created. This information can help the support team determine whether you are assigned the correct roles or membership within your organization.
 
 
@@ -76,7 +76,7 @@ To create a space, use one of the following methods:
 {: tsResolve}
  
   * On the {{site.data.keyword.Bluemix_notm}} Dashboard, select the organization in which you want to create the space, then click **Create a Space**.
-  * In the cf command line interface, type ```cf create-space <space_name> -o <organization_name>```.
+  * In the cf command line interface, type `cf create-space <space_name> -o <organization_name>`.
   
   
   
@@ -91,7 +91,7 @@ You might notice that several applications share the same URL in {{site.data.key
 This problem might happen when you assign the same URL route for different applications within a space.
 {: tsCauses}
 
-For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mybluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mybluemix.net". The route is now mapped to both applications.
+For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mychinabluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mychinabluemix.net". The route is now mapped to both applications.
 
  
 
@@ -126,30 +126,5 @@ You can use the command such as `cf orgs`, `cf create-org`, and `cf delete-org` 
 <!-- end STAGING ONLY -->
 
 
-
-
-## Credit card can't be added
-{: #ts_addcc}
-
-You cannot submit your credit card information to convert your trial account to a Pay As You Go account.
-
- 
-
-The Submit button on the Add credit card page is disabled.
-{: tsSymptoms}
-
- 
-
-This problem happens when your information is not filled in correctly in the Add credit card page.
-{: tsCauses}
-
- 
-
-Complete the following steps to solve this problem:
-{: tsResolve}
-
-  1. On the Add credit card page, fill in all of the required fields that are in the contact information, contact address, and billing address sections.
-  2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**. The **Select a payment method** section is displayed.
-  3. Enter your credit card number, the expiration date of your card, and the security code that is on your card. Then, click **Submit**.
 
 

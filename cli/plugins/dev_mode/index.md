@@ -17,8 +17,9 @@ copyright:
 # (Deprecated)Development mode CLI
 {: #devmodecli}
 
-*Last updated: 23 June 2016*
+Last updated: 12 May 2016
 {: .last-updated}
+
 
 **This CLI has been deprecated:** Instead of using the Development mode (dev_mode) CLI, use IBM Eclipse Tools for Bluemix or DevOps Web IDE. You can continue to use the dev_mode CLI until 30 June 2016.
 
@@ -37,7 +38,7 @@ You can do the following tasks with the dev_mode CLI:
 
 Use one of the following methods to install the dev_mode command line tool:
 - Install locally.
-  1. Download the dev_mode plug-in for your platform from [IBM Bluemix CLI Plugin Repository](http://plugins.{DomainName}).
+  1. Download the dev_mode plug-in for your platform from [IBM Bluemix CLI Plugin Repository](http://plugins.ng.bluemix.net).
   2. Go to the folder that the dev_mode plug-in is saved, and install the dev_mode plug-in by using the cf install-plugin command. For example: 
   
         ```

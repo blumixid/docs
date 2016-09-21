@@ -1,26 +1,14 @@
-# docs
-IBM Bluemix product documentation.
+# docs-staging-cl
+The docs-staging-cl repo is for the product content for Bluemix in China. The Bluemix *staging-cl* doc app builds from this location for all staging environments for China.
 
-The docs repo is for the product content for IBM Bluemix that is authored in Markdown. The Bluemix *production* doc app builds all Markdown source from this location for all regions.
+Each directory in the docs-staging repo must synch with the overall architecture of the Bluemix doc app.
 
-Each directory in the docs repo must synch with the overall architecture of the Bluemix doc app.
+**To suggest changes or updates:** fork the project or branch, make your edits, and then create a pull request.
 
-##How to suggest changes or updates to Bluemix documentation
-
-All you need is a GitHub ID, and you can suggest edits and changes to Bluemix docs. A Bluemix team member will review any pull requests, and merge all or parts of your suggested changes as quickly as possible.
-To make your changes:
-
-    1. Fork the project or create a branch right from the repository.
-    2. Edit files.
-    3. When your changes are complete, send a pull request from your branch with your changes.
-    4. Wait for a Bluemix team member to review your changes and merge all or parts of your suggested changes
-    5. After you are notified of your changes, tidy up your branches using the delete button in the pull request or on the branches page.
-
-For more detailed information on how to contribute content to Bluemix documentation, see the following flow:
-https://help.github.com/articles/github-flow-in-the-browser/
+For more details on suggesting changes, and for details on how to merge your content from /docs-staging to the production /docs repo, see the following blueprint: https://releaseblueprints.ibm.com/display/CLOUDOE/Creating+content+in+markdown#Creatingcontentinmarkdown-HowdoImergecontentfromthestagingGithubrepototheproductionGithubrepo?
 
 
-##Authoring Bluemix content in Markdown
+Authoring Bluemix Content in Markdown
 ===============
 
 Purpose
@@ -38,6 +26,39 @@ Before you begin
 
 ###Markdown Editors
 There are many free Markdown editors available, however, not all editors will honor the syntax used by Bluemix extensions. Notepad ++ is free, compatible, and also supports YAML, which is used to define content reference keywords.
+
+###Markdown Parser and setting up your environment
+The mdProcessor.js was created by Grant Gayed and can be cloned from the project [ggayed | markdownProcessor at hub.jazz.net](https://hub.jazz.net/project/ggayed/markdownProcessor/overview). The parser is *as-is*. 
+
+A version of the parser is installed on the Blueix doc build system and is used to output all Markdown sourced content to HTML 5.
+
+To try out the parser or run it locally:
+ 1. install node ( http://nodejs.org/ )
+ 2. install any git client if you don't already have one
+ 3. at a prompt:
+```
+> git clone https://hub.jazz.net/git/ggayed/markdownProcessor
+> cd markdownProcessor
+> npm install
+> node mdProcessor.js --sourceDir=<fullPathToDirectoryContainingMarkdownFiles> --destDir=<fullPathToDestinationDirectory>
+```
+**Example command:**
+```
+node mdProcessor.js --sourceDir=C:\dev\bluemix_service --destDir=C:\dev\markdown_target\service --headerFile=header.txt --footerFile=footer.txt -enableAttributes -overwrite --conrefFile=<fullpath>
+```
+
+**Parameters:**
+*  `--sourceDir:` location of where the *.md files are located
+*  `--destDir:` location of where the HTML files should be output
+*  `--headerFile:` header information added to each of the HTML output files
+*  `--footerFile:` footer information added to each of the HTML output file
+*  `-enableAttributes:` disables the Attributes extension
+*  `-disableAttributes:` disables the attribute extension
+*  `-overwrite:` overwrites any previously output (HTML 5) version of the file in the destination directory
+*  `-conrefFile:` location of where the master content reference file is located
+*  `-disableToc:` disables the Table of Contents extension
+
+For additional guidance in setting up your local environment for the mdProcess.js, see [Setting up a local version of the Markdown parser for testing](https://releaseblueprints.ibm.com/display/CLOUDOE/Creating+content+in+markdown#Creatingcontentinmarkdown-SettingupalocalversionoftheMarkdownparserfortesting:) in the Bluemix Release Blueprints.
 
 #Mappings between DITA, MarkDown, and HTML 5
 
@@ -97,9 +118,9 @@ There are many free Markdown editors available, however, not all editors will ho
 
 |  Dita Element     |   HTML 5 output from Dita  |   How to code in Markdown    | HTML 5 output from Markdown  |
 |-----------------|-----------|-------------|-------------------|
-| **Bluemix Messages**<br>msg<br><br>msgBody<br><br>msgID<br><br>msgPrefix<br><br>msgNumber<br><br>msgSuffix<br><br>msgExplanation<br><br>msgUserResponse    | `<section class="section section msgExplanation">Explanation:`<br><br>`<section class="section section msgUserResponse">Action:` | ```` `msgph` ```` <br><br> `>`msgblock of text<br>`>`this is more text<br>`>`and some more text<br><br>`## BXNUI0001E`<br>`**The attempt to determine whether a session exists failed.**`<br><br>For instructions to fix this problem, see this `[troubleshooting topic](https://www.ng.bluemix.net/docs/troubleshoot/index-gentopic3.html#tr_err)`. | `<code>msgph</code>`<br>`<h2 id="bxnui0001e">BXNUI0001E</h2>`<br>`<p><b>The attempt to determine whether a session exists failed.</b></p>`<br>`<p>For instructions to fix this problem, see this <a href="https://www.ng.bluemix.net/docs/troubleshoot/index-gentopic3.html#tr_err">troubleshooting topic</a>.</p>`|	
+| **Bluemix Messages**<br>msg<br><br>msgBody<br><br>msgID<br><br>msgPrefix<br><br>msgNumber<br><br>msgSuffix<br><br>msgExplanation<br><br>msgUserResponse    | `<section class="section section msgExplanation">Explanation:`<br><br>`<section class="section section msgUserResponse">Action:` | ```` `msgph` ```` <br><br> `>`msgblock of text<br>`>`this is more text<br>`>`and some more text<br><br>`## BXNUI0001E`<br>`**The attempt to determine whether a session exists failed.**`<br><br>For instructions to fix this problem, see this `[troubleshooting topic](https://www.chinabluemix.net/docs/troubleshoot/index-gentopic3.html#tr_err)`. | `<code>msgph</code>`<br>`<h2 id="bxnui0001e">BXNUI0001E</h2>`<br>`<p><b>The attempt to determine whether a session exists failed.</b></p>`<br>`<p>For instructions to fix this problem, see this <a href="https://www.chinabluemix.net/docs/troubleshoot/index-gentopic3.html#tr_err">troubleshooting topic</a>.</p>`|	
 | **DITA troubleshooting specialization**<br><br>tsSymptom<br><br>tsCauses<br><br>tsResolve | `<section class="section tsSymptoms">What's happening`<br><br>`<section class="section tsCauses">Why it's happening`<br><br>`<section class="section tsResolve">How to fix it` | This is the "What's happening" paragraph <br>`{: tsSymptoms}`<br>This is the "Why it's happening" paragraph <br>`{: tsCauses}`<br>This is the "How to fix it" paragraph <br>`{: tsResolve}`<br><br>**Note:** This requires the following attribute definitions available in the attribute definition template: <br>`{:tsSymptoms: .tsSymptoms}`<br>`{:tsCauses: .tsCauses}`<br>`{:tsResolve: .tsResolve}` | `<p class="tsSymptoms">This is the "What's happening" paragraph</p>`<br><br>`<p class="tsCauses">This is the "Why it's happening" paragraph</p>`<br><br>`<p class="tsResolve">This is the "How to fix it" paragraph</p>`<br><br> |	
-| **Bluemix Runtime Classes**<br>[More Information](https://www.ng.bluemix.net/docs/starters/rt_landing.html)<br> | `<ul class="runtimeIconList">`<br>`<p class="runtimeIcon">`<br>`<p class="runtimeTitle">`<br>`<p class="runtimeLink">` | `*list item 1`<br>`*list item 2`<br>`{: runtimeIconList}` <br><br>Paragraph of text<br>`{: runtimeIcon}`<br><br>Paragraph of text<br>`{: runtimeTitle}`<br><br>Paragraph of text<br>`{: runtimeLink}`<br><br>**Note:** This requires the following attribute definitions available in the attribute definition template: <br>`{:runtimeIconList: .runtimeIconList}`<br>`{:runtimeIcon: .runtimeIcon}`<br>`{:runtimeTitle: .runtimeTitle}`<br>`{:runtimeLink: .runtimeLink}`  | `<ul class="runtimeIconList">`<br>`<li>list item 1</li>`<br>`<li>list item 2</li></ul>`<br><br>`<p class="runtimeIcon">Paragraph of text</p>`<br>`<p class="runtimeTitle">Paragraph of text</p>`<br>`<p class="runtimeLink">Paragraph of text</p>`|
+| **Bluemix Runtime Classes**<br>[More Information](https://www.chinabluemix.net/docs/starters/rt_landing.html)<br> | `<ul class="runtimeIconList">`<br>`<p class="runtimeIcon">`<br>`<p class="runtimeTitle">`<br>`<p class="runtimeLink">` | `*list item 1`<br>`*list item 2`<br>`{: runtimeIconList}` <br><br>Paragraph of text<br>`{: runtimeIcon}`<br><br>Paragraph of text<br>`{: runtimeTitle}`<br><br>Paragraph of text<br>`{: runtimeLink}`<br><br>**Note:** This requires the following attribute definitions available in the attribute definition template: <br>`{:runtimeIconList: .runtimeIconList}`<br>`{:runtimeIcon: .runtimeIcon}`<br>`{:runtimeTitle: .runtimeTitle}`<br>`{:runtimeLink: .runtimeLink}`  | `<ul class="runtimeIconList">`<br>`<li>list item 1</li>`<br>`<li>list item 2</li></ul>`<br><br>`<p class="runtimeIcon">Paragraph of text</p>`<br>`<p class="runtimeTitle">Paragraph of text</p>`<br>`<p class="runtimeLink">Paragraph of text</p>`|
 | **Bluemix Related Links** <br><br>`id="rellinks"`<br>id of wrapper tag of all related links section<br><br> `id='general'`<br>id of RELATED LINKS<br><br>`id='api'`<br>id of API REFERENCE<br><br>`id='samples'`<br>id of TUTORIALS AND SAMPLES<br><br>`id='buildpacks'`<br>id of COMPATIBLE RUNTIMES<br><br>`id='sdk'`<br>id of SDK REFERENCE  | `<article class="topic reference nested1" aria-labelledby="d68e338" lang="en-us" id="rellinks"><h2 class="topictitle2" id="d68e338">Related links</h2>`<br>`<aside>`<br>`<div class="linklist" id="general"><h3 class="linklistlabel">Related Links</h3>`<br>`<ul><li><img src="./sout.gif" alt=""><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights" rel="external" title="(Opens in a new tab or window)">Detailed Documentation</a></li>`<br>`<li><img src="./sout.gif" alt=""><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/personality-insights.html" rel="external" title="(Opens in a new tab or window)"><span class="keyword">Personality Insights</span> home page</a></li>`<br>`<li><img src="./sout.gif" alt=""><a href="https://developer.ibm.com/watson/" rel="external" title="(Opens in a new tab or window)">Watson developer cloud community</a></li>`<br>`</ul></div>`<br><br>`<div class="linklist" id="samples"><h3 class="linklistlabel">Tutorials and Samples</h3>`<br>`<ul><li><img src="./sout.gif" alt=""><a href="https://watson-pi-demo.mybluemix.net/" rel="external" title="(Opens in a new tab or window)">Live Demo</a></li>`<br>`<li><img src="./sout.gif" alt=""><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/personality-insights/index.html#sampleApp" rel="external" title="(Opens in a new tab or window)">Sample Application source and instructions</a></li>`<br>`<li><img src="./sout.gif" alt=""><a href="https://github.com/watson-developer-cloud/nodejs-wrapper" rel="external" title="(Opens in a new tab or window)">Client-side library for Watson in Node.js</a></li>`<br>`<li><img src="./sout.gif" alt=""><a href="https://github.com/watson-developer-cloud/java-wrapper" rel="external" title="(Opens in a new tab or window)">Client-side library for Watson in Java</a></li>`<br>`</ul></div>`<br><br>`<div class="linklist" id="api"><h3 class="linklistlabel">API Reference</h3>`<br>`<ul><li><img src="./sout.gif" alt=""><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/#!/personality-insights" rel="external" title="(Opens in a new tab or window)">REST API</a></li>`<br>`</ul></div>`<br>`</aside></article>` | `# rellinks`<br><br>`## samples`<br>`* [link text](http://URL)`<br>`* [link text](http://URL)`<br><br>`## sdk`<br>`* [link text](http://URL)`<br>`* [link text](http://URL)`<br><br>`## api`<br>`* [link text](http://URL)`<br>`* [link text](http://URL)`<br><br>`## buildpacks`<br>`* [link text](http://URL)`<br>`* [link text](http://URL)`<br><br>`## general`<br>`* [link text](http://URL)`<br>`* [link text](http://URL)` | `<h1 id="rellinks">rellinks</h1>`<br>`<h2 id="samples">samples</h2>`<br>`<ul>`<br>`<li>`<br>`<li>`<br>`</ul>`<br><br>`<h2 id="sdk">sdk</h2>`<br>`<ul>`<br>`<li>`<br>`<li>`<br>`</ul>`<br><br>`<h2 id="api">api</h2>`<br>`<ul>`<br>`<li>`<br>`<li>`<br>`</ul>`<br><br>`<h2 id="buildpacks">buildpacks</h2>`<br>`<ul>`<br>`<li>`<br>`<li>`<br>`</ul>`<br><br>` <h2 id="general">general</h2>`<br>`<ul>`<br>`<li><a href="http://www.softlayer.com/security">Soflayer Security Compliance</a></li>`<br>`<li><a href="../services/SingleSignOn/index.html">Getting started with Single Sign On</a></li>`<br>`</ul>` |
 | **Bluemix Context Switching**<br><br>`data-hd-programlang="languagecode"`<br>`//programming language and OS`<br>`csAllProgramlangs: [`<br>`{key:"generic", label:"Generic"},`<br>`{key:"java", label:"Java"},`<br>`{key:"ruby", label:"Ruby"},`<br>`{key:"c#", label:"C#"},`<br>`{key:"objectc", label:"Objective C"},`<br>`{key:"python", label:"Python"},`<br>`{key:"javascript", label:"JavaScript"},`<br>`{key:"php", label:"PHP"},`<br>`{key:"swift", label:"Swift"}`<br>`   ],`<br>`csAllOperatingsystems: [`<br>`{key:"generic", label:"Generic"},`<br>`{key:"ios", label:"iOS"},`<br>`{key:"android", label:"Android"}`<br>`   ],` | `<pre class="codeblock"`<br>`data-hd-programlang="javascript"><code>&lt;script&gt;`<br><br>`var setup = {`<br>`applicationId:'&lt;<var class="keyword varname">applicationId</var>&gt;',`<br>`applicationRoute:'&lt;<var class="keyword varname">applicationRoute</var>&gt;',`<br>`applicationSecret:'&lt;<var class="keyword varname">applicationSecret</var>&gt;'`<br>`}`<br><br>`IBMBluemix.initialize(setup);`<br>`&lt;/script&gt;</code>`<br>`</pre>`<br><br>`<pre class="codeblock" data-hd-operatingsystem="ios"><code>[IBMBluemix initializeWithApplicationId: <var class="keyword varname">applicationId</var> andApplicationSecret: <var class="keyword varname">applicationSecret</var> andApplicationRoute: <var class="keyword varname">applicationRoute</var>]</code></pre>` | `<!-- Attribute definitions -->`<br>`{:javascript: #javascript .ph data-hd-programlang='javascript'}`<br>`{:java: #java .ph data-hd-programlang='java'}`<br>`{:ruby: #ruby .ph data-hd-programlang='ruby'}`<br>`{:shortdescription: .shortdesc}`<br><br>`<!-- Applying the above definitions to inline code tags and paragraph tags -->`<br>`You can use the `Node.js`{: javascript} `Java`{: java} `Ruby`{: ruby} sample application to try the RabbitMQ service.`<br>`{: shortdescription}`<br><br>**Note:** This requires attribute definitions available in the attribute definition template. | `<p class="shortdesc">You can use the <code id="javascript" class="ph" data-hd-programlang="javascript">Node.js</code> <code id="java" class="ph" data-hd-programlang="java">Java</code> <code id="ruby" class="ph" data-hd-programlang="ruby">Ruby</code> sample application to try the RabbitMQ service.</p>` |
 | **Bluemix App Data**<br><br>`user's app related metadata: "app_name", "app_url", "service_name", "service_instance_name", "plan", "host"` | ? | ?<br>**Note:** This requires the following attribute definition available in the attribute definition template: `{:?: .?}` | ? |
@@ -216,6 +237,24 @@ Output of HTML5 from Markdown parser:
 ### Headers and footers
 Bluemix needed to add copyright and metadata to the header of the HTML 5 output. We have standard header and footer files that are called during transformation.
 
+Opening and closing HTML tagging is added with a header.txt and footer.txt file that is called by the parser: `--headerFile=header.txt --footerFile=footer.txt`
+
+```
+<!DOCTYPE html><html lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="copyright" content="© Copyright IBM Corporation 2016">
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2016">
+<meta name="github.edit" content="yes">
+
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+
+</head>
+```
+
 ####Anchor IDs Generated for all Headers
 When the Bluemix Markdown parser transforms Markdown to HTML5, it automatically binds an anchor ID to all Header elements. Any time the parser transforms a Markdown file that contains a header, the HTML5 output of that header tag will produce an `id` attribute, with a value that is unique. Unique anchor IDs on headers provide writers with the ability to link directly to a sub-topic that begins with a Header.
 
@@ -301,7 +340,7 @@ Conref definitions in YAML are structured in nested keys, each key that contains
     
 ```
 Conrefs in Markdown are called by using the following syntax: `{{site.data.key1.key2...keyN}}`
-**Note:** While you can Nest keys as deep as you like in YAML, and call deeper sets of keys from markdown, Bluemix conrefs use only 2 keys. For example: `{{site.data.keyword.bluemix}}`  
+**Note:** While you can Nest keys as deep as you like in YAML, and call deeper sets of keys from markdown, Bluemix conrefs use only 2 keys. For example: `{{site.data.keyword.bluemix_notm}}`  
 
 ####Content references in DITA vs Markdown
 In DITA, a content reference, or conref, is a way of reusing or pulling content from one file into another file; effectively making a copy during the transform. 
@@ -356,8 +395,8 @@ Example of conrefs sourced in YAML (stored in cloudoeconrefs.yml):
 Example of conrefs called from Markdown (called from test.md):
  
 ```
-	This is a new paragraph all about using conrefs. This word here: {{site.data.keyword.bluemix}} is actually a conref! I can use {{site.data.keyword.bluemix}} multiple times in a paragraph. 
-	* I can use the full product name: {{site.data.keyword.bluemix}}
+	This is a new paragraph all about using conrefs. This word here: {{site.data.keyword.bluemix_notm}} is actually a conref! I can use {{site.data.keyword.bluemix_notm}} multiple times in a paragraph. 
+	* I can use the full product name: {{site.data.keyword.bluemix_notm}}
 	* Or I can use the shortened product name: {{site.data.keyword.bluemix_short}}
 	* {{site.data.keyword.activedeployshort}} is a Service. 
 	* So is {{site.data.keyword.amashort}}
@@ -367,14 +406,59 @@ Example of conrefs called from Markdown (called from test.md):
 Results:
  
 ```
-	 This is a new paragraph all about using conrefs. This word here: IBM® Bluemix™ is actually a conref! I can use IBM® Bluemix™ multiple times in a paragraph.
+	 This is a new paragraph all about using conrefs. This word here: Bluemix is actually a conref! I can use Bluemix multiple times in a paragraph.
 
-		I can use the full product name: IBM® Bluemix™
+		I can use the full product name: Bluemix
 		Or I can use the shortened product name: Bluemix™
 		Active Deploy is a Service.
 		So is Advanced Mobile Access
 		
 ```
+
+####How to add a new content reference
+ 
+ 1. You have a new product called `Amazing Thing`, and you plan to refer to it in multiple locations across multiple files.
+ 2. Navigate to the `/MarkdownProcessor` directory that contains `mdProcessor.js` and open `cloudoeconrefs.yml` with an editor that supports YAML (notepad++, for example).
+ **Note**: The parser that transforms Markdown to HTML5 restricts the use of conrefs to one conref source file. Bluemix uses `cloudoeconrefs.yml` stored at this location: https://github.ibm.com/Bluemix/docs/blob/staging/cloudoeconrefs.yml
+ 3. YAML allows you to nest multiple value, (where each value contains the text you want to store as your content reference), under each key that you create. For example: 
+ ```
+ #Comments in YAML use the pound symbol
+ key
+  value1
+    conref value 1
+  value2
+    conref value 2
+	
+ ```
+ **Note**: Each key and value combination must be unique. 
+ 
+ 4. Add your new product, `Amazing Thing` to `cloudoeconrefs.yml`:
+ ```
+ keyword
+   amazing_thing
+	Amazing Thing
+	
+ ```
+ 5. Now you can call this conref from anywhere in your Markdown topics. Conrefs are called using the following syntax: `{{site.data.key.value}}`. To call your new conref, you would use: `{{site.data.keyword.amazing_thing}}`.
+ 6. Run mdProcessor on your file, ensuring that you use the --conrefFile flag:
+ ```
+ node mdProcessor.js --sourceDir=C:\pilot\sourceMD --destDir=C:\pilot\outputMD --headerFile=header.txt --footerFile=footer.txt --conrefFile=conref.yml -overwrite
+ 
+ ``` 
+ 7. The HTML5 output will contain the string `Amazing Thing` in each location that the source Markdown contains `{{site.data.keyword.amazing_thing}}`.
+ 
+####Trademark and Registered Trademark recommendations
+When DITA is transformed to HTML5 using IDWB xHTML transforms, symbols stored in a DITA conref source file that has trademarks or registered trademarks appended to them are programmatically passed through to the output. However, only the first instance of each word with a trademark or registered trademark is added to the output, and subsequent uses of that same value are ignored. The Markdown to HTML5 transform does not have the ability to ignore multiple instances of a trademarked word. We recommend manually controlling the output of your trademarked words by creating two conrefs of a trademarked word, one with the trademark, and one without. This enables you to call the trademarked conref the first time the word is used on a page, and enables you to call the conref without a trademark on subsequent uses of the word.
+ 
+**Note**: To add a trademark to a word in your conref file, simply add the HTML syntax for registered trademark (`&reg;`), or trademark (`&trade;`) to each word. For example:
+```
+ keyword:
+   bluemix:
+     IBM&reg; Bluemix&trade;
+	
+```
+**Note**: Along with passing through trademarks in HTML, all of the following special characters are also supported: (http://www.w3.org/MarkUp/HTMLPlus/htmlplus_13.html)
+
 
 ### TOC File
 In addition to the standard HTML5 output that the Bluemix Markdown parser produces from each Markdown file, the parser also produces a Table of Contents file in different formats. Each TOC file produced from a markdown topic contains a nested set of structured headers or topicrefs that match the structure of headers in the original markdown source. Each TOC header or topicref also contains a link to a corresponding header anchor ID in the HTML5 output file that was generated from the Markdown source.
@@ -404,7 +488,7 @@ We have worked to output all Markdown markup to standard and valid HTML5 tags:
 Additional accessibility *might* be needed as content is migrated to Markdown. And, as a result, updates to the parser and/or to the markup recommendations *might* be required.
 
 ### Additional functionality
- * Copy of non-.md files: Copies (doesn't process) image files (.bmp, .jpg, .png, .gif, .SVG) and other file extensions like .html, .pdf, .json, .js
+ * Copy of non-.md files: Copies (doesn't process) image files (.bmp, .jpg, .png, .gif, .SVG)
  * Recurse sub-directories: Processes all directories in the specified source directory
  * Overwrite: Addition of an overwrite flag to replace previous output
  
@@ -412,3 +496,10 @@ Additional accessibility *might* be needed as content is migrated to Markdown. A
 
 1. Using HTML within your Markdown topics is allowed, and in some cases encouraged (the only way to output a definition list is by using HTML). However, if you chose to use HTML, **always ensure your HTML is well-formed**. Any tag that does not have a closing tag associated with it will break the parser, and your build will fail. For example, the only way that you can create a line break inside a table cell in Markdown is to use a break tag, however, using `<br>` will actually break the build. You must close the break tag like so: `<br/>`. If you use HTML, carefully validate that your tags are matching and that you close all open tags.
 2. Avoid using `<` and `>`. For all special characters, it is recommended that you use the `&` value. For example, for `>` use `&gt;`.  All of the following special characters are also supported: (http://www.w3.org/MarkUp/HTMLPlus/htmlplus_13.html)
+
+### Tips for debugging Markdown parser errors:
+
+1. Search for mal-formed HTML or special characters.
+2. Run a local version of the parser, and copy text into a parallel .md document in small chunks. Rebuild each time until you find the offending key.
+3. We did see an issue where someone used a non-standard editor to produce markdown, and there were hidden mal-formed characters.
+

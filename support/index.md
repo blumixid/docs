@@ -12,17 +12,19 @@ copyright:
 # Getting customer support
 {: #getting-customer-support}
 
-Last updated: 4 August 2016
+Last updated: 13 September 2016
 {: .last-updated}
 
 
-If you experience problems with {{site.data.keyword.Bluemix}}, you have several support options, such as getting help through a forum, or opening a support ticket.
+If you experience problems with Bluemix, you have several support options, such as getting help through a forum, or opening a support ticket.
 {:shortdesc}
+
 
 ## Getting help
 {: #getting-help}
-To open a support ticket or find other help options, you can use the Account and Support widget. You can also go directly to the Stack Overflow or developerWorks (dW) Answers forums to search information or post questions.
+To open a support ticket or find other help options, you can use the Account and Support widget. You can also go directly to the developerWorks (dW) Answers forum to search information or post questions.
 {:shortdesc}
+
 
 ### Using the Account and Support widget
 {: #using-avatar}
@@ -30,24 +32,20 @@ The Account and Support widget enables you to check account information, view st
 
 To open the Account and Support widget, log in to the {{site.data.keyword.Bluemix_notm}} user interface and click the {{site.data.keyword.avatar}} icon ![Avatar icon](images/account_support.svg) in the menu bar.
 
-Click **Get help** to find answers to your questions. On the page that is displayed, type your question in the search field. Answers from across the {{site.data.keyword.Bluemix_notm}} documentation and Stack Overflow are displayed. The page also provides options to post your question to Stack Overflow, or to open a ticket by clicking **GET IN TOUCH**.
+Click **Get help** to find answers to your questions. On the page that is displayed, type your question in the search field. Answers from across the {{site.data.keyword.Bluemix_notm}} documentation and dW Answers forum are displayed. The page also provides options to post your question to dW Answers forum, or to open a ticket by clicking **GET IN TOUCH**.
 
 
 ### Asking a question
 {: #asking-a-question}
 
-The Stack Overflow and dW Answers forums both provide a wide variety of searchable answers to your Bluemix questions. If you don't find an existing answer, ask a new question. 
+The dW Answers forum provides a wide variety of searchable answers to your Bluemix questions. If you don't find an existing answer, you can also go to [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} to ask questions.
 
-  * Go to [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix){: new_window} to ask technical questions about developing apps with the Bluemix platform and services.
-  * Go to [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html){: new_window} to ask questions about the {{site.data.keyword.Bluemix_notm}} offering, and about getting started instructions.
-  * In China, go to [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} to ask questions.
-
-You can also ask a question in Stack Overflow directly from the Account and Support widget by completing the following steps:
+You can also ask a question in the dW Answers forum directly from the Account and Support widget by completing the following steps:
   1. From the Account and Support widget, click **Get help**. 
   2. On the page that is displayed, type your question in the search field to find answers. 
-  3. If the expected answer is not returned, click **POST TO STACK OVERFLOW** to post your question.
+  3. If the expected answer is not returned, click **POST TO dW Answers** to post your question.
 
-The {{site.data.keyword.Bluemix_notm}} development and support teams actively monitor Stack Overflow and dW Answers, and follow the questions that are tagged with **bluemix**. When you create a question in either forum, add a **bluemix** tag to your question to ensure that it is seen by the {{site.data.keyword.Bluemix_notm}} development and support teams.
+The {{site.data.keyword.Bluemix_notm}} development and support teams actively monitor the dW Answers forum, and follow the questions that are tagged with **bluemix**. When you create a question in either forum, add a **bluemix** tag to your question to ensure that it is seen by the {{site.data.keyword.Bluemix_notm}} development and support teams.
  
 
 
@@ -69,7 +67,7 @@ On the Status page, you can find the following information:
 You can find the Status page by choosing either of the following options:
 
   * Log in to the {{site.data.keyword.Bluemix_notm}} user interface, click the {{site.data.keyword.avatar}} icon ![Avatar icon](./images/account_support.svg) in the menu bar, and then click **Status**. Check the listed resources for the ![some issues](images/some_issues.svg) icon. This icon might indicate an outage.
-  * Access it directly at [IBM {{site.data.keyword.Bluemix_notm}} - System Status](http://ibm.biz/bluemixstatus){: new_window}.
+  * Access it directly at [System Status](https://status.chinabluemix.net/){: new_window}.
 
 
 ### Subscribing to an RSS feed
@@ -86,15 +84,13 @@ To subscribe, follow these steps:
 
 	See your reader's **Help** section for more information. 	   
 
-Other methods of reading RSS feeds are available through web browser plug-ins such as the following:
-  * [RSS Feed](http://feeder.co/){: new_window} Reader for Chrome 
+Other methods of reading RSS feeds are available through web browser plug-ins such as the following: 
+  * [RSS Feed](http://feeder.co/){: new_window} Reader for Chrome
   * [Brief](https://addons.mozilla.org/en-US/firefox/addon/brief/){: new_window} add-on for Firefox
 
-
 News sources like the following also provide methods to read RSS feeds:
-
   * [Feedly](http://www.feedly.com/){: new_window} 
-  * [G2reader](http://www.g2reader.com/en/){: new_window} 
+  * [G2reader](http://www.g2reader.com/en/){: new_window}
 
 You can also use a third-party service to automatically send an email for each RSS update. The following list provides some example third-party services:
 
@@ -107,32 +103,26 @@ You can also use a third-party service to automatically send an email for each R
 
 {{site.data.keyword.Bluemix_notm}} typically has approximately 50 updates per month.
 
+
+
 ### Setting up incident and maintenance email notifications
 {: #setting-up-notifications}
 
 For {{site.data.keyword.Bluemix_notm}} Public, you can sign up for platform notifications. Platform notifications are optional email alerts for incident and maintenance events for the {{site.data.keyword.Bluemix_notm}} platform. You can choose to receive these email notifications by clicking the {{site.data.keyword.avatar}} icon ![Avatar icon](../admin/images/account_support.svg) &gt; **Notifications** &gt; **Platform** options. For more information about setting account notifications, go to [Setting notifications](../admin/account.html#notifications).
+
+
 ### Best practices for monitoring status
 {: #best-practices}
 
   * Check for upcoming maintenance windows
 
 	Check for upcoming maintenance windows posted on the status page, at least once every 24 hours, by using one of the following options:
-	  * By navigating directly to the [Status](http://ibm.biz/bluemixstatus){: new_window} page
+	  * By navigating directly to the [Status](https://status.chinabluemix.net/){: new_window} page
 	  * By using the RSS feed or an RSS-to-email forwarder
 
   * Check for current maintenance windows or an incident in progress
 
-	If you suspect that {{site.data.keyword.Bluemix_notm}} is not functioning as expected, check the status page for current maintenance windows or an incident in progress. To report an incident that is not already listed on the status page, open a Support ticket through the {{site.data.keyword.avatar}} icon ![Avatar icon](images/account_support.svg) in the menu bar or the [IBM Bluemix Support](https://support.eu-gb.bluemix.net/gethelp/){: new_window} help page.
-
-  * Take advantage of multiple {{site.data.keyword.Bluemix_notm}} regions
-
-    All users of {{site.data.keyword.Bluemix_notm}} Public automatically have access to the US-SOUTH, EU-GB, and AU-SYD regions:
-
-	  * US-SOUTH: https://console.ng.bluemix.net
-	  * EU-GB: https://console.eu-gb.bluemix.net
-	  * AU-SYD: https://console.au-syd.bluemix.net
-
-	The {{site.data.keyword.Bluemix_notm}} Global Operations team manages all regions to avoid maintenance impacts and minimize the risk of incidents that affect all regions at the same time.
+	If you suspect that {{site.data.keyword.Bluemix_notm}} is not functioning as expected, check the status page for current maintenance windows or an incident in progress. To report an incident that is not already listed on the status page, open a Support ticket through the {{site.data.keyword.avatar}} icon ![Avatar icon](images/account_support.svg) in the menu bar or the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} page.
 
   * Prepare for minor interruptions
 
@@ -145,18 +135,18 @@ For {{site.data.keyword.Bluemix_notm}} Public, you can sign up for platform noti
 
 You can open support tickets if you have a valid {{site.data.keyword.Bluemix_notm}} account. 
 
-If you have a {{site.data.keyword.Bluemix_notm}} account linked with a SoftLayer account, you can open support tickets for {{site.data.keyword.Bluemix_notm}} from the SoftLayer Customer portal or from the {{site.data.keyword.Bluemix_notm}} user interface.
+You can open support tickets for {{site.data.keyword.Bluemix_notm}} from the {{site.data.keyword.Bluemix_notm}} user interface.
 
 ### Contacting support for {{site.data.keyword.Bluemix_notm}} Public
 {: #contacting-bluemix-support}
 
-All customers of {{site.data.keyword.Bluemix_notm}} are provided with free technical support through the Bluemix community or Stack Overflow.  In addition, different levels of support are provided to meet different customer needs. Refer to the following table to choose between the free, basic, standard, and premium support levels. 
+All customers of {{site.data.keyword.Bluemix_notm}} are provided with free technical support through the [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/){: new_window}. In addition, different levels of support are provided to meet different customer needs. Refer to the following table to choose between the free, basic, standard, and premium support levels. 
 
 Levels | Free |  Basic | Standard | Premium
 --- | --- | --- | --- | --- |
-Description | Support for all trial customers of Bluemix.  |  Support for non-production environments or workloads where traditional severities and response times are not needed. | Support for environments with a limited number of business-critical applications. {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local customers receive standard support. | Support for mission-critical environments that have a strategic dependence on {{site.data.keyword.Bluemix_notm}}. 
+Description | Support for all customers of Bluemix.  |  Support for non-production environments or workloads where traditional severities and response times are not needed. | Support for environments with a limited number of business-critical applications. {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local customers receive standard support. | Support for mission-critical environments that have a strategic dependence on {{site.data.keyword.Bluemix_notm}}. 
 High severity support |  N/A | N/A | Included | Included 
-Support language | English | English | English | English
+Support language | Chinese, English | Chinese, English | Chinese, English | Chinese, English
 Assigned client success manager (CSM) | Not included | Not included | Not included | Included at<br> 8 hours per week
 *Table 1. Support levels*
 
@@ -165,22 +155,22 @@ Assigned client success manager (CSM) | Not included | Not included | Not includ
 
 If you are unable to resolve your technical problem with the troubleshooting and help options, you can ask for support. However, before contacting support for a technical issue, ensure that the problem is not due to an outage by checking {{site.data.keyword.Bluemix_notm}} status.
 
-If the problem is not due to an outage, and you are a customer in a country or region excluding China, open a support ticket by using one of the following options:
+
+
+If the problem is not due to an outage, open a support ticket by using one of the following options:
 
   * From the Account and Support widget, click **Get help**. On the page that is displayed, click **GET IN TOUCH**. Fill in the form to indicate what you need technical support for.
-  * Use the [IBM {{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport){: new_window} help page. You can submit tickets for sales, billing, IBMid and login, and technical support problems. For technical support problems, you can further select a technical group after you click the **Technical Support** tile. For example, if you need help with Cloud Foundry apps, OpenWhisk, Containers, Virtual Servers, or Bare Metal servers, you can choose **Application Services**. If you need help with a specific service, select the corresponding service category. To determine the category that your service belongs to, see categories under [Services](../services/index.html){: new_window} in the navigation pane.  
-  * From [IBM Client Success Portal](https://support.ibmcloud.com){: new_window}. After you sign in to the portal, click **Open Ticket**, and then fill in the support form. 
   
+  * Form the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} page. After you sign in,click **Open Ticket**, and then fill in the form. Select **public** in the Environment field.
+  
+When you open a support ticket, ensure that you indicate an appropriate severity for your ticket. The severity determines how your ticket is handled. See [Support ticket severity and response time](index.html#support-ticket-severity){: new_window} for information about the different severities. If your request is urgent, but you only have free or basic support, you can upgrade your account to submit high-severity (level 1, 2, and 3) tickets. To upgrade your account to a higher support level, contact your sales representative by email at sales@chinabluemix.net.
 
-
-When you open a support ticket, ensure that you indicate an appropriate severity for your ticket. The severity determines how your ticket is handled. See [Support ticket severity and response time](index.html#support-ticket-severity){: new_window} for information about the different severities. If your request is urgent, but you only have free or basic support, you can upgrade your account to submit high-severity (level 1, 2, and 3) tickets. To upgrade your account to a higher support level, contact your IBM sales representative by email at sales@bluemix.net.
-
-If you are a customer in China, you can get paid support to your account from the [UNISYS Service Management IBM Bluemix page](https://chinabluemix.itsm.unisysedge.cn){: new_window}.
 
 #### Checking support ticket status
 {: #check-ticket-status}
 
-Each support ticket is assigned a unique ticket number for reference. In countries or regions other than China, you can use the ticket number to review your support ticket progress and update the support ticket at the [IBM Client Success Portal](https://support.ibmcloud.com){: new_window}. Updates and responses are sent to you by email and recorded in the ticket notes. 
+Each support ticket is assigned a unique ticket number for reference. You can use the ticket number to review your support ticket progress and update the support ticket at the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} 	page. Updates and responses are sent to you by email and recorded in the ticket notes.  
+
 
 
 ### Contacting support for {{site.data.keyword.Bluemix_notm}} Dedicated
@@ -188,35 +178,31 @@ Each support ticket is assigned a unique ticket number for reference. In countri
 
 <!-- Michelle links to this anchor  -->
 
-If you are a {{site.data.keyword.Bluemix_notm}} Dedicated customer in a country or region other than China, support is provided by the IBM {{site.data.keyword.Bluemix_notm}} support team. You can choose from a few different options to get support, depending on whether you have an IBMid.
+If you are a {{site.data.keyword.Bluemix_notm}} Dedicated customer, support is provided by the {{site.data.keyword.Bluemix_notm}} support team. You can choose from a few different options to get support, depending on whether you have an ID.
 
 <ul>
-<li>Contact support by opening a new ticket using the
-<a href="http://ibm.biz/bluemixsupport" target="_blank">IBM {{site.data.keyword.Bluemix_notm}} Support</a> help page. You can use an email address or your IBMid for this form. Select the **{{site.data.keyword.Bluemix_notm}} Dedicated** option for the Region field.
-<p>Form submissions are monitored from Sunday 10:00 PM UTC through Friday 11:59 PM UTC.</p>
+<li>Contact support by opening a new ticket using the <a href="https://chinabluemix.itsm.unisysedge.cn" target="_blank">Bluemix Support Ticketing System</a> page. You can use an email address for this form. Select the **{{site.data.keyword.Bluemix_notm}} Dedicated** option for the Environment field.
 </li>
-<li>If you have an IBMid and have access to the {{site.data.keyword.Bluemix_notm}} Public environment, click the {{site.data.keyword.avatar}} icon <img src="images/account_support.svg" alt="Avatar icon" /> in the menu bar and then click **Get help**. On the page that is displayed, click **GET IN TOUCH**.</li>
-<li>If you don't have an IBMid, you can contact someone in your organization who does have one, or work with your IBM representative.
+<li>If you have a {{site.data.keyword.Bluemix_notm}} ID and have access to the {{site.data.keyword.Bluemix_notm}} Public environment, click the {{site.data.keyword.avatar}} icon <img src="images/account_support.svg" alt="Avatar icon" /> in the menu bar and then click **Get help**. On the page that is displayed, click **GET IN TOUCH**.</li>
+<li>If you don't have a {{site.data.keyword.Bluemix_notm}} ID, you can contact someone in your organization who does have one, or work with your 21Vianet representative.
 <p>**Note**: At your request, a list of users in your org who can serve as contacts for support tickets can be displayed on the **Support** page in the {{site.data.keyword.Bluemix_notm}} user interface in your Dedicated environment.</p></li>
 </ul>
 
-If you are a {{site.data.keyword.Bluemix_notm}} Dedicated customer in China, you can request support from the [UNISYS Service Management IBM Bluemix page](https://chinabluemix.itsm.unisysedge.cn){: new_window}. In addition, customers in China can get free support at [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window}.
+In addition, customers in China can get free support at [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window}.
 
 
 ### Contacting support for {{site.data.keyword.Bluemix_notm}} Local
 {: #contacting-bluemix-support-local}
-
+	
 <!-- Michelle links to this anchor  -->
 
-If you are a {{site.data.keyword.Bluemix_notm}} Local customer, support is provided by the IBM {{site.data.keyword.Bluemix_notm}} support team. However, because you might not have an IBMid, you have a few different options for getting support.
+If you are a {{site.data.keyword.Bluemix_notm}} Local customer, support is provided by the {{site.data.keyword.Bluemix_notm}} support team. However, because you might not have an ID, you have a few different options for getting support.
 
 <ul>
-<li>Contact support by opening a new ticket using the
-<a href="http://ibm.biz/bluemixsupport" target="_blank">IBM {{site.data.keyword.Bluemix_notm}} Support</a> help page. You can use an email address or your IBMid for this form. Select the **{{site.data.keyword.Bluemix_notm}} Local** option for the  Region field.
-<p>Form submissions are monitored from Sunday 10:00 PM UTC through Friday 11:59 PM UTC.</p>
+<li>Contact support by opening a new ticket using the <a href="https://chinabluemix.itsm.unisysedge.cn" target="_blank">Bluemix Support Ticketing System</a> page. You can use an email address for this form. Select the **{{site.data.keyword.Bluemix_notm}} Local** option for the  Region field.
 </li>
-<li>If you have an IBMid and have access to the {{site.data.keyword.Bluemix_notm}} Public environment, click the {{site.data.keyword.avatar}} icon <img src="images/account_support.svg" alt="Avatar icon" /> in the menu bar and then click **Get help**. On the page that is displayed, click **GET IN TOUCH**.</li>
-<li>If you don't have an IBMid, you can contact someone in your organization who does have one, or work with your IBM representative.
+<li>If you have a {{site.data.keyword.Bluemix_notm}} ID and have access to the {{site.data.keyword.Bluemix_notm}} Public environment, click the {{site.data.keyword.avatar}} icon <img src="images/account_support.svg" alt="Avatar icon" /> in the menu bar and then click **Get help**. On the page that is displayed, click **GET IN TOUCH**.</li>
+<li>If you don't have a {{site.data.keyword.Bluemix_notm}} ID, you can contact someone in your organization who does have one, or work with your 21Vianet representative.
 <p>**Note**: At your request, a list of users in your org who can serve as contacts for support tickets can be displayed on the **Support** page in the {{site.data.keyword.Bluemix_notm}} user interface in your Local environment.</p></li>
 </ul>
 
@@ -228,9 +214,8 @@ If you are a {{site.data.keyword.Bluemix_notm}} Local customer, support is provi
 
 When you contact support, you can request a specific severity level, depending on the type and urgency of the problem. The severity level might affect how quickly your issue is addressed.
 
-The following table lists some common examples of support issues, suggested severity levels and the response time objectives. The response time objectives are used to describe IBM's goals only, and don't represent a guarantee of performance.
+The following table lists some common examples of support issues, suggested severity levels and the response time objectives. The response time objectives are used to describe 21Vianet's goals only, and don't represent a guarantee of performance.
 
-**Hours of operation:** Sunday 10:00 PM GMT – Friday 11:59 PM GMT (excluding US/Italian/Australian holidays). For more information about the holiday schedule, see [Bluemix Support Holidays](http://ibm.biz/bluemixholidays){: new_window}. 
 
 
 Severity | Severity definition | Response time objectives | Response time coverage
@@ -252,7 +237,7 @@ To report a potential security vulnerability, complete the following steps:
   2. Clearly describe in the ticket summary that the ticket is about a potential security vulnerability.
   2. Provide details of the potential security vulnerability by including one of the following items:
        * A phone number at which you can be reached to discuss the issue.
-	   * Details of the issue. You must encrypt the details as a block of text in the body of the ticket, and provide instructions on how IBM Support can securely contact you to obtain decryption instructions.
+	   * Details of the issue. You must encrypt the details as a block of text in the body of the ticket, and provide instructions on how Support team can securely contact you to obtain decryption instructions.
 	   
 	   
 	   
@@ -260,7 +245,7 @@ To report a potential security vulnerability, complete the following steps:
 ### Escalating a support ticket
 {: #escalation}
 
-With standard or premium support, in a country or region other than China, if you have not received a timely response to a support ticket, or if you feel that a support ticket is not being addressed appropriately, you can escalate the support ticket. Through the support ticket escalation process, IBM management reviews your concerns and works with you to improve the support experience.
+With standard or premium support, if you have not received a timely response to a support ticket, or if you feel that a support ticket is not being addressed appropriately, you can escalate the support ticket. Through the support ticket escalation process, 21Vianet management reviews your concerns and works with you to improve the support experience.
 
 To submit an escalation request, complete the following steps:
   1. Open a new support ticket with the summary **Escalation Request**.
@@ -324,7 +309,7 @@ The following table lists the supported national languages and language codes fo
 ## Satisfaction surveys for {{site.data.keyword.Bluemix_notm}} support  
 {: #survey}
 
-IBM periodically sends surveys to Bluemix customers to obtain their feedback on recent experiences with the customer support.  The survey focuses on the support quality and the overall experience.  IBM management reviews the survey results to improve the support experience. 
+21Vianet periodically sends surveys to Bluemix customers to obtain their feedback on recent experiences with the customer support.  The survey focuses on the support quality and the overall experience.  21Vianet management reviews the survey results to improve the support experience. 
 
 
 # rellinks
@@ -333,9 +318,7 @@ IBM periodically sends surveys to Bluemix customers to obtain their feedback on 
 ## general
 {: #general}
 
-  * [Bluemix support portal](https://support.ibmcloud.com){: new_window} 
-  * [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html){: new_window} 
+  * [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} 
+  * [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} 
   * [Installing the cf command tool](../starters/install_cli.html){: new_window} 
-  * [SaaS Support Handbook](http://www-01.ibm.com/software/support/handbook.html){: new_window}
-  * [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix){: new_window} 
   

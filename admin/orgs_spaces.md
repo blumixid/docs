@@ -17,7 +17,7 @@ copyright:
 
 # Managing organizations and spaces
 {: #orgsspacesusers}
-Last updated: 16 August 2016
+Last updated: 5 September 2016
 {: .last-updated}
 
 As an account owner, you can manage your organizations by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Manage Organizations** page. Organization managers can also use the Manage Organizations page to manage any organizations where they are set as the manager.
@@ -44,7 +44,7 @@ Organizations can span multiple regions, and they are defined by the following i
 <dd>Provide the route on the internet that is allocated to the organization. A route has a sub-domain and a domain. A sub-domain is typically the application name. A domain might be a system domain, or a custom domain that you registered for your application. See [Managing custom domains](orgs_spaces.html#managedomains).<br/>
 <p>**Note**: If you add a custom domain, you must configure your DNS server to resolve your custom domain to point to the {{site.data.keyword.Bluemix_notm}} system domain. In this way, when {{site.data.keyword.Bluemix_notm}} receives a request for your custom domain, it can properly route it to your application.</p></dd>
 <dt>Quota</dt>
-<dd>Represents the resource limits for the organization, including the number of services and the amount of memory that can be allocated for use by the organization. Quotas are assigned when organizations are created. Any application or service in a space of the organization contributes to the usage of the quota. With the Pay-As-You-Go or Subscription plans, you can adjust your quota for Cloud Foundry applications and containers as the needs of your organization change. See [Managing quota](orgs_spaces.html#managequota).</dd>
+<dd>Represents the resource limits for the organization, including the number of services and the amount of memory that can be allocated for use by the organization. Quotas are assigned when organizations are created. Any application or service in a space of the organization contributes to the usage of the quota. With the Subscription plans, you can adjust your quota for Cloud Foundry applications as the needs of your organization change. See [Managing quota](orgs_spaces.html#managequota).</dd>
 </dl>
 
 In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable collaboration among team members and to facilitate the logical grouping of project resources in the following ways:
@@ -56,7 +56,7 @@ In {{site.data.keyword.Bluemix_notm}}, you can use organizations to enable colla
 
 When you create an organization, the organization name must be unique in {{site.data.keyword.Bluemix_notm}}. If the organization name is already in use by another {{site.data.keyword.Bluemix_notm}} Public, Dedicated, or Local user, then you must specify a new name. After you create the organization, you will be automatically assigned the *Organization Manager* permission, which enables you to edit the organization name, add team members, and create or delete spaces in the organization.
 
-You must contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport){: new_window} to delete an organization. When you request for the support team to delete an organization, all the spaces, applications, and services within the organization are deleted.
+You must open a support ticket from the [{{site.data.keyword.Bluemix_notm}} Support Ticketing System](http://chinabluemix.itsm.unisysedge.cn/){: new_window} to delete an organization. When you request for the support team to delete an organization, all the spaces, applications, and services within the organization are deleted.
 
 The following [user roles](users_roles.html#userrolesinfo) can be assigned to team members in an organization:
 
@@ -86,7 +86,9 @@ After you add team members to an organization, you can grant them permissions to
 ## Creating orgs and spaces
 {: #createorg}
 
-Only account owners with Pay-As-You-Go accounts can create an organization. You can create an organization by completing the following steps:
+<!--Crystal: Need to double check with dev whether this section need to be deleted if subscription account can't create orgs. Only account owners with Pay-As-You-Go accounts can create an organization. -->  
+
+You can create an organization by completing the following steps:
 
 1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Manage Organizations** page.
 2. Click **Add a New Org**.
@@ -118,7 +120,7 @@ Take the following steps to rename your organization:
 ## Deleting an existing org or space
 {: #deleteorgs}
 
-As the account owner, you can contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport){: new_window} to delete an organization. 
+As the account owner, you can open a support ticket from the [{{site.data.keyword.Bluemix_notm}} Support Ticketing System](http://chinabluemix.itsm.unisysedge.cn/){: new_window} to delete an organization. 
 
 **Note**: Deleting operations cannot be reversed. You lose all your applications and services that are associated with the organization.
 
@@ -134,7 +136,7 @@ You can delete a space from the **Manage Organizations** page:
 
 Complete the following steps to list the members for a specific organization:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Manage Organizations**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Manage Organizations** page.
 2. Identify the organization that you want to view the members for, and click **View Details**.
 3. Click **Edit**.
 4. You can see the members of your organization and their roles in the **Users** tab.
@@ -158,7 +160,7 @@ To view the quota for your org, complete the following steps:
 3. Click **Edit**.
 4. Select the **Quota** tab.
 
-To update the quota for your organization, you must open a support ticket. For more information about openeing a support ticket, see [Getting customer support](../support/index.html#contacting-support).For more information about quota for containers, see [Quota](../containers/container_planning_org_ov.html##container_planning_quota) in the Containers documentation.
+To update the quota for your organization, you must open a support ticket. For more information about openeing a support ticket, see [Getting customer support](../support/index.html#contacting-support).
 
 ## Managing domains
 {: #managedomains}

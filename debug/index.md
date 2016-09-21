@@ -16,10 +16,10 @@ copyright:
 # Debugging
 {: #debugging}
 
-*Last updated: 25 May 2016*
+Last updated: 13 September 2016
 {: .last-updated}
 
-If you experience problems with {{site.data.keyword.Bluemix}}, you can view the log files to investigate the problems and debug the errors. 
+If you experience problems with {{site.data.keyword.Bluemix_notm}}, you can view the log files to investigate the problems and debug the errors. 
 {:shortdesc}
 
 Logs provide information such as whether a job runs successfully, or whether it fails. They also provide relevant information that can be used to debug and determine the cause of a problem.
@@ -38,7 +38,7 @@ The following procedure shows how you can use the `cf logs` command to debug sta
 
   1. Connect to {{site.data.keyword.Bluemix_notm}} by entering the following code in the cf command line interface:
      ```
-	 cf api https://api.ng.bluemix.net
+	 cf api https://api.chinabluemix.net
 	 ```
 	 
   2. Log in to {{site.data.keyword.Bluemix_notm}} by entering `cf login`.
@@ -49,9 +49,7 @@ The following procedure shows how you can use the `cf logs` command to debug sta
 	```
   4. View the first error that is displayed in the log.
   
-If you use the IBM Eclipse tools for {{site.data.keyword.Bluemix_notm}} plug-in to deploy applications, in the **Console** tab of the Eclipse tool, you can see logs that are similar to the cf logs output. You can also open a separate Eclipse window to track `the logs` when you deploy the application.
 
-In addition to the `cf logs` command, in {{site.data.keyword.Bluemix_notm}} you can also use the Monitoring and Analytics service to collect the log details. In addition, the Monitoring and Analytics service monitors the performance, health, and availability of your applications. It also provides log analytics for Node.js and Liberty runtime applications.  
 
 ### Debugging staging errors for a Node.js application
 
@@ -117,8 +115,6 @@ Specifically, logging to stdout and stderr can be enabled. For more information 
   
 When you enter `cf logs appname --recent` in the cf command line interface, only the most recent logs are displayed. To view the logs for errors that occurred earlier, you must retrieve all the logs and search for the errors. To retrieve all the logs for your application, use one of the following methods:
 <dl> 
-<dt><strong>{{site.data.keyword.Bluemix_notm}} Monitoring and Analytics Service</strong></dt> 
-<dd>The integrated log file search and analysis capabilities of the Monitoring and Analytics Service can help you to quickly identify errors. For more information, see <a href="../services/monana/index.html#gettingstartedtemplate" target="_blank">Monitoring and Analytics</a>.</dd> 
 <dt><strong>Third-party tools</strong></dt> 
 <dd>You can collect and export the logs from your application to an external log host. For more information, see <a href="../monitor_log/monitoringandlogging.html#thirdparty_logging" target="_blank">Configuring external logging</a>.</dd> 
 <dt><strong>Scripts to collect and export the logs </strong></dt> 
@@ -143,7 +139,7 @@ Depending on the way the new code is deployed, choose one of the following metho
 
   * For new code that is deployed from the cf command line, check the output from the *cf push* command. In addition, you can use the *cf logs* command to find more clues for solving the problem. For more information about how to use the *cf logs* command, see [viewing logs from the command line interface](../monitor_log/monitoringandlogging.html#viewing_logs_cli){: new_window}. 
 
-  * For new code that is deployed from a GUI such as the {{site.data.keyword.Bluemix_notm}} user interface, DevOps Delivery Pipeline, or Travis-CI, you can check the logs from the interface. For example, if you deploy the new code from {{site.data.keyword.Bluemix_notm}} user interface, you can go to Dashboard, find your app, and then view logs for clues.   For more information about how to view logs from the {{site.data.keyword.Bluemix_notm}} user interface, see [Viewing logs from Bluemix Dashboard](../monitor_log/monitoringandlogging.html#viewing_logs_UI){: new_window}.  
+  * For new code that is deployed from a GUI such as the {{site.data.keyword.Bluemix_notm}} user interface, you can check the logs from the interface. For example, if you deploy the new code from {{site.data.keyword.Bluemix_notm}} user interface, you can go to Dashboard, find your app, and then view logs for clues.   For more information about how to view logs from the {{site.data.keyword.Bluemix_notm}} user interface, see [Viewing logs from Bluemix Dashboard](../monitor_log/monitoringandlogging.html#viewing_logs_UI){: new_window}.  
  
 
 # rellinks
@@ -153,7 +149,6 @@ Depending on the way the new code is deployed, choose one of the following metho
 {: #general}
 
   * [Droplet Execution Agent (DEA)](http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html){: new_window}
-  * [Getting started with IBM Monitoring and Analytics for Bluemix service](../services/monana/index.html#gettingstartedtemplate){: new_window}
   * [How Bluemix works](../public/index.html#howwork){: new_window}
   * [Installing the cf command tool](../starters/install_cli.html){: new_window}
   * [Viewing logs](../monitor_log/monitoringandlogging.html#viewing_logs){: new_window}

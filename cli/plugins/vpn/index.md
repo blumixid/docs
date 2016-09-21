@@ -11,11 +11,11 @@ copyright:
 
 
 # {{site.data.keyword.vpn_short}} CLI plug-in for cf CLI
-*Last updated: 23 June 2016*
+Last updated: 23 June 2016
 {: .last-updated}
 
 
-You can use the command line interface (CLI) to configure and manage your {{site.data.keyword.vpn_full}} service. The {{site.data.keyword.vpn_short}} CLI plug-in is available in two versions: one for use with the Cloud Foundry CLI plug-in and the other for use with the {{site.data.keyword.Bluemix}} CLI plug-in. Both versions of the plug-in provide the same functionality.  
+You can use the command line interface (CLI) to configure and manage your {{site.data.keyword.vpn_full}} service. The {{site.data.keyword.vpn_short}} CLI plug-in is available in two versions: one for use with the Cloud Foundry CLI plug-in and the other for use with the {{site.data.keyword.Bluemix_notm}} CLI plug-in. Both versions of the plug-in provide the same functionality.  
 {:shortdesc}
 
 The {{site.data.keyword.vpn_short}} plug-in is available for Windows, MAC, and Linux operating systems. Ensure that you use the one that is applicable to you.

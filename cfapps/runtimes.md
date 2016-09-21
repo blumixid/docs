@@ -14,9 +14,10 @@ copyright:
 {:shortdesc: .shortdesc}
 
 # Runtimes overview
-*Last updated: 11 November 2015*
+Last updated: 5 September 2016
+{: .last-updated}
 
-Use runtimes to get your app up and running quickly, with no need to set up and manage VMs and operating systems. Runtimes in {{site.data.keyword.Bluemix}} are based on Cloud Foundry, which means that community buildpacks or tooling plug-ins for Cloud Foundry also work with {{site.data.keyword.Bluemix_notm}}. Check out the growing list of runtimes to get started.
+Use runtimes to get your app up and running quickly, with no need to set up and manage VMs and operating systems. Runtimes in {{site.data.keyword.Bluemix_notm}} are based on Cloud Foundry, which means that community buildpacks or tooling plug-ins for Cloud Foundry also work with {{site.data.keyword.Bluemix_notm}}. Check out the growing list of runtimes to get started.
 {:shortdesc}
 
 <ul class="runtimeIconList">
@@ -29,6 +30,11 @@ Use runtimes to get your app up and running quickly, with no need to set up and 
 <p class="runtimeIcon"><img src="images/node_featured.svg" alt="Node.js" /></p>
 <p class="runtimeTitle">SDK for Node.js</p>
 <p class="runtimeLink"><a format="html" href="../runtimes/nodejs/index.html" scope="peer">VIEW DOCS</a></p>
+</li>
+<li>
+<p class="runtimeIcon"><img src="images/dotnet_featured.svg" alt="ASP.NET Core" /></p>
+<p class="runtimeTitle">ASP.NET Core</p>
+<p class="runtimeLink"><a format="html" href="../runtimes/dotnet/index.html" scope="peer">VIEW DOCS</a></p>
 </li>
 <li>
 <p class="runtimeIcon"><img src="images/xpages_featured.svg" alt="XPages" /></p>

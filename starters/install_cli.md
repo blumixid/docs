@@ -4,7 +4,7 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015，2016
 
  
 
@@ -28,16 +28,16 @@ copyright:
 {:user_ID: data-hd-keyref="user_ID"}
 
 # Deploying your app with the command line interface
-*Last updated: 24 February 2016*
+Last updated: 14 September 2016
 {: .last-updated}
 
 You can use the command line interface to deploy and modify applications and service instances.
 {:shortdesc}
 
-Before you begin, install the Cloud Foundry and {{site.data.keyword.Bluemix}} command line interfaces.
+Before you begin, install the {{site.data.keyword.Bluemix_notm}} and Cloud Foundry command line interfaces.
 
 <p>
-<a class="xref" href="https://github.com/cloudfoundry/cli/releases" target="_blank" title="(Opens in a new tab or window)"><img class="image" src="images/btn_cf_commandline.svg" alt="Download Cloud Foundry command line interface" /> </a>  <a class="xref" href="http://clis.ng.bluemix.net/ui/home.html" target="_blank" title="(Opens in a new tab or window)"><img class="image" src="images/btn_bx_commandline.svg" alt="Download {{site.data.keyword.Bluemix}} command line interface" /> </a>
+<a class="xref" href="http://clis.ng.bluemix.net/ui/home.html" target="_blank" title="(Opens in a new tab or window)"><img class="image" src="images/btn_bx_commandline.svg" alt="Download {{site.data.keyword.Bluemix_notm}} command line interface" /> </a>  <a class="xref" href="https://github.com/cloudfoundry/cli/releases" target="_blank" title="(Opens in a new tab or window)"><img class="image" src="images/btn_cf_commandline.svg" alt="Download Cloud Foundry command line interface" /> </a> 
 </p>
 
 **Restriction:** The command line tools are not supported by Cygwin. Use the tools in a command line window other than the Cygwin command line window.
@@ -47,22 +47,22 @@ After the command line interfaces are installed, you can get started:
 
   1. {: download} Download your starter code. 
       
-    <a class="xref" href="http://bluemix.net" target="_blank" title="(Opens in a new tab or window)"><img class="image" src="images/btn_starter-code.svg" alt="Download starter code" /> </a>
+    <a class="xref" href="http://chinabluemix.net" target="_blank" title="(Opens in a new tab or window)"><img class="image" src="images/btn_starter-code.svg" alt="Download starter code" /> </a>
   
   2. Extract the package to a new directory to set up your development environment.
   3. Change to your new directory.
   
   <pre class="pre">cd <var class="keyword varname">your_new_directory</var></pre>
   
-   4.  Make changes to your app code as you see fit. We suggest making sure the app runs locally before you deploy it back to {{site.data.keyword.Bluemix}}.<br><br>One file you should take note of is the `manifest.yml` file. When deploying your app back to {{site.data.keyword.Bluemix}}, this file is used to determine your application’s URL, memory allocation, number of instances, and other crucial parameters. You can [read more about the manifest file](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html){: new_window} in the Cloud Foundry documentation.
+  4.  Make changes to your app code as you see fit. We suggest making sure the app runs locally before you deploy it back to {{site.data.keyword.Bluemix_notm}}.<br><br>One file you should take note of is the `manifest.yml` file. When deploying your app back to {{site.data.keyword.Bluemix_notm}}, this file is used to determine your application’s URL, memory allocation, number of instances, and other crucial parameters. You can [read more about the manifest file](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html){: new_window} in the Cloud Foundry documentation.
   
-  5. Connect to {{site.data.keyword.Bluemix}}.
+  5. Connect to {{site.data.keyword.Bluemix_notm}}.
   
-  <pre class="pre">bluemix api https://api.<span class="keyword" data-hd-keyref="DomainName">DomainName</span></pre>
+  <pre class="pre">bluemix api https://api.chinabluemix.net</pre>
   
   6. Log in to {{site.data.keyword.Bluemix_notm}}.
  
-  <pre class="pre">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o <var class="keyword varname" data-hd-keyref="org_name">org_name</var> -s <var class="keyword varname" data-hd-keyref="space_name">space_name</var></pre>
+  <pre class="pre">bluemix login -u <var class="keyword varname" data-hd-keyref="user_ID">username</var> -o "<var class="keyword varname" data-hd-keyref="org_name">org_name</var>" -s "<var class="keyword varname" data-hd-keyref="space_name">space_name</var>"</pre>
   
   7. Deploy your app to {{site.data.keyword.Bluemix_notm}}. For more information about cf push command, see [Uploading your application](/docs/starters/upload_app.html).
   

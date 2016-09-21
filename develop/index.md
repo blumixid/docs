@@ -4,7 +4,7 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015，2016
 
  
 
@@ -19,7 +19,8 @@ copyright:
 #Developing apps 
 {: #develop-apps-IDS}
 
-*Last Updated: 07 December 2015*  
+Last Updated: 07 December 2015
+{: .last-updated}
 
 You can develop applications by using an integrated development environment (IDE) or a text editor, or you can use {{site.data.keyword.jazzhub}}. 
 {: shortdesc}

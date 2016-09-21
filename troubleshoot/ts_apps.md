@@ -19,7 +19,7 @@ copyright:
 # Troubleshooting for managing apps
 {: #managingapps}
 
-Last updated: 18 August 2016
+Last updated: 13 September 2016
 {: .last-updated} 
 
 General problems with managing applications might include applications can't be updated, double-byte characters aren't displayed. However, in many cases, you can recover from these problems by following a few easy steps.
@@ -135,7 +135,7 @@ Take the following steps to delete the unused route:
 	 ```
 	 For example:
 	 ```
-	 cf delete-route mybluemix.net -n app001
+	 cf delete-route mychinabluemix.net -n app001
 	 ```
 
 
@@ -160,7 +160,7 @@ Ensure that you created a space in your current organization.  To create a space
   * Click the {{site.data.keyword.avatar}} icon ![Avatar icon](images/account_support.svg) to open the Account and Support widget, select the organization that you want to create the space in, and then click **Create a Space**.
   * In the cf command line interface, type `cf create-space <space_name> -o <organization_name>`.
 
-Try again. If you see this message again, go to the [Bluemix status](http://ibm.biz/bluemixstatus){: new_window} page to check whether a service or component has an issue.
+Try again. If you see this message again, go to the [Bluemix status](https://status.chinabluemix.net/){: new_window} page to check whether a service or component has an issue.
 
 
 
@@ -220,28 +220,6 @@ For more information about the commands that you can use in other program langua
 
 
 
-## Unable to deploy apps by using IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}
-{: #ts_bm_tools_facet}
-
-When an unsupported facet is applied to your Eclipse project, you might not be able to deploy your apps to {{site.data.keyword.Bluemix_notm}} by using the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}. 
-
- 
-
-You can successfully deploy your app to {{site.data.keyword.Bluemix_notm}} by using the Cloud Foundry CLI. However, you cannot deploy the app to {{site.data.keyword.Bluemix_notm}} by using the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, and you see the error message: `Project facet <facet_name> is not supported.` For example, `Project facet Cloud Foundry Standalone Application version 1.0 is not supported.`
-{: tsSymptoms}
-
- 
-
-The IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} map projects to {{site.data.keyword.Bluemix_notm}} runtimes by project facets. Facets define the requirements for Java EE projects in Eclipse, and are used as part of the runtime configuration so that different runtimes are associated with different projects. If the facet that is applied to the project is not supported by the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, you might not be able to deploy your app by using the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
-{: tsCauses}
-
-
-You must remove the facet from the Eclipse project so that you can deploy your app by using the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
-{: tsResolve} 
-
-To remove the facet, in the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, click **Project > Properties > Project Facets** for the project. Then, clear the check box for the unsupported facet. 
-
-
 
 ## 502 Bad Gateway errors are received
 {: #ts_502_error}
@@ -262,7 +240,7 @@ Other less common causes of a Bad Gateway error are Internet service provider (I
 
  
 
-If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first check the [{{site.data.keyword.Bluemix_notm}} status](http://ibm.biz/bluemixstatus){: new_window} page. You might want to use the service in another {{site.data.keyword.Bluemix_notm}} region as a workaround. Detailed information is available in [Using services in another region](../services/reqnsi.html#cross_region_service){: new_window}. If the service status is normal, try the following steps to solve the problem: 
+If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first check the [{{site.data.keyword.Bluemix_notm}} status](https://status.chinabluemix.net/){: new_window} page. If the service status is normal, try the following steps to solve the problem: 
 {: tsResolve}
 
   * Retry the action:
@@ -290,7 +268,7 @@ The default disk quota that is allocated for an app is 1 GB. If you need more di
 {: tsCauses}
 
  
-Use one of the following methods to specify your disk quota. The maximum disk quota that you can specify is 2 GB. If 2 GB is still not enough, try an external service such as [Object Store](../services/ObjectStorage/index.html){: new_window}.
+Use one of the following methods to specify your disk quota. The maximum disk quota that you can specify is 2 GB. If 2 GB is still not enough, try an external service.
 {: tsResolve}
 
   * In the manifest.yml file, add the following item:
@@ -304,37 +282,6 @@ Use one of the following methods to specify your disk quota. The maximum disk qu
 
 	
 	
-## Cannot add Git repository
-{: #ts_cannot_addgit}
-
-After you create an app on the Dashboard, you click ADD GIT to create a Git repository, but you cannot proceed.
-
-
-
-When you click **ADD GIT**, a window opens and one of these issues occur:
-{: tsSymptoms} 
-
-  * The window hangs with a blank screen.
-  * A message states that a problem exists with 3rd party cookies.
-
-
-
-Your browser might be configured to prevent a cookie from being set. That cookie must be set from the IBM® Bluemix DevOps Services site in the hub.jazz.net internet domain from within the context of the {{site.data.keyword.Bluemix_notm}} console.
-{: tsCauses}  
-
- 
-
-You can fix this problem in one of the following ways:
-{: tsResolve}
-
-  * Follow the instructions that are in the window that opens from the {{site.data.keyword.Bluemix_notm}} console. Click the button. Another browser window opens temporarily. In that window, DevOps Services sets the authentication cookie.
-  * In another browser tab, go to https://hub.jazz.net and log in. Return to the {{site.data.keyword.Bluemix_notm}} console and refresh the page. Click **ADD GIT** again.
-  * Change your browser settings to enable 3rd party cookies and click ADD GIT again. For details about configuring the settings, see the documentation for your browser:
-    * [Mozilla Firefox](https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences#w_how-do-i-change-cookie-settings){: new_window}
-	* [Google Chrome](https://support.google.com/chrome/answer/95647){: new_window}
-	* [Apple Safari](https://support.apple.com/kb/PH17191){: new_window}
-	* [Microsoft Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies#ie=ie-11){: new_window}
-If those workarounds do not fix the problem, send an email to idslogin@jazz.net.
 
 
 
@@ -354,40 +301,6 @@ Use third-party services that do not rely on the GCM service as a workaround, fo
 {: tsResolve}
 
 
-
-## Org's services limit is exceeded
-{: #ts_servicelimit}
-
-If you are a trial account user, you might be unable to create an application in {{site.data.keyword.Bluemix_notm}} if you have exceeded your organization's services limit.
- 
-
-When you try to create an application in {{site.data.keyword.Bluemix_notm}}, you see the following error message: 
-{: tsSymptoms}
-
-`BXNUI2032E: The <service_instances> resource wasn't created. While Cloud Foundry was being contacted to create the resource, an error occurred. Cloud Foundry message: "You have exceeded your organization's services limit."`
-
-
-
-This error occurs when you have exceeded the limit on the number of service instances that you can have for your account. The maximum number of services instances for a trial account is 10.
-{: tsCauses} 
-
- 
-
-Delete any services instances that are not needed, or remove the limit on the number of service instances that you can have.
-{: tsResolve}
- 
-  * To delete a services instance, you can use the {{site.data.keyword.Bluemix_notm}} user interface or the command line interface.
-    To use the {{site.data.keyword.Bluemix_notm}} user interface to delete a service instance, complete the following steps:
-	  1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, click the service that you want to delete.  The service tile displays.
-	  2. On the service tile, click the **Menu** icon.
-	  3. Click **Delete Service**. After you delete the service instance, you will be prompted to restage the application that the service instance was bound to. 
-    To use the command line interface to delete a service instance, complete the following steps:
-	  1. Unbind the service instance from an application by typing `cf unbind-service <appname> <service_instance_name>`.
-	  2. Delete the service instance by typing `cf delete-service <service_instance_name>`.
-	  3. After you delete the service instance, you might want to restage your application that the service instance was bound to by typing `cf restage <appname>`.
-  * To remove the limit on the number of service instances that you can have, convert your trial account to a pay account. For information about how to convert your trial account to a pay account, see [How to change your plan](../pricing/index.html#changing){: new_window}.
-
-  
   
 ## Executables can't be run on {{site.data.keyword.Bluemix_notm}}
 {: #ts_executable}
@@ -418,48 +331,6 @@ cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/nul
 ```
 
 
-## Org's memory limit is exceeded
-{: #ts_outofmemory}
-
-If you are a trial account user, you might be unable to deploy an app to {{site.data.keyword.Bluemix_notm}} if you have exceeded the memory limit of your organization. You can either reduce the memory that your apps use or increase the memory quota of your account. 
-
-
-
-When you deploy an app to {{site.data.keyword.Bluemix_notm}}, you see the following error message:
-{: tsSymptoms} 
-
-`FAILED Server error, status code: 400, error code: 100005, message: You have exceeded your organization's memory limit.`
-
- 
-
-This error occurs when the amount of memory that is remaining for your organization is less than the amount of memory that is required by the app that you want to deploy. The maximum memory quota for a trial account is 2 GB.
-{: tsCauses}
-
-
-
-You can either increase the memory quota of your account, or reduce the memory that your apps use.
-{: tsResolve} 
-
-  * To increase the memory quota of your account, convert your trial account to a pay account. For information about how to convert your trial account to a pay account, see [Pay accounts](../pricing/index.html#pay-accounts){: new_window}. 
-  * To reduce the memory that your apps use, use either the {{site.data.keyword.Bluemix_notm}} user interface or the cf command line interface.
-    If you use the {{site.data.keyword.Bluemix_notm}} user interface, complete the following steps:
-	  1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, select your application. The app details page opens.
-	  2. In the runtime pane, you can reduce the maximum memory limit or the numbers of app instances, or both, for your app. 
-	  
-	If you use the cf command line interface, complete the following steps:
-	
-	  1. Check how much memory is being used for your apps:
-	  ```
-	  cf apps
-	  ```
-	     The cf apps command lists all the apps that you deployed in your current space. The status of each app is also displayed.
-      2. To reduce the amount of memory that is used by your app, reduce the number of app instances or the maximum memory limit, or both:
-	  ```
-	  cf push appname -p app_path -i instance_number -m memory_limit
-      ```
-	  3. Restart your app for the changes to take effect.
-
-
 
 	  
 ## Apps are not automatically restarted
@@ -488,93 +359,7 @@ cf push appname -p app_path
 ```
 In addition, you can code the app to identify and recover from problems such as outages, exceptions, and connection failures. 
 
-	  
-
-## User-defined variables are lost when an application is pushed
-{: #ts_varsnotretained}
-
-When you push an app to {{site.data.keyword.Bluemix_notm}} from IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, the variables that you specified are reset unless you save the variables to the manifest file.
-
-
-
-The variables that you specified are lost after you push an app to {{site.data.keyword.Bluemix_notm}} from IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
-{: tsSymptoms} 
-
-
-The variables that you specified are saved only if you save them to the manifest file.
-{: tsCauses} 
-
- 
-
-When you push an app to {{site.data.keyword.Bluemix_notm}} from IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, select the **Save to the manifest file** check box in the Application details page of the Application wizard. Then, the variables that you specified in the wizard are saved to the manifest file for your application. The next time you open the wizard, the variables are displayed automatically.
-{: tsResolve}
-
-
-
-## {{site.data.keyword.Bluemix_notm}} Live Sync icons are not shown
-{: #ts_llz_lkb_3r}
-
-You created an app in IBM Bluemix DevOps Services, but the IBM Bluemix Live Sync icons are not shown in the Web IDE.
-
- 
-
-When you edit a Node.js app in the DevOps Services Web IDE, the {{site.data.keyword.Bluemix_notm}} live edit, quick restart, and debug icons are not shown.
-{: tsSymptoms}
-
- 
-
-The icons are not available in these circumstances:
-{: tsCauses}
-
-  * The `manifest.yml` file is not stored at the top level of your project.
-  * Your app is stored in a subdirectory rather than the top level of your project, but the path to the subdirectory is not specified in the `manifest.yml` file.
-  * The app does not contain a `package.json` file.
-
-
-Use one of the following methods to solve the problem: 
-{: tsResolve} 
-
-  * If the `manifest.yml` file is not stored at the top level of your project, store it there.
-  * If your app is stored in a subdirectory, specify the path to the subdirectory in the `manifest.yml` file.
-  ```
-   path: path_to_application
-   ```
-  * Create a `package.json` file that is in the same directory as your app.
-
-  
-  
-  
-<!-- begin STAGING ONLY --> 
-
-## Bluemix Live Sync Debug does not start from the command line
-{: #ts_no_debug}
-
-You enabled the IBM Bluemix Live Sync Debug feature for your app by using the command line, but you cannot access the Debug interface.  
-  
- 
-
-You enabled the Debug feature for your app by setting the **BLUEMIX_APP_MGMT_ENABLE** environment variable. However, you cannot access the Debug user interface at `app_url/bluemix-debug/manage`.
-{: tsSymptoms}
-
-
-
-The Debug feature cannot be enabled in these situations:
-{: tsCauses} 
-
-  * When the `manifest.yml` contains the command attribute
-  * When you use the **-c** option to push an app to {{site.data.keyword.Bluemix_notm}}
-
- 
-  
-Use one of the following options to resolve the issue: 
-{: tsResolve}
-
-  * The recommended practice is to use the IBM Node.js buildpack to start the app. For more information, see the Startup command section of the [Deploying a Node.js application to {{site.data.keyword.Bluemix_notm}}](../runtimes/nodejs/index.html#nodejs_runtime){: new_window} topic. 
-  * Disable the command for your existing app either by revising the command attribute in your `manifest.yml` to command: null or by editing your push command to include `-c null`. 
-  * Remove the **command** attribute from the `manifest.yml`. Then delete the current app from {{site.data.keyword.Bluemix_notm}} and push the app again.
-  
-<!-- end STAGING ONLY -->  
-  
+	    
   
 
   
@@ -586,7 +371,7 @@ You might not be able to locate your organization on {{site.data.keyword.Bluemix
   
  
 
-You can log in to the {{site.data.keyword.Bluemix_notm}} user interface successfully, but you cannot push apps by using the cf command line interface or the Eclipse plug-in.
+You can log in to the {{site.data.keyword.Bluemix_notm}} user interface successfully, but you cannot push apps by using the cf command line interface.
 {: tsSymptoms}
 
 When you try to push an application to {{site.data.keyword.Bluemix_notm}} by using the cf command line interface, you see one of the following error messages with the organization name specified in the message: 
@@ -596,24 +381,19 @@ When you try to push an application to {{site.data.keyword.Bluemix_notm}} by usi
 `Organization not found`
 
 
-When you try to push an application to {{site.data.keyword.Bluemix_notm}} by using the Cloud Foundry Eclipse Plugin, you see the following error message:
-
-`cloudspace not found.`
-
-
 
 This problem occurs because the API endpoint of the region that you want to work with is not specified, and the organization you're looking for might be in a different region.
 {: tsCauses} 
 
    
   
-If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the cf command line interface, enter the cf api command and specify the API endpoint of the region. For example, enter the following command to connect to the {{site.data.keyword.Bluemix_notm}} Europe United Kingdom region:
+If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the cf command line interface, enter the cf api command and specify the API endpoint of the region. For example, enter the following command to connect to the {{site.data.keyword.Bluemix_notm}} China:
 {: tsResolve}
 
 ```
-cf api https://api.eu-gb.bluemix.net
+cf api https://api.chinabluemix.net
 ```
-If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the Eclipse tools, you must first create a {{site.data.keyword.Bluemix_notm}} server and specify the API endpoint of the {{site.data.keyword.Bluemix_notm}} region that your organization was created in. For more information about using the Eclipse tools, see [Deploying apps with IBM Eclipse Tools for Bluemix](../manageapps/eclipsetools/eclipsetools.html){: new_window}.  
+
   
   
 
@@ -795,26 +575,6 @@ For more tips about Node.js apps, see [Tips for Node.js Applications](http://doc
 
 
 
-## Configuration errors appear in the `server.xml` file after you import a {{site.data.keyword.Bluemix_notm}} Liberty app from Bluemix DevOps Services to Eclipse
-{: #ts_eclipse}
-
-If you see configuration errors in the `server.xml` file after you import a {{site.data.keyword.Bluemix_notm}} Liberty app from IBM Bluemix DevOps Services to Eclipse, you might need to remove the `server.xml` file from the project. 
-
- 
-
-After you import a {{site.data.keyword.Bluemix_notm}} Liberty app from {{site.data.keyword.Bluemix_notm}} DevOps Services into the Eclipse, you see configuration errors within the `server.xml` file from Eclipse Problems view. 
-{: tsSymptoms}
-
- 
-
-Liberty buildpack uses the `server.xml` file to configure the app and generates a `runtime-vars.xml` file when the Liberty app is pushed to {{site.data.keyword.Bluemix_notm}}. When you import the app to Eclipse, the `runtime-vars.xml` file doesn't exist in your local environment.
-{: tsCauses}
-
- 
-
-You can resolve this problem by removing the server.xml file from the project. The buildpack creates the `server.xml` file dynamically when you push the app as a WAR app. For more information, see [Liberty for Java](../runtimes/liberty/index.html){: new_window}.
-{: tsResolve}
-	
 	
 ## Apps can't be staged by using custom buildpacks
 {: #ts_bp_compilation}
@@ -836,28 +596,6 @@ You can use the [git update](http://git-scm.com/docs/git-update-index){: new_win
 {: tsResolve}
 	
 	
-	
-## Unable to deploy an app from DevOps Services to {{site.data.keyword.Bluemix_notm}}
-{: #ts_devops_to_bm}
-
-You might not be able to push your app from IBM Bluemix DevOps Services to {{site.data.keyword.Bluemix_notm}} if the `manifest.yml` file is not present within your app.
-
- 
-
-When you deploy an app from DevOps Services to {{site.data.keyword.Bluemix_notm}}, an error message `Unable to detect a supported application type` might display.
-{: tsSymptoms}
-
- 
-
-This problem might happen because DevOps Services requires a `manifest.yml` file to deploy an app to {{site.data.keyword.Bluemix_notm}}.
-{: tsCauses}
-
- 
-
-To resolve this problem, you must create a `manifest.yml` file. For more information about how to create a `manifest.yml` file, see [Application manifest](../manageapps/depapps.html#appmanifest){: new_window}.
-{: tsResolve}	
-	
-
 
 
 
@@ -892,629 +630,6 @@ To use a custom buildpack for Meteor apps, use one of the following methods:
 	
   
 
-    
-## Deploy to {{site.data.keyword.Bluemix_notm}} button doesn't deploy an app
-{: #deploytobluemixbuttondoesntdeployanapp}
 
-If you click the Deploy to {{site.data.keyword.Bluemix_notm}} button and find that either the Git repository is not cloned or the app is not deployed, try the troubleshooting methods for the following issues.
-  * [The Bluemix DevOps Services project cannot be created](#project-cannot-be-created)
-  * [The Git repository is not found and cannot be cloned in DevOps Services](#repo-not-found)
-  * [The Git repository is cloned in DevOps Services, but the app is not deployed to {{site.data.keyword.Bluemix_notm}}](#repo-cloned-app-not-deployed)
 
-For more information about how to create the button, see Creating a Deploy to {{site.data.keyword.Bluemix_notm}} button.
-
-### The Bluemix DevOps Services project cannot be created
-{: #project-cannot-be-created}
-
-If you find that the DevOps Services project cannot be created, your IBM {{site.data.keyword.Bluemix_notm}} account might have expired.
-
-
-
-You click the **Deploy to Bluemix** button, but the "Creating project" step does not complete successfully.
-{: tsSymptoms} 
-
-
-Your {{site.data.keyword.Bluemix_notm}} account might have expired.
-{: tsCauses} 
-
-Use one of the following methods to fix the problem:
-{: tsResolve}
-
-  * Log in to {{site.data.keyword.Bluemix_notm}} and update your account information.
-  * Click the **Deploy to Bluemix** button again.
-
-
-### The Git repository is not found and cannot be cloned in DevOps Services
-{: #repo-not-found}
-
-If you find that the Git repository is not cloned, an issue might exist with the repository or with the button snippet.
-
-
-
-You click the **Deploy to Bluemix** button, but the Git repository is not found and cannot be cloned in DevOps Services. The "Cloning repository" step does not complete successfully. Therefore, the app cannot be deployed to {{site.data.keyword.Bluemix_notm}}. 
-{: tsSymptoms} 
-
-This problem might occur because of the following reasons:
-{: tsCauses} 
-
-  * The Git repository might not exist or be accessible.
-  * An issue might exist in the HTML or markdown for the button snippet.
-  * An issue might exist where special characters, query parameters, or fragments in the URL are preventing the Git repository from being accessed properly.
-
-Use one of the following methods to fix the problem:
-{: tsResolve}
-
-  * Verify that your Git repository exists, is publicly accessible, and that the URL is correct.
-  * Verify that the snippet does not contain any HTML or markdown errors.
-  * If special characters, query parameters, or fragments cause an issue with the Git repository URL, encode the URL in the button snippet.
-  
-
-  
-  
-### The Git repository is cloned in DevOps Services, but the app is not deployed to {{site.data.keyword.Bluemix_notm}}
-{: #repo-cloned-app-not-deployed}
-
-If you find that the app is not deployed, issues might exist with the code in the repository.
-     
-
-
-You click the **Deploy to Bluemix** button and the Git repository is cloned in DevOps Services, but the app is not deployed to {{site.data.keyword.Bluemix_notm}}. The "Deploying to Bluemix" step does not complete successfully.
-{: tsSymptoms} 
-
-This problem might occur because of the following reasons:
-{: tsCauses}  
-
-  * There might not be enough space in your {{site.data.keyword.Bluemix_notm}} space to deploy an app. 
-  * A required service might not be declared in the `manifest.yml` file.
-  * A required service might be declared in the `manifest.yml` file, but the service is already in the target space.
-  * An issue might exist with the code in the repository.
-To diagnose the issue, review the build and deploy logs from the deployment:
-  1. When the "Deploying to Bluemix" step does not complete successfully, click the link in the previous "Configuring pipeline" step to open the Delivery Pipeline.
-  2. Identify the failed build or deploy stage.
-  3. In the failed stage, click **View logs and history**.
-  4. Locate the error message.
-   
-Use one of the following methods to fix the problem:
-{: tsResolve}
-
-  * If the error message indicates that there is not enough space in the {{site.data.keyword.Bluemix_notm}} space to deploy the app, target another space.
-  * If the error message indicates that a required service is not declared in the `manifest.yml` file, notify the repository owner that the required service must be added.
-  * If the error message indicates that a required service already exists in the target space, select a different space to use.
-  * If the error message indicates that an issue exists with the build, fix any issues with the code that are preventing the app from being built. To verify that the code does not contain any issues, build the code by using Git commands:
-    1. Clone the Git repository:
-    ```
-    git clone <git_repository_URL>
-    ```
-	2. Open the app directory:
-	```
-	cd <appname>
-	```
-	3. Create the app:
-	```
-	<appname> create
-	```
-	4. If necessary, provision add-ons.
-	5. Add any configuration variables that are required.
-	6. Push the code:
-	```
-	git push <appname> master
-	```
-	7. Verify that the app builds correctly.
-	8. If necessary, run the post deployment command:
-	```
-	<appname> run
-	```
-	9. Open the app and verify that it is working correctly:
-	```
-	<appname> open
-	```
-	
-## Deploying an app from the run bar fails
-{: #deployinganappfromtherunbarfails}
-
-In this scenario, the deployment fails in a yellow, "not synchronized" state. 
-
-The app that you are deploying has the same route as another app that is running. To fix this issue, change the route to be unique.
-
-## Run bar cannot be found
-{: #runbarcannotbefound}
-
-If you don't see the run bar in the Eclipse Orion {{site.data.keyword.webide}}, one of these issues occurred:
-
-1. {{site.data.keyword.jazzhub}} isn't identifying your project as a project.
-   * Fix: In your project's root directory, create a `project.json` file.
-2. {{site.data.keyword.jazzhub_short}} failed to determine which folder your app is in.
-   * Fix: If your app is in a directory other than the project root, do one of these steps:
-      * In your project's root directory, create a `manifest.yml` file. Then, edit the file so that it points to the location of your app; for example, `path: path_to_your_app`
-      * Move your app so that it is in your project's root directory.
-3. {{site.data.keyword.jazzhub_short}} does not detect that your app is a Node.js app.
-   * Fix: In the app folder of your project, create a `package.json` file.
-   
-
-## GitHub hook isn't working
-{: #githubhookisntworking}
-
-If you configured your GitHub project to create work-item links when you push commits and the links aren't working as expected, follow these steps to find the problem:
-
-1. In your GitHub repo, click **Settings**.
-   ![GitHub settings link](images/githubSettings1_small.png)
-
-2. Click **Webhooks & services**.
-   ![GitHub web hooks and services link](images/githubHooks1_small.png)
-
-3. To view the message, hover over the {{site.data.keyword.jazzhub}} status icon.
-   ![Error message on service hook](images/troubleshoothook1_small.png)
-
-4. Resolve the error according to the GitHub message.
-
-5. To verify that the fix worked, commit and push another change, or go to the service page for {{site.data.keyword.jazzhub_short}} and click **Test service**.
-   ![GitHub Test service button](images/githubTestService_small.png)
-
-6. Verify that there are no errors by checking the status icon again.
-   ![Status icon without errors](images/githubResolved_small.png)
-
-For more information, see [Setting up GitHub for Bluemix DevOps Services projects](https://hub.jazz.net/docs/githubhooks/){: new_window}.
-
-
-# Troubleshooting for managing accounts
-{: #managingaccounts}
-
-You might experience problems when you manage your account, such as different apps share the same domain name, administrators can't view all organizations. However, in many cases, you can recover from these problems by following a few easy steps.
-{:shortdesc}
-
-
-## Account is inactive
-{: #ts_accnt_inactive}
-
-You are unable to create an app in {{site.data.keyword.Bluemix_notm}} if your account is inactive. You must contact the support team to fix this problem.
-
-
-
-When you try to create an app in {{site.data.keyword.Bluemix_notm}}, you see the following error message:
-{: tsSymptoms} 
-
-`BXNUI0096E: The app wasn't created. Your account is inactive because it was canceled or suspended.`
-
-
-The status of your {{site.data.keyword.Bluemix_notm}} account becomes inactive when the account is cancelled or suspended.
-{: tsCauses}
-
- 
-
-To reactivate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport.com){: new_window}. In the email, you must include the following information:
-{: tsResolve}
-
-  * The IBMid that you use to log in to {{site.data.keyword.Bluemix_notm}}.
-  * The name of the organization in which your app is being created. This information can help the support team determine whether you are assigned the correct roles or membership within your organization.
-
-
-
-## No space is associated with your current org
-{: #ts_no_space}
-
-You are unable to create an application if no space is associated with your current organization.
-
-
-
-When you try to create an app in {{site.data.keyword.Bluemix_notm}}, you see the following error message:
-{: tsSymptoms} 
-
-
-`BXNUI0097E: Before you can add an app, at least one space must be associated with your organization and region. On the Dashboard, click **Create a Space**. When the space is created, try again.`
-
-
-
-Apps in {{site.data.keyword.Bluemix_notm}} must be created within a space under your organization.
-{: tsCauses} 
-
- 
-
-To create a space, use one of the following methods: 
-{: tsResolve}
- 
-  * On the {{site.data.keyword.Bluemix_notm}} Dashboard, select the organization in which you want to create the space, then click **Create a Space**.
-  * In the cf command line interface, type ```cf create-space <space_name> -o <organization_name>```.
-  
-  
-  
-  
-## Apps share same domain name
-{: #ts_domain_diff}
-
-You might notice that several applications share the same URL in {{site.data.keyword.Bluemix_notm}}.
-
- 
-
-This problem might happen when you assign the same URL route for different applications within a space.
-{: tsCauses}
-
-For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mybluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mybluemix.net". The route is now mapped to both applications.
-
- 
-
-This is supported behavior of the {{site.data.keyword.Bluemix_notm}} and you can use this practice to achieve zero downtime for your application upgrade. For more information, see Blue-green deployments.
-{: tsResolve}
-  
-	
-	
-<!-- begin STAGING ONLY --> 
-	
-	
-## Administrators can't view all orgs by using the {{site.data.keyword.Bluemix_notm}} user interface
-{: #ts_ui_org}
-
-As an administrator, when you use the {{site.data.keyword.Bluemix_notm}} user interface, you can't display every organization to administer them. You can display and administer only those organizations to which you belong.
-
- 
-
-As an administrator, you cannot see all the organizations by using the {{site.data.keyword.Bluemix_notm}} user interface.
-{: tsSymptoms}
-
- 
-
-This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
-{: tsCauses}
-
- 
-
-You can use the command such as `cf orgs`, `cf create-org`, and `cf delete-org` from the cf command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
-{: tsResolve}
-	
-<!-- end STAGING ONLY -->
-
-
-
-
-## Credit card can't be added
-{: #ts_addcc}
-
-You cannot submit your credit card information to convert your trial account to a Pay As You Go account.
-
- 
-
-The Submit button on the Add credit card page is disabled.
-{: tsSymptoms}
-
- 
-
-This problem happens when your information is not filled in correctly in the Add credit card page.
-{: tsCauses}
-
- 
-
-Complete the following steps to solve this problem:
-{: tsResolve}
-
-  1. On the Add credit card page, fill in all of the required fields that are in the contact information, contact address, and billing address sections.
-  2. Select **I have read and agree to IBM's Terms and Conditions**, then click **Submit**. The **Select a payment method** section is displayed.
-  3. Enter your credit card number, the expiration date of your card, and the security code that is on your card. Then, click **Submit**.
-
-
-
-
-
-# Troubleshooting for runtimes
-{: #runtimes}
-
-You might experience problems when you use IBM® Bluemix™ runtimes. However, in many cases, you can recover from these problems by following a few easy steps.
-{:shortdesc}
-
-
-## Obsolete buildpack used when an app is pushed
-{: #ts_loading_bp}
-
-
-You might not be able to use the latest buildpack components when you push an app. You can use buildpacks that have built-in mechanisms to prevent loading obsolete components, or you can delete the contents in your app's cache directory before you push or restage the app. 
-
- 
-
-When you push or restage an app after the buildpack is updated, the latest buildpack components are not loaded automatically. As a result, your app uses the obsolete buildpack components from the cache. Updates that have been applied to the buildpack since the last time you pushed the app are not implemented. 
-{: tsSymptoms}
-
-
-
-Some buildpacks are not configured to automatically download all updated components from the internet to ensure that you always use the latest version.
-{: tsCauses} 
-
- 
-
-You can use buildpacks that have built-in mechanisms to avoid loading obsolete components. The following buildpacks are two examples: 
-{: tsResolve}
-
-  * [Cloud Foundry Java buildpack](https://github.com/cloudfoundry/java-buildpack){: new_window}. This buildpack has a built-in mechanism to ensure that the latest version of the buildpack is used. For more information about how this mechanism works, see [extending-caches.md](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}. 
-  * [Cloud Foundry Node.js buildpack](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}. This buildpack has similar functionality by using environment variables. To enable the Node.js buildpack to download node modules from the internet every time, type the following command in the cf command line interface: 	
-  ```
-  set NODE_MODULES_CACHE=false
-  ```
-If the buildpack that you are using does not provide a mechanism to load the latest components automatically, you can manually delete the contents in the cache directory and push your app again by taking the following steps:
-  1. Check out a branch of a null buildpack, for example, https://github.com/ryandotsmith/null-buildpack. For information about how to check out a branch, see [Git Basics - Getting a Git Repository](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository){: new_window}.  
-  2. Add the following line to the `null-buildpack/bin/compile` file and commit the changes. For information about how to commit changes, see [Git Basics - Recording Changes to the Repository](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){: new_window}.
-  ```
-  rm -rfv $2/*
-  ```
-  3. Push your app with the null buildpack that was modified to delete the cache by using the following command. After you complete this step, all contents in the cache directory of your app are deleted.
-  ```
-  cf push appname -p app_path -b <modified_null_buildpack>
-  ```
-  4. Push your app with the latest buildpack that you want to use by using the following command: 
-  ```
-  cf push appname -p app_path -b <latest_buildpack>
-  ```
-  
-	
-
-
-## NOTICE messages from the PHP buildpack
-{: #ts_phplog}
-
-You might see messages that contain NOTICE from the logs. You can stop the logging of these messages by changing the logging level.	
-	
- 
-
-When you push an application to Bluemix by using a PHP buildpack, you might see messages that contain `NOTICE`:
-{: tsSymptoms}
-
-```
-• 2015-01-26T15:00:59.70+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
-• 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
-• 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: fpm is running, pid 93
-• 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
-```
-
-
-
-In the PHP buildpack, the error_log parameter is used to define the logging level. By default, the value of the `error_log` parameter is **stderr notice**. The following example shows the default logging level configuration in the `nginx-defaults.conf` file of the PHP buildpack that is provided by Cloud Foundry. For more information, see [cloudfoundry/php-buildpack](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window}.
-{: tsCauses} 
-
-```
-daemon off;
-error_log stderr notice;
-pid @{HOME}/nginx/logs/nginx.pid;
-```
-
- 	
-	
-The `NOTICE` messages are informational and do not necessarily indicate that a problem has occurred. You can stop the logging of these messages by changing the logging level from stderr notice to stderr error in the nginx-defaults.conf file of your buildpack. For example: 	
-{: tsResolve}
-
-```
-daemon off;
-error_log stderr error;
-pid @{HOME}/nginx/logs/nginx.pid;
-```
-For more information about how to change the default logging configuration, see [error_log](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}.
-	
-
-## Unable to import a third-party Python library into {{site.data.keyword.Bluemix_notm}}
-{: #ts_importpylib}
-
-You might not be able to import a third-party Python library into {{site.data.keyword.Bluemix_notm}}. You can solve the problem by adding configuration files into the root directory of your python application.
-
-
-When you try to import a third-party Python library, such as the `web.py` library, the `cf push` command fails.
-{: tsSymptoms}
-
-
- 
-
-This problem occurs when configuration information for the Python application is missing.
-{: tsCauses}
-
-
- 
-
-To solve the problem, add a `requirements.txt` file and a `Procfile` file into the root directory of your Python app. The following information assumes that you are importing the web.py library:
-{: tsResolve}
-
-  1. Add a `requirements.txt` file into the root directory of your Python app.
-     The `requirements.txt` file specifies the library packages that are required for your Python application and the version of the packages. The following example shows the content of the `requirements.txt` file, where `web.py==0.37` indicates the version of the `web.py` library that will be downloaded is 0.37, and `wsgiref==0.1.2` indicates the version of the web server gateway interface that is required by the web.py library is 0.1.2.
-	 ```
-	 web.py==0.37
-     wsgiref==0.1.2
-	 ```
-	For more information about how to configure the `requirements.txt` file, see [Requirements files](https://pip.readthedocs.org/en/1.1/requirements.html). 
-	 
-  2. Add a `Procfile` file into the root directory of your Python application.
-	The `Procfile` file must contain the start command for your Python application. In the following command, *yourappname* is the name of your Python application, and *PORT* is the port number that your Python application must use to receive requests from users of the app. *$PORT* is optional. If you do not specify PORT in the start command, the port number under the `VCAP_APP_PORT` environment variable that is inside the app is used instead. 
-	```
-	web: python <yourappname>.py $PORT
-	```
-You are now able to import the third-party Python library into {{site.data.keyword.Bluemix_notm}}.	
-
-
-
-## The Actions button on the Instance Details page is disabled
-{: #ts_actionsbutton}
-
-
-
-The Actions button on the Instance Details page is disabled.
-{: tsSymptoms} 
-
- 
-
-This problem occurs because of the following reasons:
-{: tsCauses}
-
-  * The application is not a Java™ web application. Runtime Management Utilities (RMU) supports only web applications that are deployed with Liberty buildpacks.
-  * The application is not deployed with the embedded Liberty buildpack.
-  * The application was deployed with an early version of Liberty buildpack.
-
-
-
-If the problem is caused by an early version of Liberty buildpack, redeploy the application in {{site.data.keyword.Bluemix_notm}}. Otherwise, you can provide the following client application log files to the support team:
-{: tsResolve} 
-
-  * logs/messages.log
-  * logs/stdout.log
-  * logs/stderr.log
-  
-
-  
-  
-## Credentials are required when opening trace or dump window
-{: #ts_username}
-
-
- 
-
-A user name and password are required when opening the trace and dump window.
-{: tsSymptoms}
-
- 
-
-This problem occurs because of the login session timeout.
-{: tsCauses}
-
- 
-
-The solution is to reenter the user name and password.
-{: tsResolve}
-
-
-
-
-## Error occurs when trace or dump operations are running
-{: #ts_target}
-
- 
-
-An error message is displayed while the trace or dump operations are running. The message indicates that a target instance for an app is not in the running state:	
-{: tsSymptoms}
-
-```
-Instance 0: Trace specification is set successfully
-Instance 2: Trace specification is set successfully
-Instance 1: Target instance 1 for app abcd is not in the running state.
-Instance 3: Trace specification is set successfully
-Instance 4: Trace specification is set successfully
-```
-
-
-
-This problem occurs because of the following reasons:
-{: tsCauses} 
-
-  * The trace or dump management capabilities are only for application instances that are running. Trace or dump operations cannot be used on application instances that are stopped, starting, or crashed.
-  * The status of the application instance is changing when the trace or dump dialog is opened. 
-  
-
-
-The solution is to close the window, and then reopen it again.
-{: tsResolve} 
-
-
-
-## Instances have different traceSpecification configuration
-{: #ts_different_config}
-
- 
-
-For different instances of one application, you might see different traceSpecification configuration.
-{: tsSymptoms}
-
- 
-
-This problem occurs because of the following reasons:
-{: tsCauses}
-
-  * You might have changed the configuration for one or more instances previously. If you change the traceSpecification configuration for one instance, it does not apply to other instances of the same application. For example, you application uses log4j and you have 2 instances for this application. You can change the log level of instance 0 from info to debug, but the log level of instance 1 remains info. 
-  * The application scales out and has new instances. RMU does not apply the traceSpecification configuration of the existing instance to the new, scaled out instance. The new instance uses the default configuration. For example, your application uses log4j and it has one instance. You can change the log level of this instance from info to debug. After you make this change, if you scale out your application into two instances, the log level of the new instance is info, rather than debug.
-  
-
-
-This behavior is expected.
-{: tsResolve} 
-
-
-
-
-
-## Disk quota exceeded
-{: #ts_diskquota}
-
-You might see, in your app log, that your disk quota is exceeded.
-
- 
-
-You see the `Disk quota exceeded` error message in the log of your app.
-{: tsSymptoms}
-
-
-
-This problem is caused by one of the following reasons: 
-{: tsCauses} 
-
-  * The dump files are generated with the running application instances, and the files use up the allocated disk quota. By default, the disk quota for one application instance is 1 GB. You can check your disk usage by clicking **Dashboard > Application > App Runtime**. The following example shows the runtime information, including disk usage, for two instances of an application:
-    ```
-    Instance	State	CPU	Memory Usage	Disk Usage
-
-	0		Running	1.0%	344.8MB/512MB	236.8MB/1GB
-	2		Running	2.3%	361.2MB/512MB	235.7MB/1GB
-    ```
-  * The disk quota is limited by the current organization quota.
-  
-  
-
-
-You can resolve this issue by using one of the following methods:
-{: tsResolve} 
-
-  * Delete dump files after they are downloaded.
-  * Redeploy the application with a bigger disk quota by including the following entry in the deployment manifest:
-    ```
-	disk_quota: 2048
-	```
-	
-	
-<!-- begin STAGING ONLY --> 
-
-	
-## Log4js logger objects are not displayed in the Node.js Trace pop-up window
-{: #ts_logger}
-
-The log4js logger objects are not displayed in the Node.js Trace pop-up window when both the log4js and ibmbluemix modules are used in your app. 	
-
- 
-The log4js logger objects are not displayed in the Node.js Trace pop-up window when both the log4js, winston, and ibmbluemix modules are used in your app.
-{: tsSymptoms}
-
-
-Because the ibmbluemix module provides a unified API for log operations that use the log4js and winston modules, only the ibmbluemix logger objects are displayed in the Node.js Trace pop-up window. This is to stop the log level settings for the ibmbluemix, log4js, and winston logger objects from overwriting each other.
-{: tsCauses}
-
-
-This behavior is expected.
-{: tsResolve}
-
-<!-- end STAGING ONLY -->
-
-
-
-
-<!-- begin STAGING ONLY -->
-
-
-## Apply trace setting to all instances of the application check box is disabled
-{: #ts_bunyan}
-
-The **Apply trace setting to all instances of the application** check box is unchecked and disabled in the Node.js Trace pop-up window when the Bunyan logger levels are modified.
-
-
-
-When you change the levels of the Bunyan logger objects, the **Apply trace setting to all instances of the application** check box is unchecked and disabled in the Node.js Trace pop-up window.
-{: tsSymptoms} 
-
- 
-
-When Bunyan log levels are modified, the trace setting cannot be applied to all instances of an application. This is because the Bunyan library does not require the names or identifiers of Bunyan logger objects to be unique. More than one of the Bunyan logger objects that are used to specify levels in the log messages for your application can have the same name or identifier. Therefore, if the trace setting is enabled for an application, the log levels that are specified in the log messages of your application might be inaccurate.
-{: tsCauses}
-
-
-
-
-This behavior is expected.
-{: tsResolve} 
-
-<!-- end STAGING ONLY -->
 

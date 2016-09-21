@@ -18,25 +18,25 @@ copyright:
 # Scenario: End-to-end development
 {: #ee}
 
-*Last updated: 16 August 2016*
+Last updated: 12 September 2016
 {: .last-updated}
 
-You can use the {{site.data.keyword.Bluemix}} user interface, platform, and a selection of tools when you build, run, and deploy your apps. Follow this end-to-end development scenario to get started.
+You can use the {{site.data.keyword.Bluemix_notm}} user interface, platform, and a selection of tools when you build, run, and deploy your apps. Follow this end-to-end development scenario to get started.
 {:shortdesc}
 
 ## Signing up
 {: #ee_start}
 
-Before you can get started, you sign up for an IBMid from [https://console.ng.bluemix.net/](https://console.ng.bluemix.net/). After that, you log in to {{site.data.keyword.Bluemix_notm}} and start your 30-day free trial. {{site.data.keyword.Bluemix_notm}} provides an allowance of 2 GB runtime memory and 10 service instances for your free trial.
+Before you can get started, you must have a {{site.data.keyword.Bluemix_notm}} ID according to your contract. After that, you log in to {{site.data.keyword.Bluemix_notm}}.
 
 ## Creating your web app by using {{site.data.keyword.Bluemix_notm}} user interface
 {: #ee_appui}
 
 After signing up, you start to build your first app by using {{site.data.keyword.Bluemix_notm}} user interface.
 
-In {{site.data.keyword.Bluemix_notm}}, apps are associated with organizations and spaces. An organization is owned and used by multiple collaborators. Initially, you get a default organization that is named after your user name and you are the only collaborator. You also get a space within this organization. The space is an environment to run your apps; for example, you can have a dev space as a development environment, a test space as a test environment, and a production space as a production environment. Furthermore, each of the environment belongs to a region. With {{site.data.keyword.Bluemix_notm}}, you can deploy your applications to a specific geographical region for lower network latency, data privacy, and better availability. See Regions for details.
+In {{site.data.keyword.Bluemix_notm}}, apps are associated with organizations and spaces. An organization is owned and used by multiple collaborators. Initially, you get a default organization that is named after your user name and you are the only collaborator. You also get a space within this organization. The space is an environment to run your apps; for example, you can have a dev space as a development environment, a test space as a test environment, and a production space as a production environment. 
 
-For this scenario, you want to develop a web app using Node.js. Assume that you are in the US and most of your app users are also in the US. You decide to build and run your app close to your user base, so that you can benefit from lower network latency. After logging in to {{site.data.keyword.Bluemix_notm}}, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), then select the **US South** region. Then, you can take the following steps to create an app:
+For this scenario, you want to develop a web app using Node.js. Take the following steps to create an app:
 
   1. Select **Compute**.
   2. Click the plus icon.
@@ -104,10 +104,10 @@ Click **Environment Variables** on the app Overview page to see the whole list o
 	```
 	
     **Requirement:** Make sure that you always use the latest version of the cf command line tool.
-  3. After you install the **cf** command line interface, you must specify which {{site.data.keyword.Bluemix_notm}} region you want to work with by using the **cf api** command. The **cf** command line interface uses *https://api.Bluemix_URL*, where *Bluemix_URL* is the region's URL. The URL of the US South region is {{Domain}}. Enter the following command to connect to {{site.data.keyword.Bluemix_notm}}:
+  3. After you install the **cf** command line interface, you must specify which {{site.data.keyword.Bluemix_notm}} region you want to work with by using the **cf api** command. The **cf** command line interface uses *https://api.Bluemix_URL*, where *Bluemix_URL* is the region's URL. Enter the following command to connect to {{site.data.keyword.Bluemix_notm}}:
   
   ```
-  cf api https://api.ng.bluemix.net
+  cf api https://api.chinabluemix.net
   ```
   
   For more information about connecting to other {{site.data.keyword.Bluemix_notm}} regions, see {{site.data.keyword.Bluemix_notm}} regions. After you specify the {{site.data.keyword.Bluemix_notm}} region, the location information that you specified is saved.
@@ -128,7 +128,7 @@ Click **Environment Variables** on the app Overview page to see the whole list o
   
   6. Now, you can access the app by entering the following app URL in a browser:
   ```
-  http://TestNode.mybluemix.net
+  http://TestNode.mychinabluemix.net
   ```
 
 You can also choose other tools to build your app, such as Eclipse tools. For more information, see the Start Coding page of your app on {{site.data.keyword.Bluemix_notm}} user interface.
@@ -231,7 +231,9 @@ var create_message = function(req, res) {
 ## Calculating your app cost
 {: #ee_billing}
 
-Your 30-day free trial has expired, but you want to continue to use {{site.data.keyword.Bluemix_notm}}. You must add your credit card information for a Pay As You Go account or a Subscription account to continue using {{site.data.keyword.Bluemix_notm}}. However, {{site.data.keyword.Bluemix_notm}} still provides free allowances for most of the runtime frameworks and services even if you convert to a pay account. You are not charged by {{site.data.keyword.Bluemix_notm}} unless the usage is beyond the free allowances.
+
+
+{{site.data.keyword.Bluemix_notm}} provides free allowances for most of the runtime frameworks and services. You are not charged by {{site.data.keyword.Bluemix_notm}} unless the usage is beyond the free allowances.
 
 {{site.data.keyword.Bluemix_notm}} provides an estimator and calculator for you to see your app cost. You can see the cost of TestNode in the following ways:
 

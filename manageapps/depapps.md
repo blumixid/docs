@@ -14,10 +14,10 @@ copyright:
 #Deploying apps
 {: #deployingapps}
 
-*Last updated: 28 July 2016*
+Last updated: 13 September 2016
 {: .last-updated}
 
-You can deploy applications to {{site.data.keyword.Bluemix}} by using various methods, such as the command line interface and integrated development environments (IDEs). You can also use application manifests to deploy applications. By using an application manifest, you reduce the number of deployment details that you must specify every time that you deploy an application to {{site.data.keyword.Bluemix_notm}}.
+You can deploy applications to {{site.data.keyword.Bluemix_notm}} by using various methods, such as the command line interface and integrated development environments (IDEs). You can also use application manifests to deploy applications. By using an application manifest, you reduce the number of deployment details that you must specify every time that you deploy an application to {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
 
 ##Application deployment
@@ -44,7 +44,7 @@ If you experience problems when you stage your applications on {{site.data.keywo
 ##Deploying applications by using the cf command
 {: #dep_apps}
 
-When you deploy your applications to {{site.data.keyword.Bluemix_notm}} from the command line interface, a buildpack must be provided as the runtime environment according to your application language and framework. You can also use the Delivery Pipeline service to deploy applications to {{site.data.keyword.Bluemix_notm}}.
+When you deploy your applications to {{site.data.keyword.Bluemix_notm}} from the command line interface, a buildpack must be provided as the runtime environment according to your application language and framework. 
 
 {{site.data.keyword.Bluemix_notm}} provides built-in buildpacks that support Java and Node.js. If you are using these languages and frameworks, you don't need to specify the buildpack when you deploy your application by using the command line interface. Because {{site.data.keyword.Bluemix_notm}} is built on Cloud Foundry, the command defaults to these buildpacks.
 
@@ -123,7 +123,7 @@ An app is specific to the space where it is deployed. You can't move or copy an 
   2. Go to your app directory and deploy your app by using the **cf push** command, where appname must be unique within your domain.
   
   ```
-  cf push appname
+  cf push appname 
   ```
   
 ##Application manifest
@@ -148,7 +148,7 @@ cf push -f appManifest.yml
 |:----------|:--------------|:---------------|
 |**buildpack**	|The URL or name of the custom buildpack.	|`buildpack:` *buildpack_URL*|
 |**disk_quota**	|The disk quota that is allocated for an application. The default value is 1 G.	|`disk_quota: 500M`|
-|**domain**	|The domain name of the application in {{site.data.keyword.Bluemix_notm}}.	|`domain:` ng.bluemix.net|
+|**domain**	|The domain name of the application in {{site.data.keyword.Bluemix_notm}}.	|`domain:` chinabluemix.net|
 |**host**	|The host name of the application in {{site.data.keyword.Bluemix_notm}}. This value must be unique in the {{site.data.keyword.Bluemix_notm}} environment.	|`host:` *host_name*|
 |**name**	|The application name in {{site.data.keyword.Bluemix_notm}}. This value must be unique in the {{site.data.keyword.Bluemix_notm}} environment.	|`name:` *appname*|
 |**path**	|The location of your application. This value can be a relative path or absolute path.	|`path:` *path_to_application*|
@@ -174,7 +174,7 @@ The following example shows a manifest file for a Node.js application that uses 
   path: /dev/myNodejsApp
   buildpack: nodejs_buildpack
   host: nodejs001
-  domain: mybluemix.net
+  domain: mychinabluemix.net
   command: node app.js
   timeout: 80
   services:
@@ -272,14 +272,14 @@ The following variables are defined by the DEA:
     "application_version": "df111903-7d95-4c20-96d9-aad4e97d2a9a",
     "application_name": "testapp",
     "application_uris": [
-        "testapp.AppDomainNameng.mybluemix.net"
+        "testapp.AppDomainNamestage1.mychinabluemix.net"
     ],
     "version": "df111903-7d95-4c20-96d9-aad4e97d2a9a",
     "name": "testapp",
     "space_name": "dev",
     "space_id": "c6ed3a8e-436b-43ac-9f96-b676ee335000",
     "uris": [
-        "testapp.AppDomainNameng.mybluemix.net"
+        "testapp.AppDomainNamestage1.mychinabluemix.net"
     ],
     "users": null,
     "application_id": "e984bb73-4c4e-414b-84b7-c28c87f84003",
@@ -382,7 +382,7 @@ To specify start commands for your application, you can use one of the following
   * Use the **cf push** command and specify the -c parameter. For example, when you deploy a Node.js application, you can specify the **node app.js** start command on the -c parameter:
   
   ```
-  cf push appname -p app_path -c "node app.js"
+  cf push appname -p app_path -c "node app.js" 
   ```
   
   * Use the command parameter in the `manifest.yml` file. For example, when you deploy a Node.js application, you can specify the **node app.js** start command in the manifest file:
@@ -449,6 +449,6 @@ tmp/
 {: #general}
 
 * [Deploying with Application Manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html){:new_window}
-* [CF Manifest Generator](http://cfmanigen.mybluemix.net/){:new_window}
+* [CF Manifest Generator](http://cfmanigen.bluemix.net/){:new_window}
 * [Getting Started with cf v6](http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html){:new_window}
-* [Getting Started with IBM Continuous Delivery Pipeline for Bluemix](../services/DeliveryPipeline/index.html#getstartwithCD)
+

@@ -15,22 +15,22 @@ copyright:
 
 # {{site.data.keyword.Bluemix_notm}} security
 {: #security}
-Last updated: 22 July 2016
+Last updated: 8 September 2016
 {: .last-updated}
 
-Designed with secure engineering practices, the {{site.data.keyword.Bluemix}} platform has layered security controls across network and infrastructure. {{site.data.keyword.Bluemix_notm}} provides a group of security services that application developers can use to secure their mobile and web apps. These elements combine to make {{site.data.keyword.Bluemix_notm}} a platform with clear choices for secure application development.
+Designed with secure engineering practices, the {{site.data.keyword.Bluemix_notm}} platform has layered security controls across network and infrastructure. {{site.data.keyword.Bluemix_notm}} provides a group of security services that can be used by application developers to secure their mobile and web apps. These elements combine to make {{site.data.keyword.Bluemix_notm}} a platform with clear choices for secure application development.
 {:shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} ensures security readiness by adhering to security policies that are driven by best practices in IBM for systems, networking, and secure engineering. These policies include practices such as source code scanning, dynamic scanning, threat modeling, and penetration testing. {{site.data.keyword.Bluemix_notm}} follows the IBM Product Security Incident Response Team (PSIRT) process for security incident management. See the [IBM Security Vulnerability Management (PSIRT)](http://www-03.ibm.com/security/secure-engineering/process.html){: new_window} site for details.
+{{site.data.keyword.Bluemix_notm}} ensures security readiness by adhering to security policies that are driven by best practices in IBM for systems, networking, and secure engineering. These policies include practices such as source code scanning, dynamic scanning, threat modeling, and penetration testing. 
 
-{{site.data.keyword.Bluemix_notm}} Public and Dedicated use IBM SoftLayer Infrastructure-as-a-Service (IaaS) cloud services and take full advantage of its security architecture. SoftLayer IaaS provides multiple overlapping tiers of protection for your applications and data. For {{site.data.keyword.Bluemix_notm}} Local, you own the physical security and provide the infrastructure by hosting {{site.data.keyword.Bluemix_notm}} Local in your own data center behind a company firewall. In addition, {{site.data.keyword.Bluemix_notm}} adds security capabilities at the Platform as a Service layer in different categories: platform, data, and application.
+For {{site.data.keyword.Bluemix_notm}} Local, you own the physical security and provide the infrastructure by hosting {{site.data.keyword.Bluemix_notm}} Local in your own data center behind a company firewall. In addition, {{site.data.keyword.Bluemix_notm}} adds security capabilities at the Platform as a Service layer in different categories: platform, data, and application.
 
 ## Security of the {{site.data.keyword.Bluemix_notm}} platform
 {: #platform-security}
 
-{{site.data.keyword.Bluemix_notm}} provides functional, infrastructure, operational, and physical security (through IBM SoftLayer) for the core platform. However, {{site.data.keyword.Bluemix_notm}} Local is unique in that the customer provides the infrastructure and data center, and owns the physical security.
+{{site.data.keyword.Bluemix_notm}} provides functional, infrastructure, operational, and physical security for the core platform. However, {{site.data.keyword.Bluemix_notm}} Local is unique in that the customer provides the infrastructure and data center, and owns the physical security.
 
-The {{site.data.keyword.Bluemix_notm}} environment on SoftLayer is compliant with the most restrictive IBM information technology (IT) security standards, which meet or exceed the industry standards. These standards include the following:
+The {{site.data.keyword.Bluemix_notm}} environment is compliant with the most restrictive IBM information technology (IT) security standards, which meet or exceed the industry standards. These standards include the following:
 Network, data encryption, and access control
  * Application ACLs, permissions, and penetration testing
  * Identification, authentication, and authorization
@@ -58,7 +58,7 @@ IBM installs, remotely monitors, and manages {{site.data.keyword.Bluemix_notm}} 
 
 <dl>
 <dt>Authentication</dt>
-<dd>Application developers are authenticated to {{site.data.keyword.Bluemix_notm}} by using the IBM web identity.
+<dd>Application developers are authenticated to {{site.data.keyword.Bluemix_notm}} by using the identity name.
 
 For {{site.data.keyword.Bluemix_notm}} Dedicated and Local, authentication through LDAP is supported by default. On request, authentication through IBM web identity can be set up instead for {{site.data.keyword.Bluemix_notm}}.
 </dd>
@@ -81,9 +81,8 @@ The following HTTP methods are allowed:
 <li>PUT</li>
 <li>TRACE</li>
 </ul>
-HTTP inactivity times out at 2 minutes.</dd>
-<dd>
-The following headers are populated by DataPower:
+ HTTP inactivity times out at 2 minutes.</dd>
+<dd>The following headers are populated by DataPower:
 <dl>
 <dt>$wsis</dt>
 <dd>Set to true if client-side connection is secure (HTTPS), set to false otherwise.</dd>
@@ -101,7 +100,7 @@ The following headers are populated by DataPower:
 </dd>
 
 <dt>Secure development practices</dt>
-<dd> For {{site.data.keyword.Bluemix_notm}} Public and Dedicated, periodic security vulnerability scans are performed on various {{site.data.keyword.Bluemix_notm}} components by using IBM Security AppScan® Dynamic Analyzer. Threat modeling and penetration testing are performed to detect and address any potential vulnerabilities for all types of {{site.data.keyword.Bluemix_notm}} deployments. In addition, application developers can use the AppScan Dynamic Analyzer service to secure their web apps that are deployed on {{site.data.keyword.Bluemix_notm}}.</dd>
+<dd> For {{site.data.keyword.Bluemix_notm}} Public and Dedicated, periodic security vulnerability scans are performed on various {{site.data.keyword.Bluemix_notm}} components. Threat modeling and penetration testing are performed to detect and address any potential vulnerabilities for all types of {{site.data.keyword.Bluemix_notm}} deployments.</dd>
 </dl>
 
 ### Infrastructure security
@@ -110,10 +109,10 @@ The following headers are populated by DataPower:
 
 <dl>
 <dt>Environment segregation</dt>
-<dd>For {{site.data.keyword.Bluemix_notm}} Public, development and production environments are segregated from each other to improve application stability and security.</dd>
+<dd> For {{site.data.keyword.Bluemix_notm}} Public, development and production environments are segregated from each other to improve application stability and security.</dd>
 
 <dt>Firewalls</dt>
-<dd>Firewalls are in place to restrict access to the {{site.data.keyword.Bluemix_notm}} network. For {{site.data.keyword.Bluemix_notm}} Local, your company firewall segregates the rest of your network from your {{site.data.keyword.Bluemix_notm}} instance.</dd>
+<dd> Firewalls are in place to restrict access to the {{site.data.keyword.Bluemix_notm}} network. For {{site.data.keyword.Bluemix_notm}} Local, your company firewall segregates the rest of your network from your {{site.data.keyword.Bluemix_notm}} instance.</dd>
 
 <dt>Intrusion protection</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} Public and Dedicated enable intrusion protection to discover threats so that they can be addressed. Intrusion protection policies are enabled on firewalls.</dd>
@@ -122,7 +121,7 @@ The following headers are populated by DataPower:
 <dd>Each {{site.data.keyword.Bluemix_notm}} application is isolated and runs in its own container that has specific resource limits for processor, memory, and disk.</dd>
 
 <dt>Operating system security hardening</dt>
-<dd>IBM administrators perform network and operating system hardening regularly by using tools such as IBM Endpoint Manager.</dd>
+<dd>{{site.data.keyword.Bluemix_notm}} administrators perform network and operating system hardening regularly by using tools such as IBM Endpoint Manager.</dd>
 </dl>
 
 ### Operational security
@@ -142,17 +141,10 @@ The following headers are populated by DataPower:
 <dt>User access management</dt>
 <dd>Within {{site.data.keyword.Bluemix_notm}}, Separation of Duties guidelines are followed to assign granular access privileges to users, and to ensure that users have only the access that is required to perform their jobs according to the principle of least privilege.
 
-Within {{site.data.keyword.Bluemix_notm}} Dedicated and Local environments, assigned administrators can manage roles and permissions for {{site.data.keyword.Bluemix_notm}} users in their organization by using the Admin Console. See [Managing {{site.data.keyword.Bluemix_notm}} Local and Dedicated](../admin/index.html#mng) for details.
+Within {{site.data.keyword.Bluemix_notm}} Dedicated and Local environments, assigned administrators can manage roles and permissions for {{site.data.keyword.Bluemix_notm}} users in their organization by using the Admin Console. See [Managing {{site.data.keyword.Bluemix_notm}}](../admin/adminpublic.html#mng) for details.
 </dd>
 </dl>
 
-### Physical security
-
-{{site.data.keyword.Bluemix_notm}} Public and Dedicated rely on the network-within-a-network topology of SoftLayer for physical network security. This network-within-a-network architecture ensures that systems are fully accessible only to authorized personnel. For {{site.data.keyword.Bluemix_notm}} Local, you own the physical security for the local instance. Your data center is secured behind your company firewall.
-
-In SoftLayer network-within-a-network, the public network layer handles public traffic to hosted websites or online resources. The private network layer allows for true out-of-band management through a distinct stand-alone third carrier over SSL, PPTP, or IPSec VPN gateways. The data center to data center network layer provides free and secure connectivity between servers that are housed in separate SoftLayer facilities.
-
-Every SoftLayer data center is fully secured with controls that meet SSAE 16 and industry-recognized requirements, without exceptions. For more information, see the SoftLayer Security Compliance page.
 
 ## Data security
 {: #data-security}
@@ -174,7 +166,7 @@ Data that is associated with a running application can be in one of three states
 
 Each type of data needs to be considered when you plan for data security.
 
-The {{site.data.keyword.Bluemix_notm}} platform secures data-in-transit by securing the end-user access to the application by using SSL through the network until the data reaches IBM DataPower Gateway at the boundary of the {{site.data.keyword.Bluemix_notm}} internal network. IBM DataPower Gateway acts as a reverse proxy and provides SSL termination. From there to the application, IPSEC is used to secure the data as it travels from the IBM DataPower Gateway to the application.
+The {{site.data.keyword.Bluemix_notm}} platform secures data-in-transit by securing the end-user access to the application by using SSL, through the network until the data reaches IBM DataPower Gateway at the boundary of the {{site.data.keyword.Bluemix_notm}} internal network. IBM DataPower Gateway acts as a reverse proxy and provides SSL termination. From there to the application IPSEC is used to secure the data as it travels from the IBM DataPower Gateway to the application.
 
 Security for both data-in-use and data-at-rest is your responsibility as you develop your application. You can take advantage of several data-related services available in the {{site.data.keyword.Bluemix_notm}} Catalog to help with these concerns.
 
@@ -185,7 +177,7 @@ As an application developer, you must enable the security configurations, includ
 
 You can use security capabilities that are provided by several {{site.data.keyword.Bluemix_notm}} services to secure your applications. All {{site.data.keyword.Bluemix_notm}} services that are produced by IBM follow IBM secure engineering development practices.
 
-**Note:** Some services described here might not apply to {{site.data.keyword.Bluemix_notm}} Dedicated or Local instances.
+**Note:** Some of the services described here might not apply to {{site.data.keyword.Bluemix_notm}} Dedicated or Local instances.
 
 ### SSO service
 
@@ -199,38 +191,9 @@ The Single Sign On service supports several identity sources where your users' c
 
 <dt>Cloud Directory</dt>
 <dd>A user registry that is hosted in IBM Cloud.</dd>
-
-<dt>Social identity sources</dt>
-<dd> The user registries that are maintained by Google, Facebook, and LinkedIn.</dd>
 </dl>
 
 For more information, see [Getting started with Single Sign On](../services/SingleSignOn/index.html).
-
-### Application Security on Cloud
-
-This service provides a security analysis of mobile and web apps, and it allows you to scan source code for security vulnerabilities. For more information, see  [Getting started with Application Security on Cloud](../services/ApplicationSecurityonCloud/index.html).
-
-### IBM UrbanCode plug-in for application security testing
-
-The IBM Application Security Testing for {{site.data.keyword.Bluemix_notm}} plug-in enables you to run security scans on your web or Android apps that are hosted on {{site.data.keyword.Bluemix_notm}}. This plug-in is developed and supported by the IBM UrbanCode™ Deploy Community on the IBM Bluemix DevOps Services platform.
-
-For more information, go to [IBM Application Security Testing for Bluemix](https://developer.ibm.com/urbancode/plugindoc/ibmucd/ibm-application-security-testing-bluemix/1-0/){: new_window}.
-
-### dashDB
-
-The dashDB service uses an embedded LDAP server for user authentication. The connection between applications and the database is protected by SSL certificates. This service uses the DB2® native encryption capability to automatically encrypt your deployed database and database backups. Master key rotation is automatic and happens every 90 days.
-
-For more information, see [Getting started with dashDB](../services/dashDB/index.html).
-
-### Secure Gateway
-
-The Secure Gateway service enables you to securely connect {{site.data.keyword.Bluemix_notm}} apps to remote locations, either on premises or in the cloud. It provides secure connectivity and establishes a tunnel between your {{site.data.keyword.Bluemix_notm}} organization and the remote location that you want to connect to. You can configure and create a secure gateway by using the {{site.data.keyword.Bluemix_notm}} user interface or an API package.
-
-For more information, see [Getting started with Secure Gateway](../services/SecureGateway/secure_gateway.html).
-
-### Security information and event management
-
-You can use security information and event management (SIEM) tools to analyze security alerts in application logs. One such tool is IBM Security QRadar&reg; SIEM, which provides security intelligence in cloud environments. For information, see [IBM QRadar Security Intelligence Platform](http://www-01.ibm.com/support/knowledgecenter/SS42VS/welcome?lang=en){: new_window}.
 
 ## {{site.data.keyword.Bluemix_notm}} security deployment
 {: #security-deployment}
@@ -247,11 +210,9 @@ For {{site.data.keyword.Bluemix_notm}} *app users*, the **app user flow** is as 
  3. Through the network router.
  4. Reaches the application runtime in the droplet execution agent (DEA).
 
-The {{site.data.keyword.Bluemix_notm}} *developer* follows two main flows: for login, and for development and deployment.
+The {{site.data.keyword.Bluemix_notm}} *developer* follows two main flows: for login and for development and deployment.
  * The **developer login flow** includes the following:
-    * For developers who are logging in to {{site.data.keyword.Bluemix_notm}} Public, the flow is as follows:
-      1. Through the IBM Single Sign On service.
-      2. Through IBM web identity.
+    * For developers who are logging in to {{site.data.keyword.Bluemix_notm}} Public, the flow is through the IBM Single Sign On service.
     * For developers who are logging in to {{site.data.keyword.Bluemix_notm}} Dedicated or Local, the flow is through the enterprise LDAP.
  * The **development and deployment flow** is as follows:
     1. Through a firewall, with intrusion prevention and network security in place. This applies to {{site.data.keyword.Bluemix_notm}} Dedicated only.
@@ -265,58 +226,27 @@ For {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix
  3. Through the network router.
  4. Reaches the Administration page in the {{site.data.keyword.Bluemix_notm}} user interface.
 
-In addition to users described in these paths, an authorized IBM security operations team performs various operational security tasks, such as the following:
+In addition to users described in these paths, an authorized security operations team performs various operational security tasks, such as the following:
  * Vulnerability scans. For {{site.data.keyword.Bluemix_notm}} Local, you own the physical security and any scans within your firewall.
  * User access management.
  * Operating system hardening by periodically applying fixes with IBM Endpoint Manager.
  * Management of risks with intrusion protection.
  * Security monitoring with QRadar.
  * Security reports available on the Administration page.
-
-## Security compliance
-{: #compliance}
-
-{{site.data.keyword.Bluemix}} provides a secure cloud platform that you can trust. {{site.data.keyword.Bluemix_notm}} compliance results from a platform and services that are built on best-in-industry security standards, including ISO 27001 and ISO 27002.
-{:shortdesc}
-
-![EU Data Protection Model Clause](images/icon_eumc.png)  A **European Union (EU) Model Clause** is an agreement to protect personal data that is transferred from the EU or European Economic Area (EEA) to a third country. The EU Model Clause is signed between the client located in the EU or EEA as the data exporter, and the IBM data processor located in the third country as the data importer. The [IBM SaaS EU Model Clause](http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?subtype=ST&infotype=SA&htmlfid=KUJ12408USEN&attachment=KUJ12408USEN.PDF){: new_window} contains the rights and obligations of the data exporter and the data importer, and the rights of the data subjects. The IBM SaaS EU Model Clause ensures that personal data, when processed in a third country, is under protection that is similar to the protection available within the EU or EEA.
-
-![Financial Industry Information Systems](images/FISC.gif)  For banking and related financial institutions in Japan, computer systems must have security procedures in place that are based on the Center for Financial Industry Information Systems (FISC) security guidelines. **FISC** security guidelines are enforced by the Japan Financial Services Agency (FSA), Bank of Japan (BOJ), and FISC.
-
-You can find a {{site.data.keyword.Bluemix_notm}} self assessment document for the FISC security guidelines, written in Japanese, at [IBM Bluemix risk survey results](https://www.ibm.com/cloud-computing/jp/ja/bluemix_fisc.html){: new_window}. 
-
-![ISO 27001/2](images/icon_iso27k1.png)  {{site.data.keyword.Bluemix_notm}} is certified under the **International Organization for Standardization (ISO) 27001 and 27002 standards**, which define the best practices for information security management processes. The ISO 27001 standard specifies the requirements for establishing, implementing, and documenting Information Security Management Systems (ISMS) and the requirements for implementing security controls, according to the needs of individual organizations. The ISO 27002 standard explains each security control of ISO 27001 in detail. The ISO 27000 family of standards incorporates a process of scaling risk and valuation of assets, with the goal of safeguarding the confidentiality, integrity, and availability of the written, oral, and electronic information.
-
-{{site.data.keyword.Bluemix_notm}} is audited by a third-party security firm and meets all of the requirements for ISO 27001: [Bluemix ISO 27001:2013 Certificate of Registration](ftp://public.dhe.ibm.com/cloud/bluemix/compliance/Bluemix_ISO27K1_WWCert_2016.pdf){: new_window}.
-
-![SSAE16 SOC1/2/3](images/icon_aicpa.png) **Service Organization Controls (SOC)** reports define the evaluation of the leading internal control practices that relate to security, availability, processing integrity, confidentiality, and privacy at a service organization. The reports that are generated by using the American Institute of Certified Public Accountants (AICPA) Guide include the following items: 
-  * Organization oversight
-  * Vendor management program
-  * Internal corporate governance and risk management processes
-  * Regulatory oversight
-
-{{site.data.keyword.Bluemix_notm}} uses IBM SoftLayer Infrastructure-as-a-Service (IaaS) cloud services and takes full advantage of its security architecture. For additional information, contact the [{{site.data.keyword.Bluemix_notm}} sales](mailto:bmxcert1@us.ibm.com){:new_window} team.
+ 
 
 ### Platform and service compliance
 The following table displays which services in {{site.data.keyword.Bluemix_notm}} are compliant for each of the standards.
 
-|{{site.data.keyword.Bluemix_notm}} components		|FISC		|ISO 27001	|SOC 2 Type 1		|
-|:----------------------|:---------:|:---------:|:---------:|
-|{{site.data.keyword.Bluemix_notm}} platform		|Y			|Y	|Y	|
-|{{site.data.keyword.APIM}}			|Y	|Y |			|
-|{{site.data.keyword.autoscaling}}			|Y	|Y |			|
-|{{site.data.keyword.bigicloudst}}			|Y |Y |Y |
-|{{site.data.keyword.cloudant}}				|Y |Y |Y	|
-|{{site.data.keyword.dashdbshort}}			|Y	|Y	|Y	|
-|{{site.data.keyword.datacshort}}			|Y	|Y	|			|
-|{{site.data.keyword.jazzhub_short}}					|Y	|Y	|			|
-|{{site.data.keyword.containerlong}}			|Y		|Y	|			|
-|{{site.data.keyword.mql}}				|Y	|Y	|	 		|
-|{{site.data.keyword.SecureGateway}}			|Y	|Y |	 		|
-|{{site.data.keyword.sescashort}}     |Y |Y | |
+|{{site.data.keyword.Bluemix_notm}} components		|FISC		|ISO 27001	|PCI |SOC 2 Type 1		|
+|:----------------------|:---------:|:---------:|:---------:|:---------:|
+|{{site.data.keyword.Bluemix_notm}} platform		|Y			|Y	|Y	|Y	|
+|{{site.data.keyword.autoscaling}}			|Y	|Y |Y	|			|
+|{{site.data.keyword.cloudant}}				|Y |Y |	|Y	|
+|{{site.data.keyword.jazzhub_short}}					|Y	|Y	|	|			|
+|{{site.data.keyword.mql}}				|Y	|Y	|Y	|	 		|
 
 *Table 1. Platform and service compliance*
-
 
 # Related Links
 {: #rellinks}
@@ -324,5 +254,5 @@ The following table displays which services in {{site.data.keyword.Bluemix_notm}
 ## Related Links
 {: #general}
 
-* [SoftLayer Security Compliance](http://www.softlayer.com/security)
+* [IBM SaaS security](http://www.ibm.com/cloud-computing/built-on-cloud/saas-security)
 * [Getting started with Single Sign On](../services/SingleSignOn/index.html)

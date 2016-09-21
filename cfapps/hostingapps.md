@@ -17,14 +17,14 @@ copyright:
 
 #Hosting apps in {{site.data.keyword.Bluemix_notm}}
 
-*Last updated: 9 May 2016*
+Last updated: 12 September 2016
 {: .last-updated}
 
-<!--The whole topic is staging only -->
 
-With {{site.data.keyword.Bluemix}}, you can create applications, as well as host your existing applications. You can migrate your apps to {{site.data.keyword.Bluemix_notm}} as long as it is cloud-ready. {{site.data.keyword.Bluemix_notm}} provides various ways for you to run your applications, for example, Cloud Foundry, IBM Containers, and Virtual Machines.
 
-##Making your apps Cloud-ready
+With {{site.data.keyword.Bluemix_notm}}, you can create applications, and you can host your existing applications. You can migrate your apps to {{site.data.keyword.Bluemix_notm}} as long as it is cloud-ready. 
+
+##Making your apps cloud-ready
 {: #cloud-readyapps}
 
 A cloud-ready application follows the cloud platform principles when the application is designed and built. A cloud-ready application can use the capabilities that are provided by the cloud platform.
@@ -47,7 +47,7 @@ If all of the following principles are observed in your application, the applica
 
   The state of your system is defined by your databases and shared storage, and not by each individual running application instance. Statefulness of any sort limits the scalability of an application. Try to minimize the impact of session state by storing it in a centralized location on the server.
 
-  If you can't eliminate session state entirely, push it out to a highly available store that is external to your application server. The stores include IBM WebSphere Extreme Scale, Redis, or Memcached, or an external database.
+  If you can't eliminate session state entirely, push it out to a highly available store that is external to your application server. 
 
 * Do not use specific infrastructure dependency.
 
@@ -81,28 +81,8 @@ If all of the following principles are observed in your application, the applica
 
 For more information about cloud-ready applications, see [The 12-factor application](http://12factor.net/){:new_window}.
 
-##Migrating your apps
-{: #ht_hostapp}
-
-You can migrate your applications to {{site.data.keyword.Bluemix_notm}} in an incremental way, instead of shifting the application completely to the cloud environment. You can migrate a portion of your application first and connect to the existing data or system of records by using the Cloud Integration service.
-
-In your cloud applications, you might need to access the backend data or services, for example, a system of record. In {{site.data.keyword.Bluemix_notm}}, you can use the Secure Gateway service to establish a secured tunnel between a {{site.data.keyword.Bluemix_notm}} organization and the enterprise backend network. The service enables the applications on {{site.data.keyword.Bluemix_notm}} to access the backend network’s data and services. For details, see [Reaching enterprise backend with Bluemix Secure Gateway via console](https://developer.ibm.com/bluemix/2015/04/01/reaching-enterprise-backend-bluemix-secure-gateway/){:new_window}.
-
-To deploy your application to {{site.data.keyword.Bluemix_notm}} as a Cloud Foundry application, select a runtime from the {{site.data.keyword.Bluemix_notm}} Catalog. The runtime contains a starter Hello World application that you can replace with your own application. If you cannot find a starter that provides the runtime you want, you can bring a custom, Cloud Foundry-compatible buildpack to {{site.data.keyword.Bluemix_notm}} by using the –b option with the cf push command. For details, see [Using community buildpacks](../cfapps/byob.html).
-
-You can use the following tools and services that {{site.data.keyword.Bluemix_notm}} provides:
-
-*Table 1. {{site.data.keyword.Bluemix_notm}} tools*
-
-| Tool	| Method |
-|:------|:--------|
-|Cloud Foundry command line interface (cf cli)	|Manage your code on local client and use Cloud Foundry command line interface to push your application to {{site.data.keyword.Bluemix_notm}} manually. For more information, see [Uploading your apps](../starters/upload_app.html).|
-|Eclipse	|Manage your code in Eclipse and use the IBM Eclipse tools for {{site.data.keyword.Bluemix_notm}} to push your application.|
-|Git integration	|Manage your code on GitHub and integrate Git into {{site.data.keyword.Bluemix_notm}}. You can collaborate with other developers. Your application is deployed to {{site.data.keyword.Bluemix_notm}} automatically when you commit changes in the code. You do not need to push the application manually.|
-|{{site.data.keyword.Bluemix_notm}} DevOps Delivery Pipeline	|Manage your code on DevOps GitHub repository and deploy your application to {{site.data.keyword.Bluemix_notm}} by using the DevOps Delivery Pipeline.|
 
 
-If the Cloud Foundry platform does not support your application requirements, you can use a container or VM where the runtime is set up, configured, and maintained with more customized options.
 
 ##Uploading your apps by using cf cli
 {: #ht_cfcli}
@@ -130,7 +110,7 @@ Take the following steps to migrate your application:
   host: myjavatest
   name: MyJavaTest
   path: webStarterApp.war
-  domain: mybluemix.net
+  domain: mychinabluemix.net
   instances: 1
   memory: 512M</code></pre>
 <p>For more information about the supported options that you can use in this file, see [Application manifest](../manageapps/depapps.html#appmanifest).
@@ -141,7 +121,7 @@ Take the following steps to migrate your application:
 <li>Push your application. You can upload your application by using the cf push command.
 <ol>
 <li>Connect and log in to {{site.data.keyword.Bluemix_notm}} by running the following command. Select your organization and space when prompted.
-<pre>cf login -a https://api.ng.bluemix.net</pre></li>
+<pre>cf login -a https://api.chinabluemix.net</pre></li>
 <li>From your application directory, enter the cf push command with the application name. The application name must be unique in the {{site.data.keyword.Bluemix_notm}} environment.
 <pre>cf push appname</pre></li>
 <li>Optional: If you use an external buildpack, you must use the -b option with the cf push command. For example:
@@ -166,23 +146,11 @@ After you upload your application to {{site.data.keyword.Bluemix_notm}}, select 
 
 The VCAP_SERVICES environment variable of your application is a JSON object that contains information about how to interact with a service instance in {{site.data.keyword.Bluemix_notm}}. The information includes the service instance name, credentials, and the connection URL to the service instance.
 
-To run your code in {{site.data.keyword.Bluemix_notm}}, you must add the code logic for parsing the VCAP_SERVICES variable to obtain information about service connection. Modify your application to get the dynamically assigned host and port of the service instance through the environment variables. The following example shows how to get the credentials of a Postgre SQL service instance in a Ruby application:
+To run your code in {{site.data.keyword.Bluemix_notm}}, you must add the code logic for parsing the VCAP_SERVICES variable to obtain information about service connection. Modify your application to get the dynamically assigned host and port of the service instance through the environment variables. 
 
-```
-services = JSON.parse(ENV['VCAP_SERVICES'], :symbolize_names => true)
-        url = services.values.map do |srvs|
-          srvs.map do |srv|
-            if srv[:credentials][:uri] =~ /^postgres/
-              srv[:credentials][:uri]
-            else
-              []
-            end
-          end
-        end.flatten!.first
-```		
-{:codeblock}
 
 To ensure that your application can run in a local environment after you modify the application for {{site.data.keyword.Bluemix_notm}}, check for the presence of the VCAP_SERVICES environment variable, which is set for all {{site.data.keyword.Bluemix_notm}} Cloud Foundry applications.
+
 
 
 # Related Links
@@ -191,9 +159,5 @@ To ensure that your application can run in a local environment after you modify 
 ## Related Links
 {: #general}
 
-* [IBM Containers](../containers/container_index.html)
-* [Virtual Machines](../virtualmachines/vm_index.html)
-* [Getting started with Delivery Pipeline](../services/DeliveryPipeline/index.html)
 * [Deploying apps with IBM Eclipse Tools for Bluemix](../manageapps/eclipsetools/eclipsetools.html)
 * [The twelve-factor app](http://12factor.net/){:new_window}
-* [Reaching enterprise backend with Bluemix Secure Gateway via console](https://developer.ibm.com/bluemix/2015/04/01/reaching-enterprise-backend-bluemix-secure-gateway/){:new_window}

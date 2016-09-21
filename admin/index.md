@@ -17,10 +17,10 @@ copyright:
 
 # Managing {{site.data.keyword.Bluemix_notm}} Local and {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #mng}
-Last updated: 16 August 2016
+Last updated: 19 September 2016
 {: .last-updated}
 
-If you have administrator access for {{site.data.keyword.Bluemix}} Local or {{site.data.keyword.Bluemix_notm}} Dedicated, go to the **Administration** page to manage resources, monitor quota usage, administer user permissions, schedule upgrade notifications, view security reports and logs, and more. You can manage your orgs by creating spaces and setting [user roles and permissions](index.html#oc_useradmin); see [Managing your organizations](../admin/orgs_spaces.html).
+If you have administrator access for {{site.data.keyword.Bluemix_notm}} Local or {{site.data.keyword.Bluemix_notm}} Dedicated, go to the **Administration** page to manage resources, monitor quota usage, administer user permissions, schedule upgrade notifications, view security reports and logs, and more. You can manage your orgs by creating spaces and setting [user roles and permissions](index.html#oc_useradmin); see [Managing your organizations](../admin/orgs_spaces.html).
 {:shortdesc}
 
 *Table 1. Administrative tasks for managing your {{site.data.keyword.Bluemix_notm}} local or dedicated instance*
@@ -150,7 +150,7 @@ Before you start scheduling and approving updates, you must set your preapproved
 
 You are required to set a minimum of 12 available hours in a week for a minimum of two days during each week. For example, you can set 6-hour windows across two separate days, or you can set 4-hour windows across three separate days. To ensure that the windows provide enough time for an update to be applied, each window must be a minimum of four hours in duration.
 
-**Note**: Only users with the Superuser permission (`ops.admin`) can schedule and approve maintenance updates.
+**Note**: Only users with the Admin permission (`ops.admin`) can schedule and approve maintenance updates.
 
 1. Go to **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending &gt; Manage Availability**.
 2. Expand the **Manage Available Update Windows** section.
@@ -230,7 +230,7 @@ In the General Information section, you can view the following information:
 ### LDAP configuration details
 
 In the LDAP Configuration Details section, you can select the LDAP
-server, and view information about user and group mappings. If you are using {{site.data.keyword.IBM}} WebID, it is indicated in this section.
+server, and view information about user and group mappings. 
 
 ## Viewing usage and reports
 {: #oc_resource}
@@ -245,20 +245,33 @@ You can view different types of usage information for your local or dedicated in
 ### Resource usage
 {: #resourceusage}
 
-To view resource usage information, click **ADMINISTRATION &gt; USAGE**.
+To view resource usage information, click **ADMINISTRATION &gt; Resource Usage**.
 
-In the Resource Monitoring section, you can view the following
-information:
+In the Resource Usage section, you can view the following information:
 
-- Resource usage information, such as how many GB of memory and how many GB of disk space are
-used. You can view the CPU usage averaged across all droplet execution agents (DEAs). Click the
-**CPU** tile, and you can see the CPU usage for each DEA. The DEA with the
-highest usage is listed first, and each is identified by their job and IP address. The CPU usage is
-separated into three categories that include amount of CPU spent in system processes, amount of CPU
-spent in user processes, and amount of CPU spent in waiting processes.
-- Network usage information for bandwidth in and bandwidth out, over the past day, week, or month.
-The data that is displayed is based on the sum of in and out traffic for both public and private
-networks.
+- Resource usage information, such as how much memory and disk space is available and how much is actually in use, as well as the memory, disk, and CPU usage averaged across all droplet execution agents (DEAs). To see the usage of your memory, disk, or CPU by DEA, click **Breakdown**.  
+You can see a summary of the **Reserved** and **Physical** amounts for your memory and disk.  
+	<dl>
+	<dt><strong>Physical</strong></dt>
+	<dd>The amount of memory or disk space that was purchased for your environment.  </dd>
+	<dt><strong>Reserved</strong></dt>
+	<dd>The amount of memory or disk space that is available to be reserved to run all of the applications in your environment. Because not all of the memory and disk space needed to run applications is used at any one time, these resources can be reserved and used as needed. The reserved value is about twice the amount of the physical value.</dd>
+	</dl>
+
+	In addition to the graphical representation, you can see the percentage of memory and disk space your environment is using.  You can also see both the reserved and the physical amounts, in GB, of the actual usage compared to the amount that is available. 
+To see more detailed information about your physical, reserved, and actual memory usage, click **History.** You can specify the time frame to view as either weekly or monthly. The Hisorical Memory Usage view shows a graph of memory usage over the time you choose.  
+
+	<dl>
+	<dt><strong>Reserved Limit</strong></dt>
+	<dd>Shown as a horizontal dotted line, the Reserved Limit is the total amount of memory that can be reserved to run all of the applications in your environment. The reserved limit is twice the amount of the physical memory that was purchased.</dd>
+	<dt><strong>Reserved</strong></dt>
+	<dd>The Reserved bar shows the memory that is currently reserved to run all of the applications in your environment.  To see which organizations have reserved the most memory at a particular point in time, click the dot along the top of the Reserved bar that is associated with that point in time.  You can then click an organziation in the resulting pie chart to see more information about that organization.</dd>
+	<dt><strong>Physical Limit</strong></dt>
+	<dd>Shown as a horizontal dotted line, the Physical Limit shows the amount of physical memory that was purchased for your environment.</dd>
+	<dt><strong>Physical</strong></dt>
+	<dd>The Physical bar shows the amount of memory that is actually being used.</dd>
+	</dl>
+- Network usage information for bandwidth in and bandwidth out, over the past 6 hours or day. The data that is displayed is based on the sum of in and out traffic for both public and private networks.
 - Average response time for {{site.data.keyword.Bluemix_notm}} over the past 10 minutes, hour, and day.
 - Average transactions per second for
 {{site.data.keyword.Bluemix_notm}} over the past 10
@@ -268,6 +281,12 @@ minutes, hour, and day.
 {: #accountusage}
 
 You can view the monthly usage for your account for your dedicated or local environment. You can use this data to identify how much to charge specific orgs based on their usage.
+
+<!-- draft for August start -->
+
+All admin console users that are assigned the **Users** permission with **Read** access can view the account usage data. In addition, organization billing managers can view the account usage data for their organizations, even if the billing manager does not have the admin console **Users** permission assigned. As an admin console administrator, you can update the billing manager role for organizations by clicking the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg), then select **Manage organizations**.
+
+<!-- draft for August end -->
 
 <ol>
 <li>Click the <strong>{{site.data.keyword.avatar}}</strong> icon ![Avatar](../support/images/account_support.svg) &gt; <strong>Account</strong> &gt; <strong>Usage details</strong>.</li>
@@ -368,7 +387,7 @@ The Status page is the central place to find notifications and announcements abo
 
 ### Administration console status
 
-After the initial deployment of your {{site.data.keyword.Bluemix_notm}} environment, a verification check is completed automatically on the components that are used to administer your environment. You can go to the Admin Console Verification Check page to check the status of the components after the verification check has run. To access the page, go to <code>https://console.&lt;subdomain&gt;.bluemix.net/check</code>, where `<subdomain>` is the name of your local or dedicated instance.
+After the initial deployment of your {{site.data.keyword.Bluemix_notm}} environment, a verification check is completed automatically on the components that are used to administer your environment. You can go to the Admin Console Verification Check page to check the status of the components after the verification check has run. To access the page, go to <code>https://console.&lt;subdomain&gt;.chinabluemix.net/check</code>, where `<subdomain>` is the name of your local or dedicated instance.
 
 You can run a verification at any time. You must be logged in to select the option to run the verification. If you encounter failures while you are adding a user, editing an org, or managing your services, run this check to identify whether any components are failing or disconnected. You can open a support ticket with the information from the check to get the issue resolved quickly.
 
@@ -431,7 +450,7 @@ Complete the following steps to register your service broker:
       ],
       "metadata":{
          "displayName":"Cool Service",
-         "serviceMonitorApi":"https://myservicesstatus.mybluemix.net/healthcheck/",
+         "serviceMonitorApi":"https://myservicesstatus.mychinabluemix.net/healthcheck/",
          "providerDisplayName":"Cool company",
          "longDescription":"Cool Service is a data warehousing and analytics solution. You can quickly move your data into a next-generation columnar in-memory database and start running complex analytical queries.",
          "bullets":[
@@ -565,45 +584,30 @@ You can create spaces in your organization; for example, a *dev* space as a deve
 
 In the Quota Monitoring section, you can expand the section and view the following information:
 
-**Note**: The data is automatically refreshed every 4 hours. Click **Recalculate**, if you want to refresh the data on the page before it is automatically updated.
-
-- Environment memory usage. This section details the memory usage for the full system environment.
-	The chart provides information that includes used system memory, total system memory, quota that is
-	used, and the total quota allocated. The following list of terms defines the types of memory usage
-	that are displayed in the chart.
+- Environment memory usage. This section details the memory usage for the full system environment. The chart provides information that includes the physical memory that is in use and the limit of physical memory, the reserved limit of memory and the quota of resverved memory, and the total quota of memory for your environment. The following list of terms defines the types of memory usage that are displayed in the chart.
 
 	<dl>
-	<dt><strong>Used system memory</strong></dt>
+	<dt><strong>Physical Used</strong></dt>
 	<dd>The physical memory that is used by your environment.</dd>
-	<dt><strong>Total system memory</strong></dt>
+	<dt><strong>Physical Limit</strong></dt>
 	<dd>The total physical memory that is available to your environment.</dd>
-	<dt><strong>Quota deployed</strong></dt>
-	<dd>The sum of memory that is allocated for all deployed apps, across all organizations. The sum of
-	the quota deployed can exceed the physical total system memory for your environment. For example, if
-	you have a total system memory of 16 GB, and you allocate 4 GB of memory each for a total of five
-	different organizations, the total quota exceeds the total system memory that has been allocated to
-	you for all organizations. However, in many cases, the organizations might not use the total quota
-	that is allocated individually to each organization. In addition, all organizations might not use
-	their total quota allocation of memory all at the same time. </dd>
+	<dt><strong>Quota Reserved</strong></dt>
+	<dd>The sum of memory that is reserved for all deployed apps, across all organizations. The sum of the quota reserved can exceed the physical limit of memory for your environment. For example, if you have a physical memory limit of 16 GB, and you reserve 4 GB of memory each for a total of five different organizations, the quota reserved exceeds the physical limit of memory. However, in many cases, the organizations might not use the total quota that is reserved individually to each organization. In addition, all organizations might not use
+	their total quota of reserved memory all at the same time.</dd>
+	<dt><strong>Reserved Limit</strong></dt>
+	<dd>The total memory that can be reserved across all organizations for your environment.</dd>
 	<dt><strong>Total quota</strong></dt>
-	<dd>The total memory that is allocated across all organizations.</dd>
+	<dd>The total memory that is allocated across all organizations for your environment.</dd>
 	</dl>
+	**Note**: The data is automatically refreshed every 4 hours. Click **Recalculate**, if you want to refresh the data on the page before it is automatically updated.
 
-- Organization memory usage. This section details the memory usage at an organization level. You
-	can view the total quota allowance and the quota that is deployed for each organization. The chart
-	provides information that is listed by highest memory usage per organization, and the organization
-	that uses the largest amount of memory, by default, is listed first. You can sort by
-	** Highest Memory Usage** and **Excess Memory Allocation**.
+- Organization memory usage. This section details the memory usage at an organization level. You can view the total quota allowance and the quota that is reserved for each organization. The chart provides information that is listed by highest memory reserved per organization, and the organization that reserves the largest amount of memory, by default, is listed first. You can sort by **Highest Memory Usage** and **Excess Memory Allocation**.
 
 	<dl>
 	<dt><strong>Highest Memory Usage</strong></dt>
-	<dd>Use this option to identify the org using the greatest amount of memory. Sort by highest memory
-	usage to identify the organizations that are using the most amount of memory. The list is sorted by
-	quota deployed. </dd>
+	<dd>Use this option to identify the org using the greatest amount of memory. Sort by highest memory usage to identify the organizations that are using the most amount of memory. The list is sorted by quota deployed. </dd>
 	<dt><strong>Excess Memory Allocation</strong></dt>
-	<dd>Use this option to identify organizations that have a quota plan that is larger than needed.
-	Sort by excess memory usage to identify organizations that are using the lowest amount of memory for
-	the quota that has been allocated for the org. </dd>
+	<dd>Use this option to identify organizations that have a quota reserved that is larger than needed. Sort by excess memory usage to identify organizations that are using the lowest amount of memory for the quota that has been allocated for the org. </dd>
 	</dl>
 
 ### Adjusting quota plans
@@ -652,7 +656,19 @@ The **Superuser** and **Basic Access**` permissions can be set to **On** or **Of
 
 Depending on your **Read** or **Write** access for the users' permissions, you can search for existing users, remove users, and add users individually or by a group. Note that if you have the **Superuser** permission, you have full access to complete any tasks for user management in the environment. Review the following user management tasks and the level of access needed to complete each task:
 
-* Locate users. If have **Read** or **Write** access and you know all or part of the user name, you can locate users in the table by using the **Search** field.
+* Locate users. If have **Read** or **Write** access and you know all or part of the user name, you can locate users in the table by using the **Search** field. You can also filter the list of users by their organization and permissions.
+   <ol>
+  <li> To filter a list of users, click <strong>Filter</strong>.</li>
+  <li> Click  <strong>Organizations</strong> or <strong>Permissions</strong>.
+  <dl>
+	<dt><strong>Organization</strong></dt>
+	<dd>To filter users by their oganization, begin typing the organization name in the Organization field and select the organization from the list. Then select the role, or roles, assigned to the users within the organization.</dd>
+	<dt><strong>Permissions</strong></dt>
+	<dd>To filter users by their permissions, first select the type of user, or users. For example, you might want to see all of the Superusers.  For permissions other than Superuser or Basic Access, you can also select the type of access, for example <strong>Read</strong> or <strong>Write</strong>.</dd>
+	</dl></li>
+  <li>Click <strong>Apply</strong>.</li>
+   </ol>  
+   The User Administration window shows the filers you set and the users in the resulting table.  You can then search the for a user in the filtered table.  You can also remove a filter by clicking to close the filter in the list.
 
 * Add a single user. If you have **Superuser** permission or
 **Users** permission with **Write** access, you can add users.
@@ -752,14 +768,14 @@ permission with **Write** access, you can add or remove users. You must have
 **Superuser** permission to edit other users' permissions.
 
 To log in to the Admin Console, you can use basic access authentication on the
-`https://<your_host>.ibm.com/login` endpoint. The server returns a cookie with your
+`https://login.chinabluemix.net/UAALoginServerWAR/nglogin.jsp` endpoint. The server returns a cookie with your
 session. You use that cookie for all operations with the Admin Console.
 
 **Note:** The session becomes invalid if not used for a few hours.
 
 To log in to the Admin Console, run the following command:
 
-`curl --user <user_id>:<password> -c ./cookies.txt --header "Accept: application/json" https://<your_host>.ibm.com/login | python -m json.tool`
+`curl --user <user_id>:<password> -c ./cookies.txt --header "Accept: application/json" https://login.chinabluemix.net/UAALoginServerWAR/nglogin.jsp | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -798,7 +814,7 @@ When you add a user, you must specify an organization. You can use the
 **Users** permission with **Read** access to list
 organizations.To list all organizations, run the following command:
 
-`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/organizations | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.chinabluemix.net/codi/v1/organizations | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -843,7 +859,7 @@ using the `Admin` REST API to list registered users. You must have
 **Users** permission with **Read** access to list registered
 users.To list all users, run the following command:
 
-`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.chinabluemix.net/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -920,7 +936,7 @@ have **Users** permission with **Write** access to add
 users, or the **Superuser** permission (ops.admin) for the admin console. Additionally, as the Admin, you can allow organization members who do not have general admin console `user` or `superuser` permission the ability to add new users to their organization only. Use the following API command for this specific capability for organization managers:
 
 ```
-PUT console.<subdomain>.bluemix.net/codi/env_config/allow_managers?flag=<TRUE or FALSE>
+PUT console.<subdomain>.chinabluemix.net/codi/env_config/allow_managers?flag=<TRUE or FALSE>
 ```
 {: screen}
 
@@ -935,7 +951,7 @@ add a user, you must provide the following information:
 
 You provide the information in a JSON file.
 
-`curl -b ./cookies.txt https://<your_host>.ibm.com/codi/v1/users | python -m json.tool`
+`curl -b ./cookies.txt https://<your_host>.chinabluemix.net/codi/v1/users | python -m json.tool`
 {: codeblock}
 
 <dl class="parml">
@@ -971,7 +987,7 @@ following content:</p>
 <li>Post the content of the JSON file to the user's endpoint by running the following
 command:<br/><br/>
 <code>
-curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.json https://<your_host>.ibm.com/codi/v1/users
+curl -v -b ./cookies.txt -X POST -H "Content-Type: application/json" -d @./user.json https://<your_host>.chinabluemix.net/codi/v1/users
 </code>
 </li>
 </ol>
@@ -1031,7 +1047,7 @@ have **Users** permission with **Write** access to remove users.
 
 To remove a user, you must provide the user ID of the user. Run the following command:
 
-`curl -v -b ./cookies.txt -X DELETE https://<your_host>.ibm.com/codi/v1/users?user_id=<some_user_id@domain.com>`
+`curl -v -b ./cookies.txt -X DELETE https://<your_host>.chinabluemix.net/codi/v1/users?user_id=<some_user_id@domain.com>`
 {: codeblock}
 
 <dl class="parml">
@@ -1068,11 +1084,11 @@ command:
 
 There are three APIs that you can use to register or create a new service, update a service, and delete a service.
 
-All APIs are relative to <code>https://console.&lt;subdomain&gt;.bluemix.net/</code>.
+All APIs are relative to <code>https://console.&lt;subdomain&gt;.chinabluemix.net/</code>.
 
 <dl>
 <dt><strong>&lt;subdomain&gt;</strong></dt>
-<dd>This value is the name of your local or dedicated instance. The subdomain name for your {{site.data.keyword.Bluemix}} instance was
+<dd>This value is the name of your local or dedicated instance. The subdomain name for your {{site.data.keyword.Bluemix_notm}} instance was
 assigned during onboarding.</dd>
 </dl>
 
@@ -1120,7 +1136,7 @@ POST /codi/v1/serviceBrokers
 
 ```
 Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbG ... ciOiJIUzI1
-Host: console.comp.bluemix.net
+Host: console.comp.chinabluemix.net
 Content-Type: application/json
 ```
 {: screen}
@@ -1143,7 +1159,7 @@ Content-Type: application/json
 {
   "entity": {
     "name": "Service broker's name",
-    "broker_url": "https://provision-broker.comp.bluemix.net/bmx/provisioning/brokers/2063580064-8f23230c-7f36-4ce5-a298-2ab4108f1120",
+    "broker_url": "https://provision-broker.comp.chinabluemix.net/bmx/provisioning/brokers/2063580064-8f23230c-7f36-4ce5-a298-2ab4108f1120",
     "auth_username": "username",
     "space_guid": null
   },
@@ -1200,7 +1216,7 @@ Use the following API and code examples to update a service.
 
 ```
 Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbG ... ciOiJIUzI1
-Host: console.comp.bluemix.net
+Host: console.comp.chinabluemix.net
 Content-Type: application/json
 ```
 {: screen}
@@ -1223,7 +1239,7 @@ Content-Type: application/json
 {
   "entity": {
     "name": "Service Broker's name",
-    "broker_url": "https://provision-broker.dys0.bluemix.net/bmx/provisioning/brokers/2063580064-d11bdd84-7556-469f-858d-2098b531f7f2",
+    "broker_url": "https://provision-broker.dys0.chinabluemix.net/bmx/provisioning/brokers/2063580064-d11bdd84-7556-469f-858d-2098b531f7f2",
     "auth_username": "username",
     "space_guid": null
   },
@@ -1263,7 +1279,7 @@ DELETE /codi/v1/serviceBrokers?name=name of service broker
 
 ```
 Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbG ... ciOiJIUzI1
-Host: console.comp.bluemix.net
+Host: console.comp.chinabluemix.net
 Content-Type: application/json
 ```
 {: screen}
@@ -1309,7 +1325,7 @@ Complete the following steps to add the repository and install the plug-in:
 <ol>
 <li>To add the {{site.data.keyword.Bluemix_notm}} admin plug-in repository, run the following command:<br/><br/>
 <code>
-cf add-plugin-repo BluemixAdmin https://console.&lt;subdomain&gt;.bluemix.net/cli
+cf add-plugin-repo BluemixAdmin https://console.&lt;subdomain&gt;.chinabluemix.net/cli
 </code><br/><br/>
 <dl class="parml">
 <dt class="pt dlterm">&lt;subdomain&gt;</dt>
