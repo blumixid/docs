@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-09-18"
 
 ---
 
@@ -22,63 +23,6 @@ Last updated: 18 September 2016
 
 General problems with accessing {{site.data.keyword.Bluemix_notm}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
 {:shortdesc}
-
-
-<!-- Crystal: 2016.9.6  The BM China sign in page is not available yet, so can't verify the exact UI strings. Hide this topic for now.
-## Unable to log in to {{site.data.keyword.Bluemix_notm}}
-{: #ts_logintobm}
-
-You must have a valid ID and password to log in to {{site.data.keyword.Bluemix_notm}}.
-
-
-When you try to sign in to {{site.data.keyword.Bluemix_notm}}, you see the following error message: 
-{: tsSymptoms} 
-
-`The password that you entered is not correct.`
-
-
-The ID and password that you use to sign in to {{site.data.keyword.Bluemix_notm}} is invalid.
-{: tsCauses} 
- 
-
-To get a valid ID and password, go to the My IBM profile page, and then complete one of the following steps:
-{: tsResolve}
-  * If you have already registered an IBMid and you want to check whether your ID and password are valid, click **Sign in** and enter your IBMid and password on the Sign in page. If you have forgotten your password, click **Forgot your password** on the Sign in page to reset your password. If you have forgotten your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help. 
-  * If you don't have an IBMid, click **Register** to register an IBMid and password. 
-  
-**Note:** For IBM employees, the IBMid might be different from the intranet login ID. 
--->
-
-
-<!-- begin STAGING ONLY --> 
-
-## Problem accessing external website
-{: #ts_bmlinkid}
-
-You cannot log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID unless you link your intranet ID with your IBMid.
-
-
-After you select **Sign in with your intranet ID** from the {{site.data.keyword.Bluemix_notm}} Sign in page, you might see the following error message:
-{: tsSymptoms} 
-
-`Problem Accessing External Website`
-
-
-
-This problem occurs when you log in to {{site.data.keyword.Bluemix_notm}} by using an IBM intranet ID that is not linked to an IBMid. Your IBMid is the ID that you use to log in to www.ibm.com.
-{: tsCauses}
-
-
-As an IBM employee, before you are able to log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID, you must link your intranet ID with your external IBMid. To link the two IDs, complete the following steps:
-{: tsResolve} 
-
-  1. On the [Central Sign-on](https://w3-03.sso.ibm.com/tools/cso/index.jsp){: new_window} page, click **My Sign-ons**.
-  2. On the My Sign-ons page, click **Link IDs**, and enter your IBMid and password on the {{site.data.keyword.Bluemix_notm}} Sign in page. After that, your intranet ID and IBMid will be automatically linked.
-  
-
-<!-- end STAGING ONLY -->
-
-
 
 
 ## You have unsaved changes
@@ -139,13 +83,13 @@ If your account is pending, you cannot log in to {{site.data.keyword.Bluemix_not
 After you register for a {{site.data.keyword.Bluemix_notm}} trial account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. Instead, you see the following message:
 {: tsSymptoms}
 
-<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Bluemix Support</a>.</code>
+<code>Your account is pending. Please wait up to 24 hours for email confirmation and also check your spam folder. If you still have not received your email confirmation, contact <a href="https://chinabluemix.itsm.unisysedge.cn/" target="_blank">Bluemix Support</a>.</code>
 
 
 After you register for a {{site.data.keyword.Bluemix_notm}} trial account, you receive a confirmation email. You must click the link that is in the confirmation email to complete the registration process.
 {: tsCauses} 
 
-The confirmation email is sent to the email address that you provided. Check your inbox and your junk mail folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport.com){: new_window}.  
+The confirmation email is sent to the email address that you provided. Check your inbox and your junk mail folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support](https://chinabluemix.itsm.unisysedge.cn/){: new_window}.  
 {: tsResolve}
 
 
@@ -189,7 +133,7 @@ If you are unable to invite users to your organization and need a different role
   
 If you are unable to invite users because you are a collaborator and not a member, you must delete your previous {{site.data.keyword.Bluemix_notm}} account and then be invited to join the account as a member of the organization. To delete your previous account and join the account as a member, complete the following steps: 
 
-  1. Contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport){: new_window} to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email. 
+  1. Contact [{{site.data.keyword.Bluemix_notm}} Support](https://chinabluemix.itsm.unisysedge.cn/){: new_window} to open a support ticket and request that your account be deleted. If you have data that is associated with your old account that you want to save and move to the new account, include this information in your email. 
   2. After your account is deleted, have a user with the organization manager role invite you to the organization as an organization manager. Then, sign up for {{site.data.keyword.Bluemix_notm}} from the invitation. 
 
 
@@ -394,7 +338,7 @@ Ensure that you created a space in your current organization.  To create a space
   * Click the {{site.data.keyword.avatar}} icon ![Avatar icon](images/account_support.svg) to open the Account and Support widget, select the organization that you want to create the space in, and then click **Create a Space**.
   * In the cf command line interface, type `cf create-space <space_name> -o <organization_name>`.
 
-Try again. If you see this message again, go to the [Bluemix status](http://ibm.biz/bluemixstatus){: new_window} page to check whether a service or component has an issue.
+Try again. If you see this message again, go to the [Bluemix status](http://www.{DomainName}/status){: new_window} page to check whether a service or component has an issue.
 
 
 
@@ -496,7 +440,7 @@ Other less common causes of a Bad Gateway error are Internet service provider (I
 
  
 
-If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first check the [{{site.data.keyword.Bluemix_notm}} status](http://ibm.biz/bluemixstatus){: new_window} page. You might want to use the service in another {{site.data.keyword.Bluemix_notm}} region as a workaround. Detailed information is available in [Using services in another region](../services/reqnsi.html#cross_region_service){: new_window}. If the service status is normal, try the following steps to solve the problem: 
+If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first check the [{{site.data.keyword.Bluemix_notm}} status](http://www.{DomainName}/status){: new_window} page. You might want to use the service in another {{site.data.keyword.Bluemix_notm}} region as a workaround. Detailed information is available in [Using services in another region](../services/reqnsi.html#cross_region_service){: new_window}. If the service status is normal, try the following steps to solve the problem: 
 {: tsResolve}
 
   * Retry the action:
@@ -775,43 +719,7 @@ Use one of the following methods to solve the problem:
    ```
   * Create a `package.json` file that is in the same directory as your app.
 
-  
-  
-  
-<!-- begin STAGING ONLY --> 
 
-## Bluemix Live Sync Debug does not start from the command line
-{: #ts_no_debug}
-
-You enabled the IBM Bluemix Live Sync Debug feature for your app by using the command line, but you cannot access the Debug interface.  
-  
- 
-
-You enabled the Debug feature for your app by setting the **BLUEMIX_APP_MGMT_ENABLE** environment variable. However, you cannot access the Debug user interface at `app_url/bluemix-debug/manage`.
-{: tsSymptoms}
-
-
-
-The Debug feature cannot be enabled in these situations:
-{: tsCauses} 
-
-  * When the `manifest.yml` contains the command attribute
-  * When you use the **-c** option to push an app to {{site.data.keyword.Bluemix_notm}}
-
- 
-  
-Use one of the following options to resolve the issue: 
-{: tsResolve}
-
-  * The recommended practice is to use the IBM Node.js buildpack to start the app. For more information, see the Startup command section of the [Deploying a Node.js application to {{site.data.keyword.Bluemix_notm}}](../runtimes/nodejs/index.html#nodejs_runtime){: new_window} topic. 
-  * Disable the command for your existing app either by revising the command attribute in your `manifest.yml` to command: null or by editing your push command to include `-c null`. 
-  * Remove the **command** attribute from the `manifest.yml`. Then delete the current app from {{site.data.keyword.Bluemix_notm}} and push the app again.
-  
-<!-- end STAGING ONLY -->  
-  
-  
-
-  
   
 ## Orgs can't be found on {{site.data.keyword.Bluemix_notm}}
 {: #ts_orgs}
@@ -1315,7 +1223,7 @@ The status of your {{site.data.keyword.Bluemix_notm}} account becomes inactive w
 
  
 
-To reactivate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](http://ibm.biz/bluemixsupport.com){: new_window}. In the email, you must include the following information:
+To reactivate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](https://chinabluemix.itsm.unisysedge.cn/){: new_window}. In the email, you must include the following information:
 {: tsResolve}
 
   * The ID that you use to log in to {{site.data.keyword.Bluemix_notm}}.
@@ -1362,41 +1270,12 @@ You might notice that several applications share the same URL in {{site.data.key
 This problem might happen when you assign the same URL route for different applications within a space.
 {: tsCauses}
 
-For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mychinabluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mychinabluemix.net". The route is now mapped to both applications.
+For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.{DomainName}". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.{DomainName}". The route is now mapped to both applications.
 
  
 
 This is supported behavior of the {{site.data.keyword.Bluemix_notm}} and you can use this practice to achieve zero downtime for your application upgrade. For more information, see Blue-green deployments.
 {: tsResolve}
-  
-	
-	
-<!-- begin STAGING ONLY --> 
-	
-	
-## Administrators can't view all orgs by using the {{site.data.keyword.Bluemix_notm}} user interface
-{: #ts_ui_org}
-
-As an administrator, when you use the {{site.data.keyword.Bluemix_notm}} user interface, you can't display every organization to administer them. You can display and administer only those organizations to which you belong.
-
- 
-
-As an administrator, you cannot see all the organizations by using the {{site.data.keyword.Bluemix_notm}} user interface.
-{: tsSymptoms}
-
- 
-
-This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
-{: tsCauses}
-
- 
-
-You can use the command such as `cf orgs`, `cf create-org`, and `cf delete-org` from the cf command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
-{: tsResolve}
-	
-<!-- end STAGING ONLY -->
-
-
 
 
 ## Credit card can't be added
@@ -1701,9 +1580,6 @@ You can resolve this issue by using one of the following methods:
 	```
 	
 	
-<!-- begin STAGING ONLY --> 
-
-	
 ## Log4js logger objects are not displayed in the Node.js Trace pop-up window
 {: #ts_logger}
 
@@ -1720,13 +1596,6 @@ Because the ibmbluemix module provides a unified API for log operations that use
 
 This behavior is expected.
 {: tsResolve}
-
-<!-- end STAGING ONLY -->
-
-
-
-
-<!-- begin STAGING ONLY -->
 
 
 ## Apply trace setting to all instances of the application check box is disabled
@@ -1750,5 +1619,4 @@ When Bunyan log levels are modified, the trace setting cannot be applied to all 
 This behavior is expected.
 {: tsResolve} 
 
-<!-- end STAGING ONLY -->
 

@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-
+lastupdated: "2016-09-05"
  
  
 ---
@@ -415,28 +415,9 @@ cf update-service <service_name> [-p <new_plan>]
 ```
 
 
-<!-- audience blue staging only begin comment -->
-
-##Requesting more quota for staging
-{: #staging_quota}
-
-Your organization might run out of free quota easily and require more disk space or memory in order to host a demo for clients.
-
-Use the following template in the request and send the request to [{{site.data.keyword.Bluemix_notm}} admin](mailto:bluemix-admin-reqs@wwpdl.vnet.ibm.com){: new_window} .
-
-1. What is the organization that needs increased quota?
-2. What type and amount of quota is needed?
-3. Are you from a service team under the service onboarding Process? `Yes`/`No`
-4. Are you from a {{site.data.keyword.Bluemix_notm}} testing or development team? `Yes`/`No`
-5. If both 3 and 4 are `No`, what is the team or group that you belong to?
-6. What is the Service Operation Plan (SOP) number?
-7. Provide a detailed justification for your request for quota increase.
-
-<!-- audience blue staging only end comment -->
-
 # rellinks
 ## general 
 * [{{site.data.keyword.Bluemix_notm}} Pricing Sheet](https://console.{DomainName}/pricing/)
 * [{{site.data.keyword.Bluemix_notm}} Developers Community Forum](https://developer.ibm.com/bluemix/)
-* [Getting online help](https://www.{DomainName}/docs/troubleshoot/getting_customer_support.html#online_help)
+* [Getting online help](../troubleshoot/getting_customer_support.html#online_help)
 * [Contact us](https://console.{DomainName}/#/contactUs/cloudOEPaneId=contactUs)

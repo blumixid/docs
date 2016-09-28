@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-
+lastupdated: "2016-09-05"
 
 
 ---
@@ -15,7 +15,7 @@ copyright:
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-<!-- staging only content beginning -->
+
 
 # Administering
 {: #administer}

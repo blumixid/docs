@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-
+lastupdated: "2016-09-14"
 
 
 ---
@@ -485,7 +485,6 @@ Depending on the issue, you, IBM, or both of you work together to fix the issue.
 
 **Note**: Severity 1 support tickets are monitored 24 hours a day, 7 days a week. Other tickets are processed from Sunday 10:00 pm GMT through Saturday 12:00 am GMT. For more information about severity of support tickets and working with support, see <a href="../support/index.html#contacting-bluemix-support-local">Contacting support</a>.
 
-<!-- audience blue staging only end -->
 
 ## Disaster recovery
 {: #dr}

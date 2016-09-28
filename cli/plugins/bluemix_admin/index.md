@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-
+lastupdated: "2016-09-09"
 
 
 ---
@@ -132,7 +132,6 @@ cf ba add-user <user_name> <organization>
 **Tip:** You can also use **ba au** as an alias for the longer
 **ba add-user** command name.
 
-<!-- staging-only commands start. Live for interconnect -->
 
 ### Search for a user
 
@@ -182,7 +181,6 @@ cf ba set-permissions <user_name> <permission> <access>
 **Tip:** You can also use **ba sp** as an alias for the longer
 **ba set-permissions** command name.
 
-<!-- staging-only commands end -->
 
 ### Removing a user
 

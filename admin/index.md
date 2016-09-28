@@ -5,6 +5,7 @@
 copyright:
 
   years: 2015, 2016
+  lastupdated: "2016-09-16"
 
 
 
@@ -406,17 +407,6 @@ Catalog, select **DISABLE ALL PLANS**.
 - To control the visibility of an individual plan, select the plan name, and then use the
 drop-down menu to select **Enable for all organizations**, **Disable for all organizations**, or **Enable plan for specific organizations**.
 
-<!-- staging only start -->
-
-You can also manage the priority order of available buildpacks to be chosen based on compatibility for your developers when they are creating apps.
-
-1. Go to **ADMINISTRATION &gt; CATALOG MANAGEMENT**
-2. Go to the **Compute** section.
-3. Select **Buildpack priority**.
-4. Select the buildpack option that you want to prioritize higher or lower within the list.
-5. With the option selected, use the arrows to move the option within the list.
-
-<!-- staging only end -->
 
 ### Registering a service broker
 {: #servicebrokerui}

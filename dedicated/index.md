@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-
+lastupdated: "2016-09-26"
 
 
 ---
@@ -16,7 +16,7 @@ copyright:
 # {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #dedicated}
 
-Last updated: 21 September 2016
+Last updated: 26 September 2016
 {: .last-updated}
 
 
@@ -32,7 +32,7 @@ All dedicated deployments of {{site.data.keyword.Bluemix_notm}} include the foll
 
 {{site.data.keyword.Bluemix_notm}} Dedicated comes with all included {{site.data.keyword.Bluemix_notm}} runtimes and 64 GB of compute resources memory.
 
-In addition, a set of services and components that are included or optional for purchase will be provided by the end of 2017. Review the following table to see what is included and what you can purchase optionally.
+In addition, a set of services and components that are included or optional for purchase are provided. Review the following table to see what is included and what you can purchase optionally.
 
 <!-- staging only content for lower rows as well as second table -->
 
@@ -45,7 +45,7 @@ In addition, a set of services and components that are included or optional for 
 |Optional | [{{site.data.keyword.apiconnect_short}}](../services/apiconnect/index.html) | {{site.data.keyword.apiconnect_long}} integrates {{site.data.keyword.APIM}} and IBM StrongLoop into a single offering that provides a comprehensive solution to create, run, manage, and enforce APIs and microservices. |
 |Optional | [{{site.data.keyword.cloudant}}](../services/Cloudant/index.html#Cloudant) | {{site.data.keyword.cloudant}} provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB, and accessible through a simple to use HTTP interface for mobile and web application models. |
 | Optional | [{{site.data.keyword.messagehub}}](../services/MessageHub/index.html#messagehub) | {{site.data.keyword.messagehub}} is a scalable, distributed, high throughput message bus to unite your on-premises and off-premises technologies. {{site.data.keyword.messagehub}} is based on Apache Kafka, which is a fast, scalable, and durable real-time messaging engine. |
-|Optional | [{{site.data.keyword.mobilepushshort}}](../services/mobilepush/index.html) | {{site.data.keyword.mobilepushshort}} is a service that you can use to send notifications to iOS and Android device. Notifications can be targeted to all application users or to a specific set of users and devices using tags. You can administer devices, tags, and subscriptions. You can also use an SDK (software development kit) and Representational State Transfer (REST) application program interface (APIs) to further develop your client applications.|
+| Optional | [{{site.data.keyword.dashdbshort}}](../services/dashDB/dashDB.html) | Use dashDB to store relational data, including special types such as geospatial data. Then analyze that data with SQL or advanced built-in analytics like predictive analytics and data mining, analytics with R, and geospatial analytics. |
 | Optional | [{{site.data.keyword.iot_short}}](../services/IoT/index.html) | This service lets your apps communicate with and consume data collected by your connected devices, sensors and gateways. The base offering permits running a private version of the {{site.data.keyword.iot_short}} within the dedicated environment with a capacity of 100,000 concurrently connected devices or applications and 1.6 TB of data exchange. |
 
 
@@ -53,31 +53,6 @@ There are optional components that are available for you to purchase to scale an
 
 
 
-### Syndicated catalog
-{: #catalogdedicated}
-
-{{site.data.keyword.Bluemix_notm}} Dedicated includes a private catalog that brings together approved services across your public, dedicated and local deployments. You can even publish and manage access to your own services through the {{site.data.keyword.Bluemix_notm}} catalog. You have the option to decide which public services meet the requirements for your business based on your data privacy and security criteria. 
-
-If you have a private instance of the service for your dedicated environment, you see a "Dedicated" tag with the service names in your catalog. Similarly, if it is a custom service, meaning you used a service broker to create it, you see "Custom" listed with the service name. All other services listed that do not have a "dedicated" or "custom" tag are available by using syndication from {{site.data.keyword.Bluemix_notm}} Public. Syndicated services provide the function to create hybrid applications that consist of public and private services. 
-
-
-*Table 3. Services available for syndication from {{site.data.keyword.Bluemix_notm}} Public*
-
-
-|Service	|Available in China |
-|:----------|:------------------------------|
-|{{site.data.keyword.autoscaling}}| Yes |
-|{{site.data.keyword.cloudant}}| Yes |
-|{{site.data.keyword.customimageclassifier}} | Yes |
-|{{site.data.keyword.deepsentimine}} | Yes |
-|{{site.data.keyword.hybriddb}} | Yes |
-|{{site.data.keyword.messagehub}}| Yes |
-|{{site.data.keyword.mobilemediasocialint}} | Yes |
-|{{site.data.keyword.namedentityrecog}} | Yes |
-|{{site.data.keyword.questionandanswershort}} | Yes |
-|{{site.data.keyword.ssoshort}}| Yes |
-|{{site.data.keyword.speechrecog}} | Yes |
-|{{site.data.keyword.iot_short}}| Yes |
 
 ## {{site.data.keyword.Bluemix_notm}} Dedicated architecture
 {: #dedicatedarch}

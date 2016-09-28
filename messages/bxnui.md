@@ -1,3 +1,11 @@
+---
+
+copyright:
+  years: 2016
+lastupdated: "2016-09-13"
+
+---
+
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
@@ -12,7 +20,7 @@ When you receive an error message from {{site.data.keyword.Bluemix_notm}}, you c
 ## BXNUI0001E
 **The page wasn't loaded because Bluemix didn't detect whether a session exists.** 
 
-For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}.
+For instructions to fix this problem, see this [troubleshooting topic](../troubleshoot/accessing.html#tr_err){: new_window}.
 
 
 ## BXNUI0004E

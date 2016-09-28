@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-09-13"
 
 ---
 
@@ -22,39 +23,6 @@ Last updated: 13 September 2016
 
 General problems with accessing {{site.data.keyword.Bluemix_notm}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
 {:shortdesc}
-
-
-
-
-<!-- begin STAGING ONLY --> 
-
-## Problem accessing external website
-{: #ts_bmlinkid}
-
-You cannot log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID unless you link your intranet ID with your IBMid.
-
-
-After you select **Sign in with your intranet ID** from the {{site.data.keyword.Bluemix_notm}} Sign in page, you might see the following error message:
-{: tsSymptoms} 
-
-`Problem Accessing External Website`
-
-
-
-This problem occurs when you log in to {{site.data.keyword.Bluemix_notm}} by using an IBM intranet ID that is not linked to an IBMid. Your IBMid is the ID that you use to log in to www.ibm.com.
-{: tsCauses}
-
-
-As an IBM employee, before you are able to log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID, you must link your intranet ID with your external IBMid. To link the two IDs, complete the following steps:
-{: tsResolve} 
-
-  1. On the [Central Sign-on](https://w3-03.sso.ibm.com/tools/cso/index.jsp){: new_window} page, click **My Sign-ons**.
-  2. On the My Sign-ons page, click **Link IDs**, and enter your IBMid and password on the {{site.data.keyword.Bluemix_notm}} Sign in page. After that, your intranet ID and IBMid will be automatically linked.
-  
-
-<!-- end STAGING ONLY -->
-
-
 
 
 ## You have unsaved changes

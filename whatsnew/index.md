@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-
+lastupdated: "2016-08-16"
  
 
 ---
@@ -25,7 +25,7 @@ Stay up-to-date with the new features and services that are available in {{site.
 ### Set email notifications for your {{site.data.keyword.Bluemix}} account
 *New as of: 12 July 2016*
 
-You can now set platform notifications, in addition to the existing spending notification capability, for your {{site.data.keyword.Bluemix}} account. Choose to receive an email notification regarding platform-wide {{site.data.keyword.Bluemix}} incidents or planned {{site.data.keyword.Bluemix}} maintenance events. To learn more about how to set these notifications, see [Setting notifications](../admin/account.html#notifications). And, remember, you can always see the latest status of incidents and planned maintenance events by visiting the [Status](http://ibm.biz/bluemixstatus){: new_window} page. 
+You can now set platform notifications, in addition to the existing spending notification capability, for your {{site.data.keyword.Bluemix}} account. Choose to receive an email notification regarding platform-wide {{site.data.keyword.Bluemix}} incidents or planned {{site.data.keyword.Bluemix}} maintenance events. To learn more about how to set these notifications, see [Setting notifications](../admin/account.html#notifications). And, remember, you can always see the latest status of incidents and planned maintenance events by visiting the [Status](http://www.{DomainName}/status){: new_window} page. 
 
 ### Check out the new user experience for the {{site.data.keyword.Bluemix_notm}} docs
 *New as of: 27 June 2016*

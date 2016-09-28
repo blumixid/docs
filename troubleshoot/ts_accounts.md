@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-09-13"
 
 ---
 
@@ -91,7 +92,7 @@ You might notice that several applications share the same URL in {{site.data.key
 This problem might happen when you assign the same URL route for different applications within a space.
 {: tsCauses}
 
-For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mychinabluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mychinabluemix.net". The route is now mapped to both applications.
+For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.{DomainName}". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.{DomainName}". The route is now mapped to both applications.
 
  
 
@@ -99,31 +100,6 @@ This is supported behavior of the {{site.data.keyword.Bluemix_notm}} and you can
 {: tsResolve}
   
 	
-	
-<!-- begin STAGING ONLY --> 
-	
-	
-## Administrators can't view all orgs by using the {{site.data.keyword.Bluemix_notm}} user interface
-{: #ts_ui_org}
-
-As an administrator, when you use the {{site.data.keyword.Bluemix_notm}} user interface, you can't display every organization to administer them. You can display and administer only those organizations to which you belong.
-
- 
-
-As an administrator, you cannot see all the organizations by using the {{site.data.keyword.Bluemix_notm}} user interface.
-{: tsSymptoms}
-
- 
-
-This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
-{: tsCauses}
-
- 
-
-You can use the command such as `cf orgs`, `cf create-org`, and `cf delete-org` from the cf command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
-{: tsResolve}
-	
-<!-- end STAGING ONLY -->
 
 
 
