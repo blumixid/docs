@@ -48,11 +48,11 @@ Cloud Foundry cf 命令行工具是所有其他 {{site.data.keyword.Bluemix_notm
 
 1. 要从 {{site.data.keyword.Bluemix_notm}} 注册表安装 {{site.data.keyword.Bluemix_notm}} CLI 插件，请设置插件注册表端点：
 ```
-bluemix plugin repo-add bluemix-bx-staging https://plugins.ng.bluemix.net
+bluemix plugin repo-add bluemix-bx https://plugins.ng.bluemix.net
 ```
 2. 运行以下命令来安装插件：
 ```
-bluemix plugin install plugin_name -r bluemix-bx-staging
+bluemix plugin install plugin_name -r bluemix-bx
 ```
 
 | *{{site.data.keyword.autoscaling}} CLI* | *目录管理器*  |
@@ -66,11 +66,11 @@ bluemix plugin install plugin_name -r bluemix-bx-staging
 
 1. 要从 {{site.data.keyword.Bluemix_notm}} 注册表安装 cf CLI 插件，请设置插件注册表端点：
 ```
-cf add-plugin-repo bluemix-cf-staging https://plugins.ng.bluemix.net
+cf add-plugin-repo bluemix-cf https://plugins.ng.bluemix.net
 ```
 2. 运行以下命令来安装插件：
 ```
-cf install-plugin plugin_name -r bluemix-cf-staging
+cf install-plugin plugin_name -r bluemix-cf
 ```
 
 | *管理控制台* | 

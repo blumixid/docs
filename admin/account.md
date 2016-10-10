@@ -35,19 +35,6 @@ You can set platform email notifications for {{site.data.keyword.Bluemix_notm}} 
 
 Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Notifications** &gt; **Platform** to set email notifications for {{site.data.keyword.Bluemix_notm}} incidents and planned maintenance. You can select or clear each option to enable or disable the email notification.
 
-<!-- staging only
-
-**Note**: You are always alerted by email about emergencies and pricing changes.
-
-On the **Platform** tab you can also customize notifications for your orgs, spaces, or applications. Complete the following steps to add a customized notification:
-
-<ol>
-<li>Select **Add a Notification**.</li>
-<li>Use the search field to find the org, application, service, or resource that you want to set a notification for, or expand the item in the pre-populated list.</li>
-<li>Select *Email* to set the notification type.</li>
-</ol>
-
-staging only end -->
 
 ### Setting spending notifications
 {: #spendingnotifications}

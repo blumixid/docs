@@ -15,7 +15,6 @@ copyright:
 {:screen: .screen}
 {:new_window: target="_blank"}
 
-<!-- staging only content beginning -->
 
 # 管理
 {: #administer}

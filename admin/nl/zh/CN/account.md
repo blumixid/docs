@@ -36,19 +36,6 @@ copyright:
 转至 **{{site.data.keyword.avatar}}** 图标 ![Avatar 图标](../icons/i-avatar-icon.svg) &gt; **帐户** &gt; **通知** &gt; **平台**，以针对 {{site.data.keyword.Bluemix_notm}} 事件和计划内维护设置电子邮件通知。
 您可以选择或清除每个选项，以启用或禁用电子邮件通知。
 
-<!-- staging only
-
-**Note**: You are always alerted by email about emergencies and pricing changes.
-
-On the **Platform** tab you can also customize notifications for your orgs, spaces, or applications. Complete the following steps to add a customized notification:
-
-<ol>
-<li>Select **Add a Notification**.</li>
-<li>Use the search field to find the org, application, service, or resource that you want to set a notification for, or expand the item in the pre-populated list.</li>
-<li>Select *Email* to set the notification type.</li>
-</ol>
-
-staging only end -->
 
 ### 设置花费通知
 {: #spendingnotifications}
