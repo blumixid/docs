@@ -1,0 +1,183 @@
+---
+
+copyright:
+  years: 2015, 2016
+
+---
+
+{:new_window: target="_blank"}  
+{:shortdesc: .shortdesc}
+
+
+# 将服务添加到应用程序
+{: #add_service}
+
+上次更新时间：2016 年 9 月 8 日
+{: .last-updated}
+
+{{site.data.keyword.Bluemix_notm}} 具有服务列表并为开发人员管理这些服务。要添加服务以供您的应用程序使用，必须请求此服务的实例，并将该应用程序配置为与此服务进行交互。
+
+通过下列方式，您可以在 {{site.data.keyword.Bluemix_notm}} 中查看所有可用服务：
+
+* 从 {{site.data.keyword.Bluemix_notm}} 用户界面。查看 {{site.data.keyword.Bluemix_notm}}“目录”。
+* 从 cf 命令行界面。使用 **cf marketplace** 命令。
+* 从您自己的应用程序。使用 [GET /v2/services Services API](http://apidocs.cloudfoundry.org/197/services/list_all_services.html){: new_window}。
+
+在开发应用程序时，您可以选择所需的服务。在您进行选择后，{{site.data.keyword.Bluemix_notm}} 将与该服务进行交互，并执行必要的步骤以供应服务的资源。对于不同类型的服务，供应过程可能会不同。例如，数据库服务会创建数据库，移动应用程序的推送通知服务会生成配置信息。
+
+{{site.data.keyword.Bluemix_notm}} 通过使用服务实例来为您的应用程序提供服务的资源。可以跨 Web 应用程序共享服务实例。
+
+您还可使用在其他区域中托管的服务（如果这些服务在这些区域中可用）。这些服务必须可从因特网访问并且具有 API 端点。必须按照与编码外部应用程序或第三方工具以使用 {{site.data.keyword.Bluemix_notm}} 服务相同的方式来手动编码应用程序以使用这些服务。有关更多信息，请参阅[允许外部应用程序和第三方工具使用 {{site.data.keyword.Bluemix_notm}} 服务](#accser_external)。
+
+<!-- begin STAGING ONLY -->
+
+如果您希望将服务添加到 {{site.data.keyword.Bluemix_notm}} 服务目录以供 {{site.data.keyword.Bluemix_notm}} 应用程序使用，那么可构建自己的服务，并将其与 {{site.data.keyword.Bluemix_notm}} 集成。有关更多信息，请参阅[将服务与 {{site.data.keyword.Bluemix_notm}} 集成](../services/onboarding/index.html#v2api){: new_window}。
+
+<!-- end STAGING ONLY -->
+
+
+
+## 请求新的服务实例
+{: #req_instance}
+
+要请求新的服务实例，必须使用 {{site.data.keyword.Bluemix_notm}} 用户界面或 cf 命令行界面。
+
+**注：**指定服务名称时，请避免使用非字母或数字字符，因为结果可能难以预料。
+
+如果使用 {{site.data.keyword.Bluemix_notm}} 用户界面请求服务实例，请完成以下步骤：
+
+1. 在 {{site.data.keyword.Bluemix_notm}} **目录**中，单击要添加的服务的磁贴。这将打开服务详细信息页面。
+
+2. 在“添加服务”窗格中，从**应用程序**列表中选择要将此服务实例绑定到的应用程序。
+
+3. 在**服务名称**字段中键入名称。系统提供了缺省服务名称。您可以更改该字段中的名称，也可以保留不变。
+
+4. 完成其他字段或选择，然后单击**创建**。
+
+如果使用 cf 命令行界面请求服务实例，请完成以下步骤：
+
+1. 使用 **cf marketplace** 命令查找所需服务的名称和套餐。
+
+2. 使用以下命令创建服务实例，其中 service_name 是服务的名称；service_plan 是服务的套餐；service_instance 是您希望用于此服务实例的名称。
+
+    ```
+cf create-service service_name service_plan service_instance
+    ```
+
+3. 使用以下命令将服务实例绑定到应用程序，其中 appname 是应用程序的名称；service_instance 是服务实例的名称。
+
+    ```
+    cf bind-service appname service_instance
+    ```
+
+只能将服务实例绑定到位于同一空间或组织中的应用程序实例。不过，也可以按照与外部应用程序相同的方式使用其他空间或组织中的服务实例。不要创建绑定，请改用凭证来直接配置应用程序实例。有关外部应用程序如何使用 {{site.data.keyword.Bluemix_notm}} 服务的更多信息，请参阅[允许外部应用程序使用 {{site.data.keyword.Bluemix_notm}} 服务](#accser_external){: new_window}。  
+  
+  
+
+
+## 将应用程序配置为与服务进行交互
+{: #config}
+
+将服务实例绑定到应用程序后，必须将应用程序配置为与服务交互。
+
+每个服务可能需要采用不同的机制与应用程序进行通信。在开发应用程序时，会记录这些机制作为服务定义的一部分以供您参阅。为了实现一致性，您的应用程序需要通过这些机制与服务进行交互。
+
+* 要与数据库服务交互，请使用 {{site.data.keyword.Bluemix_notm}} 提供的信息，例如，用户标识、密码和应用程序的访问 URI。
+* 要与移动后端服务交互，请使用 {{site.data.keyword.Bluemix_notm}} 提供的信息，例如，应用程序标识、特定于客户机的安全性信息以及应用程序的访问 URI。移动服务通常彼此配合工作，以便能够在一组服务之间共享上下文信息，例如，应用程序开发者名称和使用应用程序的用户。
+* 要与 Web 应用程序或移动应用程序的服务器端云代码交互，请在应用程序的 *VCAP_SERVICES* 环境变量中使用 {{site.data.keyword.Bluemix_notm}} 提供的信息，例如，运行时凭证。*VCAP_SERVICES* 环境变量的值是序列化 JSON 对象。该变量包含与绑定应用程序的服务进行交互所需要的运行时数据。不同服务的数据格式不同。您可能需要阅读服务文档以了解预期的结果以及如何解读每条信息。
+
+如果绑定到应用程序的服务崩溃，那么应用程序可能会停止运行或发生错误。{{site.data.keyword.Bluemix_notm}} 不会自动重新启动应用程序，以便从这些问题中进行恢复。在进行应用程序编码时，应考虑到识别中断、异常和连接失败以及进行恢复的问题。有关更多信息，请参阅[应用程序不会自动重新启动](../troubleshoot/index.html#ts_topmenubar)故障诊断主题。
+
+## 允许外部应用程序使用 {{site.data.keyword.Bluemix_notm}} 服务
+{: #accser_external}
+
+您可能会有在 {{site.data.keyword.Bluemix_notm}} 外部创建和运行的应用程序，或者，您可能会使用第三方工具。如果 {{site.data.keyword.Bluemix_notm}} 服务提供可从因特网访问的端点，那么您可以通过本地应用程序或第三方工具来使用这些服务。
+
+要允许外部应用程序或第三方工具使用 {{site.data.keyword.Bluemix_notm}} 服务，请完成以下步骤：
+
+1. 请求服务的实例。
+    1. 在 {{site.data.keyword.Bluemix_notm}} 用户界面中的“仪表板”上，单击**使用服务或 API**。这将显示“目录”。
+    2. 在“目录”中，通过单击服务磁贴来选择所需的服务。这将打开服务详细信息页面。
+    3. 在“添加服务”窗口中，将**应用程序**列表选择保留为**保持未绑定**。此选择意味着该服务不会连接到 {{site.data.keyword.Bluemix_notm}} 应用程序。
+    4. 根据需要进行任何其他选择。然后，单击**创建**。这将创建服务实例，并显示服务“仪表板”。
+2. 在服务“仪表板”中，可以选择**服务凭证**来查看或添加 JSON 格式的凭证。使用显示的 API 密钥作为凭证来连接到服务实例。
+
+在 {{site.data.keyword.Bluemix_notm}} 外部运行的应用程序现在可以访问 {{site.data.keyword.Bluemix_notm}} 服务。
+
+**注：**如果想要删除服务实例或检查记帐信息，必须返回到用户界面中用于管理服务实例的“仪表板”。
+
+## 创建用户提供的服务实例
+{: #user_provide_services}
+
+您可能有一些资源是在 {{site.data.keyword.Bluemix_notm}} 外部管理的。如果您拥有从因特网访问这些外部资源的凭证，那么可以创建用户提供的 {{site.data.keyword.Bluemix_notm}} 服务实例来代表外部资源并与这些资源进行通信。
+
+要创建用户提供的服务实例并将其绑定到应用程序，请完成以下步骤：
+
+1. 创建用户提供的服务实例，方法是使用 **cf create-user-provided-service** 或 **cf cups** 命令：
+    * 要创建用户提供的一般服务实例，请使用 **-p** 选项，并用逗号分隔参数名称。随后，cf 命令行界面会依次提示您提供每个参数的值。例如：
+        ```
+cf cups testups1 -p "host, port, dbname, username, password"
+        host> pubsub01.example.com
+        port> 1234
+        dbname> sampledb01
+        username> pubsubuser
+        password> p@$$w0rd
+        正在以 user@sample.com 身份在组织 my-org/空间 dev 中创建用户提供的服务 testups1...
+        成功
+        ```
+
+    * 要创建服务实例来将信息排出至第三方日志管理软件，请使用 **-l** 选项，然后指定第三方日志管理软件提供的目标。例如：
+
+        ```
+cf cups testups2 -l syslog://example.com
+        正在以 user@sample.com 身份在组织 my-org/空间 dev 中创建用户提供的服务 testups2...
+        成功
+        ```
+
+    如果想要更新用户提供的服务实例的一个或多个参数，请使用 **cf update-user-provided-service** 或 **cf uups** 命令。
+
+    * 要更新一般用户提供的服务实例，请使用 **-p** 选项，并在 json 对象中指定参数键和值。例如：
+
+        ```
+cf uups testups1 -p "{\"username\":\"pubsubuser2\",\"password\":\"p@$$w0rd2\"}"
+        正在以 user@sample.com 身份在组织 my-org/空间 dev 中更新用户提供的服务 testups1...
+        成功
+        ```
+
+    * 要创建服务实例来将信息排出至第三方日志管理软件，请使用 -l 选项。例如：
+
+        ```
+cf uups testups2 -l syslog://example2.com
+        正在以 user@sample.com 身份在组织 my-org/空间 dev 中更新用户提供的服务 testups2...
+        成功
+        ```
+
+2. 使用 cf bind-service 命令将该服务实例绑定到您的应用程序。例如：
+
+	```
+	cf bind-service myapp testups1
+	正在以 user@sample.com 身份在组织 my-org/空间 dev 中将服务 testups1 绑定到应用程序 myapp...
+	成功
+	```
+
+现在，您可以将应用程序配置为使用外部资源。有关如何将应用程序配置为与服务进行交互的信息，请参阅[将应用程序配置为与服务进行交互](#config){: new_window}。
+
+		 
+## 在其他服务中使用服务
+{: #s2s_binding}
+
+通过服务访问授权，一个服务可以直接访问另一个服务。在 {{site.data.keyword.Bluemix_notm}}“仪表板”上，可以授权和配置某个服务实例对其他服务实例的访问权。
+
+要从另一个服务使用某个服务实例，请完成以下步骤：
+
+1. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”上，单击要访问的服务的磁贴。这将显示该服务的仪表板。
+2. 在导航窗格中，单击*管理*，通过使用该服务实例的控制台来授权其他服务实例绑定该服务实例。
+3. 如果想要拒绝其他服务访问该服务实例，请单击导航窗格中的*服务访问授权*，然后使用*撤销*来除去服务绑定。
+
+# 相关链接
+{: #rellinks}
+
+## 常规
+{: #general}
+* [使用 {{site.data.keyword.Bluemix_notm}} 用户界面绑定服务](../cfapps/ee.html#ee_bindui)
+* [检索 VCAP_SERVICES](../cli/vcapsvc.html)

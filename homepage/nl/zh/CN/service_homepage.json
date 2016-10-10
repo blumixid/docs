@@ -1,0 +1,31 @@
+{
+  "id": "docs_homepage_services",
+  "title": "如何使用 Bluemix 服务",
+  "subtitle": "了解服务类型和可用性",
+  "subtitleHref": "services/index.html",
+  "items": [{
+    "id": "cfApp",
+    "title": "Cloud Foundry 应用程序",
+    "href": "cfapps/index.html",
+    "category_id": "计算"
+  }, {
+    "title": "运行时",
+    "href": "cfapps/runtimes.html",
+    "category_id": "计算"
+  }, {
+    "title": "样板",
+    "href": "cfapps/boilerplates.html",
+    "category_id": "计算"
+  }, {
+    "type": "额外",
+    "title": "尝试使用数据",
+    "href": "services/WorkWithData/index.html",
+    "category_id": "data"
+  }, {
+    "type": "额外",
+    "title": "尝试 Bluemix Mobile 仪表板",
+    "href": "mobile/index.html",
+    "category_id": "mobile"
+  }]
+}
+

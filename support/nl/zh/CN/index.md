@@ -1,0 +1,319 @@
+---
+
+copyright:
+  years: 2015, 2016
+
+---
+
+
+{:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+
+# 获取客户支持
+{: #getting-customer-support}
+
+上次更新时间：2016 年 9 月 13 日
+{: .last-updated}
+
+
+如果您遇到 Bluemix 问题，可以使用多个支持选项，例如通过论坛获取帮助或开具支持凭单。
+{:shortdesc}
+
+
+## 获取帮助
+{: #getting-help}
+要开具支持凭单或查找其他帮助选项，可以使用“帐户和支持”窗口小部件。您还可以直接转至 developerWorks (dW) Answers 论坛来搜索信息或发布问题。
+{:shortdesc}
+
+
+### 使用帐户和支持窗口小部件
+{: #using-avatar}
+使用“帐户和支持”窗口小部件，可以检查帐户信息、查看状态、获取最新的通知、选择区域、选择和管理组织以及注销。此外，还可获取帮助并提供反馈。
+
+要打开“帐户和支持”窗口小部件，请登录到 {{site.data.keyword.Bluemix_notm}} 用户界面，然后单击菜单栏中的 {{site.data.keyword.avatar}} 图标 ![Avatar 图标](images/account_support.svg)。
+
+单击**获取帮助**来查找问题的答案。在显示的页面上，在搜索字段中键入问题。这会显示来自 {{site.data.keyword.Bluemix_notm}} 文档和 dW Answers 论坛中的答案。此页面还提供了多个选项，用于将问题发布到 dW Answers 论坛或通过单击**取得联系**开具凭单。
+
+
+### 提出问题
+{: #asking-a-question}
+
+dW Answers 论坛针对 Bluemix 问题提供了丰富的可供搜索的答案。如果找不到现有答案，还可以转至 [IBM developerWorksChina Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} 来提出问题。
+
+您还可以通过完成以下步骤，在 dW Answers 论坛中直接从“帐户和支持”窗口小部件提出问题：
+  1. 在“帐户和支持”窗口小部件中，单击**获取帮助**。 
+  2. 在显示的页面上，在搜索字段中键入问题以寻找答案。 
+  3. 如果未返回期望的答案，请单击**发布到 dW Answers** 以发布您的问题。
+
+
+{{site.data.keyword.Bluemix_notm}} 开发和支持团队会积极监视 dW Answers 论坛，并且会关注带有 **bluemix** 标记的问题。在其中任一论坛中创建问题时，请为问题添加 **bluemix** 标记，以确保 {{site.data.keyword.Bluemix_notm}} 开发和支持团队会看到此问题。
+ 
+
+
+## 查看 {{site.data.keyword.Bluemix_notm}} 状态
+{: #viewing-bluemix-status}
+
+{{site.data.keyword.Bluemix_notm}}“状态”页面是查找通知和公告的一个中心位置，从中可了解影响 {{site.data.keyword.Bluemix_notm}} 平台以及 {{site.data.keyword.Bluemix_notm}} 中主要服务的关键事件。
+
+在“状态”页面上，可以找到以下信息：
+
+  * 所有 {{site.data.keyword.Bluemix_notm}} 区域中服务和组件的当前状态。
+  * 维护和事件相关公告的列表，按时间顺序排列。您可以过滤该列表或打开单个公告来查看更多详细信息。
+  * 计划的维护时段，至少提前 24 小时发布，但一些极端情况除外。
+  * 计划外的事件或中断，在 {{site.data.keyword.Bluemix_notm}} 团队获悉后立即发布。事件通知会定期更新，直到得到解决为止。
+  * 对影响各种 {{site.data.keyword.Bluemix_notm}} 服务或平台的安全公报的引用。
+  * 具有一般关注度的其他平台范围的公告。
+  * 要预订的 RSS 订阅源。
+
+可以通过选择以下两个选项之一来找到“状态”页面：
+
+  * 登录到 {{site.data.keyword.Bluemix_notm}} 用户界面，单击菜单栏中的 {{site.data.keyword.avatar}} 图标 ![Avatar 图标](./images/account_support.svg)，然后单击**状态**。检查列出的资源中是否存在 ![某些问题](images/some_issues.svg) 图标。此图标可能指示有中断情况。
+  * 直接通过 [System Status](https://status.chinabluemix.net/){: new_window} 进行访问。
+
+
+### 预订 RSS 订阅源
+{: #subscribing-rss-feed}
+
+还可以通过预订 {{site.data.keyword.Bluemix_notm}}“状态”页面的 RSS 订阅源来接收任何通知提醒。通过此方法，您可以获取更新，而不必定期查看状态页面。
+
+要进行预订，请执行以下步骤：
+
+  1. 下载并安装 RSS 阅读器。
+  2. 通过以下某个方法，使用您的阅读器来预订订阅源：
+       * 将 ![RSS](images/rss.svg) 图标拖入 RSS 阅读器。
+       * 右键单击 RSS 图标，选择**复制链接地址**，然后将 URL 粘贴到 RSS 阅读器中。
+
+	有关更多信息，请参阅阅读器的**帮助**部分。 	   
+
+通过 Web 浏览器插件可以使用其他阅读 RSS 订阅源的方法，如下所示： 
+  * Chrome 的 [RSS 订阅源](http://feeder.co/){: new_window}阅读器
+  * Firefox 的 [Brief](https://addons.mozilla.org/en-US/firefox/addon/brief/){: new_window} 附加组件
+
+如下所示的新源也会提供阅读 RSS 订阅源的方法：
+  * [Feedly](http://www.feedly.com/){: new_window} 
+  * [G2reader](http://www.g2reader.com/en/){: new_window}
+
+您还可以通过第三方服务自动发送电子邮件来通知每个 RSS 更新。以下列表提供了一些第三方服务示例：
+
+  * www.feedmyinbox.com
+  * www.rssforward.com
+  * www.feedrabbit.com
+  * www.mailchimp.com
+  * www.feedmailer.com
+  * www.iftt.com
+
+{{site.data.keyword.Bluemix_notm}} 每月通常有 50 条左右的更新。
+
+
+
+### 设置事件和维护电子邮件通知
+{: #setting-up-notifications}
+
+对于 {{site.data.keyword.Bluemix_notm}} Public，您可以注册平台通知。平台通知是 {{site.data.keyword.Bluemix_notm}} 平台事件和维护事件的可选电子邮件警报。您可以通过单击 {{site.data.keyword.avatar}} 图标 ![Avatar 图标](../admin/images/account_support.svg) &gt;**通知** &gt; **平台** 选项，来选择接收这些电子邮件通知。有关设置帐户通知的更多信息，请转至[设置通知](../admin/account.html#notifications)。
+
+
+### 监视状态的最佳做法
+{: #best-practices}
+
+  * 检查即将开始的维护时段
+
+	通过使用以下某个选项，检查状态页面上发布的即将开始的维护时段，至少每 24 小时检查一次：
+	  * 直接浏览到[状态](https://status.chinabluemix.net/){: new_window}页面
+	  * 使用 RSS 订阅源或 RSS-to-email 转发器
+
+  * 检查当前维护时段或进行中事件
+
+	如果您怀疑 {{site.data.keyword.Bluemix_notm}} 未按预期运作，请检查状态页面上的当前维护时段或进行中事件。要报告尚未在状态页面上列出的事件，请通过菜单栏中的 {{site.data.keyword.avatar}} 图标 ![Avatar 图标](images/account_support.svg) 或 [Bluemix 支持凭单系统](https://chinabluemix.itsm.unisysedge.cn){: new_window}页面来开具支持凭单。
+
+  * 为小的中断做准备
+
+    在大多数情况下，即使在维护时段内，也可以正常继续使用 {{site.data.keyword.Bluemix_notm}}。但是，小的服务中断总是不可避免的。即使 {{site.data.keyword.Bluemix_notm}} 的应用程序管理功能（例如启动和停止应用程序）暂时中断，运行中应用程序通常也会一直可用。要最大限度地提高运行中应用程序的可用性，每个应用程序应至少运行三个实例。
+
+
+
+## 联系支持人员
+{: #contacting-support}
+
+如果您有有效的 {{site.data.keyword.Bluemix_notm}} 帐户，那么可以开具支持凭单。 
+
+您可以从 {{site.data.keyword.Bluemix_notm}} 用户界面开具 {{site.data.keyword.Bluemix_notm}} 的支持凭单。
+
+### 联系 {{site.data.keyword.Bluemix_notm}} Public 支持人员
+{: #contacting-bluemix-support}
+
+通过 [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/){: new_window}，将为所有 {{site.data.keyword.Bluemix_notm}} 客户提供免费技术支持。此外，还提供了不同的支持级别来满足不同的客户需求。请参阅下表以从免费、基本、标准和高级支持级别中进行选择。 
+
+级别 | 免费 |  基本 | 标准 | 高级
+--- | --- | --- | --- | --- |
+描述 | 支持所有 Bluemix 客户。  |  支持非生产环境或无需传统严重性和响应时间的工作负载。 | 支持具有有限数量的业务关键型应用程序的环境。{{site.data.keyword.Bluemix_notm}} Dedicated 和 {{site.data.keyword.Bluemix_notm}} Local 客户会获得标准支持。 | 支持对 {{site.data.keyword.Bluemix_notm}} 具有战略依赖关系的任务关键型环境。
+高严重性支持 |  不适用 | 不适用 | 内含 | 内含
+支持语言 | 中文，英语 | 中文，英语 | 中文，英语 | 中文，英语
+分配的客户成功经理 (CSM) | 不包含 | 不包含 | 不包含 | 包含：<br> 8 小时/周
+*表 1. 支持级别*
+
+#### 开具支持凭单
+{: #open-ticket}
+
+如果通过故障诊断和帮助选项无法解决您的技术问题，您可以请求支持。但是，在就技术问题联系支持人员之前，请通过检查 {{site.data.keyword.Bluemix_notm}} 状态以确保问题不是因中断而引起的。
+
+
+
+如果问题不是因中断而引起的，请使用以下某个选项来开具支持凭单：
+
+  * 在“帐户和支持”窗口小部件中，单击**获取帮助**。在显示的页面上，单击**取得联系**。填写表单，指出您需要技术支持帮助您解决的问题。
+  
+  * 从 [Bluemix 支持凭单系统](https://chinabluemix.itsm.unisysedge.cn){: new_window}页面。登录后，单击**开具凭单**，然后填写表单。在“环境”字段中，选择**公共**。
+  
+开具支持凭单时，确保为您的凭单指示了适当的严重性。严重性将决定凭单的处理方式。请参阅[支持凭单严重性和响应时间](index.html#support-ticket-severity){: new_window}，以获取有关不同严重性的信息。如果请求非常紧急，但您只具有免费或基本支持，那么可以升级您的帐户以提交高严重性（1 级、2 级和 3 级）凭单。要将帐户升级到更高支持级别，请通过电子邮件 sales@chinabluemix.net 联系销售代表。
+
+
+#### 检查支持凭单状态
+{: #check-ticket-status}
+
+每张支持凭单都会分配有唯一的凭单编号以方便查询。您可以在 [Bluemix 支持凭单系统](https://chinabluemix.itsm.unisysedge.cn){: new_window}页面中使用凭单号来查看支持凭单的进度以及更新支持凭单。更新和响应会通过电子邮件发送给您并记录在凭单说明中。  
+
+
+
+### 联系 {{site.data.keyword.Bluemix_notm}} Dedicated 支持
+{: #contacting-bluemix-support-dedicated}
+
+<!-- Michelle links to this anchor  -->
+
+如果您是 {{site.data.keyword.Bluemix_notm}} Dedicated 客户，那么支持由 {{site.data.keyword.Bluemix_notm}} 支持团队提供。根据您是否具有标识，您可以从几个不同的选项中进行选择来获取支持。
+
+<ul>
+<li>与支持人员联系，方法是使用 <a href="https://chinabluemix.itsm.unisysedge.cn" target="_blank">Bluemix 支持凭单系统</a>页面来开具新凭单。在此表单中，您可以使用电子邮件地址。在“环境”字段中，选择 **{{site.data.keyword.Bluemix_notm}} Dedicated** 选项。</li>
+<li>如果您具有 {{site.data.keyword.Bluemix_notm}} 标识并有权访问 {{site.data.keyword.Bluemix_notm}} Public 环境，请单击菜单栏中的 {{site.data.keyword.avatar}} 图标 <img src="images/account_support.svg" alt="Avatar 图标" />，然后单击**获取帮助**。在显示的页面上，单击**取得联系**。</li>
+<li>如果您没有 {{site.data.keyword.Bluemix_notm}} 标识，那么可以联系您组织中拥有标识的人员，也可以与 21Vianet 代表合作。<p>**注**：您可以请求在 Dedicated 环境中 {{site.data.keyword.Bluemix_notm}} 用户界面的**支持**页面上显示您组织中可用作支持凭单联系人的用户的列表。</p></li>
+</ul>
+
+此外，中国的客户还可以在 [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} 上获取免费支持。
+
+
+### 联系 {{site.data.keyword.Bluemix_notm}} Local 支持
+{: #contacting-bluemix-support-local}
+	
+<!-- Michelle links to this anchor  -->
+
+如果您是 {{site.data.keyword.Bluemix_notm}} Local 客户，那么支持由 {{site.data.keyword.Bluemix_notm}} 支持团队提供。但是，由于您可能没有标识，所以可以通过几个不同的选项来获取支持。
+
+<ul>
+<li>与支持人员联系，方法是使用 <a href="https://chinabluemix.itsm.unisysedge.cn" target="_blank">Bluemix 支持凭单系统</a>页面来开具新凭单。在此表单中，您可以使用电子邮件地址。在“区域”字段中，选择 **{{site.data.keyword.Bluemix_notm}} Local** 选项。</li>
+<li>如果您具有 {{site.data.keyword.Bluemix_notm}} 标识并有权访问 {{site.data.keyword.Bluemix_notm}} Public 环境，请单击菜单栏中的 {{site.data.keyword.avatar}} 图标 <img src="images/account_support.svg" alt="Avatar 图标" />，然后单击**获取帮助**。在显示的页面上，单击**取得联系**。</li>
+<li>如果您没有 {{site.data.keyword.Bluemix_notm}} 标识，那么可以联系您组织中拥有标识的人员，也可以与 21Vianet 代表合作。<p>**注**：您可以请求在 Local 环境中 {{site.data.keyword.Bluemix_notm}} 用户界面的**支持**页面上显示您组织中可用作支持凭单联系人的用户的列表。</p></li>
+</ul>
+
+
+
+
+### 支持凭单严重性和响应时间
+{: #support-ticket-severity}
+
+联系支持人员时，可以根据问题的类型和紧急程度来请求特定严重性级别。严重性级别可能会影响解决问题的速度。
+
+下表列出了支持问题、建议严重性级别和响应时间目标的一些常见示例。响应时间目标仅用于描述 21Vianet 的目标，并不表示性能保证。
+
+
+
+严重性 | 严重性定义 | 响应时间目标 | 响应时间覆盖范围
+------|-------- | --- | --- |
+严重性 1 | <strong>严重业务影响或服务关闭。</strong><br> 业务关键功能无法运行或关键接口发生故障。此严重性通常应用于生产环境，指示由于无法访问服务而导致对运营产生严重影响。此情况需要立即解决。 | <ul><li><strong>免费：</strong>不适用</li><li><strong>基本：</strong>不适用</li><li><strong>标准：</strong>1 小时内</li><li><strong>高级：</strong>1 小时内</li></ul> | <ul><li><strong>免费：</strong>不适用</li><li><strong>基本：</strong>不适用</li><li><strong>标准：</strong>全天候</li><li><strong>高级：</strong>全天候</li></ul> 			   
+严重性 2 | <strong>重大业务影响。</strong><br> 服务特色或功能的使用受到严重限制，或者您即将超过业务截止期限。 | <ul><li><strong>免费：</strong>不适用</li><li><strong>基本：</strong>不适用</li><li><strong>标准：</strong>2 小时内</li><li><strong>高级：</strong>90 分钟内</li></ul> | <ul><li><strong>免费：</strong>不适用</li><li><strong>基本：</strong>不适用</li><li><strong>标准：</strong>工作时间内</li><li><strong>高级：</strong>工作时间内</li></ul>
+严重性 3 | <strong>轻微业务影响。</strong><br> 服务特色或功能可使用，但存在一些影响其使用的问题。不会对操作产生严重影响。 | <ul><li><strong>免费：</strong>不适用</li><li><strong>基本：</strong>不适用</li><li><strong>标准：</strong>4 小时内</li><li><strong>高级：</strong>2 小时内</li></ul> | <ul><li><strong>免费：</strong>不适用</li><li><strong>基本：</strong>不适用</li><li><strong>标准：</strong>工作时间内</li><li><strong>高级：</strong>工作时间内</li></ul>
+严重性 4 | <strong>最小业务影响。</strong><br> 查询或非技术请求。 | <ul><li><strong>免费：</strong>尽力</li><li><strong>基本：</strong>尽力</li><li><strong>标准：</strong>8 小时内</li><li><strong>高级：</strong>4 小时内</li></ul> | <ul><li><strong>免费：</strong>工作时间内</li><li><strong>基本：</strong>工作时间内</li><li><strong>标准：</strong>工作时间内</li><li><strong>高级：</strong>工作时间内</li></ul>
+*表 2. 严重性定义和响应时间*
+
+### 报告潜在安全漏洞
+{: #report-security-vulnerability}
+
+如果您认为发生了潜在的安全漏洞，请通过开具支持凭单向 Bluemix 进行报告。 
+
+要报告潜在安全漏洞，请完成以下步骤：
+  1. 开具严重性级别为 1 的凭单，或开具您的支持所允许最高严重性级别的凭单。有关如何开具凭单的信息，请参阅[开具支持凭单](#open-ticket){: new_window}。 
+  2. 在凭单摘要中清楚地描述该凭单是关于潜在安全漏洞的。
+  2. 通过包含以下某项，提供潜在安全漏洞的详细信息：
+       * 可以联系到您来讨论此问题的电话号码。
+	   * 问题的详细信息。必须在凭单正文中将详细信息加密为文本块，并提供有关支持团队可以如何安全联系到您来获取解密说明的指示信息。
+	   
+	   
+	   
+
+### 上报支持凭单
+{: #escalation}
+
+对于标准或高级支持，如果您未收到对支持凭单的及时响应，或者如果您认为支持凭单未得到恰当处理，那么可以上报支持凭单。通过支持凭单上报过程，21Vianet 管理人员将复查您的问题，并与您合作来改进支持体验。
+
+要提交上报请求，请完成以下步骤：
+  1. 使用摘要**上报请求**来开具新的支持凭单。
+  2. 要确保上报请求能与原始支持凭单匹配，请在凭单正文中包含以下信息：
+       * 需要上报的已开具支持凭单的凭单编号。
+	   * 对需要上报的原因的简要概述。
+
+
+
+
+## 收集诊断信息
+{: #collecting-diagnostic-information}
+要诊断并解决 {{site.data.keyword.Bluemix_notm}} 应用程序和服务的问题，{{site.data.keyword.Bluemix_notm}} 支持团队可能会要求您收集诊断信息。
+
+在收集诊断信息之前，请完成以下步骤：
+
+  1. 确保已安装最新的 cf 命令行界面。有关更多信息，请参阅[安装 cf 命令行界面](../starters/install_cli.html){: new_window}。
+
+     **注：**如果未安装最新 cf 命令行界面，那么在 cf 命令行连接到 {{site.data.keyword.Bluemix_notm}} 后，`cf logs` 命令可能不会返回输出。
+
+  2. 确保使用 `cf api` 命令将 cf 命令行界面连接到 {{site.data.keyword.Bluemix_notm}} 正在运行的位置。
+
+  3. 确保满足 [{{site.data.keyword.Bluemix_notm}} 先决条件](https://developer.ibm.com/bluemix/support/#prereqs){: new_window}中的所有先决条件。
+
+使用以下脚本来收集诊断信息：
+
+  * 对于 Windows 操作系统，下载并运行 [bmdiag-general.bat](http://bluemix-mustgather.mybluemix.net/mustgather/general/bmdiag-general.bat){: new_window} 文件。
+  * 对于 Linux 和 Mac 操作系统，下载并运行 [bmdiag-general.sh](http://bluemix-mustgather.mybluemix.net/mustgather/general/bmdiag-general.sh){: new_window} 文件。
+
+脚本使用 cf 命令行界面来从应用程序环境抽取以下信息：
+
+  * 应用程序日志
+  * 应用程序元数据
+  * 配置的路径
+  * 事件
+  * 提供的服务
+
+
+## {{site.data.keyword.Bluemix_notm}} 的本地语言支持
+{: #lang}
+
+{{site.data.keyword.Bluemix_notm}} 支持除英语以外的其他本地语言。不过，并非 {{site.data.keyword.Bluemix_notm}} 随附的所有内容都已翻译。下表列出了 {{site.data.keyword.Bluemix_notm}} 所支持的本地语言和语言代码。
+
+| **本地语言** | **语言代码** |
+|-------------------|---------------|
+| 巴西葡萄牙语 | pt_BR |
+| 英语 | en |
+| 法语 | fr |
+| 德语 | de |
+| 日语 | ja |
+| 朝鲜语 | ko |
+| 意大利语 | it |
+| 西班牙语 | es |
+| 简体中文 | zh_CN |
+| 繁体中文 | zh_TW |
+
+*表 3. 支持的本地语言和语言代码*
+
+
+## 对 {{site.data.keyword.Bluemix_notm}} 支持的满意度调查  
+{: #survey}
+
+21Vianet 会定期向 Bluemix 客户发送调查，以获取客户对最近使用客户支持的体验方面的反馈。调查着眼于支持服务的质量和整体体验。21Vianet 管理人员会复查这些调查结果，以改进支持体验。 
+
+
+# 相关链接
+{: #rellinks}
+
+## 常规
+{: #general}
+
+  * [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} 
+  * [Bluemix 支持凭单系统](https://chinabluemix.itsm.unisysedge.cn){: new_window} 
+  * [安装 cf 命令工具](../starters/install_cli.html){: new_window} 
+  
