@@ -41,11 +41,6 @@
 		"description": "跨公共、专用和内部部署模型作为服务交付。",
 		"img": "homepage/images/hybrid.svg",
 		"href": "hybrid/index.html"
-	}, {
-		"title": "开发人员指南",
-		"description": "面向为 Bluemix 创建服务或构建内容模块和微型服务的开发者的文档。",
-		"img": "homepage/images/WhatIsBluemix-icon.svg",
-		"href": "developing/index.html"
 	}]
 
 }
