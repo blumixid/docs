@@ -162,7 +162,7 @@ dW Answers 论坛针对 Bluemix 问题提供了丰富的可供搜索的答案。
 
   * 在“帐户和支持”窗口小部件中，单击**获取帮助**。在显示的页面上，单击**取得联系**。填写表单，指出您需要技术支持帮助您解决的问题。
   
-  * 从 [Bluemix 支持凭单系统](https://chinabluemix.itsm.unisysedge.cn){: new_window}页面。登录后，单击**开具凭单**，然后填写表单。在“环境”字段中，选择**公共**。
+  * 从 [Bluemix 支持凭单系统](https://pub-chinabluemix.itsm.unisysedge.cn/support/){: new_window}页面。登录后，单击**开具凭单**，然后填写表单。在“环境”字段中，选择**公共**。
   
 开具支持凭单时，确保为您的凭单指示了适当的严重性。严重性将决定凭单的处理方式。请参阅[支持凭单严重性和响应时间](index.html#support-ticket-severity){: new_window}，以获取有关不同严重性的信息。如果请求非常紧急，但您只具有免费或基本支持，那么可以升级您的帐户以提交高严重性（1 级、2 级和 3 级）凭单。要将帐户升级到更高支持级别，请通过电子邮件 sales@chinabluemix.net 联系销售代表。
 
@@ -170,7 +170,7 @@ dW Answers 论坛针对 Bluemix 问题提供了丰富的可供搜索的答案。
 #### 检查支持凭单状态
 {: #check-ticket-status}
 
-每张支持凭单都会分配有唯一的凭单编号以方便查询。您可以在 [Bluemix 支持凭单系统](https://chinabluemix.itsm.unisysedge.cn){: new_window}页面中使用凭单号来查看支持凭单的进度以及更新支持凭单。更新和响应会通过电子邮件发送给您并记录在凭单说明中。  
+每张支持凭单都会分配有唯一的凭单编号以方便查询。您可以在 [Bluemix 支持凭单系统](https://pub-chinabluemix.itsm.unisysedge.cn/support/){:new_window}页面中使用凭单号来查看支持凭单的进度以及更新支持凭单。更新和响应会通过电子邮件发送给您并记录在凭单说明中。  
 
 
 

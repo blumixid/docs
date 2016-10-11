@@ -162,7 +162,7 @@ If the problem is not due to an outage, open a support ticket by using one of th
 
   * From the Account and Support widget, click **Get help**. On the page that is displayed, click **GET IN TOUCH**. Fill in the form to indicate what you need technical support for.
   
-  * Form the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} page. After you sign in,click **Open Ticket**, and then fill in the form. Select **public** in the Environment field.
+  * Form the [Bluemix Support Ticketing System](https://pub-chinabluemix.itsm.unisysedge.cn/support/){: new_window} page. After you sign in,click **Open Ticket**, and then fill in the form. Select **public** in the Environment field.
   
 When you open a support ticket, ensure that you indicate an appropriate severity for your ticket. The severity determines how your ticket is handled. See [Support ticket severity and response time](index.html#support-ticket-severity){: new_window} for information about the different severities. If your request is urgent, but you only have free or basic support, you can upgrade your account to submit high-severity (level 1, 2, and 3) tickets. To upgrade your account to a higher support level, contact your sales representative by email at sales@chinabluemix.net.
 
@@ -170,7 +170,7 @@ When you open a support ticket, ensure that you indicate an appropriate severity
 #### Checking support ticket status
 {: #check-ticket-status}
 
-Each support ticket is assigned a unique ticket number for reference. You can use the ticket number to review your support ticket progress and update the support ticket at the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} 	page. Updates and responses are sent to you by email and recorded in the ticket notes.  
+Each support ticket is assigned a unique ticket number for reference. You can use the ticket number to review your support ticket progress and update the support ticket at the [Bluemix Support Ticketing System](https://pub-chinabluemix.itsm.unisysedge.cn/support/){: new_window} page. Updates and responses are sent to you by email and recorded in the ticket notes.  
 
 
 
