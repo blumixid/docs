@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2016-09-26"
+lastupdated: "2016-10-11"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2016-09-26"
 # {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #dedicated}
 
-Last updated: 26 September 2016
+Last updated: 11 October 2016
 {: .last-updated}
 
 
@@ -223,6 +223,9 @@ The final stage of completion represents the end of the relationship between you
 |Remove customer network connections | Remove network connections between 21Vianet and the customer environment. | 21Vianet and customer share responsibility |
 |Recycle infrastructure | Your environment is recycled based on the defined processes. | 21Vianet |
 
+
+<!-- Disabled on 10/11/2016 per Bingbing's request
+
 ##Maintaining your dedicated instance
 {: #maintaindedicated}
 
@@ -246,6 +249,8 @@ The following types of maintenance are required for {{site.data.keyword.Bluemix_
 **Important**: 21Vianet reserves the right to interrupt services to apply emergency maintenance as needed. 21Vianet might change scheduled maintenance hours, but will notify you of any such changes, as well as any emergency maintenance information.
 
 If there is a reported issue following a maintenance update, you agree with {{site.data.keyword.Bluemix_notm}} Support if it is in your best interest to allow 21Vianet to roll back the update. Upon agreement, 21Vianet rolls back the update to restore the environment to the previous state.
+
+Disabled part ends here, 10/11/2016-->
 
 ## Incident response and support
 {: #incidentresponse}

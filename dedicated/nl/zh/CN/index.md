@@ -16,7 +16,7 @@ copyright:
 # {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #dedicated}
 
-上次更新时间：2016 年 9 月 5 日
+上次更新时间：2016 年 10 月 11 日
 {: .last-updated}
 
 
@@ -284,6 +284,9 @@ IBM 为您提供了使用受密码保护的登录来访问 {{site.data.keyword.B
 |除去客户网络连接 | 除去 IBM 与客户环境之间的网络连接。 | IBM 和客户共担责任 |
 |回收基础架构 | 基于定义的流程来回收您的环境。 | IBM |
 
+
+<!-- Disabled per Bingbing's request on 2016/10/11
+
 ##维护专用实例
 {: #maintaindedicated}
 
@@ -306,6 +309,8 @@ IBM 会发送有关在“状态”页面上针对每个维护时段计划进行�
 **重要信息**：IBM 保留在必要时中断服务来实施紧急维护的权利。IBM 可能会更改所安排的维护时间，但会通知您任何此类更改以及任何紧急维护信息。
 
 如果在维护更新后报告有问题，您与 {{site.data.keyword.Bluemix_notm}} 支持人员协商，允许 IBM 回滚更新是否对您最有利。IBM 会根据商定的结果回滚更新，使环境复原到先前的状态。
+
+Disabled part ends. 2016/10/11-->
 
 ## 事件响应和支持
 {: #incidentresponse}
