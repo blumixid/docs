@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA IBM Map//EN"
+ "ibm-map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="zh-cn">
+<title>定制图片分类器 API 版本 v1.0</title>
+<topicref format="html" href="index.html" navtitle="定制图片分类器" linking="sourceonly" locktitle="yes" scope="peer">
+<topicref format="html" href="index.html#gettingstartedCIC" navtitle="定制图片分类器 API 版本 v1.0" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#DLAPIs" navtitle="DLAPIs" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#getdlapi" navtitle="GET /dlapis/{id}" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#request" navtitle="Request" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#response" navtitle="Response" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#postdlapi" navtitle="POST /dlapis/{id}" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#postrequest" navtitle="Request" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#postresponse" navtitle="Response" locktitle="yes" scope="peer"></topicref>
+</topicref>
+</map><?Pub Caret -3?>
+<?Pub *0000000799?>
+
+
+
