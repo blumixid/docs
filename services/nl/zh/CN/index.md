@@ -13,7 +13,7 @@ copyright:
 #服务
 {: #services}
 
-上次更新时间：2016 年 9 月 5 日
+上次更新时间：2016 年 10 月 19 日
 {: .last-updated}
 
 通过 {{site.data.keyword.Bluemix_notm}}，您可以轻松地实施、托管和扩展服务和应用程序。您可以关注应用程序逻辑和应用程序设计。
@@ -49,11 +49,13 @@ copyright:
 |服务	|在中国可购买 |
 |:----------|:------------------------------|
 |{{site.data.keyword.autoscaling}}| 是 |
+|{{site.data.keyword.blockchain}}| 是 |
 |{{site.data.keyword.cloudant}}| 是 |
 |{{site.data.keyword.customimageclassifier}} | 是 |
 |{{site.data.keyword.deepsentimine}} | 是 |
 |{{site.data.keyword.hybriddb}} | 是 |
 |{{site.data.keyword.messagehub}}| 是 |
+|{{site.data.keyword.mmc_short}} | 是 |
 |{{site.data.keyword.mobilemediasocialint}} | 是 |
 |{{site.data.keyword.namedentityrecog}} | 是 |
 |{{site.data.keyword.questionandanswershort}} | 是 |

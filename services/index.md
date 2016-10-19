@@ -13,7 +13,7 @@ copyright:
 #Services
 {: #services}
 
-Last updated: 5 September 2016
+Last updated: 19 October 2016
 {: .last-updated}
 
 {{site.data.keyword.Bluemix_notm}} makes it easy for you to implement, host, and scale services and apps. You can focus on your application logic and application design.
@@ -46,12 +46,14 @@ The following table shows the IBM services that are available in China.
 |Service	|Available for purchase in China |
 |:----------|:------------------------------|
 |{{site.data.keyword.autoscaling}}| Yes |
+|{{site.data.keyword.blockchain}}| Yes |
 |{{site.data.keyword.cloudant}}| Yes |
 |{{site.data.keyword.customimageclassifier}} | Yes |
 |{{site.data.keyword.deepsentimine}} | Yes |
 |{{site.data.keyword.hybriddb}} | Yes |
 |{{site.data.keyword.messagehub}}| Yes |
 |{{site.data.keyword.mobilemediasocialint}} | Yes |
+|{{site.data.keyword.mmc_short}} | Yes |
 |{{site.data.keyword.namedentityrecog}} | Yes |
 |{{site.data.keyword.questionandanswershort}} | Yes |
 |{{site.data.keyword.ssoshort}}| Yes |
