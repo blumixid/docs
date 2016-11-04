@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2016-10-11"
+lastupdated: "2016-11-02"
 
 
 ---
@@ -16,15 +16,15 @@ lastupdated: "2016-10-11"
 # {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #dedicated}
 
-Last updated: 11 October 2016
+Last updated: 2 Novemver 2016
 {: .last-updated}
 
 
 
-{{site.data.keyword.Bluemix_notm}} is an open-standards, cloud-based platform for building, running, and managing applications. With {{site.data.keyword.Bluemix_notm}} Dedicated, you get the power and simplicity of {{site.data.keyword.Bluemix_notm}}&mdash;in your own dedicated environment that is securely connected to both the {{site.data.keyword.Bluemix_notm}} Public environment and your own network.
+{{site.data.keyword.Bluemix_notm}} operated by 21ViaNet is an open-standards, cloud-based platform for building, running, and managing applications. With {{site.data.keyword.Bluemix_notm}} Dedicated, you get the power and simplicity of {{site.data.keyword.Bluemix_notm}}&mdash;in your own dedicated environment that is securely connected to both the {{site.data.keyword.Bluemix_notm}} Public environment and your own network.
 {:shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} Dedicated in China is supported by IBM Bluebox, an OpenStack-based, private cloud infrastructure. {{site.data.keyword.Bluemix_notm}} Dedicated customers in China can request support from the [ {{site.data.keyword.Bluemix_notm}} Supporting Ticket System](https://chinabluemix.itsm.unisysedge.cn){: new_window}. 
+{{site.data.keyword.Bluemix_notm}} Dedicated in China is supported by IBM Bluebox, an OpenStack-based, private cloud infrastructure. {{site.data.keyword.Bluemix_notm}} Dedicated customers in China can request support from the [{{site.data.keyword.Bluemix_notm}} Supporting Ticket System](https://chinabluemix.itsm.unisysedge.cn){: new_window}. In addition, Chinese customers can get free support from [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window}.
 
 
 All dedicated deployments of {{site.data.keyword.Bluemix_notm}} include the following benefits and features at no additional cost: VPN, private virtual local area network (VLAN), firewall, connectivity with your LDAP, ability to leverage existing on-premises databases and apps, 24/7 on-site security, dedicated hardware, and standard support.
@@ -32,9 +32,8 @@ All dedicated deployments of {{site.data.keyword.Bluemix_notm}} include the foll
 
 {{site.data.keyword.Bluemix_notm}} Dedicated comes with all included {{site.data.keyword.Bluemix_notm}} runtimes and 64 GB of compute resources memory.
 
-In addition, a set of services and components that are included or optional for purchase are provided. Review the following table to see what is included and what you can purchase optionally.
+In addition, a set of services used as {{site.data.keyword.Bluemix_notm}} Dedicated services will be gradually launched by the end of 2017. Review the following table to see what is included and what you can purchase optionally.
 
-<!-- staging only content for lower rows as well as second table -->
 
 *Table 1. Dedicated Services*
 
@@ -42,10 +41,9 @@ In addition, a set of services and components that are included or optional for 
 |-----------------|-------------------|-------------------|
 |Included | [{{site.data.keyword.Bluemix_notm}} runtimes](../cfapps/runtimes.html) | Use runtimes to get your app up and running quickly, with no need to set up and manage machines and operating systems. All {{site.data.keyword.Bluemix_notm}} runtimes are available for you to use in your {{site.data.keyword.Bluemix_notm}} Dedicated instance.|
 | Included | [{{site.data.keyword.autoscaling}}](../services/Auto-Scaling/index.html) | Dynamically increase or decrease the compute capacity of your application based on policies. With this service, you have unlimited use in your {{site.data.keyword.Bluemix_notm}} Dedicated environment. |
-|Optional | [{{site.data.keyword.apiconnect_short}}](../services/apiconnect/index.html) | {{site.data.keyword.apiconnect_long}} integrates {{site.data.keyword.APIM}} and IBM StrongLoop into a single offering that provides a comprehensive solution to create, run, manage, and enforce APIs and microservices. |
 |Optional | [{{site.data.keyword.cloudant}}](../services/Cloudant/index.html#Cloudant) | {{site.data.keyword.cloudant}} provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB, and accessible through a simple to use HTTP interface for mobile and web application models. |
-| Optional | [{{site.data.keyword.messagehub}}](../services/MessageHub/index.html#messagehub) | {{site.data.keyword.messagehub}} is a scalable, distributed, high throughput message bus to unite your on-premises and off-premises technologies. {{site.data.keyword.messagehub}} is based on Apache Kafka, which is a fast, scalable, and durable real-time messaging engine. |
 | Optional | [{{site.data.keyword.dashdbshort}}](../services/dashDB/dashDB.html) | Use dashDB to store relational data, including special types such as geospatial data. Then analyze that data with SQL or advanced built-in analytics like predictive analytics and data mining, analytics with R, and geospatial analytics. |
+| Optional | [{{site.data.keyword.messagehub}}](../services/MessageHub/index.html#messagehub) | {{site.data.keyword.messagehub}} is a scalable, distributed, high throughput message bus to unite your on-premises and off-premises technologies. {{site.data.keyword.messagehub}} is based on Apache Kafka, which is a fast, scalable, and durable real-time messaging engine. |
 | Optional | [{{site.data.keyword.iot_short}}](../services/IoT/index.html) | This service lets your apps communicate with and consume data collected by your connected devices, sensors and gateways. The base offering permits running a private version of the {{site.data.keyword.iot_short}} within the dedicated environment with a capacity of 100,000 concurrently connected devices or applications and 1.6 TB of data exchange. |
 
 
@@ -74,11 +72,11 @@ Based on BlueBox, {{site.data.keyword.Bluemix_notm}} Dedicated ensures that you 
 
 21Vianet provides you access to {{site.data.keyword.Bluemix_notm}} Dedicated by using a password-secured login. You can access the services, runtimes, and associated resources, and deploy and remove {{site.data.keyword.Bluemix_notm}} apps. 
 
-To set up your private version of {{site.data.keyword.Bluemix_notm}}:
+To set up your private version of {{site.data.keyword.Bluemix_notm}}(may incur costs):
 
 <ol>
-<li>Contact your designated account representative or <a href="https://console.chinabluemix.net/?direct=classic/#/contactUs/cloudOEPaneId=contactUs" target="_blank">contact {{site.data.keyword.Bluemix_notm}}</a> to get started.</li>
-<li>Work with us on your fee for your {{site.data.keyword.Bluemix_notm}} Dedicated instance. The monthly recurring fee is based on the dedicated services that you want to use, plus a subscription to all {{site.data.keyword.Bluemix_notm}} public services. You then receive an invoice for anything that you use beyond that subscription agreement.</li>
+<li>Contact your designated account representative from 21Vianet or <a href="https://console.chinabluemix.net/?direct=classic/#/contactUs/cloudOEPaneId=contactUs" target="_blank">contact {{site.data.keyword.Bluemix_notm}}</a> to get started.</li>
+<li>Work with 21Vianet on your fee for your {{site.data.keyword.Bluemix_notm}} Dedicated instance. The monthly recurring fee is based on the dedicated services that you want to use, plus a subscription to all {{site.data.keyword.Bluemix_notm}} public services. You then receive an invoice for anything that you use beyond that subscription agreement.</li>
 <li>Identify the deadlines for each phase of setting up your {{site.data.keyword.Bluemix_notm}} Dedicated instance. For information about each phase and the tasks involved, see <a href="index.html#rolesresponsibilities" target="_blank">{{site.data.keyword.Bluemix_notm}} Dedicated roles and responsibilities</a>.</li>
 <li>Then, your dedicated platform and account are created. For your account, you identify the people in your organization for the roles that are needed to get your dedicated instance up and running. For information about the roles that you assign, see <a href="index.html#rolesresponsibilities" target="_blank">{{site.data.keyword.Bluemix_notm}} Dedicated roles and responsibilities</a>.
 </li>
@@ -105,11 +103,11 @@ You can expect a process similar to the following list for the initial deploymen
 <p>You can choose as many custom domains as you want. However, you are responsible for the certificates for the custom domains. For information about creating your custom domain, see <a href="../manageapps/updapps.html#domain">Creating and using a custom domain</a>.</p></li>
 <li>You identify an owner for the public account that is used to represent your company in {{site.data.keyword.Bluemix_notm}} Public. 21Vianet uses this account for tracking syndicated services usage.</li>
 <li>You decide whether there will be any access to your dedicated environment from the public Internet.</li>
-<li>You select the type of authentication that will be used.</li>
+<li>You select the type of authentication that will be used. The optional types include 21ViaNet or Active Directory.</li>
 <li>You identify and assign roles for your administrative team for the environment. For information about the roles that you must assign, see <a href="index.html#rolesresponsibilities" target="_blank">{{site.data.keyword.Bluemix_notm}} Dedicated roles and responsibilities</a>.</li>
 <li>21Vianet deploys the core platform that includes the elastic runtimes, console, administration feature, and monitoring.</li>
 <li>21Vianet configures your administrative access to the environment.</li>
-<li>You can start using your dedicated instance that is monitored by the {{site.data.keyword.Bluemix_notm}} operations team in order to respond to alerts.</li>
+<li>You can start using your dedicated instance that is monitored by the 21Vianet operations team in order to respond to alerts.</li>
 </ol>
 
 After your {{site.data.keyword.Bluemix_notm}} instance is set up, you can monitor and manage your {{site.data.keyword.Bluemix_notm}} instance by using the Administration page. 
@@ -134,7 +132,7 @@ The following list shows the customer roles and responsibilities that you assign
 <dd>Works with the 21Vianet representative to plan and apply the maintenance updates that are needed for the {{site.data.keyword.Bluemix_notm}} platform, services, and runtimes. The person assigned to this role also works with the 21Vianet representative on the configuration of your {{site.data.keyword.Bluemix_notm}} Dedicated instance.</dd>
 </dl>
 
-Your customer representatives work with 21 Vianet {{site.data.keyword.Bluemix_notm}} specialists that work together to ensure that you always have the support that you need. 
+Your customer representatives work with 21Vianet {{site.data.keyword.Bluemix_notm}} specialists that work together to ensure that you always have the support that you need. 
 
 The {{site.data.keyword.Bluemix_notm}} support and operations team that works with you on your {{site.data.keyword.Bluemix_notm}} instance might access your local environment, but does so only for the following reasons.
 
@@ -165,12 +163,12 @@ The inception phase is used to establish the {{site.data.keyword.Bluemix_notm}} 
 |Select architecture | Select architecture based on predefined choices that take into account high availability and disaster recovery requirements. | 21Vianet |
 |Define disaster recovery goals | Define the disaster recovery requirements for the environment. | Customer |
 |Create disaster recovery plan | Consult and define the disaster recovery plan. 21Vianet creates a disaster recovery model, and consults with you where you provide feedback and approve the plan. | 21Vianet and customer share responsibility |
-|Create backup and recovery plan | Create a backup and recovery plan that defines the frequency and the requirements for on-and-off site distribution of the backup. IBM backs up fabric components, 21Vianet services, service metadata including user roles, and more. You back up any application-specific data that you are responsible for. | 21Vianet and customer share responsibility |
+|Create backup and recovery plan | Create a backup and recovery plan that defines the frequency and the requirements for on-and-off site distribution of the backup. 21ViaNet backs up fabric components, 21Vianet services, service metadata including user roles, and more. You back up any application-specific data that you are responsible for. | 21Vianet and customer share responsibility |
 |Identify tools for event detection and problem determination | Identify 21Vianet and third-party tools used for event detection and problem determination at the {{site.data.keyword.Bluemix_notm}} platform level. | 21Vianet |
 |Define escalation plan | Define the escalation plan to triage and resolve events detected from the monitoring components. | 21Vianet |
 |Sign infrastructure, platform, and support agreements | Sign the subscription agreement including the financial terms and conditions for the environment. Sign support subscription. | Customer |
-|Procure environment | Procure compute resources, network, and storage including core and Services VLAN to host {{site.data.keyword.Bluemix_notm}}, bare metal services to host Data Power, and Firewall. Provide infrastructure to allow for VPN tunnel. | 21Vianet |
-|Install fabric, application, and monitoring and management components | Install, configure, and verify fabric components, such as BOSH Director, Cloud Controller, Health Manager, messaging, routers, DEAs and Service providers, and the monitoring components that are defined in the escalation and problem detection plan. | 21Vianet |
+|Procure environment | Procure compute resources, network, and storage including core and Services VLAN to host {{site.data.keyword.Bluemix_notm}}, bare metal services to host Data Power, and {{site.data.keyword.Bluemix_notm}} Firewall. Provide infrastructure to allow for VPN tunnel. | 21Vianet |
+|Install platform, application, and monitoring and management components | Install, configure, and verify platform components, such as BOSH Director, Cloud Controller, Health Manager, messaging, routers, DEAs and Service providers, and the monitoring components that are defined in the escalation and problem detection plan. | 21Vianet |
 |Install and configure security components | Install and configure security components that are tied into the monitoring and escalation plan including IBM QRadar, credential vault, intrusion prevention system, IBM BigFix, and IBM Security Privileged Identity Management. | 21Vianet |
 |Install and configure custom components |  	Install and configure custom components that reside outside the scope of the {{site.data.keyword.Bluemix_notm}} product and services. | Customer |
 |Establish initial network configuration | Establish initial network configuration including firewalls, DataPower, Fortigate, and DNS. | 21Vianet |
@@ -221,7 +219,7 @@ The final stage of completion represents the end of the relationship between you
 |End financial agreement | Discuss and agree to an end to the financial agreement contract. | 21Vianet and customer share responsibility |
 |Decommission environment | Shut down access to and credentials for the environment. | 21Vianet and customer share responsibility |
 |Remove customer network connections | Remove network connections between 21Vianet and the customer environment. | 21Vianet and customer share responsibility |
-|Recycle infrastructure | Your environment is recycled based on the defined processes. | 21Vianet |
+|Recycle infrastructure | Your environment is recycled based on the {{site.data.keyword.Bluemix_notm}}-defined processes. | 21Vianet |
 
 
 <!-- Disabled on 10/11/2016 per Bingbing's request
@@ -257,7 +255,7 @@ Disabled part ends here, 10/11/2016-->
 
 ### Customer-detected issues
 
-If you identify an issue that needs attention from 21Vianet support and operations, you can contact support by using a few different methods. Depending on the issue, you, 21Vianet, or both work together to fix the issue.
+If you identify an issue that needs attention from 21Vianet support and operations, you can contact support by using [{{site.data.keyword.Bluemix_notm}} Supporting Ticket System](https://chinabluemix.itsm.unisysedge.cn){: new_window}. Depending on the issue, you, 21Vianet, or both work together to fix the issue.
 
 ### 21Vianet-detected critical incidents
 
@@ -294,6 +292,10 @@ These technologies include the following:
 <p>To ensure high availability for your applications, you need enough compute resources to balance the load, and you might also require additional compute resources to support a possible failure. If you need to scale your environment by increasing your DEA pool to be prepared for a failure or address a spike in the load for your app instances, you can work with your 21Vianet representative to order additional DEAs and ensure that you have the appropriate hardware to support the added resources.
 </p>
 </dd>
+<dt>Bluebox Redundancy</dt>
+<dd>When you use Bluebox in a dedicated environment, the data in each cloud storage cluster is written for multiple times, and all the storage clusters can perform recovery automatically in the event of driver failure. If there is a problem with a virtual server, BlueBox attempts to restart the virtual server on another host. </dd>
+<dt>Metadata Backup</dt>
+<dd>You can back up data to the object storage service of Bluebox (swift) by using Bluebox object storage service. The object storage itself is scalable and highly available (3 copies of each data).</dd>
 </dl>
 
 ##Restoring your dedicated instance
@@ -308,16 +310,12 @@ As part of the data backup, which includes system metadata and configurations, 2
 <li>Monitors and manages backup activity</li>
 <li>Provides the encrypted backup files</li>
 <li>Restores the requested data</li>
-<li>Manages scheduling conflicts between backup and fix management operations</li>
 </ul>
 
 Because protection of private data is critical, 21Vianet needs your collaboration when dealing with backup file management, so that the files are not moved outside of your data centers. Specifically, 21Vianet asks that you complete the following tasks:
 
 <ul>
 <li>Move a copy of your encrypted backup data off-site, just as you would for any other backup data that you manage.</li>
-<li>Provide the backup files for the IBM operator in case of any need to restore.</li>
+<li>Provide the backup files for the 21Vianet operator in case of any need to restore.</li>
 </ul>
 
-# rellinks
-## general
-* [Contacting support](../support/index.html#getting-customer-support)
