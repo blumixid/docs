@@ -808,7 +808,7 @@ Try a different route.
 **Message**: Failed to add the {0} service to your application because a problem occurred contacting Cloud Foundry.
 ## BXNUI0700E
 
-**Message**: The â€˜{0}â€?space wasn't created because a problem occurred contacting Cloud Foundry.
+**Message**: The space wasn't created because a problem occurred contacting Cloud Foundry.
 
 Click **Create** to try again or cancel the action.
 

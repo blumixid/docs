@@ -661,7 +661,7 @@ The following tables can help you fill in the JSON file.
             "plan": "enterprise",
             "status": 1,
             "serviceinput": "count(*)fromhealthcheck",
-            "serviceoutput": "10 error¦orerror1234databasenotrunning",
+            "serviceoutput": "10 error 1234 database not running",
             "responsetime": 4
         }
     ]
