@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-09-05"
 
 ---
 
@@ -10,7 +11,6 @@ copyright:
 # Data & Analytics
 {: #data_analytics}
 
-Last updated: 5 September 2016
 
 Do more with rich, integrated cloud databases and analytic services. In addition to exploring services, you can use the Work with Data console to get data into your services, build data-driven apps, and analyze your data, all in one central place. Just click [WORK WITH DATA](https://console.chinabluemix.net/data/services/) in the `Data & Analytics` tile on the {{site.data.keyword.Bluemix_notm}} Dashboard.
 {:shortdesc}

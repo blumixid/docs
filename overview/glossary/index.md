@@ -16,8 +16,6 @@ lastupdated: "2016-04-19"
 # Glossary terms for {{site.data.keyword.Bluemix_notm}} 
 {: #glossary}
 
-*Last updated: 19 April 2016*
-{: .last-updated}
 
 This glossary provides terms and definitions for {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}

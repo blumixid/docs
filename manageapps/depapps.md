@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-13"
+lastupdated: "2016-11-21"
 
 ---
 
@@ -15,8 +15,6 @@ lastupdated: "2016-09-13"
 #Deploying apps
 {: #deployingapps}
 
-Last updated: 13 September 2016
-{: .last-updated}
 
 You can deploy applications to {{site.data.keyword.Bluemix_notm}} by using various methods, such as the command line interface and integrated development environments (IDEs). You can also use application manifests to deploy applications. By using an application manifest, you reduce the number of deployment details that you must specify every time that you deploy an application to {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
@@ -28,7 +26,7 @@ Deploying an application to {{site.data.keyword.Bluemix_notm}} includes two phas
 
 ###Staging an application
 
-During the staging phase, a droplet execution agent (DEA) uses the information that you provide in the cf command line interface or the `manifest.yml` file to decide what to create for application staging. The DEA selects an appropriate buildpack to stage your application, and the result of the staging process is a droplet. For more information about deploying an application to {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} architecture, How {{site.data.keyword.Bluemix_notm}} works](../public/index.html#publicarch).
+During the staging phase, a droplet execution agent (DEA) uses the information that you provide in the cf command line interface or the `manifest.yml` file to decide what to create for application staging. The DEA selects an appropriate buildpack to stage your application, and the result of the staging process is a droplet. For more information about deploying an application to {{site.data.keyword.Bluemix_notm}}, see [{{site.data.keyword.Bluemix_notm}} architecture, How {{site.data.keyword.Bluemix_notm}} works](/docs/public/index.html#publicarch).
 
 During the staging process, the DEA checks whether the buildpack matches the application. For example, a Liberty runtime for a .war file, or a Node.js runtime for .js files. The DEA then creates an isolated container that contains the buildpack and the application code. The container is managed by the Warden component. For more information, see [How Applications Are Staged](http://docs.cloudfoundry.org/concepts/how-applications-are-staged.html){:new_window}.
 
@@ -40,7 +38,7 @@ If the logs for your application are no longer available so that the **cf files*
 
 **Note:** The buffer size is limited. If an application runs for a long time and is not restarted, logs might not be displayed when you enter `cf logs appname --recent` because the log buffer might have been cleared. Therefore, to debug staging errors for a large application, you can enter `cf logs appname` in a separate command line from the cf command line interface to track the logs when you deploy the application.
 
-If you experience problems when you stage your applications on {{site.data.keyword.Bluemix_notm}}, you can follow the steps in [Debugging staging errors](../debug/index.html#debugging-staging-errors) to resolve the problem.
+If you experience problems when you stage your applications on {{site.data.keyword.Bluemix_notm}}, you can follow the steps in [Debugging staging errors](/docs/debug/index.html#debugging-staging-errors) to resolve the problem.
 
 ##Deploying applications by using the cf command
 {: #dep_apps}
@@ -57,7 +55,7 @@ If you use an external buildpack, you must specify the URL of the buildpack by u
   cf push
   ```
   
-  For more information about Liberty Buildpack, see [Liberty for Java](../runtimes/liberty/index.html).
+  For more information about Liberty Buildpack, see [Liberty for Java](/docs/runtimes/liberty/index.html).
   
   * To deploy Java Tomcat applications to {{site.data.keyword.Bluemix_notm}}, use the following command:
   
@@ -450,6 +448,6 @@ tmp/
 {: #general}
 
 * [Deploying with Application Manifests](http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html){:new_window}
-* [CF Manifest Generator](http://cfmanigen.bluemix.net/){:new_window}
+* [CF Manifest Generator](http://cfmanigen.mybluemix.net/){:new_window}
 * [Getting Started with cf v6](http://docs.cloudfoundry.org/devguide/installcf/whats-new-v6.html){:new_window}
 

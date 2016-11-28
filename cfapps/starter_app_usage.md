@@ -9,8 +9,6 @@ lastupdated: "2016-03-16"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-Last Updated: 16 March 2016
-{: .last-updated}
 
 # Using the starter applications
 {: #using_starter_applications}

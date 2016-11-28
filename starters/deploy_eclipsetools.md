@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2015-11-11"
+lastupdated: "2015-11-21"
  
 
 ---
@@ -15,8 +15,7 @@ lastupdated: "2015-11-11"
 {:shortdesc: .shortdesc}
 
 # Developing with Eclipse Tools
-Last updated: 11 November 2015
-{: .last-updated}
+
 
 {{site.data.keyword.eclipsetoolsfull}} provides lightweight tools in Eclipse for rapid development and integration of applications with {{site.data.keyword.Bluemix_notm}} or Cloud Foundry Clouds.
 {:shortdesc}
@@ -28,4 +27,4 @@ Last updated: 11 November 2015
 
   3. {: download} Download your starter code and import it into Eclipse by going to **File > Import Existing Projects into Workspace > Archive File**. 
 
-For step-by-step directions in deploying apps, see [Deploying apps with IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}](../manageapps/eclipsetools/eclipsetools.html#eclipsetools){: new_window}.
+For step-by-step directions in deploying apps, see [Deploying apps with IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}](/docs/manageapps/eclipsetools/eclipsetools.html#eclipsetools){: new_window}.

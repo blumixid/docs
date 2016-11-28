@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2016-08-04"
+lastupdated: "2016-11-21"
 
 
 ---
@@ -17,24 +17,24 @@ lastupdated: "2016-08-04"
 
 # Profile settings
 {: #usersettings}
-Last updated: 04 August 2016
-{: .last-updated}
 
-Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile** to update your profile settings.
+
+Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **User Profile** to update your profile settings.
 {:shortdesc}
 
  On the **Profile** page, you can set or update the following information:
 
  * A profile photo that is visible to other {{site.data.keyword.Bluemix_notm}} users
- * ID information including your name, email, phone number, password, company, and role
+ * {{site.data.keyword.Bluemix_notm}} ID information including your name, email, phone number, password, company, and role
  * Analytics tracking setting
 
 ## Changing your profile photo
 {: #photo}
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
 
-* Click **Change Photo** to upload a new photo.
+* Click **UPLOAD A PHOTO** to upload a photo.
+* Click **CHANGE PHOTO** to upload a new photo.
 * Click **Remove Photo** to remove your photo.
 
 ## Editing your ID information
@@ -42,10 +42,10 @@ Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar
 
 If you need to change your ID account information, such as your name, email, phone number, password, or company name, complete the following steps:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
-2. Click **Edit your ID**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
+2. Click **edit your Bluemix ID**.
 3. Edit your user information.
-4. Click **Submit**.
+4. Click **Save**.
 
 ## Analytics tracking setting
 {: #tracking}
@@ -56,5 +56,5 @@ If you choose to disable tracking, then you might not be able to use some featur
 
 To disable analytics tracking, complete the following steps:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
-2. Set analytics tracking to **Off**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **User Profile**.
+2. Set analytics tracking to **off**.

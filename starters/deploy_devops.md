@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2016-09-06"
+lastupdated: "2016-11-21"
  
 
 ---
@@ -15,8 +15,7 @@ lastupdated: "2016-09-06"
 {:download: .download}
 
 # Start coding with Git
-Last updated: 6 September 2016
-{: .last-updated}  
+
 
 You can create a hosted Git repository that deploys to {{site.data.keyword.Bluemix_notm}} automatically. Then, you can modify the code that runs in your app by pushing changes to the Git repository. 
 {:shortdesc}
@@ -41,7 +40,7 @@ For step-by-step directions, see [Set up Git integration and auto-deploy in DevO
 
 If you are building a Node.js app, you can use {{site.data.keyword.Bluemix_notm}} Live Sync to quickly update the app instance on {{site.data.keyword.Bluemix_notm}} and develop as you would on the desktop.  
 
-To learn more about {{site.data.keyword.Bluemix_notm}} Live Sync, see [{{site.data.keyword.Bluemix_notm}} Live Sync](../develop/bluemixlive.html). For more details on the commands, see the [{{site.data.keyword.Bluemix_notm}} Live Sync CLI doc](../cli/reference/bl/index.html). To use {{site.data.keyword.Bluemix_notm}} Live Sync with the Web IDE, see [Live Edit](../develop/bluemixlive.html).  
+To learn more about {{site.data.keyword.Bluemix_notm}} Live Sync, see [{{site.data.keyword.Bluemix_notm}} Live Sync](/docs/develop/bluemixlive.html). For more details on the commands, see the [{{site.data.keyword.Bluemix_notm}} Live Sync CLI doc](/docs/cli/reference/bl/index.html). To use {{site.data.keyword.Bluemix_notm}} Live Sync with the Web IDE, see [Live Edit](/docs/develop/bluemixlive.html).  
 
 Before you begin, download and install the {{site.data.keyword.Bluemix_notm}} Live Sync bl command line. 
 

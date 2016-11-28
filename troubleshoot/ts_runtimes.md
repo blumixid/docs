@@ -20,8 +20,6 @@ lastupdated: "2016-09-09"
 # Troubleshooting for runtimes
 {: #runtimes}
 
-Last updated: 9 September 2016
-{: .last-updated}
 
 
 You might experience problems when you use {{site.data.keyword.Bluemix_notm}} runtimes. However, in many cases, you can recover from these problems by following a few easy steps.
@@ -294,6 +292,8 @@ You can resolve this issue by using one of the following methods:
 	disk_quota: 2048
 	```
 	
+	
+<!-- begin STAGING ONLY --> 
 
 	
 ## Log4js logger objects are not displayed in the Node.js Trace pop-up window
@@ -312,6 +312,13 @@ Because the ibmbluemix module provides a unified API for log operations that use
 
 This behavior is expected.
 {: tsResolve}
+
+<!-- end STAGING ONLY -->
+
+
+
+
+<!-- begin STAGING ONLY -->
 
 
 ## Apply trace setting to all instances of the application check box is disabled
@@ -335,4 +342,5 @@ When Bunyan log levels are modified, the trace setting cannot be applied to all 
 This behavior is expected.
 {: tsResolve} 
 
+<!-- end STAGING ONLY -->
 

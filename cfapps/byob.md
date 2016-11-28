@@ -17,8 +17,7 @@ lastupdated: "2015-12-08"
 {:pre: .pre}
 
 # Using community buildpacks
-Last updated: 8 December 2015
-{: .last-updated}
+
 
 If you can't find a starter in the {{site.data.keyword.Bluemix_notm}} Catalog that provides the runtime you want, you can bring an external buildpack to {{site.data.keyword.Bluemix_notm}}. You can specify a custom, Cloud Foundry-compatible buildpack when you deploy your app by using the cf push command.
 {:shortdesc}

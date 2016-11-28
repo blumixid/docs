@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2016-05-12"
+lastupdated: "2016-11-21"
  
 
 ---
@@ -16,9 +16,6 @@ lastupdated: "2016-05-12"
 
 # (Deprecated)Development mode CLI
 {: #devmodecli}
-
-Last updated: 12 May 2016
-{: .last-updated}
 
 
 **This CLI has been deprecated:** Instead of using the Development mode (dev_mode) CLI, use IBM Eclipse Tools for Bluemix or DevOps Web IDE. You can continue to use the dev_mode CLI until 30 June 2016.
@@ -213,7 +210,7 @@ cf restart-inplace <appName>
 ## Related Links
 {: #general}
 * [Development mode CLI](http://clis.ng.bluemix.net/ui/repository.html#cf-plugins){:new_window}
-* [IBM Eclipse Tools for Bluemix](../../manageapps/eclipsetools/eclipsetools.html){:new_window}
+* [IBM Eclipse Tools for Bluemix](/docs/manageapps/eclipsetools/eclipsetools.html){:new_window}
 * [DevOps Web IDE](https://hub.jazz.net/docs/deploy/){:new_window}
 
 

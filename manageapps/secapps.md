@@ -15,8 +15,6 @@ lastupdated: "2016-09-09"
 #Securing apps
 {: #securingapps}
 
-Last updated: 9 September 2016
-{: .last-updated}
 
 You can secure your applications by uploading SSL certificates and restricting access to the applications.
 {:shortdesc}

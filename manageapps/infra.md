@@ -14,8 +14,6 @@ lastupdated: "2016-03-15"
 
 #  Bluemix infrastructure layers
 
-Last updated: 15 March 2016
-{: .last-updated}
 
 {{site.data.keyword.Bluemix_notm}} abstracts and hides operating system and infrastructure layers, so that you don't need to manage them. However, sometimes you might want to know more about the operating system and middleware for your app.
 {:shortdesc}

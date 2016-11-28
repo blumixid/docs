@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2016-09-12"
+lastupdated: "2016-11-21"
  
 
 ---
@@ -17,8 +17,6 @@ lastupdated: "2016-09-12"
 
 #Hosting apps in {{site.data.keyword.Bluemix_notm}}
 
-Last updated: 12 September 2016
-{: .last-updated}
 
 
 
@@ -113,7 +111,7 @@ Take the following steps to migrate your application:
   domain: mychinabluemix.net
   instances: 1
   memory: 512M</code></pre>
-<p>For more information about the supported options that you can use in this file, see [Application manifest](../manageapps/depapps.html#appmanifest).
+<p>For more information about the supported options that you can use in this file, see [Application manifest](/docs/manageapps/depapps.html#appmanifest).
 
 </p></li></ol>
 </li>
@@ -137,7 +135,7 @@ Take the following steps to migrate your application:
 
 * When you use the cf push command, the cf command line interface copies all of the files and directories from your current directory to {{site.data.keyword.Bluemix_notm}}. Ensure that you have only the required files in your application directory.
 * Ensure that your organization has enough memory for all instances of your application. To view the memory quota for your org, use cf org org_name.
-* For more information about cf push, see [cf commands](../cli/reference/cfcommands/index.html).
+* For more information about cf push, see [cf commands](/docs/cli/reference/cfcommands/index.html).
 
 ##Migrating your data and using services
 {: #ht_service}
@@ -146,8 +144,21 @@ After you upload your application to {{site.data.keyword.Bluemix_notm}}, select 
 
 The VCAP_SERVICES environment variable of your application is a JSON object that contains information about how to interact with a service instance in {{site.data.keyword.Bluemix_notm}}. The information includes the service instance name, credentials, and the connection URL to the service instance.
 
-To run your code in {{site.data.keyword.Bluemix_notm}}, you must add the code logic for parsing the VCAP_SERVICES variable to obtain information about service connection. Modify your application to get the dynamically assigned host and port of the service instance through the environment variables. 
+To run your code in {{site.data.keyword.Bluemix_notm}}, you must add the code logic for parsing the VCAP_SERVICES variable to obtain information about service connection. Modify your application to get the dynamically assigned host and port of the service instance through the environment variables. The following example shows how to get the credentials of a Postgre SQL service instance in a Ruby application:
 
+```
+services = JSON.parse(ENV['VCAP_SERVICES'], :symbolize_names => true)
+        url = services.values.map do |srvs|
+          srvs.map do |srv|
+            if srv[:credentials][:uri] =~ /^postgres/
+              srv[:credentials][:uri]
+            else
+              []
+            end
+          end
+        end.flatten!.first
+```		
+{:codeblock}
 
 To ensure that your application can run in a local environment after you modify the application for {{site.data.keyword.Bluemix_notm}}, check for the presence of the VCAP_SERVICES environment variable, which is set for all {{site.data.keyword.Bluemix_notm}} Cloud Foundry applications.
 
@@ -159,5 +170,5 @@ To ensure that your application can run in a local environment after you modify 
 ## Related Links
 {: #general}
 
-* [Deploying apps with IBM Eclipse Tools for Bluemix](../manageapps/eclipsetools/eclipsetools.html)
+* [Deploying apps with IBM Eclipse Tools for Bluemix](/docs/manageapps/eclipsetools/eclipsetools.html)
 * [The twelve-factor app](http://12factor.net/){:new_window}

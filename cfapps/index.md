@@ -14,8 +14,7 @@ lastupdated: "2016-09-12"
 {:new_window: target="_blank"}
 
 # Creating Cloud Foundry apps
-Last updated: 12 September 2016
-{: .last-updated}
+
 
 With {{site.data.keyword.Bluemix_notm}}, you can create your app in the {{site.data.keyword.Bluemix_notm}} user interface. After it's created, you can decide to continue to use the UI, use the cf command line interface to develop, track, plan, and deploy your app.
 {:shortdesc}

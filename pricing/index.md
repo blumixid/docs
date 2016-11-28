@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2016-09-05"
+lastupdated: "2016-11-21"
  
  
 ---
@@ -51,8 +51,6 @@ lastupdated: "2016-09-05"
 # Pricing
 {: #pricing}
 
-Last updated: 5 September 2016
-{: .last-updated}
 
 {{site.data.keyword.Bluemix_notm}} has choices of pricing plans to meet your needs and your budget, and account options for how you'll be billed. 
 {:shortdesc}
@@ -87,7 +85,7 @@ The resources or capabilities vary depending on the particular code, but can inc
 * Use premium service plans
 
 **Note:** You can apply multiple promo codes to your account. Each promo code can be redeemed only once before the expiration date of the code.
-To use a promo code, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), select **Account**, then click **Account Type** in the {{site.data.keyword.Bluemix_notm}}x user interface.
+To use a promo code, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg), select **Account**, then click **Account Type** in the {{site.data.keyword.Bluemix_notm}}x user interface.
 
 ##How you are billed
 {: #pay-accounts}
@@ -99,16 +97,16 @@ When you sign up for the {{site.data.keyword.Bluemix_notm}} Paid pricing plan, y
 
  With a Subscription account, you can get a monthly discount based on a minimum monthly spending commitment. {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local are charged by annual contracts.
 
-After you create a paid account, you can edit the information that you provided. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), then click **Account &gt; Account Type** to edit your information.
+After you create a paid account, you can edit the information that you provided. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg), then click **Account &gt; Account Type** to edit your information.
 
-If you encounter any problems with {{site.data.keyword.Bluemix_notm}} when you are using a Subscription account, see [Getting help](../support/index.html#getting-help) for more information.
+If you encounter any problems with {{site.data.keyword.Bluemix_notm}} when you are using a Subscription account, see [Getting help](/docs/support/index.html#getting-help) for more information.
 
 ###Subscription account
 {: #subscription}
 
 If you sign up for a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. You also pay for any usage that exceeds the minimum spending amount.
 
-To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact {{site.data.keyword.Bluemix_notm}} Sales, by using the link listed on the [{{site.data.keyword.Bluemix_notm}} Contact Us](../support/index.html#getting-customer-support) page.
+To sign up for a Subscription account, and for more information about subscription rates and discounts, you must contact {{site.data.keyword.Bluemix_notm}} Sales, by using the link listed on the [{{site.data.keyword.Bluemix_notm}} Contact Us](/docs/support/index.html#getting-customer-support) page.
 
 ###{{site.data.keyword.Bluemix_notm}} Dedicated account
 {: #dedicated}
@@ -155,11 +153,11 @@ Different types of charges apply depending on the features of {{site.data.keywor
 
 You are charged for the time that your applications run and the memory that is used, calculated as *GB-hours*. GB-hours is the calculation of the number of application instances, multiplied by the memory per instance, multiplied by the hours that the instances run. You can customize the number of instances and the amount of memory per instance based on your needs. You can also add memory or instances to scale for more users. The final charge is per GB-hour: your application instances, multiplied by memory per instance, multiplied by hours running.
 
-For example, consider a runtime that costs $0.07 per GB-hour in two 512 MB instances, running for 30 days (720 hours). These resources would cost $24.15 USD, including a free allowance of 375 GB-hours, with the following calculations: 
+For example, consider a runtime that costs 0.07 CNY per GB-hour in two 512 MB instances, running for 30 days (720 hours). These resources would cost 24.15 CNY, including a free allowance of 375 GB-hours, with the following calculations: 
 
 ```
 2 instances x 0.5 GB x 720 hours = 720 GB-hours.
-(720 - 375) GB-hours x $0.07 per GB-hour = $24.15
+(720 - 375) GB-hours x 0.07 per GB-hour = 24.15
 ```
 
 ###Charges for services
@@ -186,11 +184,11 @@ In the simple tier model, the unit price is determined by the tier that the quan
 
 | Quantity of items | Unit price for all items |
 |-------------------|--------------------------|
-| Tier 1: 1 - 1000  | $1 USD                   |
-| Tier 2: 1001 - 2000    |    $0.90 USD                      |
-| Tier 3: 2001 - 3000                  |   $0.75 USD                       |
-| Tier 4: 3001 - 4000           |      $0.60 USD                    |
-|Tier 5: &gt; 4000 | $0.40 USD | 
+| Tier 1: 1 - 1000  | 1 CNY                   |
+| Tier 2: 1001 - 2000    |    0.90 CNY                      |
+| Tier 3: 2001 - 3000                  |   0.75 CNY                       |
+| Tier 4: 3001 - 4000           |      0.60 CNY                    |
+|Tier 5: &gt; 4000 | 0.40 CNY | 
 
 *Table 1. Simple tier pricing table*
 
@@ -198,11 +196,11 @@ The following table illustrates how much you pay with a plan that is based on a 
 
 | Quantity of items | Charge Calculation | Total Price |
 |-------------------|--------------------|-------------|
-|500 |	500 × 1 = 500 |	$500 USD|
-|1500 |	1500 × 0.90 = 1350 |	$1350 USD|
-|2500 |	2500 × 0.75 = 1875 |	$1875 USD|
+|500 |	500 × 1 = 500 |	500 CNY|
+|1500 |	1500 × 0.90 = 1350 |	1350 CNY|
+|2500 |	2500 × 0.75 = 1875 |	1875 CNY|
 |... |	... |	...|
-|5200 |	5200 × 0.40 = 2080 |$2080 USD|
+|5200 |	5200 × 0.40 = 2080 | 2080 CNY|
 *Table 2. Charge calculation by using the simple tier pricing model*
 
 ####Graduated tier
@@ -212,22 +210,22 @@ In the graduated tier model, the unit price per tier decreases as your level of 
 
 | Quantity of items |	Unit price for items in the tier|
 |-------------------|------------------------------------|
-|    Tier 1: 1 - 1000 |	$1 USD |
-|   Tier 2: 1001 - 2000 |	$0.90 USD |
-|    Tier 3: 2001 - 3000 |	$0.75 USD |
-|    Tier 4: 3001 - 4000 |	$0.60 USD |
-|    Tier 5: &gt; 4000 |	$0.40 USD |
+|    Tier 1: 1 - 1000 |	1 CNY |
+|   Tier 2: 1001 - 2000 |	0.90 CNY |
+|    Tier 3: 2001 - 3000 |	0.75 CNY |
+|    Tier 4: 3001 - 4000 |	0.60 CNY |
+|    Tier 5: &gt; 4000 |	0.40 CNY |
 *Table 3. Graduated tier pricing table*
 
 The following table illustrates how much you pay with a plan that is based on a graduated tier pricing model:
 
 |Quantity of items | Charge calculation | Total price|
 |------------------|--------------------|------------|
-|500 |	500 × 1 (unit price for Tier 1) = 500 |	$500 USD|
-|1500 |	(1000 × 1 (unit price for Tier 1)) + (500 × 0.90 (unit price for Tier 2)) = 1450 |	$1450 USD|
-|2500 |	(1000 × 1 (unit price for Tier 1)) + (1000 × 0.90 (unit price for Tier 2)) + (500 × 0.75 (unit price for Tier 3)) = 2275 |	$2275 USD |
+|500 |	500 × 1 (unit price for Tier 1) = 500 |	500 CNY|
+|1500 |	(1000 × 1 (unit price for Tier 1)) + (500 × 0.90 (unit price for Tier 2)) = 1450 |	1450 CNY|
+|2500 |	(1000 × 1 (unit price for Tier 1)) + (1000 × 0.90 (unit price for Tier 2)) + (500 × 0.75 (unit price for Tier 3)) = 2275 |	2275 CNY |
 |... |	... |	...|
-|5200 |	(1000 × 1 (unit price for Tier 1)) + (1000 × 0.90 (unit price for Tier 2)) + (1000 × 0.75 (unit price for Tier 3)) + (1000 × 0.60 (unit price for Tier 4)) + (1200 × 0.40 (unit price for Tier 5)) = 3730 |	$3730 USD|
+|5200 |	(1000 × 1 (unit price for Tier 1)) + (1000 × 0.90 (unit price for Tier 2)) + (1000 × 0.75 (unit price for Tier 3)) + (1000 × 0.60 (unit price for Tier 4)) + (1200 × 0.40 (unit price for Tier 5)) = 3730 |	3730 CNY|
 *Table 4. Charge calculation by using the graduated tier pricing model*
 
 ####Block tier
@@ -237,21 +235,21 @@ In the block tier model, the price is a set charge for the quantity you use with
 
 |Quantity of items |	Total price for all items|
 |------------------|-----------------------------|
-| Tier 1: &lt;= 1000 |	$1000 USD|
-| Tier 2: &lt;= 2000 |	$1900 USD|
-| Tier 3: &lt;= 3000 |	$2800 USD|
-| Tier 4: &lt;= 4000 |	$3500 USD|
-| Tier 5: &lt;= 10000 |	$5000 USD|
+| Tier 1: &lt;= 1000 |	1000 CNY|
+| Tier 2: &lt;= 2000 |	1900 CNY|
+| Tier 3: &lt;= 3000 |	2800 CNY|
+| Tier 4: &lt;= 4000 |	3500 CNY|
+| Tier 5: &lt;= 10000 |	5000 CNY|
 *Table 5. Block tier pricing table*
 
 The following table illustrates how much you pay with a plan that is based on a block tier pricing model:
 
 |Quantity of items |	Charge calculation |	Total price|
 |------------------|-----------------------|---------------|
-|500 |	The number of items falls into Tier 1, so the total price is $1000 USD. |	$1000 USD|
-|1500 |	The number of items falls into Tier 2, so the total price is $1900 USD. |	$1900 USD|
+|500 |	The number of items falls into Tier 1, so the total price is 1000 CNY. |	1000 CNY|
+|1500 |	The number of items falls into Tier 2, so the total price is 1900 CNY. |	1900 CNY|
 |... |	... |	...|
-|5200 |	The number of items falls into Tier 5, so the total price is $5000 USD. |	$5000 USD|
+|5200 |	The number of items falls into Tier 5, so the total price is 5000 CNY. |	5000 CNY|
 *Table 6. Charge calculation by using the block tier pricing model*
 
 
@@ -298,13 +296,13 @@ To keep the example simple, assume that the prices in the following table do not
 
 |Service |	Features |	Price |
 |--------|-----------|--------|
-|SDK for Node.js |	375 GB-hours free per month (shared across all runtimes) |	$0.07 USD/GB-hour|
+|SDK for Node.js |	375 GB-hours free per month (shared across all runtimes) |	0.07 CNY/GB-hour|
 |Auto-Scaling |	Free service plan for the Auto-Scaling service |	Free|
-|Data Cache - Starter |	1 GB of cache space and a replica |	$55.00 USD/instance |
-|Data Cache - Standard |	5 GB of cache space and a replica |	$155.00 USD/instance |
-|Data Cache - Premium |	25 GB of cache space and a replica |	$505.00 USD/instance|
-|IBM Cloudant® NoSQL DB for {{site.data.keyword.Bluemix_notm}} |	2 GB of free data storage<br/>50,000 light API calls free per month<br/>10,000 heavy API calls free per month | $1.00 USD/GB<br/>$0.03 USD/1000 light API calls<br/>$0.15 USD/1000 heavy API calls |
-|SQL Database 	| 2 GB free per instance<br/>10 GB maximum per instance |	$30.00 USD/instance |
+|Data Cache - Starter |	1 GB of cache space and a replica |	55.00 CNY/instance |
+|Data Cache - Standard |	5 GB of cache space and a replica |	155.00 CNY/instance |
+|Data Cache - Premium |	25 GB of cache space and a replica |	505.00 CNY/instance|
+|IBM Cloudant® NoSQL DB for {{site.data.keyword.Bluemix_notm}} |	2 GB of free data storage<br/>50,000 light API calls free per month<br/>10,000 heavy API calls free per month | 1.00 CNY/GB<br/>0.03 CNY/1000 light API calls<br/>0.15 CNY/1000 heavy API calls |
+|SQL Database 	| 2 GB free per instance<br/>10 GB maximum per instance |	30.00 CNY/instance |
 *Table 7. Pricing sheet*
 
 ###Calculating the application price
@@ -315,13 +313,13 @@ The price of the application can be calculated in the following way:
 <dt>Four 256 MB Node.js runtime instances</dt>
 <dd>{{site.data.keyword.Bluemix_notm}} charges for a runtime by GB-hours. The number of GB used per month is <code>4 x 256 = 1024 MB or 1 GB per month</code>. Assume that there are <code>24 x 30 = 720 hours in a month</code>, so the application is charged for <code>1 x 720 = 720 GB-hours</code>.
 <p>
-375 GB-hours are included in a free allowance per month, shared across all {{site.data.keyword.Bluemix_notm}} runtimes. So the total cost for the runtime is <code>$0.07 x (720-375) = $24.15</code>.</p></dd>
+375 GB-hours are included in a free allowance per month, shared across all {{site.data.keyword.Bluemix_notm}} runtimes. So the total cost for the runtime is <code>0.07 x (720-375) = 24.15</code>.</p></dd>
 
 <dt>Two Auto-Scaling policies (processor and memory)</dt>
 <dd>The Auto-Scaling policies are free of charge.</dd>
 
 <dt>2 GB per month Data Cache</dt>
-<dd>The 50 MB plan that is provided by the Data Cache service is free of charge. However, the free plan would not cover your projected use of 2 GB per month. The three paid plans for Data Cache cost a set amount for a specific amount of space, regardless of how much space you actually use. Therefore, you want to choose the minimum plan that meets your projected use, which is the standard plan of 5 GB. The total cost is $155 per month.</dd>
+<dd>The 50 MB plan that is provided by the Data Cache service is free of charge. However, the free plan would not cover your projected use of 2 GB per month. The three paid plans for Data Cache cost a set amount for a specific amount of space, regardless of how much space you actually use. Therefore, you want to choose the minimum plan that meets your projected use, which is the standard plan of 5 GB. The total cost is 155 CNY per month.</dd>
 
 <dt>150 GB per month NoSQL database</dt>
 <dd>The IBM Cloudant NoSQL DB for {{site.data.keyword.Bluemix_notm}} service charges are based on data storage and the ability to access that data by different API methods. The <strong>PUT</strong> and <strong>POST</strong> commands are considered as heavy API calls, but <strong>GET</strong> commands are considered as light API calls.
@@ -329,27 +327,27 @@ The price of the application can be calculated in the following way:
 Add up the number of GB and deduct a 2 GB free allowance. 148 GB is charged per month. Subtract the free allowance of 50,000 for light api calls and 10,000 for heavy api calls. The total storage price includes the following parts:</p>
 <pre class="codeblock">
 <codeblock>
-    148 x 1 = $148
-    (450,000 / 1000) x 0.03 = $13.5
-    (90,000 / 1000) x 0.15 = $13.5
+    148 x 1 = 148
+    (450,000 / 1000) x 0.03 = 13.5
+    (90,000 / 1000) x 0.15 = 13.5
 </codeblock>
 </pre>
 <p>
-The total price is 148 + 13.5 + 13.5 = $175.</p></dd>
+The total price is 148 + 13.5 + 13.5 = 175 CNY.</p></dd>
 
 <dt>8 GB per month SQL Database</dt>
-<dd>The total price is $30 per instance.</dd>
+<dd>The total price is 30 CNY per instance.</dd>
 
 <dt>20 GB inbound or outbound network traffic</dt>
 <dd>Inbound and outbound network traffic is free of charge.</dd>
 
 </dl>
 
-When all the items are added, the total price of the application is $384.15.
+When all the items are added, the total price of the application is 384.15 CNY.
 
 ###Supported currencies
 
-Although the United States dollar (USD) is used in the pricing examples, other currencies are also supported in {{site.data.keyword.Bluemix_notm}}. The following table lists the different currencies that are supported.
+Although the Chinese Yuan (CNY) is used in the pricing examples, other currencies are also supported in {{site.data.keyword.Bluemix_notm}}. The following table lists the different currencies that are supported.
 
 |ISO 4217 code| Currency|
 |-------------|---------|
@@ -357,6 +355,7 @@ Although the United States dollar (USD) is used in the pricing examples, other c
 |BRL |	  Brazilian real|
 |CAD |	  Canadian dollar|
 |CHF |	  Swiss franc|
+|CNY |    Chinese Yuan|
 |DKK |	  Danish krone|
 |EUR |	  Euro|
 |GBP |	  Pound sterling|
@@ -370,28 +369,34 @@ Although the United States dollar (USD) is used in the pricing examples, other c
 |ZAR |	  South African rand|
 *Table 8. Supported currencies* 
 
-##Viewing usage details
+##Usage dashboard
 {: #usage}
 
-As an account owner or a billing manager, you can use the Usage Dashboard view to see the real-time charges for the runtimes and services that are used per month in your organizations. You can see the runtime GB-hours and service consumption in all regions, or you can select to see a particular region and space, for the past 12 months.
+As an account owner or a billing manager, you can use the Usage Dashboard page to see the real-time charges for the runtimes and services that are used per month in your organizations. You can see the runtime GB-hours and service consumption in all regions, or you can select to see a particular region and space, for the past 12 months.
 
-To open the Usage Dashboard view, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; *your_account_name* &gt; **Usage Dashboard**. In the view, you can see a summary of the runtime and service usage for the account. Billing managers can see the details for only the organizations in which they are billing managers.
+To open the **Usage Dashboard** page, click **Account** &gt; *your_account_name* &gt; **Usage Dashboard**. In the page, you can see a summary of the runtime and service usage for the account. Billing managers can see the details for only the organizations in which they are billing managers.
 
 The account owner is charged for the total usage that is incurred across all organizations at the end of each billing cycle. Each billing cycle lasts one month.
 
-Account owners can filter the usage summary by region and organization. If you are an account owner, set **Organization** as **All Organizations** to see the usage for the entire account for a 12-month period. Click a particular month to see the usage for that month. The charges shown represent the amount that you, as account owner, are billed for that month.
+Account owners can filter the usage summary by region and organization. The charges shown represent the amount that you, as the account owner, are billed for that month.
 
 If you select a specific organization for the **Organization**, you can see the total usage for that organization, including any usage as part of a free tier. The charges shown for the organization are not the charges that you are billed. The free tier usage is shown as free at the account level, but not at the organizational level. Therefore, when you view the organizational usage, you see the real usage for that organization including both free and charged usage. All organizational usage is rolled up to the account usage after the free tier is removed.
 
 ##Viewing credits
 {: #credits}
 
-As an account owner or a billing manager, you can use the Usage Dashboard view to see any credits for your account.
+As an account owner or a billing manager, you can use the **Usage Dashboard** page to see any credits for your account. You might have credits if, for example, you linked a SoftLayer account with a {{site.data.keyword.Bluemix_notm}} account.
 
-To open the Usage Dashboard view, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), then select **Account**. On the page that is displayed, click **Usage Dashboard**. In the view, you can see any credits, if they exist, and when they expire.
+To open the **Usage Dashboard** page, click **Account**. On the page that is displayed, click **Usage Dashboard**. In the page, you can see any credits, if they exist, and when they expire.
 
+##Notifications
+{: #notifications}
 
-##Changing your plan
+As an account manager, you can set spending notifications against the total cost of your account, for your runtime, services, and for individual services, excluding third-party services. You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify.
+
+To open the **Notifications** view, click **Account** &gt; *your_account_name* &gt; **Spending Notifications**. Enter a numeric value to set the spending threshold for triggering a notification for each type of spending notification as needed. You can also add and delete notifications for individual services.
+
+##How to change your plan
 {: #changing}
 
 You can change your service plan in {{site.data.keyword.Bluemix_notm}} in the service Dashboard, if plan changes are enabled for that service.
@@ -419,5 +424,5 @@ cf update-service <service_name> [-p <new_plan>]
 ## general 
 * [{{site.data.keyword.Bluemix_notm}} Pricing Sheet](https://console.{DomainName}/pricing/)
 * [{{site.data.keyword.Bluemix_notm}} Developers Community Forum](https://developer.ibm.com/bluemix/)
-* [Getting online help](../troubleshoot/getting_customer_support.html#online_help)
+* [Getting online help](/docs/troubleshoot/getting_customer_support.html#online_help)
 * [Contact us](https://console.{DomainName}/#/contactUs/cloudOEPaneId=contactUs)

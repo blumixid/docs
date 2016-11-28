@@ -15,8 +15,7 @@ lastupdated: "2016-06-23"
 
 # Developing with Visual Studio
 
-Last updated: 23 June 2016
-{: .last-updated}
+
 
   1. If you don't already have Visual Studio, install Visual Studio 2015 or Visual Studio Code by following the instructions [here](https://msdn.microsoft.com/en-us/library/e2h7fzkw.aspx){: new_window}.
 

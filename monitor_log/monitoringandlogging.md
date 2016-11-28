@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-12"
+lastupdated: "2016-11-21"
 
 ---
 
@@ -12,11 +12,9 @@ lastupdated: "2016-09-12"
 {:codeblock: .codeblock}
 {:screen: .screen}
 
-#Monitoring and logging
+#Monitoring and logging with Cloud Foundry
 {: #monitoringandlogging}
 
-Last updated: 12 September 2016
-{: .last-updated}
 
 By monitoring your apps and reviewing logs, you can follow application execution and data flow to get a better understanding of your deployment. In addition, you can reduce the time and effort that is required to locate any issues and repair them.
 {:shortdesc}
@@ -41,7 +39,7 @@ For stable operations of your deployments on {{site.data.keyword.Bluemix_notm}} 
 
 When you are using the Cloud Foundry infrastructure to run your apps on {{site.data.keyword.Bluemix_notm}}, you'll want to keep up with performance information such as health status, resource usage, and traffic metrics. With this performance information, you can then make decisions or take actions accordingly.
 
-To monitor Bluemix apps, use one of the following methods:
+To monitor {{site.data.keyword.Bluemix_notm}} apps, use one of the following methods:
 * Bluemix built-in monitoring mechanism.
 * Third-party options. For example, [New Relic](http://newrelic.com/){:new_window}.
 
@@ -49,6 +47,10 @@ To monitor Bluemix apps, use one of the following methods:
 {: #logging_for_bluemix_apps}
 
 Log files are automatically created when you are using the Cloud Foundry infrastructure to run your apps on {{site.data.keyword.Bluemix_notm}}. When you encounter errors in any stage from deployment to runtime, you can check the logs for clues that might help solve your issue.
+###Log Retention
+{: #log_retention}
+
+In {{site.data.keyword.Bluemix_notm}} Public Cloud Foundry apps, log data is stored for 7 days by default.
 
 
 
@@ -131,7 +133,7 @@ You can view the logs for your Cloud Foundry apps in three places:
 {: #viewing_logs_UI}
 
 To see the deployment or runtime logs, complete the following steps:
-1. Log in to {{site.data.keyword.Bluemix_notm}}, and then click the tile for your app on the Dashboard. The app details page is displayed.
+1. Log in to {{site.data.keyword.Bluemix_notm}}, and then click the tile for your app. The app details page is displayed.
 2. In the navigation bar, click **Logs**.
 
 In the **Logs** console, you can view the recent logs for your app or tail logs in real time. In addition, you can filter logs by log type and channel.
@@ -190,7 +192,7 @@ staging task. You can use this log to troubleshoot staging problems.</p>
 </li></ul>
 
 
-**Note:** For information about how to enable application logging, see [Debugging runtime errors](../debug/index.html#debugging-runtime-errors).
+**Note:** For information about how to enable application logging, see [Debugging runtime errors](/docs/debug/index.html#debugging-runtime-errors).
 
 
 
@@ -277,7 +279,7 @@ To stream logs from your app and the system to an external log host, complete th
 	 
 	 The name of your app.
 	 
-	 &gt;service_name&gt;
+	 &lt;service_name&gt;
 	 
 	 The name for the user-provided service instance.
 	 

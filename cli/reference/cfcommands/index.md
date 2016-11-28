@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016
-lastupdated: "2016-09-06"
+lastupdated: "2016-11-02"
 
 
 ---
@@ -21,8 +21,6 @@ lastupdated: "2016-09-06"
 
 {: #cf}
 
-Last updated: 6 September 2016
-{: .last-updated}
 
 
 The Cloud Foundry (cf) command line interface (CLI) provides a set of commands for managing your apps. The following information lists the cf commands used most commonly for managing apps and includes their names, options, usage, prerequisites, descriptions, and examples. To list all of the cf commands and associated help information, use `cf help`. Use `cf command_name -h` to view detailed help information for a particular command.
@@ -38,7 +36,7 @@ Use the index in the following table to refer to the frequently used Cloud Found
 
 <table summary="Alphabetically ordered general Cloud Foundry commands that have links that bring you to more info for the command">
  <thead>
- <th colspan="5">General Cloud Foundry commands</th>
+ <th colspan="6">General Cloud Foundry commands</th>
  </thead>
  <tbody>
  <tr>
@@ -46,6 +44,7 @@ Use the index in the following table to refer to the frequently used Cloud Found
  <td>[help](index.html#cf_help)</td>
  <td>[login](index.html#cf_login)</td>
  <td>[stacks](index.html#cf_stacks)</td>
+ <td>[target](index.html#cf_target)</td>
  <td>[-v](index.html#cf_v)</td>
  </tr>
    </tbody>
@@ -138,7 +137,7 @@ Assume that you have one instance for an app, in the instances column of the res
 cf apps
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 
 ## cf bind-service
@@ -150,7 +149,7 @@ Binds an existing service instance to your application.
 cf bind-service appname service_instance
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:  
 
@@ -179,7 +178,7 @@ Creates a service instance
 cf create-service service_name service_plan service_instance
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:  
 
@@ -210,7 +209,7 @@ Creates a space.
 cf create-space space_name [-o] [-q]
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`
 
 <strong>Command options</strong>:  
 
@@ -241,7 +240,7 @@ Deletes an existing application.
 cf delete appname [-f] [-r]
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:  
 
@@ -290,7 +289,7 @@ Deletes a space.
 cf delete-space space_name [-f]
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`
 
 <strong>Command options</strong>:  
 
@@ -338,7 +337,7 @@ Displays runtime events that are related to an application.
 cf events [appname]
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:  
 
@@ -459,7 +458,7 @@ Displays the STDOUT and STDERR log streams of an application.
 ```
 cf logs appname [--recent]
 ```
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:
 
@@ -493,7 +492,7 @@ Lists all of the services that are available in the marketplace. The services li
 ```
 cf marketplace
 ```
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`
 
 <strong>Command options</strong>: None.
 
@@ -515,7 +514,7 @@ Deploys a new application to {{site.data.keyword.Bluemix_notm}}, or updates an e
 cf push appname [-b buildpack_name] [-c start_command] [-f manifest_path] [-i instance_number] [-k disk_limit] [-m memory_limit] [-n host_name] [-p app_path] [-s stack_name] [-t timeout_length] [--no-hostname] [--no-manifest] [--no-route] [--no-start] [--random-route]
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:
 
@@ -579,7 +578,7 @@ Displays or changes the instance number, disk space limit, and memory limit for 
 cf scale appname [-i instance_number] [-k disk_limit] [-m memory_limit] [-f]
 ```
 
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:
 
@@ -619,7 +618,7 @@ Lists all of the services that are available in the current space.
 ```
 cf services
 ```
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>: None.
 
@@ -640,7 +639,7 @@ Sets an environment variable for an application
 ```
 cf set-env appname var_name var_value
 ```
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:
 
@@ -665,12 +664,12 @@ cf set-env my_app variable_a 123
 ## cf stacks
 {: #cf_stacks}
 
-Lists all stacks. A stack is  pre-built file system, including an operating system that can run apps.
+Lists all stacks. A stack is a pre-built file system, including an operating system that can run apps.
 
 ```
 cf stacks
 ```
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`
 
 <strong>Command options</strong>: None.
 
@@ -691,7 +690,7 @@ Stops an application
 ```
 cf stop appname
 ```
-<strong>Prerequisites</strong>: None.
+<strong>Prerequisites</strong>: `cf api`, `cf login`, `cf target`
 
 <strong>Command options</strong>:
 
@@ -705,6 +704,34 @@ cf stop appname
 Stop the application named `my_app`.
 ```
 cf stop my_app
+```
+{: codeblock}
+
+
+## cf target
+{: #cf_target}
+
+Sets or views the targeted organization or space
+
+```
+cf target [-o org_name] [-s space_name]
+```
+<strong>Prerequisites</strong>: `cf api`, `cf login`
+
+<strong>Command options</strong>:
+
+<dl>
+<dt>-o *org_name* (optional)</dt>
+<dd>The name of the organization where the space is located.</dd>
+<dt>-s *space_name* (optional)</dt>
+<dd>The name of the space.</dd>
+</dl>
+
+<strong>Examples</strong>:
+
+Set the target to the organization named "my_org" and the space named "my_space".
+```
+cf target -o my_org -s my_space
 ```
 {: codeblock}
 
@@ -739,5 +766,5 @@ cf -v
 
 * [Download Cloud Foundry CLI](https://github.com/cloudfoundry/cli/releases)
 {:new_window}
-* [Quick Reference Card - cf commands](ftp://public.dhe.ibm.com/cloud/bluemix/cli_reference_card.pdf)
+* [Quick Reference Card - cf commands](ftp://public.dhe.ibm.com/cloud/bluemix/cf_cli_refcard.html)
 {:new_window}

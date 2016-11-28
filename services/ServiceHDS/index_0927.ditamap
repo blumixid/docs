@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA IBM Map//EN"
+ "ibm-map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us">
+<title>Getting started with Hybrid Data Service</title>
+<topicref format="html" href="index.html" navtitle="Hybrid Data Service" linking="sourceonly" locktitle="yes" scope="peer">
+<topicref format="html" href="index.html#gettingstartedHDS" navtitle="Getting started with Hybrid Data Service" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#samplesaccessHDS" navtitle="Samples to Use JDBC, MongoDB API and Rest API to Access Hybrid Data Service" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#apiHDS" navtitle="API Documents" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#restapiHDS" navtitle="REST API for HDS" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#iotrestapiHDS" navtitle="IoT REST API for HDS" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#iotrestapiExamples" navtitle="IOT REST API Examples" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#siHDSweb" navtitle="Service Instance Web Page" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#mongoPage" navtitle="Mongo Page" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#sqlPage" navtitle="SQL Page" locktitle="yes" scope="peer"></topicref>
+</topicref>
+</map><?Pub Caret -3?>
+<?Pub *0000000799?>

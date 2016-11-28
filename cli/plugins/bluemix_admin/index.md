@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2016-09-09"
+lastupdated: "2016-11-21"
 
 
 ---
@@ -18,15 +18,13 @@ lastupdated: "2016-09-09"
 # {{site.data.keyword.Bluemix_notm}} admin CLI
 {: #bluemixadmincli}
 
-Last updated: 9 September 2016
-{: .last-updated}
 
 
 You can manage users for your
 {{site.data.keyword.Bluemix_notm}} Local or {{site.data.keyword.Bluemix_notm}} Dedicated environment by
 using the Cloud Foundry command line interface with the
 {{site.data.keyword.Bluemix_notm}} Admin CLI plug-in. For
-example, you can add users from an LDAP registry. If you are looking for information about managing your {{site.data.keyword.Bluemix_notm}} Public account, see [Administering](../../../admin/adminpublic.html#administer).
+example, you can add users from an LDAP registry. If you are looking for information about managing your {{site.data.keyword.Bluemix_notm}} Public account, see [Administering](/docs/admin/adminpublic.html#administer).
 
 Before you begin, install the cf command line interface. The
 {{site.data.keyword.Bluemix_notm}} Admin CLI plug-in
@@ -132,6 +130,7 @@ cf ba add-user <user_name> <organization>
 **Tip:** You can also use **ba au** as an alias for the longer
 **ba add-user** command name.
 
+<!-- staging-only commands start. Live for interconnect -->
 
 ### Search for a user
 
@@ -147,11 +146,11 @@ cf ba search-users -name=<user_name_value> -permission=<permission_value> -organ
 <dt class="pt dlterm">&lt;user_name_value&gt;</dt>
 <dd class="pd">The name of the user in {{site.data.keyword.Bluemix_notm}}. </dd>
 <dt class="pt dlterm">&lt;permission_value&gt;</dt>
-<dd class="pd">The permission assigned to the user. For example, superuser, basic, catalog, user, and reports. For more information about assigned user permissions, see [Permissions](../../../admin/index.html#permissions). You cannot use this parameter with the organization parameter in the same query. </dd>
+<dd class="pd">The permission assigned to the user. For example, superuser, basic, catalog, user, and reports. For more information about assigned user permissions, see [Permissions](/docs/admin/index.html#permissions). You cannot use this parameter with the organization parameter in the same query. </dd>
 <dt class="pt dlterm">&lt;organization_value&gt;</dt>
 <dd class="pd">The organization name that the user belongs to. You cannot use this parameter with the organization parameter in the same query.</dd>
 <dt class="pt dlterm">&lt;role_value&gt;</dt>
-<dd class="pd">The organization role assigned to the user. For example, manager, billing manager, or auditor for the organization. You must specify the organization with this parameter. For more information about roles, see [User roles](../../../admin/users_roles.html#userrolesinfo).</dd>
+<dd class="pd">The organization role assigned to the user. For example, manager, billing manager, or auditor for the organization. You must specify the organization with this parameter. For more information about roles, see [User roles](/docs/admin/users_roles.html#userrolesinfo).</dd>
 
 </dl>
 
@@ -181,6 +180,7 @@ cf ba set-permissions <user_name> <permission> <access>
 **Tip:** You can also use **ba sp** as an alias for the longer
 **ba set-permissions** command name.
 
+<!-- staging-only commands end -->
 
 ### Removing a user
 
@@ -256,7 +256,7 @@ cf ba set-org <user_name> <organization> [<role>]
 <dt class="pt dlterm">&lt;organization&gt;</dt>
 <dd class="pd">The name or GUID of the {{site.data.keyword.Bluemix_notm}} org to assign the user to.</dd>
 <dt class="pt dlterm">&lt;role&gt;</dt>
-<dd class="pd">See [Roles](../../../admin/users_roles.html) for
+<dd class="pd">See [Roles](/docs/admin/users_roles.html) for
 {{site.data.keyword.Bluemix_notm}} user roles and
 descriptions.</dd>
 </dl>
@@ -281,7 +281,7 @@ cf ba unset-org <user_name> <organization> [<role>]
 <dt class="pt dlterm">&lt;organization&gt;</dt>
 <dd class="pd">The name or GUID of the {{site.data.keyword.Bluemix_notm}} org to assign the user to.</dd>
 <dt class="pt dlterm">&lt;role&gt;</dt>
-<dd class="pd">See [Roles](../../../admin/users_roles.html) for
+<dd class="pd">See [Roles](/docs/admin/users_roles.html) for
 {{site.data.keyword.Bluemix_notm}} user roles and
 descriptions.</dd>
 </dl>

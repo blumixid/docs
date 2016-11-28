@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-04-07"
 
 ---
 
@@ -10,4 +11,3 @@ copyright:
 # DevOps services
 {: #devops_services}
 
-Last updated: 7 April 2016

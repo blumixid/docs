@@ -5,274 +5,412 @@
 copyright:
 
   years: 2015, 2016
-  lastupdated: "2016-06-15"
-
+lastupdated: "2016-11-21"
 
 
 ---
 
-{:new_window: target="_blank"} 
-{:shortdesc: .shortdesc} 
-{:screen:.screen} 
+{:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+{:screen:.screen}
 {:codeblock:.codeblock}
 
-# Designing your cloud environment
+# Best practices for setting up your organizations and spaces
 {: #patterns}
-Last updated: 15 June 2016
-{: .last-updated}
 
-When you design a hybrid cloud solution, you must take into consideration security and operational requirements, country regulations, market directives, and corporate policies. {{site.data.keyword.Bluemix_notm}} is an open standards cloud platform for building, running, and managing applications and services that offers three types of cloud environments to help you architect your hybrid cloud environment:
-* [{{site.data.keyword.Bluemix_notm}} Public](../public/index.html#public "{{site.data.keyword.Bluemix_notm}} Public") is a cloud environment where infrastructure resources are shared by different companies and users. 
-* [{{site.data.keyword.Bluemix_notm}} Dedicated](../dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated") is a  cloud environment in your own dedicated infrastructure that you can connect securely to the {{site.data.keyword.Bluemix_notm}} Public cloud and your own network.
-* [{{site.data.keyword.Bluemix_notm}} Local](../local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local") is a cloud behind your company firewall that you can use to protect your most sensitive workloads and connect securely to {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated.
+For a successful project, you must take time to plan, design, and decide what resources you need and what your enterprise requirements are. To help you get started with your 
+cloud project, consider the following questions:
 
-To design a cloud environment that uses {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, {{site.data.keyword.Bluemix_notm}} Local, or any combination of them, you can use any of the following patterns:
-* [Single-organization pattern](#single)
-* [Multi-organization pattern](#multi)
-
-If you require the same set of users to access resources that are available anywhere in the organization either in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local, consider using the single organization pattern.
-
-If you require isolation between different environments within {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local, consider using the multi-organization pattern. 
+* How many, and what type of, applications will be developed?
+* Which services will the applications need to access?
+* Who will be collaborating in the development process and what role will they play?
+* What degree of isolation is required for each phase of the project?
+* Will your enterprise supply the infrastructure resources? 
+* Is there a naming standard that you can implement to clearly identify the organization and space usage?   
 
 {:shortdesc}
 
-## Single-organization Pattern
-{: #single}
+When you design a cloud solution, you must also take into account security and operational requirements, country regulations, market directives, and corporate policies. 
+To cater for your project needs, {{site.data.keyword.Bluemix_notm}} offers three types of cloud environments. 
 
-The single-organization pattern is based on the following principles:
+| Type of cloud   | Cloud description |
+|---------------------------------------|--------------------------------------------------------------------------------------|
+| [{{site.data.keyword.Bluemix_notm}} Public](/docs/overview/whatisbluemix.html "{{site.data.keyword.Bluemix_notm}} Public") | The infrastructure resources are shared by different companies and users.|
+| [{{site.data.keyword.Bluemix_notm}} Dedicated](/docs/dedicated/index.html#dedicated "{{site.data.keyword.Bluemix_notm}} Dedicated") | You use your own dedicated SoftLayer infrastructure, which you can connect securely to the {{site.data.keyword.Bluemix_notm}} Public cloud and your own network.|
+| [{{site.data.keyword.Bluemix_notm}} Local](/docs/local/index.html#local "{{site.data.keyword.Bluemix_notm}} Local") | Sits behind your company firewall, which can protect your most sensitive workloads and can connect securely to both {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated clouds.|
+Table 1. {{site.data.keyword.Bluemix_notm}} cloud types
+{: #bptable1}
 
-1. A cloud architecture where infrastructure resources are shared by different areas of the company.
-2. Isolation of applications, projects, or both.
-3. Authorization to manage resources granted by role.
+Apart from deciding the type of cloud environment, you must plan the structure of your account, organizations, spaces, resources, and team members. The folllowing table provides a 
+summary of some of the key {{site.data.keyword.Bluemix_notm}} elements. 
 
-When you design a single-organization architecture, you create an account in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local and define one organization. You can then define multiple spaces that are based on different lines of business (LoB), the delivery phases, specific projects, applications, user's permisisons, or a combination. 
+| {{site.data.keyword.Bluemix_notm}} element   | Description |
+|---------------------------------------|--------------------------------------------------------------------------------------|
+| Account   | Each account has one account owner. |
+|| Contains one or more organizations. You must have a Pay-As-You-Go account to create more than one organization. |
+| Account owner   | Responsible for all of the usage charges that are accumulated within the account. |
+|| Can own only one account. |
+|| Can add one or more organization managers to delegate the org management, which includes the read and write permissions to the organizations. |
+|| Can be a team member in organizations and spaces in other {{site.data.keyword.Bluemix_notm}} accounts. |
+| Organization   | Contains one or more spaces. | 
+|| Contains one or more org managers. |
+|| Contains one or more team members. Each team member can be granted one or more roles. |
+|| The usage charges, which are generated by a deployed application within a space, are reported at the organization level. |
+| Space   | Contains one or more resources. |
+|| Only one application can be deployed within a space. |
+|| Contains one or more space managers. |
+|| Contains one or more team members. Each team member can be granted one or more roles. |
+| Team member   | Can be added to one or more organizations and spaces across different accounts. |
+|| Can be given more than one role within the same organization, space, or both. | 
+Table 2. Description of key {{site.data.keyword.Bluemix_notm}} elements.
+{: #bptable2}
+## Determining your organization structure
+{: #orgstructure}
 
-Consider the following information when you design the organizational architecture for your {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local cloud:
+To design a cloud environment that uses {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, {{site.data.keyword.Bluemix_notm}} Local, 
+or any combination, you can use the following organization patterns:
 
-1. To define one organization, see [Guidance defining multiple organizations](#singleorg)
-2. To define multiple spaces, see [Guidance defining multiple spaces](#singlespace)
-3. To grant permissions to users based on Bluemix roles, see [Guidance assigning roles to users](#roles).
+* Single-organization pattern
+* Multi-organization pattern
 
+If you require the same set of users to access resources that are available anywhere in the organization either in {{site.data.keyword.Bluemix_notm}} Public, 
+{{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local, consider using the single organization pattern.
 
-## Multi-organization Pattern
-{: #multi}
+If you require isolation between different environments within {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or 
+{{site.data.keyword.Bluemix_notm}} Local, consider using the multi-organization pattern.
 
-The multi-organization pattern is based on the following principles:
+### Single-organization versus multi-organization
+{: #singleormulti}
 
-1. A cloud architecture where infrastructure resources are not shared by different areas of the company.
-2. Isolation of applications, projects, or both.
-3. Authorization to manage resources granted by role.
+There is an important difference between the two organization patterns. In a single-organization environment, the infrastructure resources are shared by different areas of 
+the company. Whereas, in a multi-organization environment the infrastructure resources are not shared. 
 
-When you design a multi-organization architecture, you create an account in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local. Next, you define organizations corresponding to different lines of business (LoB), delivery phases, specific projects, users' permisisons, or a combination of these. You can then define multiple spaces that are based on applications or projects that are delivered by the same department in the company. Consider the following information when you design the organizational architecture for your {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local cloud:
+Both organization patterns support the following priciples:
 
-1. To define multiple organizations, see [Guidance defining multiple organizations](#multiorg)
-2. To define multiple spaces, see [Guidance defining multiple spaces](#multispace)
-3. To grant permissions to users based on Bluemix roles, see [Guidance assigning roles to users](#roles).
+* Isolation of applications, projects, or both.
+* Authorization to manage resources granted by user role.
 
-## Organizations
-{: #org}
+To implement a single-organization architecture, create an account in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or 
+{{site.data.keyword.Bluemix_notm}} Local, and define one organization. You can then define multiple spaces that are based on different lines of business (LOB), 
+the delivery phases, specific projects, applications, user permisisons, or a combination of these components.
+
+To implement a multi-organization architecture, create an account in {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, 
+or {{site.data.keyword.Bluemix_notm}} Local. Next, you can define organizations that correspond to different lines of business (LOB), delivery phases, 
+specific projects, user permisisons, or a combination of these components. You can then define multiple spaces that are based on applications or projects that are 
+delivered by the same department in the company. 
+
+Now that you have your account and one or more organizations defined, you can think about the following {{site.data.keyword.Bluemix_notm}} elements:
+
+| {{site.data.keyword.Bluemix_notm}} element | Where to find more information |
+|---------------------------------------|--------------------------------------------------------------------------------------|
+| Organizations | [Single-organization guidance](#singleorg) and [Multi-organization guidance](#multiorg) |
+| Spaces | [Single space guidance](#singlespace) and [Multiple space guiance](#multispace) |
+| Team members | [Assigning roles guidance](#roles) |
+Table 3. Where to find more information about key {{site.data.keyword.Bluemix_notm}} elements.
+{: #bptable3}
+
+### Organization isolation and abstraction
+{: #orgconsiderations}
 
 {: #singleorg}
-When you adopt a single-organization architecture, the organization includes all the cloud resources, services, and applications that you use to develop, manage, and deploy cloud applications. In {{site.data.keyword.Bluemix_notm}} Public, the organization provides isolation between accounts and is available across all regions.
+When you adopt a single-organization architecture, the organization includes all of the cloud resources, services, and applications that you use to develop, manage, and 
+deploy cloud applications. In {{site.data.keyword.Bluemix_notm}} Public, the organization provides isolation between accounts and is available across all regions.
 
- ![Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}](../admin/images/multi_F3.gif "Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}")
+ ![Figure that shows the single-organization architecture in {{site.data.keyword.Bluemix_notm}}](/docs/admin/images/multi_F3.gif "Figure that shows the 
+ single-organization architecture in {{site.data.keyword.Bluemix_notm}}")
 
- *Figure 3. Example of a single-organization architecture for {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, and {{site.data.keyword.Bluemix_notm}} Local *
+ Figure 1. Example of a single-organization architecture for {{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, and 
+ {{site.data.keyword.Bluemix_notm}} Local 
+{: #bpfigure1}
 
 {: #multiorg}
-When you adopt a multi-organization architecture, organizations provide the first level of isolation and abstraction that you can use to control and define what can be done and by whom. You design each organization around the different lines of business (LoB), the delievry phases, the IT roles of the users, specific projects, or a combination.  
+When you adopt a multi-organization architecture, organizations provide the first level of isolation and abstraction that you can use to control and define what can be 
+done and by whom. Design each organization around the different lines of business (LOB), the delivery phases, the roles of the users, specific projects, or a 
+combination of these components.  
 
 The number of organizations that you require depends on multiple factors:
-*	The level of granularity that you require within your organization to manage quotas and control costs.
-*	The level of security that you must enforce in your different environments.
-*	The location of the organizations due to corporate, country, and industry requirements. For example, you might want to run all your apps in a dedicated cloud that is located in a region in your geography (GEO).
+
+* The level of granularity that you require within your organization to manage quotas and control costs.
+* The level of security that you must enforce in your different environments. For example, if you are using containers, you might want to isolate container images that are 
+used for development from the container images that are used for production.
+* The location of the organizations due to corporate, country, and industry requirements. For example, you might want to run all of your apps in a dedicated cloud that is 
+located in a specific region in your geography (geo).
+
+When you are defining the different organizations for your cloud structure, consider the following guidance:
+
+* Define and then enforce a naming convention. For example, define a naming convention where the name of the organization includes information about the business area, 
+the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Local, or {{site.data.keyword.Bluemix_notm}} Dedicated), and the 
+process phase (development, testing, or production). For organizations that are located in {{site.data.keyword.Bluemix_notm}} Public, you might want to add information 
+about the region too.
+* Define the restrictions that apply to the organization. For example, define the role of the team members that are going to work in that organization.
+* Identify the manager of the organization.
+* Identify the area of the business that is allocated to this organization.
 
 The following scenarios show different approaches that you can adopt when you define the number of {{site.data.keyword.Bluemix_notm}} organizations in a cloud environment:
 * Scenario 1: Isolation of users by delivery phase
 
-  Description: You have different sets of users that need to work in the development environment, the test environment, and the production environment. 
-  
-  Solution: You can create organizations based on the type of IT work, for example, one organization for development, one for testing, and one for production.
+  Description: You have different sets of users that need to work in the development environment, the test environment, and the production environment.
 
-  ![Figure that shows isolation of users by delivery phase in {{site.data.keyword.Bluemix_notm}} Public ](../admin/images/multi_F1.gif "Figure that shows isolation of users by delivery phase in {{site.data.keyword.Bluemix_notm}} Public")
- 
-  *Figure 1. Example of a multi-organization architecture aligned to delivery phases in {{site.data.keyword.Bluemix_notm}} Public *
+  Solution: You can create organizations based on the type of IT work. For example, one organization for development, one for testing, and one for production.
 
+  ![Figure that shows isolation of users by delivery phase in {{site.data.keyword.Bluemix_notm}} Public ](/docs/admin/images/multi_F1.gif "Figure that shows isolation of users by delivery phase in {{site.data.keyword.Bluemix_notm}} Public")
+
+  Figure 2. Example of a multi-organization architecture aligned to delivery phases in {{site.data.keyword.Bluemix_notm}} Public 
+{: #bpfigure2}
 * Scenario 2: Isolation based on type of users (internal users, external users)
-  
+
   Description: Your company works with different partners. You require different applications for internal users and for external ones.
-  
+
   Solution: You can create organizations to develop, test, and run applications that are used internally. In addition, you can create one or more organizations per partner.
 
 * Scenario 3: Isolation by project
-  
+
   Description: Your company runs hackathons to identify new services.  
-  
+
   Solution: You can define one organization per hackathon and use the organization as a sandbox. After the hackathon, you can promote the sandbox organization into an additional organization in your account.
 
-* Scenario 4: Isolation of users by LoB and delivery phase
+* Scenario 4: Isolation of users by LOB and delivery phase
 
-  Description: Corporate rules require that development, test, and production users must be different. In addition, the apps of each LoB must be developed, managed, and deployed by different users. Security must be enforced so that users can access only the apps that are relevant to their part of the business. 
-  
-  Solution: You can create organizations by LoB and then by type of environment, for example, you can create one organization for the development of applications for the billing department, one for testing the billing applications, and one for running the billing applications in production.
+  Description: Corporate rules require that development, test, and production users must be different. In addition, the apps of each LOB must be developed, managed, and deployed by different users. Security must be enforced so that users can access only the apps that are relevant to their part of the business.
 
-  ![Figure that shows isolation of users by LoB and delivery phase in {{site.data.keyword.Bluemix_notm}} Dedicated ](../admin/images/multi_F2.gif "Figure that shows isolation of users by LoB and delivery phase in {{site.data.keyword.Bluemix_notm}} Dedicated")
-  
-   *Figure 2. Example of a multi-organization architecture aligned with LoB and delivery phases for {{site.data.keyword.Bluemix_notm}} Dedicated *
+  Solution: You can create organizations by LOB and then by type of environment, for example, you can create one organization for the development of applications for the billing department, one for testing the billing applications, and one for running the billing applications in production.
 
-When you are defining the list of organizations for your cloud organization, consider the following guidance:
-* Define and enforce a naming convention. For example, define a naming convention where the organization's name includes information about the business area, the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Local, or {{site.data.keyword.Bluemix_notm}} Dedicated), and the IT role (development, testing, or production). For organizations that are located in {{site.data.keyword.Bluemix_notm}} Public, you might want to add information about the region too. 
-* Define the restrictions that apply to the organization. For example, define the role of the users that are going to work in that organization. 
-* Identify the manager of the organization.
-* Identify the area of the business that is allocated to this organization.
+  ![Figure that shows isolation of users by LOB and delivery phase in {{site.data.keyword.Bluemix_notm}} Dedicated ](/docs/admin/images/multi_F2.gif "Figure that shows isolation of users by LOB and delivery phase in {{site.data.keyword.Bluemix_notm}} Dedicated")
 
-## Spaces
-{: #spaces}
+   Figure 3. Example of a multi-organization architecture aligned with LOB and delivery phases for {{site.data.keyword.Bluemix_notm}} Dedicated 
+{: #bpfigure3}
 
-Within an organization, spaces provide an additional level of isolation and abstraction. 
+### Organization naming, restrictions, and management 
+{: #orgadmin}   
+   
+Before you start to define the different organizations for your cloud environment, consider the following guidance:
 
-A space is a reserved area in the organization where users can develop and run applications and services. You can create any number of spaces in an organization. You can control the users that have access to a space. For more information about managing spaces, see [Spaces](../admin/orgs_spaces.html#spaceinfo "Spaces").
+* Define and enforce a naming convention. For example, define a naming convention where the name of the organization includes information about the business area, 
+the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Local, or {{site.data.keyword.Bluemix_notm}} Dedicated), and the 
+IT role (development, testing, or production). For organizations that are located in {{site.data.keyword.Bluemix_notm}} Public, you might want to add information 
+about the region too.
+* Define the restrictions that apply to the organization. For example, define the role of each of the team members and the permissions they need to work in that organization.
+* Identify the manager of the organization. You might want to delegate the organization administration to more that one person. 
+* Identify the area of the business that is allocated to this organization. The application usage that is generated in each of the spaces, within the organization, 
+is accumulated and reported at the organization level. 
+
+## Determining your spaces
+{: #determinespaces}
+
+Within an organization, spaces provide an additional level of isolation and abstraction.
+
+A space is a reserved area in the organization where users can develop and run applications and services. You can create any number of spaces in an organization. 
+You can control the users that have access to a space. For more information, see [Spaces](/docs/admin/orgs_spaces.html#spaceinfo "Spaces").
+
+### Spaces for single-organization versus multi-organization
+{: #spaceconsiderations}
 
 {: #singlespace}
 When you adopt a single-organization architecture, the level of isolation and abstraction is provided by the spaces that you define within the organization. Consider the following guidance when you define spaces:
-* Define a space to host a service that requires provisioning and configuring only once in the organization. 
-* Define spaces based on the delivery lifecycle. 
-  For example, you can define one or more spaces for applications that are being developed, one or more spaces for applications that are in the test phase, and one or more spaces for applications that are in production.
-* If the isolation by delivery lifecycle is not sufficient, you can achieve more isolation by defining one or more spaces per LoB and delivery phase.
-* If you require isolation by sets of users, define a space for each set of users. 
-  For example, your developers cannot test the application and test it. You require a different set of users to test it. In this scenario, you create two spaces, one for developers of the application and one for testers of the application. Then grant each set of users access to the correct space.
+
+* Define a space to host a service that requires provisioning and configuring only once in the organization.
+* Define spaces based on the delivery lifecycle.
+  For example, you can define one or more spaces for applications that are being developed, one or more spaces for applications that are in the test phase, and one or more 
+  spaces for applications that are in production.
+* If the isolation by delivery lifecycle is not sufficient, you can achieve more isolation by defining one or more spaces per LOB and delivery phase.
+* If you require isolation by sets of users, define a space for each set of users.
+  For example, your developers cannot test the application and test it. You require a different set of users to test it. In this scenario, you create two spaces, one for 
+  developers of the application and one for testers of the application. Then grant each set of users access to the correct space.
 
 {: #multispace}
-When you adopt a multi-organization architecture, you can isolate each organization by phase of the delivery lifecycle, by line of business, or both. You can then define multiple spaces that are based on the number of applications or projects that are delivered by the same department in the company. Consider the following guidance when you plan the spaces in an organization:
+When you adopt a multi-organization architecture, you can isolate each organization by the delivery lifecycle phase, by line of business, or both. You can then define 
+multiple spaces, which are based on the number of applications or projects that are delivered by the same department in the company. Consider the following guidance when you 
+plan the spaces in an organization:
 
-* Define a space per application, per group of related applications, or for a specific project. 
+* Define a space to host a service that requires provisioning and configuring only once in the organization.
+  For example, if you want to connect applications securely that run in one of your organizations to on-premises or in cloud locations, use the 
+  [{{site.data.keyword.SecureGateway}} service](https://developer.ibm.com/bluemix/2015/03/27/bluemix-secure-gateway-yes-can-get/ "{{site.data.keyword.SecureGateway}} service"). {{site.data.keyword.SecureGateway}} provides secure connectivity and establishes a tunnel between your {{site.data.keyword.Bluemix_notm}} organization and the remote location that you want to connect to. You only need to provision once, but you can configure multiple destinations for this service in your organization.  
+* Define a space per application, per group of related applications, or for a specific project.
 * If you require isolation by sets of users, define a space for each set of users.
-  
+  In {{site.data.keyword.Bluemix_notm}} Public, for example, you can provision within a space of an organization any of the following resources: Cloud Foundry applications, 
+  Docker containers that run in {{site.data.keyword.containerlong}}, virtual servers that run in {{site.data.keyword.virtualmachineslong}}, and 
+  {{site.data.keyword.Bluemix_notm}} services. When a user is granted a developer role in a space, that user has full access to any resources (containers, virtual 
+  servers, Cloud Foundry apps, and {{site.data.keyword.Bluemix_notm}} services) that are provisioned and running in that space. When you need to enforce tighter security to prevent  
+  that users that manage Cloud Foundry applications from managing containers or virtual servers, consider defining different spaces to run containers, virtual servers, and 
+  Cloud Foundry applications. Within any of these spaces, you can provison {{site.data.keyword.Bluemix_notm}} services that might be used by the apps running in that space.
 
-When you are defining the list of spaces for your cloud organization, consider the following guidance:
-* Define and enforce a naming convention. For example, define a naming convention where the space name includes information about where the organization is located and the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Local, or {{site.data.keyword.Bluemix_notm}} Dedicated).
-* Define the restrictions that apply to the space. For example, define the type of applications that can be developed, managed, and deployed in each space. 
-* Identify the manager of the space.
+### Space naming, restrictions, and management  
+{: #spaceadmin} 
+ 
+Before you define the different spaces for your cloud organization, consider the following guidance:
 
-## Quota
-{: #quota}
+* Define and enforce a naming convention. For example, define a naming convention where the space name includes information about where the organization is located 
+and the type of cloud ({{site.data.keyword.Bluemix_notm}} Public, {{site.data.keyword.Bluemix_notm}} Dedicated, or {{site.data.keyword.Bluemix_notm}} Local).
+* Define the restrictions that apply to the space. For example, define the type of applications that can be developed, managed, and deployed in each space.
+* Identify the manager of the space. You might want to delegate the space administration to more that one person. 
 
-When you create an organization in {{site.data.keyword.Bluemix_notm}}, you provision infrastructure resources that include resources such as memory, IP, CPU, and storage:
-*	For {{site.data.keyword.Bluemix_notm}} Public, a minimum set of resources is allocated to an organization. Based on the type of account, you have different resource allocations. These resources define the quota that is allocated to an organization. 
-*	For {{site.data.keyword.Bluemix_notm}} Dedicated, you request a set of resources from IBM, and then you can distribute them between the different organizations in your {{site.data.keyword.Bluemix_notm}} Dedicated cloud environment. 
-*	For {{site.data.keyword.Bluemix_notm}} Local, you provide the resources and then you can distribute them between organizations in your {{site.data.keyword.Bluemix_notm}} Local cloud environment.
+## Determining quota for an organization
+{: #determinequota}
 
-For {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated, you can request additional resources from IBM. For {{site.data.keyword.Bluemix_notm}} Local, you are responsible for providing any resources that might be required to run your business in the local cloud.
+When you create an organization in {{site.data.keyword.Bluemix_notm}}, you provision infrastructure resources that include resources such as memory, Internet Protocol (IP), 
+servers, and storage:
+*	For {{site.data.keyword.Bluemix_notm}} Public, a minimum set of resources is allocated by IBM to an organization. Based on the type of account, you have different 
+resource allocations. These resources define the quota that is allocated by IBM to an organization.
+*	For {{site.data.keyword.Bluemix_notm}} Dedicated, you request a set of resources from IBM, and then you can distribute them between the different organizations in your 
+{{site.data.keyword.Bluemix_notm}} Dedicated cloud environment.
+*	For IBM Local, you provide the resources and then you can distribute them between organizations in your {{site.data.keyword.Bluemix_notm}} Local cloud environment.
 
-The quota that is allocated to an organization represents the resources that are available within the organization. You manage the quota and you decide how to distribute the resources in the organization.
+For {{site.data.keyword.Bluemix_notm}} Public and {{site.data.keyword.Bluemix_notm}} Dedicated, you can request additional resources from IBM. For 
+{{site.data.keyword.Bluemix_notm}} Local, you are responsible for providing any resources that might be required to run your business in the local cloud.
 
-You monitor and manage the quota of an account by space and by compute infrastructure. Any resource that is provisioned in a space of the organization contributes to the usage of the organization's quota. 
-* For more information about how to view and manage the quota of an organization in {{site.data.keyword.Bluemix_notm}} Public, see [Managing quota](../admin/orgs_spaces.html#managequota "Managing quota"). 
-* For more information about how to view and manage the quota of an organization in {{site.data.keyword.Bluemix_notm}} Dedicated or {{site.data.keyword.Bluemix_notm}} local, see [Viewing usage and reports](../admin/index.html?pos=2#oc_resource "Viewing usage and reports").
+The quota that is allocated to an organization represents the resources that are available within the organization. You manage the quota and you decide 
+how the resources are distributed across the organization. For example, in {{site.data.keyword.Bluemix_notm}} Public, different quota limits are set 
+for working with Cloud Foundry apps, {{site.data.keyword.containerlong}}, and {{site.data.keyword.virtualmachineslong}}. You manage resources by type of 
+infrastructure and distribute them according to your requirements:
+*	You can manage the number of services that are allocated to a space in Cloud Foundry.
+*	You can manage the memory, the public IP addresses, and the file shares (storage) that are allocated to a space and can be used by applications that run in 
+{{site.data.keyword.containerlong}}.
+*	You can manage the memory, the public IP addresses, and the servers that are allocated to a space and can be used by apps that run in {{site.data.keyword.virtualmachineslong}}.
 
-In a multi-organization architecture, you define the number of organizations based on the different lines of business (LoB), the delivery phases, specific projects, user's permisisons, or a combination. For example, when you define the level of granularity of an organization at the LoB and delivery phase, and the number of spaces by project, you can identify the resources that are used for development, test, and production for projects that are the responsibility of a LoB. You can also monitor the resources that are allocated to each project by viewing the space quota. In a single-organization architecture, to obtain the same level of detail, the criteria for defining spaces should consider isolation by LoB, delivery phase, and project. The naming convention for each space should facilitate the identification of the project including information about the LoB, the phase in the delivery lifecycle, and the project. 
+### Managing and monitoring quota 
+{: #managequota}
 
-Whether you adopt a multi-organization architecture or a single-organization architecture, use a naming convention for spaces that easily identifies and shows the quota allocation that you require.   
+You manage and monitor the quota of an account by space and by compute infrastructure. Any resource that is provisioned in a space and is then used by the deployed application consumes a portion of the quota available to the organization.
+* For more information about how to view and manage the quota of an organization in {{site.data.keyword.Bluemix_notm}} Public, see [Managing quota](/docs/admin/orgs_spaces.html#managequota "Managing quota").
+* For more information about how to view and manage the quota of an organization in {{site.data.keyword.Bluemix_notm}} Dedicated or {{site.data.keyword.Bluemix_notm}} local, see [Viewing usage and reports](/docs/admin/index.html?pos=2#oc_resource "Viewing usage and reports").
 
-## Users and roles
+### Multi-organization, single-organization, and naming 
+{: #multiorgquota}
+
+In a multi-organization architecture, you define the number of organizations based on the different lines of business (LOB), the delivery phases, specific projects, 
+user permisisons, or a combination of these components. For example, when you define the level of granularity for an organization at the LOB and delivery phase, and the number 
+of spaces by project, you can identify the resources that are used for the development, test, and production phases for projects that are the responsibility of a LOB. You can 
+also monitor the resources that are allocated to each project by viewing the space quota. In a single-organization architecture, to obtain the same level of detail, the 
+criteria for defining spaces should consider isolation by LOB, delivery phase, and project. The naming convention for each space should facilitate the identification of the 
+project including information about the LOB, the phase in the delivery lifecycle, and the project.
+
+Whether you adopt a multi-organization architecture or a single-organization architecture, use a naming convention for spaces that easily identifies and shows the 
+quota allocation that is required.   
+
+## Assigning roles
 {: #roles}
 
-You can grant multiple roles to users in a {{site.data.keyword.Bluemix_notm}} account. These roles define the permissions of the user to manage account and organization resources:
-* You can grant [user roles](../admin/users_roles.html#userrolesinfo "user roles" ) to members of an organization. These roles define the level of access within the organization, and who can access a space and its resources. For example, you can grant users different permissions to different spaces.
-* In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local only, you can grant [administrative roles](../admin/index.html#oc_useradmin "administrative roles" ) to members of an account to manage system information, usage of account resources, reports and logs, catalog services, users, and resource usage per organization.
+You can grant multiple roles to team members in a {{site.data.keyword.Bluemix_notm}} account. These roles define the permissions of the user to manage account and organization 
+resources:
+* You can grant [user roles](/docs/admin/users_roles.html#userrolesinfo "user roles" ) to members of an organization. These roles define the level of access within the 
+organization, and restrict who can access a space and its resources. For example, you can grant users different permissions to different spaces.
+* In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local only, you can grant [administrative roles](/docs/admin/index.html#oc_useradmin "administrative roles" ) 
+to members of an account to manage system information, usage of account resources, reports and logs, catalog services, users, and resource usage per organization.
+
+### Account owner
+{: #accountowner}
 
 Whether you design a multi-organization architecture or a single-organization architecture, the account owner is the super user of the cloud environment.
 
 The account owner core tasks include:
+
 * Managing the resources of the global account.
 * Creating organizations.
-* Adding users as team members to the account. 
+* Adding team members to the account.
 
-To add users to an account, use the email address of the user or a list of email addresses. In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local, you can also use the company’s LDAP to add users, groups of users, or both, or import users from a file. For more information, see [Managing users and permissions](../admin/index.html#oc_useradmin "Managing users and permissions").
+To add team members to an account, use the email address of the user or a list of email addresses. In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} 
+Local, you can also use the company LDAP to add users, groups of users, or both. You can also import users from a file. For more information, see [Managing users and permissions](/docs/admin/index.html#oc_useradmin "Managing users and permissions").
 
-Other tasks of the account owner include:
-* Adding 1 or more users as managers of an organization by assigning these users the **Manager** role. Consider adding a minimum of 2 users as managers of the organization. The first user acts as the principal manager of the organization. The second user acts as the deputy manager, in case, the principal manager is not available. 
-* In {{site.data.keyword.Bluemix_notm}} Public, and depending on the [account type](../pricing/index.html#pay-accounts "account type"), setting spending notifications. First, the account owner defines the thresholds that are used to alert him when costs reach a certain limit. Then, [configures email notifications](../admin/account.html#notifications "configures email notifications"). The account manager can use the information in the emails as alert notifications and might take action based on the information provided, for example upgrading the account. **Note:** The account owner is the only person that can receive spending notification emails. 
-* In {{site.data.keyword.Bluemix_notm}} Dedicated or {{site.data.keyword.Bluemix_notm}} Local, 
-  * Adding 1 or more users as administrators of the account by assigning these users the **Admin** role. Consider adding a minimum of 2 users. The first user acts as the principal administrator of the account. The second user acts as the deputy administrator.
-  * Defining account notifications to inform about maintenance updates or critical incident alerts. These notifications can be configured to send an email or an SMS.
+The account owner can also perform the following tasks:
 
-### User roles 
+* Add one or more users as managers of an organization by assigning these users the **Manager** role. Consider adding a minimum of two users as organization managers. 
+The first user acts as the principal manager of the organization. The second user acts as the deputy manager, in case, the principal manager is unavailable.
+* In {{site.data.keyword.Bluemix_notm}} Public, and depending on the [account type](/docs/pricing/index.html#pay-accounts "account type"), setting spending notifications. First, 
+the account owner defines the thresholds that are used to alert him when costs reach a certain limit. Then, [configures email notifications](/docs/admin/account.html#notifications "configures email notifications"). The account manager can use the information in the emails as alert notifications and might take action based on the information provided, for example upgrading the account. **Note:** The account owner is the only person that can receive spending notification emails.
+* In {{site.data.keyword.Bluemix_notm}} Dedicated or {{site.data.keyword.Bluemix_notm}} Local,
+* Add one or more users as administrators of the account by assigning these users the **Admin** role. Consider adding a minimum of two users. The first user acts as 
+the principal administrator of the account. The second user acts as the deputy administrator.
+* Define the account notifications to inform about maintenance updates or critical incident alerts. These notifications can be configured to send an email or a Short Message Service.
 
-User roles define the permissions that you can assign to a user in an organization and define the level of access that a user has within the organization and each space. 
+### User roles
+{: #userroles}
 
-In a multi-organization architecture or in a single-organization architecture, define the users and the permissions that each user requires to do their work:
+User roles define the permissions that you can assign to a team member in an organization and define the level of access that a team member has within the organization and each space.
+
+In a multi-organization architecture or in a single-organization architecture, define the team members and the permissions that each user requires to complete their work:
+
 1. Identify the set of users that require access to an organization.
-2. Define the permissions for each user in the organization and in a space of the organization.
-3. Select the role that grants a user the permissions required.
+2. Define the permissions for each team member in the organization and in a space of the organization.
+3. Select the role that grants a user the permissions they require.
    * [Manager role for an organization](#manager)
    * Auditor role for an organization](#orgauditor)
    * [Billing role for an organization](#orgbilling)
-   * [Manager for a space](#spmanager)
-   * [Developer for a space](#dev)
-   * [Auditor for a space](#spauditor)
+   * [Manager role for a space](#spmanager)
+   * [Developer role for a space](#dev)
+   * [Auditor role for a space](#spauditor)
 
 {: #manager}
-The principal manager of the organization is responsible for creating spaces, distributing the quota between spaces, inviting users and optionally granting them roles, and defining custom domains. The following list outlines the tasks of a manager of an organization:
-1. Create the spaces that have been identified. Consider adopting and enforcing a naming convention. 
-2. Distribute the quota between the spaces based on the type of applications that will be running in each space.
-3. Invite users to the organization. 
-4. Grant the **Space Manager** role to at least one user per space.
-5. Grant the **Organization Billing** role to a set of users.
-6. Grant the **Organization Auditor** role and the **Space Auditor** role to a set of users. 
-7. Define domains.
+The organization manager is responsible for creating spaces, distributing the quota between the spaces, inviting team members and optionally granting them specific roles, 
+and defining custom domains. The following list outlines the tasks of an organization manager:
+
+1. Create the spaces that are required for the project. To easily identify what each space is used for, consider adopting and enforcing a naming convention.
+2. Distribute the quota between the spaces based on the type of application that will be running in each space.
+3. Invite team members to the organization.
+5. For each organization, grant the **Billing Manager** role to the team members who will monitor the resource usage charges.
+6. For each organization and space, grant the **Auditor** role to the team members who will be responsible for reporting the overall use and efficiency.
+4. To delegate the authority, for each space, grant the space **Manager** role to at least one team member.
+7. [Set the namespace for the {{site.data.keyword.containerlong}} image registry](/docs/containers/container_planning_org_ov.html#container_planning_namespace "Set the namespace for the {{site.data.keyword.containerlong}} image registry") in the organization. **Note:** The namespace must be unique and can be created only once for an organization. After the namespace is created it cannot be changed. This step is only required if you plan to work with {{site.data.keyword.containerlong}}.
+8. Define the domains.
 
 {: #orgauditor}
-The users that are granted the **Organization Auditor** role can monitor the quota and the users for all the spaces in an organization. 
-* When you adopt a multi-organization architecture, consider granting the same set of users the auditor role in each organization that is part of the account. These users can then monitor the quota across all organizations in your cloud environment and obtain a global view of the account. 
-* When you adopt a single-organization architecture, identify the users that are responsible for monitoring the quota usage.
+The team members with the organization **Auditor** role can monitor the quota, the resource usage, and the team members for all of the spaces in an organization. 
+The auditors can then report on the organization efficiency and highlight any potential problems.
+
+* When you adopt a multi-organization architecture, you might want to grant the auditor role to the same team members for every organization that is part of the account. 
+Then, these team members can monitor the quota across all of the organizations in your cloud environment and obtain a global view of the account.
+* When you adopt a single-organization architecture, grant the auditor role to the team members with the responsibility for monitoring the quota usage and overall efficiency 
+of the organization.
 
 {: #orgbilling}
-The users that are granted the **Organization Billing** role can monitor the costs of an organization. 
-* When you adopt a multi-organization architecture, consider granting the same set of users the billing role in each organization that is part of the account. These users can then monitor each organizations' spending costs and obtain a global view for the account. 
+The team members with the **Billing Manager** role can monitor the costs of an organization.
+
+* When you adopt a multi-organization architecture, you might want to grant the billing role to the same set of team members for every organization that is part of the account. Then, these team members can then monitor the cost of each organization and obtain a global view of the account.
 * In a single-organization architecture, identify the users that are responsible for monitoring the cost.
 
 {: #spmanager}
-The space manager is responsible for any work that is done within the space that he manages and controls. The space manager 
-* Monitors the quota that has been allocated to the space. 
-* Requests additional resources to the organization manager.
-* Notifies the organization manager of resources that are not required. 
-* Adds users to the space with the **Developer** role.
-* Optionally, assigns the **Space Manager" role to a user so this user can act as deputy space manager in his absence.
+The space **Manager** is responsible for any work that is done within the space that they manage and control. The space manager can perform the following tasks:
+
+* Monitoring the quota that is allocated to the space.
+* Requesting additional resources to the organization manager.
+* Notifying the organization manager of resources that are not required.
+* Addind team members to the space with the **Developer** role.
+* Optionally, assigning the space **Manager** role to a team member to act as a deputy space manager in their absence.
 
 {: #dev}
-In {{site.data.keyword.Bluemix_notm}} Public, the developers are users that are granted access to a space and have been assigned the **developers** role. These users can do any of the following tasks within the space:
-* Manage CF applications.
-* Provision and configure {{site.data.keyword.Bluemix_notm}} services 
+In {{site.data.keyword.Bluemix_notm}} Public, developers are team members with the **Developer** role in a space. These team members have permission to do any of the 
+following tasks within the space:
+
+* Manage Cloud Foundry applications.
+* Manage Docker containers that run in {{site.data.keyword.containerlong}}.
+* Manage virtual servers that run in {{site.data.keyword.virtualmachineslong}}.
+* Provision and configure {{site.data.keyword.Bluemix_notm}} services.
 * Associate domains to applications.
 
-In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local, the developers are also users that are granted access to a space and are assigned the **developers** role. These users can do any of the following tasks within the space:
-* Manage CF applications.
-* Provision and configure {{site.data.keyword.Bluemix_notm}} services 
+In {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local, the developers are also users that are granted access to a space and are 
+assigned the developers role. These users can do any of the following tasks within the space:
+
+* Manage Cloud Foundry applications.
+* Provision and configure {{site.data.keyword.Bluemix_notm}} services.
 * Associate domains to applications.
 
 {: #spauditor}
-Consider granting the **audit** role in each space to the same users that you granted the  **Organization Auditor** role. You may also  have requirements to grant this role to a specific set of users.
+For every space, you might want to grant the space **Auditor** role to the same team members with the organization **Auditor** role. In your enterprise, this role might 
+have to be granted to a specific set of users.
 
-### Administrative roles 
+### Administrative roles
+{: #adminroles}
 
-[Administrative roles](../admin/index.html#oc_useradmin "Administrative roles" ) define the permissions that you can grant users to manage a {{site.data.keyword.Bluemix_notm}} Dedicated or a {{site.data.keyword.Bluemix_notm}} Local account. You can grant read or write permissions to allow a user to view system information, usage of the account resources, reports and logs, catalog services, users, and resource usage per organization. 
+[Administrative roles](/docs/admin/index.html#oc_useradmin "Administrative roles" ) define the permissions that you can grant to users to manage a {{site.data.keyword.Bluemix_notm}} Dedicated or a {{site.data.keyword.Bluemix_notm}} Local account. 
+You can grant read or write permissions to allow a user to view system information, usage of the account resources, reports and logs, catalog services, users, and resource usage per organization.
 
 In a multi-organization architecture or in a single-organization architecture, define the users and the permissions that each user requires to manage the account:
 
-1. Identify the set of users to whom you plan to grant administration permissions and will be part of the administration cloud team. Include the managers of organizations as members of this team.
+1. Identify the set of administration cloud team users and fgrant them the relevant administration permissions. Include the organization managers as members of this team.
 2. Define the permissions for these users in the account. Divide permissions to manage the catalog and reports between users of the team.
 3. Select one or more roles for each user to match the permissions required to manage the account:
-   * Admin role: Grant this role to 2 more users in the account. Users with this role have permissions to manage the entire organization.
+
+   * Admin role: Grant this role to two more users in the account. Users with this role have the authority to manage the entire organization.
    * User role: This role can be configured with read or write permissions. Grant this role with write permissions to managers of organizations to allow them to add users to the account and their organizations. Grant this role with read permissions to managers of organizations that might need access to see the list of members in the account.
-   * Catalog role: This role can be configured with read or write permissions. Grant this role to a set of users with write permissions to allow them to define and manage which Bluemix services and starters are visible to users in the Bluemix Catalog. Grant this role with read permissions to managers of organizations.
+   * Catalog role: This role can be configured with read or write permissions. Grant this role to a set of users with write permissions to allow them to define and manage which Bluemix services and starters are visible to users in the {{site.data.keyword.Bluemix_notm}} Catalog. Grant this role with read permissions to managers of organizations.
    * Reports role: This role can be configured with read or write permissions. Grant this role to a set of users with write permissions to allow them to view and add reports that other users with read permissions can download. Grant read permissions to all members of the admin team.
    * Login role: Grant this role to all members of the admin team. You can also grant this role to other users in the account that require access to view the account notifications and system information.
-
-
-
-
-
-
-
-

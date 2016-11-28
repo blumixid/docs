@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2016-09-14"
+lastupdated: "2016-11-21"
  
 
 ---
@@ -14,8 +14,7 @@ lastupdated: "2016-09-14"
 {:shortdesc: .shortdesc}
 
 # Uploading your application
-Last updated: 14 September 2016
-{: .last-updated}
+
 
 After you are logged in to {{site.data.keyword.Bluemix_notm}}, you can upload your application with the cf push command.
 {:shortdesc}
@@ -51,7 +50,7 @@ When a **cf push** command is issued, the **cf** command line interface provides
   
   **Tip:** When you use the **cf push** command, the **cf** command line interface copies all of the files and directories from your current directory to Bluemix. Ensure that you have only the required files in your application directory.
 
-  The cf push command uploads and deploys your application to {{site.data.keyword.Bluemix_notm}}. See [cf commands](../cli/reference/cfcommands/index.html) for more information about cf push. See [Using community buildpacks](../cfapps/byob.html) for information about buildpacks.
+  The cf push command uploads and deploys your application to {{site.data.keyword.Bluemix_notm}}. See [cf commands](/docs/cli/reference/cfcommands/index.html) for more information about cf push. See [Using community buildpacks](/docs/cfapps/byob.html) for information about buildpacks.
 
   2. If you change your application, you can upload those changes by entering the cf push command again. The cf command line interface uses your previous options and your responses to the prompts to update any running instances of your application with the new bits of code.
 

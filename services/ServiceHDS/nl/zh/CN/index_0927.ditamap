@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA IBM Map//EN"
+ "ibm-map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="zh-cn">
+<title>Getting started with Hybrid Data Service</title>
+<topicref format="html" href="index.html" navtitle="混合数据库服务" linking="sourceonly" locktitle="yes" scope="peer">
+<topicref format="html" href="index.html#gettingstartedHDS" navtitle="混合数据库服务入门" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#samplesaccessHDS" navtitle="使用JDBC, MongoDB 接口 和 Rest 接口访问混合数据库服务示例" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#apiHDS" navtitle="API文档" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#restapiHDS" navtitle="混合数据库服务的REST API" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#iotrestapiHDS" navtitle="混合数据库服务的IoT REST API" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#iotrestapiExamples" navtitle="IOT REST API的使用例子" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#siHDSweb" navtitle="服务实例的网页" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#mongoPage" navtitle="Mongo网页" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html#sqlPage" navtitle="SQL页面" locktitle="yes" scope="peer"></topicref>
+</topicref>
+</map><?Pub Caret -3?>
+<?Pub *0000000799?>

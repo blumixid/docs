@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-13"
+lastupdated: "2016-11-21"
 
 ---
 
@@ -15,8 +15,7 @@ lastupdated: "2016-09-13"
 #Updating apps
 {: #updatingapps}
 
-Last updated: 13 September 2016
-{: .last-updated}
+
 
 
 You can use the cf push command to update the applications in {{site.data.keyword.Bluemix_notm}}. In many cases, even for the built-in buildpacks such as Node.js, you must also supply a -c parameter to specify which command is used to start your application.
@@ -35,17 +34,19 @@ You can create and use a custom domain in {{site.data.keyword.Bluemix_notm}} by 
 
   1. Create a custom domain for your organization.
 
-	1. On the menu bar of the {{site.data.keyword.Bluemix_notm}} **DASHBOARD**, click **MANAGE ORGANIZATIONS**.
+	1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Manage Organizations** &gt; **View details** for your org &gt; **Edit Org** &gt; **Domains**.
 
 	2. On the **DOMAINS** tab, click **ADD DOMAIN**, enter your custom domain name, and click **SAVE**.
+	**Note**: For example, you can use `mycompany.com` to associate the route `www.mycompany.com` to your app. You can also use `example.mycompany.com`to associate the route `www.example.mycompany.com` to your app.
 
   2. Add the route with the custom domain to an application.
 
-    1. On the menu bar of the {{site.data.keyword.Bluemix_notm}} **DASHBOARD**, click the tile of the application that you want to add the route to. The **Overview** page is displayed.
+    1. On the menu bar, select **Console** from the drop-down menu, then click the row for the application that you want to add the route to. The **Overview** page is displayed.
 
-	2. From the application menu on the **Overview** page, click **Edit Routes and App Access**.
+	2. From the **View App** menu, select **Edit Routes and Access**.
 
 	3. Click **Add route** and specify the route that you want to use for the application.
+	4. Click **Save**. 
 
 * Use the cf command line interface:
 
@@ -83,7 +84,7 @@ You can create and use a custom domain in {{site.data.keyword.Bluemix_notm}} by 
 
 After you configure the custom domain in {{site.data.keyword.Bluemix_notm}}, you must map the custom domain to the {{site.data.keyword.Bluemix_notm}} system domain on your registered DNS server:
 
-  1. Set up a 'CNAME' record for the custom domain name on your DNS server.
+  1. Set up a 'CNAME' record for the custom domain name on your DNS server. Steps for setting up the CNAME record vary depending on your DNS provider. For example, if you are using GoDaddy, you follow the [Domains Help](https://www.godaddy.com/help/add-a-cname-record-19236){: new_window} guidance from GoDaddy.
   2. Map the custom domain name to the secure endpoint for the {{site.data.keyword.Bluemix_notm}} region where your application is running. Use the following endpoints to provide the URL route that is allocated to your organization in {{site.data.keyword.Bluemix_notm}}:
 
     * China: `secure.chinabluemix.net`

@@ -28,8 +28,7 @@ lastupdated: "2016-09-14"
 {:user_ID: data-hd-keyref="user_ID"}
 
 # Deploying your app with the command line interface
-Last updated: 14 September 2016
-{: .last-updated}
+
 
 You can use the command line interface to deploy and modify applications and service instances.
 {:shortdesc}

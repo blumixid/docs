@@ -5,7 +5,7 @@
 copyright:
 
   years: 2016
-lastupdated: "2016-08-29"
+lastupdated: "2016-11-21"
  
 
 ---
@@ -15,8 +15,7 @@ lastupdated: "2016-08-29"
 
 # {{site.data.keyword.Bluemix_notm}} Public
 {: #public}
-Last updated: 29 August 2016
-{: .last-updated}
+
 
 
 {{site.data.keyword.Bluemix_notm}} abstracts and hides most of the complexities that are associated with hosting and managing cloud-based apps. As an application developer, you can focus on developing your app without having to manage the infrastructure that is required to host it.
@@ -47,7 +46,7 @@ You can use {{site.data.keyword.Bluemix_notm}} to quickly develop apps in the mo
 {: #publicarch}
 
 
-In general, you don't have to worry about the operating system and infrastructure layers when running apps on {{site.data.keyword.Bluemix_notm}}. Layers such as root filesystems and middleware components are abstracted so that you can focus on your application code. However, you can learn more about these layers if you need specifics on where your app is running. See [Viewing {{site.data.keyword.Bluemix_notm}} infrastructure layers](../cli/vcapsvc.html#viewinfra) for details.
+In general, you don't have to worry about the operating system and infrastructure layers when running apps on {{site.data.keyword.Bluemix_notm}}. Layers such as root filesystems and middleware components are abstracted so that you can focus on your application code. However, you can learn more about these layers if you need specifics on where your app is running. See [Viewing {{site.data.keyword.Bluemix_notm}} infrastructure layers](/docs/cli/vcapsvc.html#viewinfra) for details.
 
 As a developer, you can interact with the {{site.data.keyword.Bluemix_notm}} infrastructure by using a browser-based user interface. You can also use a Cloud Foundry command line interface, called cf, to deploy web apps.
 
@@ -142,8 +141,8 @@ Next, as the application developer, you can log in to {{site.data.keyword.Bluemi
 
 # rellinks
 ## general
-* [What's new in {{site.data.keyword.Bluemix_notm}}](../whatsnew/index.html)
+* [What's new in {{site.data.keyword.Bluemix_notm}}](/docs/whatsnew/index.html)
 * [{{site.data.keyword.Bluemix_notm}} Prerequisites](https://developer.ibm.com/bluemix/support/#prereqs)
 * [{{site.data.keyword.Bluemix_notm}} known issues](https://developer.ibm.com/bluemix/support/#issues)
-* [Managing your account](../admin/adminpublic.html#mngacct)
-* [{{site.data.keyword.Bluemix_notm}} glossary](../overview/glossary/index.html)
+* [Managing your account](/docs/admin/adminpublic.html#mngacct)
+* [{{site.data.keyword.Bluemix_notm}} glossary](/docs/overview/glossary/index.html)

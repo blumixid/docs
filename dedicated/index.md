@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015, 2016
-lastupdated: "2016-11-02"
+lastupdated: "2016-11-21"
 
 
 ---
@@ -15,9 +15,6 @@ lastupdated: "2016-11-02"
 
 # {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #dedicated}
-
-Last updated: 2 Novemver 2016
-{: .last-updated}
 
 
 
@@ -39,12 +36,12 @@ In addition, a set of services used as {{site.data.keyword.Bluemix_notm}} Dedica
 
 | **Type**        | **Name**            | **Description** |      
 |-----------------|-------------------|-------------------|
-|Included | [{{site.data.keyword.Bluemix_notm}} runtimes](../cfapps/runtimes.html) | Use runtimes to get your app up and running quickly, with no need to set up and manage machines and operating systems. All {{site.data.keyword.Bluemix_notm}} runtimes are available for you to use in your {{site.data.keyword.Bluemix_notm}} Dedicated instance.|
-| Included | [{{site.data.keyword.autoscaling}}](../services/Auto-Scaling/index.html) | Dynamically increase or decrease the compute capacity of your application based on policies. With this service, you have unlimited use in your {{site.data.keyword.Bluemix_notm}} Dedicated environment. |
-|Optional | [{{site.data.keyword.cloudant}}](../services/Cloudant/index.html#Cloudant) | {{site.data.keyword.cloudant}} provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB, and accessible through a simple to use HTTP interface for mobile and web application models. |
-| Optional | [{{site.data.keyword.dashdbshort}}](../services/dashDB/dashDB.html) | Use dashDB to store relational data, including special types such as geospatial data. Then analyze that data with SQL or advanced built-in analytics like predictive analytics and data mining, analytics with R, and geospatial analytics. |
-| Optional | [{{site.data.keyword.messagehub}}](../services/MessageHub/index.html#messagehub) | {{site.data.keyword.messagehub}} is a scalable, distributed, high throughput message bus to unite your on-premises and off-premises technologies. {{site.data.keyword.messagehub}} is based on Apache Kafka, which is a fast, scalable, and durable real-time messaging engine. |
-| Optional | [{{site.data.keyword.iot_short}}](../services/IoT/index.html) | This service lets your apps communicate with and consume data collected by your connected devices, sensors and gateways. The base offering permits running a private version of the {{site.data.keyword.iot_short}} within the dedicated environment with a capacity of 100,000 concurrently connected devices or applications and 1.6 TB of data exchange. |
+|Included | [{{site.data.keyword.Bluemix_notm}} runtimes](/docs/cfapps/runtimes.html) | Use runtimes to get your app up and running quickly, with no need to set up and manage machines and operating systems. All {{site.data.keyword.Bluemix_notm}} runtimes are available for you to use in your {{site.data.keyword.Bluemix_notm}} Dedicated instance.|
+| Included | [{{site.data.keyword.autoscaling}}](/docs/services/Auto-Scaling/index.html) | Dynamically increase or decrease the compute capacity of your application based on policies. With this service, you have unlimited use in your {{site.data.keyword.Bluemix_notm}} Dedicated environment. |
+|Optional | [{{site.data.keyword.cloudant}}](/docs/services/Cloudant/index.html#Cloudant) | {{site.data.keyword.cloudant}} provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB, and accessible through a simple to use HTTP interface for mobile and web application models. |
+| Optional | [{{site.data.keyword.dashdbshort}}](/docs/services/dashDB/dashDB.html) | Use dashDB to store relational data, including special types such as geospatial data. Then analyze that data with SQL or advanced built-in analytics like predictive analytics and data mining, analytics with R, and geospatial analytics. |
+| Optional | [{{site.data.keyword.messagehub}}](/docs/services/MessageHub/index.html#messagehub) | {{site.data.keyword.messagehub}} is a scalable, distributed, high throughput message bus to unite your on-premises and off-premises technologies. {{site.data.keyword.messagehub}} is based on Apache Kafka, which is a fast, scalable, and durable real-time messaging engine. |
+| Optional | [{{site.data.keyword.iot_short}}](/docs/services/IoT/index.html) | This service lets your apps communicate with and consume data collected by your connected devices, sensors and gateways. The base offering permits running a private version of the {{site.data.keyword.iot_short}} within the dedicated environment with a capacity of 100,000 concurrently connected devices or applications and 1.6 TB of data exchange. |
 
 
 There are optional components that are available for you to purchase to scale and extend the capacity of your resources and services. You can purchase any of these components by contacting the sales team.
@@ -63,7 +60,7 @@ Based on BlueBox, {{site.data.keyword.Bluemix_notm}} Dedicated ensures that you 
 
 *Figure 1. Detailed {{site.data.keyword.Bluemix_notm}} Dedicated diagram*
 
-{{site.data.keyword.Bluemix_notm}} Dedicated environments have the same security standards as the public {{site.data.keyword.Bluemix_notm}} in terms of infrastructure, operational, and physical security. However, developer access to the dedicated {{site.data.keyword.Bluemix_notm}} is controlled by your LDAP policies, which can be configured by the {{site.data.keyword.Bluemix_notm}} team when they set up your environment. Within the dedicated environment, you can manage user roles and permissions. See [Managing users and permissions](../admin/index.html#oc_useradmin) for details.
+{{site.data.keyword.Bluemix_notm}} Dedicated environments have the same security standards as the public {{site.data.keyword.Bluemix_notm}} in terms of infrastructure, operational, and physical security. However, developer access to the dedicated {{site.data.keyword.Bluemix_notm}} is controlled by your LDAP policies, which can be configured by the {{site.data.keyword.Bluemix_notm}} team when they set up your environment. Within the dedicated environment, you can manage user roles and permissions. See [Managing users and permissions](/docs/admin/index.html#oc_useradmin) for details.
 
 ##Setting up {{site.data.keyword.Bluemix_notm}} Dedicated
 {: #setupdedicated}
@@ -100,7 +97,7 @@ You can expect a process similar to the following list for the initial deploymen
 
 <ol>
 <li>You specify the domain names for the deployment, and the IDs that you want to use. You get three domains when you set up your {{site.data.keyword.Bluemix_notm}} instance. You pick the prefix for the <code>*mycompany*.chinabluemix.net</code> and <code>*mycompany*.mychinabluemix.net</code>. And, you choose the full name for the third domain.<br />
-<p>You can choose as many custom domains as you want. However, you are responsible for the certificates for the custom domains. For information about creating your custom domain, see <a href="../manageapps/updapps.html#domain">Creating and using a custom domain</a>.</p></li>
+<p>You can choose as many custom domains as you want. However, you are responsible for the certificates for the custom domains. For information about creating your custom domain, see <a href="/docs/manageapps/updapps.html#domain">Creating and using a custom domain</a>.</p></li>
 <li>You identify an owner for the public account that is used to represent your company in {{site.data.keyword.Bluemix_notm}} Public. 21Vianet uses this account for tracking syndicated services usage.</li>
 <li>You decide whether there will be any access to your dedicated environment from the public Internet.</li>
 <li>You select the type of authentication that will be used. The optional types include 21ViaNet or Active Directory.</li>
@@ -241,7 +238,7 @@ The following types of maintenance are required for {{site.data.keyword.Bluemix_
 <dt>**Standard maintenance for the {{site.data.keyword.Bluemix_notm}} platform**</dt>
 <dd>Maintenance updates are applied based on coordination between you and 21Vianet within a 21-day window. You provide 21Vianet with preapproved maintenance windows and specific dates or times that might not work for you, and 21Vianet works to schedule updates during or around the dates that you selected.
 <p>
-<p>Go to **ADMINISTRATION > SYSTEM INFORMATION** to view scheduled and pending maintenance updates. For more information about setting your preapproved windows, unavailable dates, and viewing or approving scheduled maintenance updates, see <a href="../admin/index.html#oc_schedulemaintenance">Maintenance updates</a></p>.</dd>
+<p>Go to **ADMINISTRATION > SYSTEM INFORMATION** to view scheduled and pending maintenance updates. For more information about setting your preapproved windows, unavailable dates, and viewing or approving scheduled maintenance updates, see <a href="/docs/admin/index.html#oc_schedulemaintenance">Maintenance updates</a></p>.</dd>
 </dl>
 
 **Important**: 21Vianet reserves the right to interrupt services to apply emergency maintenance as needed. 21Vianet might change scheduled maintenance hours, but will notify you of any such changes, as well as any emergency maintenance information.
@@ -259,10 +256,10 @@ If you identify an issue that needs attention from 21Vianet support and operatio
 
 ### 21Vianet-detected critical incidents
 
-Critical incidents are urgent, unexpected service outages, and stability issues that affect your environment or your users. If 21Vianet detects a critical incident within your environment, you are notified by a notification on the **Status** page. You can also check the Status page for any known issues for the platform or your services. For more information about the Status page, see [Viewing status](../admin/index.html#oc_status).
+Critical incidents are urgent, unexpected service outages, and stability issues that affect your environment or your users. If 21Vianet detects a critical incident within your environment, you are notified by a notification on the **Status** page. You can also check the Status page for any known issues for the platform or your services. For more information about the Status page, see [Viewing status](/docs/admin/index.html#oc_status).
 
 
-![Incident response process](../local/images/incidentresponseprocess.png "Incident response process")
+![Incident response process](/docs/local/images/incidentresponseprocess.png "Incident response process")
 
 *Figure 2. Incident response process*
 

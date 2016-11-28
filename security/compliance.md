@@ -16,9 +16,7 @@ lastupdated: "2015-12-15"
 # Security compliance
 {: #compliance}
 
-Last Updated: 15 December 2015
-{: .last-updated}
- 
+
  <!-- Testing format -->
 
 {{site.data.keyword.Bluemix_notm}} provides a secure cloud platform that you can trust. The Bluemix platform and services are built on best-in-industry standards, including ISO 27001, ISO 27002, and SOC 2.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA IBM Map//EN"
+ "ibm-map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us">
+<title>Getting started with service_short_name</title>
+<topicref format="html" href="index.html" navtitle="Chinese Named Entity Recognition" linking="sourceonly" locktitle="yes" scope="peer">
+<topicref format="html" href="index.html#gettingstarted" navtitle="Getting started" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html##samples" navtitle="Samples" locktitle="yes" scope="peer"></topicref>
+<topicref format="html" href="index.html##api" navtitle="API" locktitle="yes" scope="peer"></topicref>
+</topicref>
+</map><?Pub Caret -3?>
+<?Pub *0000000799?>

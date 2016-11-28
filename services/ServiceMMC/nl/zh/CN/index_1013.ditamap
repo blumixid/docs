@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA IBM Map//EN" "ibm-map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us">
+    <title>欢迎使用移动消息互联服务</title>
+    <topicref format="html" href="index.html" navtitle="移动消息互联服务" linking="sourceonly" locktitle="yes" scope="peer">
+        <topicref format="html" href="index.html#gettingstartedMMC" navtitle="开始" locktitle="yes" scope="peer">
+            <topicref format="html" href="index.html#createAccount" navtitle="创建账户" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#createChannel" navtitle="创建移动消息账户" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#createApplicationEndpoint" navtitle="创建消息处理接口" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#testResult" navtitle="测试结果" locktitle="yes" scope="peer"></topicref>
+        </topicref>
+        <topicref format="html" href="index.html#restAPI" navtitle="API文档" locktitle="yes" scope="peer">
+            <topicref format="html" href="index.html#getReceivedMessage" navtitle="接收消息" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#sendMessage" navtitle="发送消息" locktitle="yes" scope="peer"></topicref>
+        </topicref>
+    </topicref>
+</map>
+<?Pub Caret -3?>
+<?Pub *0000000799?>

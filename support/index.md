@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-13"
+lastupdated: "2016-11-21"
 
 ---
 
@@ -13,8 +13,6 @@ lastupdated: "2016-09-13"
 # Getting customer support
 {: #getting-customer-support}
 
-Last updated: 13 September 2016
-{: .last-updated}
 
 
 If you experience problems with Bluemix, you have several support options, such as getting help through a forum, or opening a support ticket.
@@ -67,7 +65,7 @@ On the Status page, you can find the following information:
 
 You can find the Status page by choosing either of the following options:
 
-  * Log in to the {{site.data.keyword.Bluemix_notm}} user interface, click the {{site.data.keyword.avatar}} icon ![Avatar icon](./images/account_support.svg) in the menu bar, and then click **Status**. Check the listed resources for the ![some issues](images/some_issues.svg) icon. This icon might indicate an outage.
+  * Log in to the {{site.data.keyword.Bluemix_notm}} console. From the menu bar, click **Support** and then click **Status**.  Check the listed resources for the ![some issues](images/some_issues.svg) icon. This icon might indicate an outage.
   * Access it directly at [System Status](https://status.chinabluemix.net/){: new_window}.
 
 
@@ -109,7 +107,7 @@ You can also use a third-party service to automatically send an email for each R
 ### Setting up incident and maintenance email notifications
 {: #setting-up-notifications}
 
-For {{site.data.keyword.Bluemix_notm}} Public, you can sign up for platform notifications. Platform notifications are optional email alerts for incident and maintenance events for the {{site.data.keyword.Bluemix_notm}} platform. You can choose to receive these email notifications by clicking the {{site.data.keyword.avatar}} icon ![Avatar icon](../admin/images/account_support.svg) &gt; **Notifications** &gt; **Platform** options. For more information about setting account notifications, go to [Setting notifications](../admin/account.html#notifications).
+For {{site.data.keyword.Bluemix_notm}} Public, you can sign up for platform notifications. Platform notifications are optional email alerts for incident and maintenance events for the {{site.data.keyword.Bluemix_notm}} platform. You can choose to receive these email notifications by clicking the **Account** menu item  &gt; **Notifications** &gt; **Platform** options. For more information about setting account notifications, go to [Setting notifications](/docs/admin/account.html#notifications).
 
 
 ### Best practices for monitoring status
@@ -123,7 +121,7 @@ For {{site.data.keyword.Bluemix_notm}} Public, you can sign up for platform noti
 
   * Check for current maintenance windows or an incident in progress
 
-	If you suspect that {{site.data.keyword.Bluemix_notm}} is not functioning as expected, check the status page for current maintenance windows or an incident in progress. To report an incident that is not already listed on the status page, open a Support ticket through the {{site.data.keyword.avatar}} icon ![Avatar icon](images/account_support.svg) in the menu bar or the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} page.
+	If you suspect that {{site.data.keyword.Bluemix_notm}} is not functioning as expected, check the status page for current maintenance windows or an incident in progress. To report an incident that is not already listed on the status page, open a Support ticket through the **Support** menu item on the menu bar or the [Bluemix Support](https://chinabluemix.itsm.unisysedge.cn/){: new_window} help page.
 
   * Prepare for minor interruptions
 
@@ -151,7 +149,7 @@ Support language | Chinese, English | Chinese, English | Chinese, English | Chin
 Assigned client success manager (CSM) | Not included | Not included | Not included | Included at<br> 8 hours per week
 *Table 1. Support levels*
 
-#### Opening a support ticket
+### Opening a support ticket
 {: #open-ticket}
 
 If you are unable to resolve your technical problem with the troubleshooting and help options, you can ask for support. However, before contacting support for a technical issue, ensure that the problem is not due to an outage by checking {{site.data.keyword.Bluemix_notm}} status.
@@ -160,17 +158,17 @@ If you are unable to resolve your technical problem with the troubleshooting and
 
 If the problem is not due to an outage, open a support ticket by using one of the following options:
 
-  * From the Account and Support widget, click **Get help**. On the page that is displayed, click **GET IN TOUCH**. Fill in the form to indicate what you need technical support for.
+  * From the Support widget, click **Get help**. On the page that is displayed, click **GET IN TOUCH**. Fill in the form to indicate what you need technical support for.
   
-  * Form the [Bluemix Support Ticketing System](https://pub-chinabluemix.itsm.unisysedge.cn/support/){: new_window} page. After you sign in,click **Open Ticket**, and then fill in the form. Select **public** in the Environment field.
+  * Form the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} page. After you sign in,click **Open Ticket**, and then fill in the form. Select **public** in the Environment field.
   
 When you open a support ticket, ensure that you indicate an appropriate severity for your ticket. The severity determines how your ticket is handled. See [Support ticket severity and response time](index.html#support-ticket-severity){: new_window} for information about the different severities. If your request is urgent, but you only have free or basic support, you can upgrade your account to submit high-severity (level 1, 2, and 3) tickets. To upgrade your account to a higher support level, contact your sales representative by email at sales@chinabluemix.net.
 
 
-#### Checking support ticket status
+### Checking support ticket status
 {: #check-ticket-status}
 
-Each support ticket is assigned a unique ticket number for reference. You can use the ticket number to review your support ticket progress and update the support ticket at the [Bluemix Support Ticketing System](https://pub-chinabluemix.itsm.unisysedge.cn/support/){: new_window} page. Updates and responses are sent to you by email and recorded in the ticket notes.  
+Each support ticket is assigned a unique ticket number for reference. You can use the ticket number to review your support ticket progress and update the support ticket at the [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} 	page. Updates and responses are sent to you by email and recorded in the ticket notes.  
 
 
 
@@ -263,7 +261,7 @@ To diagnose and resolve problems with {{site.data.keyword.Bluemix_notm}} applica
 
 Before you collect diagnostic information, complete the following steps:
 
-  1. Ensure that you have installed the latest cf command line interface. For more information, see [Installing the cf command line interface](../starters/install_cli.html){: new_window}.
+  1. Ensure that you have installed the latest cf command line interface. For more information, see [Installing the cf command line interface](/docs/starters/install_cli.html){: new_window}.
 
      **Note:** If you do not have the latest cf command line interface installed, after the cf command line is connected to {{site.data.keyword.Bluemix_notm}}, the `cf logs` command might not return output.
 
@@ -321,5 +319,5 @@ The following table lists the supported national languages and language codes fo
 
   * [IBM developerWorks China Developer Centers](https://developer.ibm.com/cn_answers/bluemix/){: new_window} 
   * [Bluemix Support Ticketing System](https://chinabluemix.itsm.unisysedge.cn){: new_window} 
-  * [Installing the cf command tool](../starters/install_cli.html){: new_window} 
+  * [Installing the cf command tool](/docs/starters/install_cli.html){: new_window} 
   

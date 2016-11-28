@@ -2,13 +2,13 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-04-04"
 
 ---
 
 # Experimental
 {: #experimental}
 
-Last updated: 4 April 2015
 
 Check out the {{site.data.keyword.Bluemix_notm}} Experimental Services to try out experimental services.
 {: shortdesc} 

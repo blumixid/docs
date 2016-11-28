@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2016-01-28"
 
 ---
 
@@ -11,7 +12,7 @@ copyright:
 # Application Services
 {: #app_services}
 
-Last updated: 28 January 2016
+
 
 Use these services to add or remove features rapidly while you develop web applications in the cloud. You can also simplify management tasks, and organize your business processes and rules. 
 {:shortdesc}

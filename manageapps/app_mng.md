@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-12"
+lastupdated: "2016-11-21"
 
 ---
 
@@ -14,8 +14,6 @@ lastupdated: "2016-09-12"
 #Managing Liberty and Node.js apps
 {: #app_management}
 
-Last updated: 12 September 2016
-{: .last-updated}
 
 App Management is a set of development and debugging utilities that can be enabled for your Liberty and Node.js applications on {{site.data.keyword.Bluemix_notm}}.
 {:shortdesc}
@@ -40,6 +38,7 @@ These utilities support both Liberty and Node.js.
 	
   3. *hc*: Health Center agent that enables your application to be monitored by the Health Center client.
 
+    The Health Center supports analyzing the performance of your Liberty and Node.js applications by using the IBM Monitoring and Diagnostic Tools. For more information see [How to analyze the performance of Liberty Java or Node.js apps in {{site.data.keyword.Bluemix_notm}}](https://developer.ibm.com/bluemix/2015/07/03/how-to-analyze-performance-in-bluemix/){:new_window}.</p></li>
 	
   4. *shell*: Enables a web-based shell that is accessible from the devconsole utility or by accessing the following URL:
     ```
@@ -54,7 +53,7 @@ These utilities support Liberty only.
 
   1. *debug*: Turns the Liberty application into debug mode and enables clients such as the IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} to establish a remote debugging session with the application.
   
-   For more information, see [Remote Debug](../manageapps/eclipsetools/eclipsetools.html#remotedebug).
+   For more information, see [Remote Debug](/docs/manageapps/eclipsetools/eclipsetools.html#remotedebug).
    
    The *debug* utility also starts *proxy*.
    
@@ -66,47 +65,12 @@ These utilities support Liberty only.
 
 These utilities support Node.js only.
 
-  1. *inspector*: Enables the node inspector debugger interface that is accessible from the *devconsole* utility or at *https://myApp.mychinabluemix.net/bluemix-debug/inspector.*
+  1. *inspector*: Enables the node inspector debugger interface that is accessible from the *devconsole* utility or at ｀https://myApp.mychinabluemix.net/bluemix-debug/inspector｀.
   
   The inspector process runs in your application container. Use this utility to create CPU usage profiles, add breakpoints, and debug code, all while your application is running on {{site.data.keyword.Bluemix_notm}}. For more information about the node inspector module, see [node-inspector on GitHub](https://github.com/node-inspector/node-inspector){:new_window}.
   
   The *inspector* utility also starts *proxy*.
-  
-  2. *strongpm*: Enables use of [StrongLoop Arc](https://strongloop.com/node-js/arc){:new_window} to analyze your Node.js application with utilities such as [StrongLoop Metrics, Profiling and Tracing](https://strongloop.com/node-js/devops-tools/){:new_window}.
-    
-  The *strongpm* utility also starts *proxy*.
-  
-  Take the following steps to configure your Node.js application with [StrongLoop Arc](https://strongloop.com/node-js/arc){:new_window}.
-
-    1. Configure the *strongpm* BlUEMIX_APP_MGMT_ENABLE environment variable and restage your application.
-    
-	```
-    cf set-env <appname> BLUEMIX_APP_MGMT_ENABLE strongpm
-    cf restage <appname>
-    ```
-	
-    2. From the Cloud Foundry command line, add a route to your application where the route has "-pm" appended to the application name, such as, <appname>-pm.mychinabluemix.net.
-    
-	```
-    cf map-route <appname> chinabluemix.net -n <appname>-pm
-    ```
-	
-    3. Install the [StrongLoop npm module](https://www.npmjs.com/package/strongloop){:new_window} on your local workstation.
-    
-	```
-    npm install -g strongloop
-    ```
-	
-    4. Create an account on [StrongLoop’s website](https://strongloop.com/register/){:new_window}.
-    5. Launch Arc on your local workstation and login with the account you created.
-    
-	```
-    slc arc
-    ```
-	
-    6. Navigate to the Process Manager view within Arc. Input the newly created route with port 80 into the Process Manager. Press the Activate button. See [full documentation on using Arc](https://docs.strongloop.com/display){:new_window} for more details.
-	
-  3. *trace*: Dynamically sets trace levels if your application is using *log4js*, *ibmbluemix*, or *bunyan* logging modules.
+  2. *trace*: Dynamically sets trace levels if your application is using *log4js*, *ibmbluemix*, or *bunyan* logging modules.
   
   **Note:** Supported dependency versions:
 
@@ -115,13 +79,14 @@ These utilities support Node.js only.
     * ibmbluemix: (1.0.0-20140707-1250)-(1.0.0-20150409-1328)
   
   Go to the Instance Details page in the {{site.data.keyword.Bluemix_notm}} web console and select **Actions** to see the UI.
+  The *trace* utility is not available when the application was started using the "-b buildpack" option.
 
   The *trace* utility does not start *proxy*.
 
 ##How to configure App Management
 {: #configure}
 
-To enable App Management utilities, set the *BLUEMIX_APP_MGMT_ENABLE* environment variable and restage your application. Multiple utilities can be enabled by separating them with a “+”.
+To enable App Management utilities, set the *BLUEMIX_APP_MGMT_ENABLE* environment variable and restage your application. Multiple utilities can be enabled by separating them with a `+`?
 
 For example, to enable devconsole and *shell* utilities, run the following command:
 
@@ -154,7 +119,7 @@ cf restage myApp
 ##Development Mode for Eclipse Tools
 {: #devmode}
 
-Development mode is a feature of the [Eclipse Tools for {{site.data.keyword.Bluemix_notm}}](../manageapps/eclipsetools/eclipsetools.html#eclipsetools) that gives developers the ability to work with their applications while they are running in the cloud.
+Development mode is a feature of the [Eclipse Tools for {{site.data.keyword.Bluemix_notm}}](/docs/manageapps/eclipsetools/eclipsetools.html#eclipsetools) that gives developers the ability to work with their applications while they are running in the cloud.
 
 While working with their applications on {{site.data.keyword.Bluemix_notm}}, developers might feel that they cannot perform normal development activities as they might on a local environment. To tackle this issue, development mode through Eclipse Tools provides a way for you to work in the cloud while in a temporary, secure workspace.
 

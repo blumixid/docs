@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-18"
+lastupdated: "2016-11-21"
 
 ---
 
@@ -18,11 +18,66 @@ lastupdated: "2016-09-18"
 # Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}} 
 {: #accessing}
 
-Last updated: 18 September 2016
-{: .last-updated} 
 
 General problems with accessing {{site.data.keyword.Bluemix_notm}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
 {:shortdesc}
+
+
+<!-- Crystal: 2016.9.6  The BM China sign in page is not available yet, so can't verify the exact UI strings. Hide this topic for now.
+## Unable to log in to {{site.data.keyword.Bluemix_notm}}
+{: #ts_logintobm}
+
+You must have a valid ID and password to log in to {{site.data.keyword.Bluemix_notm}}.
+
+
+When you try to sign in to {{site.data.keyword.Bluemix_notm}}, you see the following error message: 
+{: tsSymptoms} 
+
+`The password that you entered is not correct.`
+
+
+The ID and password that you use to sign in to {{site.data.keyword.Bluemix_notm}} is invalid.
+{: tsCauses} 
+ 
+
+To get a valid ID and password, go to the My IBM profile page, and then complete one of the following steps:
+{: tsResolve}
+  * If you have already registered an IBMid and you want to check whether your ID and password are valid, click **Sign in** and enter your IBMid and password on the Sign in page. If you have forgotten your password, click **Forgot your password** on the Sign in page to reset your password. If you have forgotten your IBMid or continue to have problems with your password, contact the Worldwide IBM Registration Help Desk for help. 
+  * If you don't have an IBMid, click **Register** to register an IBMid and password. 
+  
+**Note:** For IBM employees, the IBMid might be different from the intranet login ID. 
+-->
+
+
+<!-- begin STAGING ONLY --> 
+
+## Problem accessing external website
+{: #ts_bmlinkid}
+
+You cannot log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID unless you link your intranet ID with your IBMid.
+
+
+After you select **Sign in with your intranet ID** from the {{site.data.keyword.Bluemix_notm}} Sign in page, you might see the following error message:
+{: tsSymptoms} 
+
+`Problem Accessing External Website`
+
+
+
+This problem occurs when you log in to {{site.data.keyword.Bluemix_notm}} by using an IBM intranet ID that is not linked to an IBMid. Your IBMid is the ID that you use to log in to www.ibm.com.
+{: tsCauses}
+
+
+As an IBM employee, before you are able to log in to {{site.data.keyword.Bluemix_notm}} by using your IBM intranet ID, you must link your intranet ID with your external IBMid. To link the two IDs, complete the following steps:
+{: tsResolve} 
+
+  1. On the [Central Sign-on](https://w3-03.sso.ibm.com/tools/cso/index.jsp){: new_window} page, click **My Sign-ons**.
+  2. On the My Sign-ons page, click **Link IDs**, and enter your IBMid and password on the {{site.data.keyword.Bluemix_notm}} Sign in page. After that, your intranet ID and IBMid will be automatically linked.
+  
+
+<!-- end STAGING ONLY -->
+
+
 
 
 ## You have unsaved changes
@@ -366,7 +421,7 @@ You do not have the appropriate level of authority that is required to perform t
 To obtain the appropriate authority level, use one of the following methods: 
 {: tsResolve}
  * Select another organization and space for which you have the developer role. 
- * Ask the org manager to change your role to developer or to create a space and then assign you a developer role. See [Managing organizations and spaces](../admin/orgs_spaces.html){: new_window} for details.
+ * Ask the org manager to change your role to developer or to create a space and then assign you a developer role. See [Managing organizations and spaces](/docs/admin/orgs_spaces.html){: new_window} for details.
  
 
 
@@ -440,7 +495,7 @@ Other less common causes of a Bad Gateway error are Internet service provider (I
 
  
 
-If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first check the [{{site.data.keyword.Bluemix_notm}} status](http://www.{DomainName}/status){: new_window} page. You might want to use the service in another {{site.data.keyword.Bluemix_notm}} region as a workaround. Detailed information is available in [Using services in another region](../services/reqnsi.html#cross_region_service){: new_window}. If the service status is normal, try the following steps to solve the problem: 
+If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first check the [{{site.data.keyword.Bluemix_notm}} status](http://www.{DomainName}/status){: new_window} page. You might want to use the service in another {{site.data.keyword.Bluemix_notm}} region as a workaround. Detailed information is available in [Using services in another region](/docs/services/reqnsi.html#cross_region_service){: new_window}. If the service status is normal, try the following steps to solve the problem: 
 {: tsResolve}
 
   * Retry the action:
@@ -448,7 +503,7 @@ If you suspect that a {{site.data.keyword.Bluemix_notm}} service is down, first 
 	* Use a different browser.
 	* Reboot your router, your modem, and your computer. Rebooting these devices can clear up various errors that lead to the error 502. 
   * Wait and try again later. In some instances, temporary problems might occur with your Internet service provider or the {{site.data.keyword.Bluemix_notm}} services. You can wait until the temporary problems are solved.
-  * If the problem still exists, contact {{site.data.keyword.Bluemix_notm}} support. See [Contacting {{site.data.keyword.Bluemix_notm}} Support](../support/index.html#contacting-bluemix-support){: new_window} for more information. 
+  * If the problem still exists, contact {{site.data.keyword.Bluemix_notm}} support. See [Contacting {{site.data.keyword.Bluemix_notm}} Support](/docs/support/index.html#contacting-bluemix-support){: new_window} for more information. 
 
 
 
@@ -468,7 +523,7 @@ The default disk quota that is allocated for an app is 1 GB. If you need more di
 {: tsCauses}
 
  
-Use one of the following methods to specify your disk quota. The maximum disk quota that you can specify is 2 GB. If 2 GB is still not enough, try an external service such as [Object Store](../services/ObjectStorage/index.html){: new_window}.
+Use one of the following methods to specify your disk quota. The maximum disk quota that you can specify is 2 GB. If 2 GB is still not enough, try an external service such as [Object Store](/docs/services/ObjectStorage/index.html){: new_window}.
 {: tsResolve}
 
   * In the manifest.yml file, add the following item:
@@ -563,7 +618,7 @@ Delete any services instances that are not needed, or remove the limit on the nu
 	  1. Unbind the service instance from an application by typing `cf unbind-service <appname> <service_instance_name>`.
 	  2. Delete the service instance by typing `cf delete-service <service_instance_name>`.
 	  3. After you delete the service instance, you might want to restage your application that the service instance was bound to by typing `cf restage <appname>`.
-  * To remove the limit on the number of service instances that you can have, convert your trial account to a pay account. For information about how to convert your trial account to a pay account, see [How to change your plan](../pricing/index.html#changing){: new_window}.
+  * To remove the limit on the number of service instances that you can have, convert your trial account to a pay account. For information about how to convert your trial account to a pay account, see [How to change your plan](/docs/pricing/index.html#changing){: new_window}.
 
   
   
@@ -618,7 +673,7 @@ This error occurs when the amount of memory that is remaining for your organizat
 You can either increase the memory quota of your account, or reduce the memory that your apps use.
 {: tsResolve} 
 
-  * To increase the memory quota of your account, convert your trial account to a pay account. For information about how to convert your trial account to a pay account, see [Pay accounts](../pricing/index.html#pay-accounts){: new_window}. 
+  * To increase the memory quota of your account, convert your trial account to a pay account. For information about how to convert your trial account to a pay account, see [Pay accounts](/docs/pricing/index.html#pay-accounts){: new_window}. 
   * To reduce the memory that your apps use, use either the {{site.data.keyword.Bluemix_notm}} user interface or the cf command line interface.
     If you use the {{site.data.keyword.Bluemix_notm}} user interface, complete the following steps:
 	  1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, select your application. The app details page opens.
@@ -719,7 +774,43 @@ Use one of the following methods to solve the problem:
    ```
   * Create a `package.json` file that is in the same directory as your app.
 
+  
+  
+  
+<!-- begin STAGING ONLY --> 
 
+## Bluemix Live Sync Debug does not start from the command line
+{: #ts_no_debug}
+
+You enabled the IBM Bluemix Live Sync Debug feature for your app by using the command line, but you cannot access the Debug interface.  
+  
+ 
+
+You enabled the Debug feature for your app by setting the **BLUEMIX_APP_MGMT_ENABLE** environment variable. However, you cannot access the Debug user interface at `app_url/bluemix-debug/manage`.
+{: tsSymptoms}
+
+
+
+The Debug feature cannot be enabled in these situations:
+{: tsCauses} 
+
+  * When the `manifest.yml` contains the command attribute
+  * When you use the **-c** option to push an app to {{site.data.keyword.Bluemix_notm}}
+
+ 
+  
+Use one of the following options to resolve the issue: 
+{: tsResolve}
+
+  * The recommended practice is to use the IBM Node.js buildpack to start the app. For more information, see the Startup command section of the [Deploying a Node.js application to {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime){: new_window} topic. 
+  * Disable the command for your existing app either by revising the command attribute in your `manifest.yml` to command: null or by editing your push command to include `-c null`. 
+  * Remove the **command** attribute from the `manifest.yml`. Then delete the current app from {{site.data.keyword.Bluemix_notm}} and push the app again.
+  
+<!-- end STAGING ONLY -->  
+  
+  
+
+  
   
 ## Orgs can't be found on {{site.data.keyword.Bluemix_notm}}
 {: #ts_orgs}
@@ -755,7 +846,7 @@ If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by usi
 ```
 cf api https://api.chinabluemix.net
 ```
-If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the Eclipse tools, you must first create a {{site.data.keyword.Bluemix_notm}} server and specify the API endpoint of the {{site.data.keyword.Bluemix_notm}} region that your organization was created in. For more information about using the Eclipse tools, see [Deploying apps with IBM Eclipse Tools for Bluemix](../manageapps/eclipsetools/eclipsetools.html){: new_window}.  
+If you are pushing your application to {{site.data.keyword.Bluemix_notm}} by using the Eclipse tools, you must first create a {{site.data.keyword.Bluemix_notm}} server and specify the API endpoint of the {{site.data.keyword.Bluemix_notm}} region that your organization was created in. For more information about using the Eclipse tools, see [Deploying apps with IBM Eclipse Tools for Bluemix](/docs/manageapps/eclipsetools/eclipsetools.html){: new_window}.  
   
   
 
@@ -954,7 +1045,7 @@ Liberty buildpack uses the `server.xml` file to configure the app and generates 
 
  
 
-You can resolve this problem by removing the server.xml file from the project. The buildpack creates the `server.xml` file dynamically when you push the app as a WAR app. For more information, see [Liberty for Java](../runtimes/liberty/index.html){: new_window}.
+You can resolve this problem by removing the server.xml file from the project. The buildpack creates the `server.xml` file dynamically when you push the app as a WAR app. For more information, see [Liberty for Java](/docs/runtimes/liberty/index.html){: new_window}.
 {: tsResolve}
 	
 	
@@ -996,7 +1087,7 @@ This problem might happen because DevOps Services requires a `manifest.yml` file
 
  
 
-To resolve this problem, you must create a `manifest.yml` file. For more information about how to create a `manifest.yml` file, see [Application manifest](../manageapps/depapps.html#appmanifest){: new_window}.
+To resolve this problem, you must create a `manifest.yml` file. For more information about how to create a `manifest.yml` file, see [Application manifest](/docs/manageapps/depapps.html#appmanifest){: new_window}.
 {: tsResolve}	
 	
 
@@ -1270,12 +1361,41 @@ You might notice that several applications share the same URL in {{site.data.key
 This problem might happen when you assign the same URL route for different applications within a space.
 {: tsCauses}
 
-For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.{DomainName}". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.{DomainName}". The route is now mapped to both applications.
+For example, you push the myApp1 application to {{site.data.keyword.Bluemix_notm}} and set the domain to "mynewapp.stage1.mychinabluemix.net". Then, you push another myApp2 application to the same space and set one of its URL routes to "mynewapp.stage1.mychinabluemix.net". The route is now mapped to both applications.
 
  
 
 This is supported behavior of the {{site.data.keyword.Bluemix_notm}} and you can use this practice to achieve zero downtime for your application upgrade. For more information, see Blue-green deployments.
 {: tsResolve}
+  
+	
+	
+<!-- begin STAGING ONLY --> 
+	
+	
+## Administrators can't view all orgs by using the {{site.data.keyword.Bluemix_notm}} user interface
+{: #ts_ui_org}
+
+As an administrator, when you use the {{site.data.keyword.Bluemix_notm}} user interface, you can't display every organization to administer them. You can display and administer only those organizations to which you belong.
+
+ 
+
+As an administrator, you cannot see all the organizations by using the {{site.data.keyword.Bluemix_notm}} user interface.
+{: tsSymptoms}
+
+ 
+
+This is a limitation of the {{site.data.keyword.Bluemix_notm}} user interface.
+{: tsCauses}
+
+ 
+
+You can use the command such as `cf orgs`, `cf create-org`, and `cf delete-org` from the cf command line interface to manage all the organizations. For a full list of cf commands, enter `cf help`.
+{: tsResolve}
+	
+<!-- end STAGING ONLY -->
+
+
 
 
 ## Credit card can't be added
@@ -1580,6 +1700,9 @@ You can resolve this issue by using one of the following methods:
 	```
 	
 	
+<!-- begin STAGING ONLY --> 
+
+	
 ## Log4js logger objects are not displayed in the Node.js Trace pop-up window
 {: #ts_logger}
 
@@ -1596,6 +1719,13 @@ Because the ibmbluemix module provides a unified API for log operations that use
 
 This behavior is expected.
 {: tsResolve}
+
+<!-- end STAGING ONLY -->
+
+
+
+
+<!-- begin STAGING ONLY -->
 
 
 ## Apply trace setting to all instances of the application check box is disabled
@@ -1619,4 +1749,5 @@ When Bunyan log levels are modified, the trace setting cannot be applied to all 
 This behavior is expected.
 {: tsResolve} 
 
+<!-- end STAGING ONLY -->
 

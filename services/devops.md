@@ -2,13 +2,13 @@
 
 copyright:
   years: 2015, 2016
+lastupdated: "2015-12-09"
 
 ---
 
 # DevOps
 {: #devops}
 
-Last updated: 9 December 2015
 
 Accelerate app delivery | Choose how you code | Deploy with confidence
 ---- | ---- | ----

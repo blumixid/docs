@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE map PUBLIC "-//IBM//DTD DITA IBM Map//EN" "ibm-map.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<map xml:lang="en-us">
+    <title>Getting started with Mobile Messaging Connect service</title>
+    <topicref format="html" href="index.html" navtitle="Mobile Messaging Connect" linking="sourceonly" locktitle="yes" scope="peer">
+        <topicref format="html" href="index.html#gettingstartedMMC" navtitle="Getting started with Mobile Messaging Connect service" locktitle="yes" scope="peer">
+            <topicref format="html" href="index.html#createAccount" navtitle="Create Account" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#createChannel" navtitle="Create Channel" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#createApplicationEndpoint" navtitle="Create Application Endpoint" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#testResult" navtitle="Test Result" locktitle="yes" scope="peer"></topicref>
+        </topicref>
+        <topicref format="html" href="index.html#restAPI" navtitle="API Documentation" locktitle="yes" scope="peer">
+            <topicref format="html" href="index.html#getReceivedMessage" navtitle="Receive Message" locktitle="yes" scope="peer"></topicref>
+            <topicref format="html" href="index.html#sendMessage" navtitle="Send Message" locktitle="yes" scope="peer"></topicref>
+        </topicref>
+    </topicref>
+</map>
+<?Pub Caret -3?>
+<?Pub *0000000799?>

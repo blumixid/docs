@@ -2,7 +2,8 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-05"
+  
+lastupdated: "2016-11-02"
 
 ---
 
@@ -14,8 +15,6 @@ lastupdated: "2016-09-05"
 # Troubleshooting
 {: #troubleshooting}
 
-Last updated: 5 September 2016
-{: .last-updated}
 
 If you experience problems with Bluemix, you can perform troubleshooting tasks to determine the corrective action to take.
 

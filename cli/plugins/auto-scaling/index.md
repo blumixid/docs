@@ -5,7 +5,7 @@
 copyright:
 
   years: 2015，2016
-lastupdated: "2016-09-13"
+lastupdated: "2016-11-21"
  
 
 ---
@@ -17,8 +17,6 @@ lastupdated: "2016-09-13"
 # Auto-Scaling CLI
 {: #autoscalingcli}
 
-Last updated: 13 September 2016
-{: .last-updated}
 
 
 You can configure the {{site.data.keyword.autoscaling}} service by using the {{site.data.keyword.autoscaling}} CLI for {{site.data.keyword.Bluemix_notm}}. The {{site.data.keyword.autoscaling}} CLI supports Linux64, Win64, and OSX, and provides functionality that is similar to the auto-scaling RESTful API provides.
@@ -53,7 +51,7 @@ bx as policy-attach <APP_NAME> -p <policy_file>
 <dt class="pt dlterm">&lt;APP_NAME&gt;</dt>
 <dd class="pd">The name of the app to which you want to attach an auto-scaling policy.</dd>
 <dt class="pt dlterm">&lt;policy_file&gt;</dt>
-<dd class="pd">The name of the JSON file that describes the auto-scaling policy. See the <a href="https://new-console.{DomainName}/apidocs/48" target="_blank">{{site.data.keyword.autoscaling}} RESTful API doc</a> for more details.</dd>
+<dd class="pd">The name of the JSON file that describes the auto-scaling policy. See the <a href="https://console.ng.bluemix.net/apidocs/48" target="_blank">{{site.data.keyword.autoscaling}} RESTful API doc</a> for more details.</dd>
 </dl>
 
 
@@ -140,7 +138,7 @@ bx as history-show <APP_NAME>  [--start-date=<start_timestamp>]  [--end-date=<en
 {: rellinks}
 ## general
 {: general}
-* [{{site.data.keyword.autoscaling}} service](../../../services/Auto-Scaling/index.html)
+* [{{site.data.keyword.autoscaling}} service](/docs/services/Auto-Scaling/index.html)
 * [{{site.data.keyword.Bluemix_notm}} CLI](http://plugins.ng.bluemix.net/ui/home.html){: new_window}
 * [W3C Date and Time Formats standard](https://www.w3.org/TR/NOTE-datetime){: new_window}
 

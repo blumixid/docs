@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2016
-lastupdated: "2016-09-13"
+lastupdated: "2016-10-23"
 
 ---
 
@@ -18,11 +18,15 @@ lastupdated: "2016-09-13"
 # Troubleshooting for accessing {{site.data.keyword.Bluemix_notm}} 
 {: #accessing}
 
-Last updated: 13 September 2016
-{: .last-updated} 
 
 General problems with accessing {{site.data.keyword.Bluemix_notm}} might include a user that is unable to log in to {{site.data.keyword.Bluemix_notm}}, an account that is stuck in a pending state, and so on. However, in many cases, you can recover from these problems by following a few easy steps. 
 {:shortdesc}
+
+
+
+
+
+
 
 
 ## You have unsaved changes
