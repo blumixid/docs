@@ -774,7 +774,7 @@ The Actions button on the Instance Details page is disabled.
 This problem occurs because of the following reasons:
 {: tsCauses}
 
-  * The application is not a Javaâ„?web application. Runtime Management Utilities (RMU) supports only web applications that are deployed with Liberty buildpacks.
+  * The application is not a Java web application. Runtime Management Utilities (RMU) supports only web applications that are deployed with Liberty buildpacks.
   * The application is not deployed with the embedded Liberty buildpack.
   * The application was deployed with an early version of Liberty buildpack.
 
