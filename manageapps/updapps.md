@@ -34,7 +34,7 @@ You can create and use a custom domain in {{site.data.keyword.Bluemix_notm}} by 
 
   1. Create a custom domain for your organization.
 
-	1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Manage Organizations** &gt; **View details** for your org &gt; **Edit Org** &gt; **Domains**.
+	1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Manage Organizations** &gt; **View details** for your org &gt; **Edit Org** &gt; **Domains**.
 
 	2. On the **DOMAINS** tab, click **ADD DOMAIN**, enter your custom domain name, and click **SAVE**.
 	**Note**: For example, you can use `mycompany.com` to associate the route `www.mycompany.com` to your app. You can also use `example.mycompany.com`to associate the route `www.example.mycompany.com` to your app.

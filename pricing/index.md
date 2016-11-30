@@ -85,7 +85,7 @@ The resources or capabilities vary depending on the particular code, but can inc
 * Use premium service plans
 
 **Note:** You can apply multiple promo codes to your account. Each promo code can be redeemed only once before the expiration date of the code.
-To use a promo code, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg), select **Account**, then click **Account Type** in the {{site.data.keyword.Bluemix_notm}}x user interface.
+To use a promo code, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), select **Account**, then click **Account Type** in the {{site.data.keyword.Bluemix_notm}}x user interface.
 
 ##How you are billed
 {: #pay-accounts}
@@ -97,7 +97,7 @@ When you sign up for the {{site.data.keyword.Bluemix_notm}} Paid pricing plan, y
 
  With a Subscription account, you can get a monthly discount based on a minimum monthly spending commitment. {{site.data.keyword.Bluemix_notm}} Dedicated and {{site.data.keyword.Bluemix_notm}} Local are charged by annual contracts.
 
-After you create a paid account, you can edit the information that you provided. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg), then click **Account &gt; Account Type** to edit your information.
+After you create a paid account, you can edit the information that you provided. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg), then click **Account &gt; Account Type** to edit your information.
 
 If you encounter any problems with {{site.data.keyword.Bluemix_notm}} when you are using a Subscription account, see [Getting help](/docs/support/index.html#getting-help) for more information.
 

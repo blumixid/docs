@@ -83,5 +83,5 @@ The account owner is charged for the total usage that is incurred across all org
 ## Updating billing information
 {: #account_billing}
 
-As the account owner, you can edit, add, or remove saved credit card information that is associated with your {{site.data.keyword.Bluemix_notm}} account. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Account** &gt; *your_account_name* &gt; **Billing**.
+As the account owner, you can edit, add, or remove saved credit card information that is associated with your {{site.data.keyword.Bluemix_notm}} account. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; *your_account_name* &gt; **Billing**.
 
