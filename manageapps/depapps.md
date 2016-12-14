@@ -396,7 +396,7 @@ To specify start commands for your application, you can use one of the following
 
 User-defined environment variables are specific for an application. You have the following options to add a user-defined environment variable to a running app:
 
-  * Use the {{site.data.keyword.Bluemix_notm}} user interafce. Complete the following steps:
+  * Use the {{site.data.keyword.Bluemix_notm}} user interface. Complete the following steps:
     1. On the {{site.data.keyword.Bluemix_notm}} Dashboard, click your app tile. The App details page is displayed.
 	2. Click **Environment Variables**.
 	3. Click **USER-DEFINED**, then click **ADD**.
