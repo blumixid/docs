@@ -30,7 +30,7 @@ If you have administrator access for {{site.data.keyword.Bluemix_notm}} Local or
 |Monitor system usage | Click **ADMINISTRATION &gt; USAGE**. View your system information, monitor CPU usage, and plan usage to make the best decisions for your business. See [Viewing usage information](index.html#oc_resource).|
 |Manage your catalog | Click **ADMINISTRATION &gt; CATALOG MANAGEMENT** to manage which services are visible to your users and orgs. See [Managing your catalog](index.html#oc_catalog).|
 |Administer orgs | Click **ADMINISTRATION &gt; ORGANIZATION ADMINISTRATION** to create organizations, monitor quotas for organizations, and make needs-based decisions quickly. See [Administering organizations](index.html#oc_organizations).|
-|Create spaces and assign user roles | Click the **{{site.data.keyword.avatar}}** icon ![Avatar](/docs/support/images/account_support.svg), then select **Manage Organizations** to create spaces within your orgs. Add users and assign org and space roles to users. See [Managing your organizations](/docs/admin/orgs_spaces.html). |
+|Create spaces and assign user roles | Click the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg), then select **Manage Organizations** to create spaces within your orgs. Add users and assign org and space roles to users. See [Managing your organizations](/docs/admin/orgs_spaces.html). |
 |Manage administrative user permissions | Click **ADMINISTRATION &gt; USER ADMINISTRATION** to add users, remove users, and adjust user permissions. See [Managing users and permissions](index.html#oc_useradmin). |
 |Review reports and logs | Click **ADMINISTRATION &gt; REPORTS AND LOGS** to view security reports and audit logs for you instance. See [Viewing reports](index.html#oc_report). |
 |View system information | Click **ADMINISTRATION &gt; SYSTEM INFORMATION** to view system information such as pending maintenance updates, name and version of your instance, region, API URL, CLI URL, LDAP configuration details, group and user mappings, statistics, and shared domains. See [Viewing system information](index.html#oc_system). |
@@ -52,11 +52,11 @@ You can view notifications for your local or dedicated environment to monitor th
 | **Event Type** | **Notification method** |       
 |-----------------|-------------------|
 | Maintenance updates | You are alerted about upcoming maintenance updates in the Notifications area on the Administration page. Go to the **Administration** page, then select the **Notifications** icon ![Notifications](images/icon_announcement.svg). To see a full list and history of your pending and complete notifications, click **ADMINISTRATION &gt; SYSTEM INFORMATION** &gt; *Number* **pending**. You can extend the notification capability by setting up a subscription that sends an email to recipients of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice. |
-|  | You are also alerted about scheduled disruptive maintenance update events on the Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](/docs/support/images/account_support.svg), and then select **Status**.|
+|  | You are also alerted about scheduled disruptive maintenance update events on the Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg), and then select **Status**.|
 |  | You can extend the notification capability by setting up a subscription that sends an email to recipients of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.|
-| Critical incidents | You are alerted about critical incidents on the Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](/docs/support/images/account_support.svg), and then select **Status**. You can extend the notification capability by setting up an event subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  |  
+| Critical incidents | You are alerted about critical incidents on the Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg), and then select **Status**. You can extend the notification capability by setting up an event subscription that sends an email to a recipient of your choice. Or you can set up a subscription that uses webhooks to integrate the notifications from the Administration page with a web service of your choice.  |  
 | Threshold events | You can set up a notification subscription that sends an email to a recipient of your choice when resource thresholds for physical disk, physical memory, reserved disk, or reserved memory are reached in your environment. Or, you can set up a subscription that uses webhooks to integrate the notifications with a web service of your choice.  |  
-| {{site.data.keyword.Bluemix_notm}} Status | You can always view the latest status for the platform, services, and your {{site.data.keyword.Bluemix_notm}} instance on the Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](/docs/support/images/account_support.svg), and then select **Status**.  |
+| {{site.data.keyword.Bluemix_notm}} Status | You can always view the latest status for the platform, services, and your {{site.data.keyword.Bluemix_notm}} instance on the Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg), and then select **Status**.  |
 
 ### Setting up notification subscriptions
 {: #seteventsub}
@@ -198,7 +198,7 @@ You can select any saved notification subscription, view the recent activity, or
 ## Maintenance updates
 {: #oc_schedulemaintenance}
 
-You can view scheduled and pending maintenance updates, if you have the superuser permission (`ops.admin`), by clicking **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending** to access the **System Updates** page.  All users of your environment can view the scheduled disruptive maintenance update events by clicking the **{{site.data.keyword.avatar}}** icon ![Avatar](/docs/support/images/account_support.svg) and then selecting **Status**.
+You can view scheduled and pending maintenance updates, if you have the superuser permission (`ops.admin`), by clicking **ADMINISTRATION &gt; SYSTEM INFORMATION &gt; *Number* pending** to access the **System Updates** page.  All users of your environment can view the scheduled disruptive maintenance update events by clicking the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg) and then selecting **Status**.
 
 **Note**: See the following section for [Setting preapproved maintenance windows](index.html#preapprovedmaintenance) to get you started. These windows must be set in order for IBM to schedule maintenance for your environment.
 
@@ -366,7 +366,7 @@ To view account usage data, complete these steps:
 
 
 <ol>
-<li>Click the <strong>{{site.data.keyword.avatar}}</strong> icon ![Avatar](/docs/support/images/account_support.svg) &gt; <strong>Account</strong> &gt; <strong>Usage details</strong>.</li>
+<li>Click the <strong>{{site.data.keyword.avatar}}</strong> icon ![Avatar](../support/images/account_support.svg) &gt; <strong>Account</strong> &gt; <strong>Usage details</strong>.</li>
 <li>Select the org that you want to see data for.</li>
 <li>You can see usage details for the following categories:
 <ul>
@@ -382,7 +382,7 @@ To view account usage data, complete these steps:
 You can also view the monthly usage and associated charges at the account level for your runtimes, apps, and services that are syndicated from {{site.data.keyword.Bluemix_notm}} Public. You can use this data to identify how much to charge specific orgs based on their usage.
 
 <ol>
-<li>Click the <strong>{{site.data.keyword.avatar}}</strong> icon ![Avatar](/docs/support/images/account_support.svg) &gt; <strong>Account</strong> &gt; <strong>Usage details</strong>.</li>
+<li>Click the <strong>{{site.data.keyword.avatar}}</strong> icon ![Avatar](../support/images/account_support.svg) &gt; <strong>Account</strong> &gt; <strong>Usage details</strong>.</li>
 <li>Click <strong>Public</strong>.</li>
 <li>Select the org that you want to see data for.</li>
 <li>You can see usage details for the following categories:
@@ -458,7 +458,7 @@ You can view status for the {{site.data.keyword.Bluemix_notm}} environment and f
 
 ### {{site.data.keyword.Bluemix_notm}} environment status
 
-You can monitor status for your {{site.data.keyword.Bluemix_notm}} instance by using the {{site.data.keyword.Bluemix_notm}} Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](/docs/support/images/account_support.svg), and then select **Status**.
+You can monitor status for your {{site.data.keyword.Bluemix_notm}} instance by using the {{site.data.keyword.Bluemix_notm}} Status page. Click the **{{site.data.keyword.avatar}}** icon ![Avatar](../support/images/account_support.svg), and then select **Status**.
 
 The Status page is the central place to find notifications and announcements about key events that are affecting the {{site.data.keyword.Bluemix_notm}} platform and major services in {{site.data.keyword.Bluemix_notm}}. You can subscribe to an RSS feed for notifications so that you don't have to check for them. For more information about the Status page and setting up the RSS feed, see [Viewing {{site.data.keyword.Bluemix_notm}}](/docs/support/index.html#viewing-bluemix-status).
 
@@ -749,7 +749,7 @@ create the org.
 
 You can create spaces in your organization; for example, a *dev* space as a development environment, a *test* space as a testing environment, and a *production* space as a production environment. Then, you can associate your apps with spaces. Complete the following steps to create a space:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/admin/images/account_support.svg) &gt; **Manage Organizations** page.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](images/account_support.svg) &gt; **Manage Organizations** page.
 2. Select the org that you want to add a space to.
 3. Click **Create a Space**.
 4. Enter a space name.

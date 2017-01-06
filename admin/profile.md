@@ -19,7 +19,7 @@ lastupdated: "2016-11-21"
 {: #usersettings}
 
 
-Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **User Profile** to update your profile settings.
+Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **User Profile** to update your profile settings.
 {:shortdesc}
 
  On the **Profile** page, you can set or update the following information:
@@ -31,7 +31,7 @@ Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-ava
 ## Changing your profile photo
 {: #photo}
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
 
 * Click **UPLOAD A PHOTO** to upload a photo.
 * Click **CHANGE PHOTO** to upload a new photo.
@@ -42,7 +42,7 @@ Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-ava
 
 If you need to change your ID account information, such as your name, email, phone number, password, or company name, complete the following steps:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **Account** &gt; **Profile**.
 2. Click **edit your Bluemix ID**.
 3. Edit your user information.
 4. Click **Save**.
@@ -56,5 +56,5 @@ If you choose to disable tracking, then you might not be able to use some featur
 
 To disable analytics tracking, complete the following steps:
 
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](/docs/icons/i-avatar-icon.svg) &gt; **User Profile**.
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg) &gt; **User Profile**.
 2. Set analytics tracking to **off**.
